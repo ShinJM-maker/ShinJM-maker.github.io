@@ -82,9 +82,9 @@ permalink: /about
           <!-- Home - Intro Text Start -->
           <div class="blank"></div>
             <p id="intro-text">  <br>Hello! <br>
-              I am a second year Ph.D. student at Yonsei University.
-              I am fortunate to be advised by <a href="#" target="_blank">Prof. Jinyoung Yeo</a>.
-              Prior to Yonsei University, I received B.S. in Software and Data Science from Sejong University.
+              I am a second year Ph.D. student at Pusan University.
+              I am fortunate to be advised by <a href="#" target="_blank">Prof. ㅎㅊ</a>.
+              Prior to Pusan University, I received B.S. in Software and Data Science from Sejong University.
               My primary research interests include Natural Language Processing, Dialogue Agent and Machine Reasoning.
               <br>
             </p>
@@ -96,25 +96,25 @@ permalink: /about
             *: equal contribution
             <hr>
             <h4 class="year">2022</h4>
-              <h4 class="title"><a href="#" target="_blank">BotsTalk: Machine-Sourced Framework for Automatic Curation of Large-scale Multi-skill Dialogue Datasets</a></h4>
-                <p><strong class="thicker">Minju Kim*</strong>, Chae Hyeong Kim*, Yong Ho Song*, Seung-won Hwang, Jinyoung Yeo</p>
-                <p><em>Proceedings of EMNLP (Long)</em>. 2022.</p>
-              <h4 class="title"><a href="#" target="_blank">Detecting Incongruent News Headlines with Auxiliary Textual Information</a></h4>
-                <p>Joonwon Jang, Yoonsik Cho, <strong class="thicker">Minju Kim</strong>, Misuk Kim</p>
-                <p><em>Expert Systems with Applications</em>. 2022.</p>
-              <h4 class="title"><a href="#" target="_blank">Dual Task Framework for Improving Persona-grounded Dialogue Dataset</a></h4>
-                <p><strong class="thicker">Minju Kim*</strong>, Beong-woo Kwak*, Youngwook Kim, Hong-in Lee, Seung-won Hwang, Jinyoung Yeo</p>
-                <p><em>Proceedings of AAAI (Oral)</em>. 2022.</p>
+              <h4 class="title"><a href="#" target="_blank">aaa</a></h4>
+                <p><strong class="thicker">저자*</strong>, 사람*, 사람</p>
+                <p><em>학회</em>. 2022.</p>
+              <h4 class="title"><a href="#" target="_blank">ㄴㅇㄴㅇ</a></h4>
+                <p>11, <strong class="thicker">22</strong>, 33</p>
+                <p><em>ㄹㄹ</em>. 2022.</p>
+              <h4 class="title"><a href="#" target="_blank">ㅎㅎ</a></h4>
+                <p><strong class="thicker">ㅗㅗ*</strong>, ㅎㄹ</p>
+                <p><em>Pㅓㅓㅓ</em>. 2022.</p>
           </div>
           <!-- Background Page Start -->
           <!-- Background - Research Experience Start-->
           <div id="experience" class="field" style="">
             <div class="blank"></div><div class="blank"></div>
             <h3>Research Experience</h3>
-              <h4>Yonsei University <sup>2021.03 - Current</sup></h4>
-                <p>Ph.D. student at <a href="#" target="_blank">Convei Lab</a>, supervised by <a href="#" target="_blank">Jinyoung Yeo</a></p>
-              <h4>Sejong University <sup>2019.12 - 2021.02</sup></h4>
-                <p>Undergraduate intern at <a href="#" target="_blank">Data Science Lab</a>, supervised by <a href="#" target="_blank">Yoonsik Cho</a></p>
+              <h4>Pusan University <sup>2021.03 - Current</sup></h4>
+                <p>Ph.D. student at <a href="#" target="_blank">Convei Lab</a>, supervised by <a href="#" target="_blank">ㅎㅍ</a></p>
+              <h4>Pusan University <sup>2019.12 - 2021.02</sup></h4>
+                <p>Undergraduate intern at <a href="#" target="_blank">Data Science Lab</a>, supervised by <a href="#" target="_blank">f Cho</a></p>
           </div>
           <div class="blank"></div>
         </div>

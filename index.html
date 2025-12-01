@@ -4,141 +4,766 @@
   <meta charset="UTF-8" />
   <title>Joongmin Shin | LLM & Document AI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- 심플한 기본 스타일 -->
+  <meta name="description" content="Joongmin Shin - LLM/LVLM Research Scientist & Document AI Engineer" />
   <style>
+    :root {
+      --bg: #f5f5f7;
+      --fg: #222;
+      --accent: #e63946;
+      --accent-soft: rgba(230, 57, 70, 0.08);
+      --card-bg: #ffffff;
+      --border-soft: #eee;
+      --muted: #666;
+      --muted-light: #888;
+      --radius-lg: 14px;
+      --radius-sm: 999px;
+      --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      color: #222;
-      background: #f5f5f7;
+      color: var(--fg);
+      background: radial-gradient(circle at top left, #ffffff, var(--bg));
     }
+
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
     header {
-      padding: 3rem 1.5rem;
-      text-align: center;
-      background: white;
-      border-bottom: 1px solid #eee;
+      padding: 2.8rem 1.5rem 1.5rem;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-soft);
+      position: sticky;
+      top: 0;
+      z-index: 20;
     }
+
+    .header-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .header-main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.3rem;
+      letter-spacing: 0.02em;
     }
+
     header h2 {
-      margin: 0.5rem 0 1rem;
+      margin: 0.3rem 0 0;
       font-weight: 500;
-      font-size: 1.1rem;
-      color: #666;
+      font-size: 1.05rem;
+      color: var(--muted);
     }
-    header .meta {
+
+    .meta-block {
       font-size: 0.95rem;
-      color: #555;
+      color: var(--muted);
     }
-    header .links a {
-      margin: 0 0.4rem;
+
+    .meta-block a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      font-size: 0.92rem;
+      align-items: center;
+    }
+
+    .link-pill {
+      border-radius: var(--radius-sm);
+      border: 1px solid #ddd;
+      padding: 0.18rem 0.75rem;
+      background: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+
+    .link-pill span.icon {
+      font-size: 0.9rem;
+    }
+
+    .link-pill:hover {
+      background: #fafafa;
+      transform: translateY(-1px);
       text-decoration: none;
-      color: #0366d6;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
     }
+
+    /* Top nav */
+    .top-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--muted-light);
+    }
+
+    .top-nav a {
+      padding: 0.2rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
+
+    .top-nav a:hover {
+      border-color: #ddd;
+      text-decoration: none;
+      background: #fafafa;
+    }
+
+    /* Layout */
     main {
-      max-width: 900px;
+      max-width: 980px;
       margin: 0 auto;
-      padding: 2rem 1.5rem 3rem;
+      padding: 2rem 1.5rem 3.5rem;
     }
+
     section {
       margin-bottom: 2.5rem;
-      background: white;
-      padding: 1.5rem 1.7rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+      background: var(--card-bg);
+      padding: 1.6rem 1.8rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(0, 0, 0, 0.02);
     }
+
     section h3 {
       margin-top: 0;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 0.4rem;
-      font-size: 1.2rem;
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 0.45rem;
+      font-size: 1.15rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.6rem;
     }
+
+    section h3 span.em {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--muted-light);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
     ul {
       padding-left: 1.4rem;
+      margin: 0.4rem 0 0;
     }
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    /* Common item layout */
+    .item {
+      margin-bottom: 1.5rem;
+    }
+
     .item-header {
       display: flex;
       justify-content: space-between;
       gap: 1rem;
       flex-wrap: wrap;
       font-weight: 600;
+      font-size: 0.98rem;
     }
+
+    .item-header span.place {
+      color: #111;
+    }
+
+    .item-header span.time {
+      color: var(--muted-light);
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
     .item-sub {
       font-size: 0.9rem;
-      color: #666;
-      margin-bottom: 0.3rem;
+      color: var(--muted);
+      margin: 0.25rem 0 0.3rem;
     }
+
     .tagline {
-      font-size: 0.95rem;
+      font-size: 0.93rem;
       color: #444;
+    }
+
+    /* Chips / tags */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin: 0.2rem 0 0.4rem;
+    }
+
+    .chip {
+      font-size: 0.78rem;
+      border-radius: 999px;
+      padding: 0.1rem 0.6rem;
+      background: #f3f4f6;
+      color: #555;
+      border: 1px solid rgba(0,0,0,0.03);
+    }
+
+    .chip.emph {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: rgba(230,57,70,0.25);
+      font-weight: 500;
+    }
+
+    /* Two-column grid for compact sections */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.3fr);
+      gap: 1.5rem;
+    }
+
+    .list-compact li {
+      margin-bottom: 0.25rem;
+      font-size: 0.92rem;
+    }
+
+    /* Publications list */
+    .pub-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .pub-list li {
+      margin-bottom: 0.65rem;
+      font-size: 0.92rem;
+    }
+
+    .pub-title {
+      font-weight: 600;
+    }
+
+    .pub-venue {
+      font-size: 0.85rem;
+      color: var(--muted-light);
+    }
+
+    /* Awards */
+    .awards-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 0.9rem;
+    }
+
+    .awards-list li {
+      margin-bottom: 0.55rem;
+    }
+
+    .award-main {
+      font-weight: 600;
+    }
+
+    .award-org {
+      color: var(--muted-light);
+      font-size: 0.86rem;
+    }
+
+    .award-year {
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    /* Skills */
+    .skills-group {
+      margin-bottom: 0.8rem;
+      font-size: 0.92rem;
+    }
+
+    .skills-group strong {
+      display: inline-block;
+      width: 150px;
+      max-width: 45%;
+    }
+
+    /* Small screens */
+    @media (max-width: 720px) {
+      header {
+        padding-top: 1.8rem;
+      }
+      .header-main {
+        align-items: flex-start;
+      }
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header h2 {
+        font-size: 0.96rem;
+      }
+      .grid-2 {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      section {
+        padding: 1.4rem 1.2rem;
+      }
+      .skills-group strong {
+        width: 120px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Joongmin Shin</h1>
-    <h2>LLM/LVLM Research Scientist &amp; Document AI Engineer</h2>
-    <div class="meta">
-      Seoul, Republic of Korea · Open to relocation (US/EU) and remote roles
-    </div>
-    <div class="meta">
-      (+82) 10-5710-8702 · <a href="mailto:tlswndals13@korea.ac.kr">tlswndals13@korea.ac.kr</a>
-    </div>
-    <div class="links">
-      <a href="https://github.com/ShinJM-maker" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/shinjm-maker" target="_blank">LinkedIn</a>
+    <div class="header-inner">
+      <div class="header-main">
+        <div>
+          <h1>Joongmin Shin</h1>
+          <h2>LLM/LVLM Research Scientist &amp; Document AI Engineer</h2>
+          <div class="meta-block">
+            Seoul, Republic of Korea · Open to relocation (US/EU) and remote roles
+          </div>
+          <div class="meta-block">
+            (+82) 10-5710-8702 ·
+            <a href="mailto:tlswndals13@korea.ac.kr">tlswndals13@korea.ac.kr</a>
+          </div>
+        </div>
+        <div class="link-row">
+          <a class="link-pill" href="https://github.com/shinjm-maker" target="_blank" rel="noreferrer">
+            <span class="icon">🐙</span><span>GitHub</span>
+          </a>
+          <a class="link-pill" href="https://shinjm-maker.github.io" target="_blank" rel="noreferrer">
+            <span class="icon">🧪</span><span>Portfolio</span>
+          </a>
+          <a class="link-pill" href="https://www.linkedin.com/in/shinjm-maker" target="_blank" rel="noreferrer">
+            <span class="icon">🔗</span><span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="top-nav">
+        <a href="#summary">Summary</a>
+        <a href="#strengths">Key Strengths</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Research &amp; Projects</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Selected Publications</a>
+        <a href="#awards">Honors &amp; Awards</a>
+        <a href="#skills">Skills</a>
+        <a href="#teaching">Teaching</a>
+      </nav>
     </div>
   </header>
 
   <main>
     <!-- Summary -->
     <section id="summary">
-      <h3>Professional Summary</h3>
+      <h3>
+        Professional Summary
+        <span class="em">Overview</span>
+      </h3>
       <ul>
-        <li>Over <strong>5 years</strong> of experience designing and deploying retrieval-augmented generation (RAG) and multimodal Document AI solutions across power plants, economy, insurance, healthcare, and manufacturing domains.</li>
+        <li>Over <strong>5 years</strong> of experience designing and deploying retrieval-augmented generation (RAG) and multimodal Document AI solutions across power plants, economy, insurance, healthcare, and manufacturing domains; led multiple PoCs from planning to industrial pilots.</li>
         <li>Specialized in parsing large-scale, unstructured industrial documents into structure-aware multimodal representations (chunks, trees, graphs) and building RAG/GraphRAG systems on top of them.</li>
-        <li>Expert in combining large language/vision models with knowledge graphs, rules, and lexicons to build explainable QA systems, resulting in award-winning pilots and patents.</li>
+        <li>Expert in combining large language/vision models with knowledge graphs, rules, and lexicons to build explainable question–answering systems, resulting in award-winning pilots and patents.</li>
         <li>First-author of EMNLP 2024/2025 papers and inventor on three patents on document parsing and hybrid NLP models; recognized with national grants and a Vice-Prime-Minister’s award.</li>
       </ul>
     </section>
 
     <!-- Key Strengths -->
     <section id="strengths">
-      <h3>Key Strengths</h3>
+      <h3>
+        Key Strengths
+        <span class="em">What I Do Well</span>
+      </h3>
       <ul>
-        <li><strong>Parsing from sentence to document level:</strong> built neural dependency parsers for Korean text and extended them to document-level trees and graphs for structure-aware chunking and retrieval over long, noisy PDFs.</li>
-        <li><strong>Domain problem definition:</strong> translate complex industrial requirements (predictive maintenance, scientific literature, medical and insurance documents) into structured tasks and data pipelines.</li>
-        <li><strong>Explainable hybrid architectures:</strong> design systems that integrate symbolic rules and knowledge graphs with LLM/LVLM models to improve performance and transparency.</li>
-        <li><strong>Rapid prototyping &amp; collaboration:</strong> lead cross-functional teams and industrial partners to deliver end-to-end prototypes and pilots.</li>
+        <li><strong>Parsing from sentence to document level:</strong> built neural dependency parsers for Korean text and extended them to document-level trees and graphs, enabling structure-aware chunking and retrieval for long, noisy PDFs and scanned documents.</li>
+        <li><strong>Domain problem definition:</strong> translate complex industrial requirements (predictive maintenance, scientific literature, medical and insurance documents) into structured tasks and data pipelines for RAG systems.</li>
+        <li><strong>Explainable hybrid architectures:</strong> design and implement systems that integrate symbolic rules and knowledge graphs with LLM/LVLM models, improving performance and transparency.</li>
+        <li><strong>Rapid prototyping &amp; collaboration:</strong> manage cross-functional teams and industrial partners to deliver end-to-end prototypes, integrating user feedback into final pilots.</li>
       </ul>
     </section>
 
-    <!-- Experience (예시 한 개만, 나머지는 복붙해서 채우면 됨) -->
+    <!-- Professional Experience -->
     <section id="experience">
-      <h3>Professional Experience</h3>
+      <h3>
+        Professional Experience
+        <span class="em">Industry &amp; Research</span>
+      </h3>
 
-      <article>
+      <!-- Korea University -->
+      <article class="item">
         <div class="item-header">
-          <span>Senior Researcher / Research Scientist, Human-Inspired AI Research, Korea University</span>
-          <span>Jun 2023 – Present · Seoul, Republic of Korea</span>
+          <span class="place">Senior Researcher / Research Scientist · Human-Inspired AI Research, Korea University</span>
+          <span class="time">Jun 2023 – Present · Seoul, Republic of Korea</span>
         </div>
         <p class="item-sub">Multimodal RAG · Document Parsing · Hybrid QA Systems</p>
         <ul>
-          <li>Led multimodal RAG projects for power-plant diagnostics, insurance customer support, and healthcare consultation, reducing manual search time by up to <strong>40%</strong> in pilots.</li>
-          <li>Developed structure-aware chunking and LVLM-based document parsing algorithms; first-authored <strong>StyleDFS</strong> (EMNLP 2024 Industry), <strong>MultiDocFusion</strong> (EMNLP 2025 Main), and <strong>M3DocDep</strong> (CVPR 2026 submission).</li>
-          <li>Architected hybrid QA systems combining knowledge graphs and LLMs, yielding a <strong>10% accuracy improvement</strong> and a patent on adaptive rule-based filtering.</li>
+          <li>Led <strong>multimodal RAG projects</strong> for power-plant diagnostics, insurance customer support, and healthcare consultation, reducing manual search time by up to <strong>40%</strong> in pilots.</li>
+          <li>Developed <strong>structure-aware chunking</strong> and LVLM-based document parsing algorithms; first-authored <strong>StyleDFS</strong> (EMNLP 2024 Industry), <strong>MultiDocFusion</strong> (EMNLP 2025 Main), and <strong>M3DocDep</strong> (CVPR 2026 submission).</li>
+          <li>Architected hybrid QA systems combining knowledge graphs and LLMs, resulting in a <strong>10% accuracy improvement</strong> and a patent on adaptive rule-based filtering.</li>
           <li>Managed collaborations with Samsung Fire &amp; Marine Insurance, Hyundai Mobis, and KIGAM, delivering MVPs and securing follow-up funding.</li>
         </ul>
       </article>
 
-      <!-- 여기에 PNU, SW Education Center 경력도 같은 형태로 추가 -->
+      <!-- PNU AI Lab -->
+      <article class="item">
+        <div class="item-header">
+          <span class="place">Researcher (M.S.) · AI Lab, Pusan National University</span>
+          <span class="time">Sep 2020 – Feb 2023 · Busan, Republic of Korea</span>
+        </div>
+        <p class="item-sub">Korean Dependency Parsing · Table QA · Prosody Prediction</p>
+        <ul>
+          <li>Led core research on <strong>Korean text dependency parsing</strong> in the Exobrain national project, developing neural–symbolic parsers that integrate morphological and syntactic features and deploying them as the backbone for sentence- and table-level QA.</li>
+          <li>Designed a <strong>table question answering pipeline</strong> that converts semi-structured financial and encyclopedic tables into structured representations using the parsing backbone, achieving state-of-the-art Korean Table QA performance.</li>
+          <li>Collaborated with KT AI2XL on <strong>Korean TTS prosody prediction</strong>, using syntactic/phrase-boundary information from parsing models together with neural networks to improve boundary accuracy and naturalness.</li>
+          <li>Contributed to applied projects in finance QA, sentiment-based marketing, and VR recommendation systems; presented five papers at national conferences and received an <strong>Outstanding Paper Award</strong>.</li>
+        </ul>
+      </article>
+
+      <!-- SW Education Center -->
+      <article class="item">
+        <div class="item-header">
+          <span class="place">Researcher · SW Education Center, Pusan National University</span>
+          <span class="time">Mar 2020 – Aug 2020 · Busan, Republic of Korea</span>
+        </div>
+        <p class="item-sub">Education Technology · Web Development</p>
+        <ul>
+          <li>Built a Django-based online judge platform with auto-grading and personalized problem recommendations for programming education.</li>
+        </ul>
+      </article>
     </section>
 
-    <!-- Education / Publications / Projects / Awards / Skills / Teaching... 도 같은 패턴으로 추가 -->
+    <!-- Selected Research & Industry Projects -->
+    <section id="projects">
+      <h3>
+        Selected Research &amp; Industry Projects
+        <span class="em">RAG · LVLM · Applied LLMs</span>
+      </h3>
+
+      <!-- M3DocDep -->
+      <article class="item">
+        <div class="item-header">
+          <span class="place">LVLM-based Document Parsing for Large-Scale Industrial Documents (M3DocDep)</span>
+          <span class="time">Jul 2025 – Present</span>
+        </div>
+        <p class="item-sub">Senior Researcher · Korea University · Seoul, Republic of Korea</p>
+        <div class="chips">
+          <span class="chip emph">LVLM</span>
+          <span class="chip">Document Parsing</span>
+          <span class="chip">RAG</span>
+        </div>
+        <ul>
+          <li>Designed and implemented a large-vision-language-model (LVLM) based document parsing framework for noisy, large-scale industrial PDFs and scans.</li>
+          <li>Built multimodal parsing pipelines that produce document-level dependency trees and graphs, enabling structure-aware chunking and retrieval for downstream RAG systems.</li>
+          <li><strong>Role:</strong> research design, LVLM fine-tuning, prototype implementation.</li>
+          <li><strong>Outcome:</strong> CVPR 2026 submission (<em>M3DocDep</em>).</li>
+        </ul>
+      </article>
+
+      <!-- MultiDocFusion -->
+      <article class="item">
+        <div class="item-header">
+          <span class="place">MultiDocFusion: Structure-Aware Multimodal Chunking for Real-World Documents</span>
+          <span class="time">Jan 2025 – Jul 2025</span>
+        </div>
+        <p class="item-sub">Senior Researcher · Korea University · Seoul, Republic of Korea</p>
+        <div class="chips">
+          <span class="chip emph">RAG</span>
+          <span class="chip">Chunking</span>
+          <span class="chip">Multimodal</span>
+        </div>
+        <ul>
+          <li>Developed a new multimodal chunking methodology for real-world industrial documents, converting document layouts into hierarchical structures and preserving them during chunking.</li>
+          <li>Implemented a structure-aware chunking pipeline that improves retrieval quality for long, noisy PDFs in RAG settings.</li>
+          <li><strong>Role:</strong> research design, modeling, prototype implementation.</li>
+          <li><strong>Outcome:</strong> EMNLP 2025 Main Track paper (<em>MultiDocFusion</em>).</li>
+        </ul>
+      </article>
+
+      <!-- StyleDFS -->
+      <article class="item">
+        <div class="item-header">
+          <span class="place">Korean Science-Domain LLM and RAG Pipeline (StyleDFS)</span>
+          <span class="time">Feb 2024 – Dec 2024</span>
+        </div>
+        <p class="item-sub">Senior Researcher · Korea University · Seoul, Republic of Korea</p>
+        <div class="chips">
+          <span class="chip emph">Domain LLM</span>
+          <span class="chip">Scientific Literature</span>
+          <span class="chip">RAG</span>
+        </div>
+        <ul>
+          <li>Designed and implemented a Korean LLM and retrieval-augmented generation (RAG) pipeline specialized for scientific literature.</li>
+          <li>Built domain-specific preprocessing and structure-aware chunking methods tailored to scientific documents, improving retrieval and QA quality.</li>
+          <li><strong>Role:</strong> data preprocessing pipeline design, chunking algorithm design and implementation.</li>
+          <li><strong>Outcome:</strong> EMNLP 2024 Industry Track paper (<em>StyleDFS</em>); technology transfer completed twice.</li>
+        </ul>
+      </article>
+
+      <!-- PLC Programming Assistant -->
+      <article class="item">
+        <div class="item-header">
+          <span class="place">GPT-based PLC Programming Assistant PoC for Smart Factories</span>
+          <span class="time">Sep 2023 – Feb 2024</span>
+        </div>
+        <p class="item-sub">Senior Researcher · Korea University &amp; Hyundai Mobis · Seoul, Republic of Korea</p>
+        <div class="chips">
+          <span class="chip emph">Code Generation</span>
+          <span class="chip">Smart Factory</span>
+        </div>
+        <ul>
+          <li>Collaborated with Hyundai Mobis to build an LLM-based PLC programming assistant as a smart factory proof-of-concept system.</li>
+          <li>Developed a Code LLaMA–based code generation model that leverages PLC code templates and domain knowledge for assisted PLC programming.</li>
+          <li><strong>Role:</strong> architecture design and implementation of the code generation model.</li>
+          <li><strong>Outcome:</strong> successfully validated the LLM-based PLC programming assistant PoC with industry stakeholders.</li>
+        </ul>
+      </article>
+
+      <!-- Synapse -->
+      <article class="item">
+        <div class="item-header">
+          <span class="place">LLM-based Multilingual Medical Consultation Service “Synapse”</span>
+          <span class="time">Jun 2023 – Jan 2024</span>
+        </div>
+        <p class="item-sub">Senior Researcher · Korea University &amp; Synapse · Seoul, Republic of Korea</p>
+        <div class="chips">
+          <span class="chip emph">Chatbot</span>
+          <span class="chip">Multilingual</span>
+          <span class="chip">Healthcare</span>
+        </div>
+        <ul>
+          <li>Developed an LLM-based multilingual medical consultation chatbot system capable of handling medical queries in multiple languages.</li>
+          <li>Implemented a LangChain-based conversational and document QA pipeline and built an admin console using React, Express, and PostgreSQL.</li>
+          <li><strong>Role:</strong> LLM-based chatbot design and development; admin web and backend implementation.</li>
+          <li><strong>Tech:</strong> LangChain, React, Express, PostgreSQL.</li>
+          <li><strong>Outcome:</strong> selected as an Excellent Technology Track project in the KU-Grant Program.</li>
+        </ul>
+      </article>
+
+      <!-- SynerPeace -->
+      <article class="item">
+        <div class="item-header">
+          <span class="place">LLM-based Insurance Assistant “SynerPeace” Pilot Project</span>
+          <span class="time">Jul 2023 – Jan 2024</span>
+        </div>
+        <p class="item-sub">Senior Researcher · Korea University &amp; Samsung Fire &amp; Marine Insurance · Seoul, Republic of Korea</p>
+        <div class="chips">
+          <span class="chip emph">Insurance</span>
+          <span class="chip">Workflow Automation</span>
+        </div>
+        <ul>
+          <li>Co-designed and developed “SynerPeace”, an LLM-based application for insurance customer support and internal workflow assistance.</li>
+          <li>Built LLM-driven question answering and workflow automation over domain documents and FAQs for insurance agents.</li>
+          <li><strong>Role:</strong> AI model architecture design and LLM application design and development.</li>
+          <li><strong>Outcome:</strong> won the grand prize in Samsung Fire &amp; Marine Insurance’s pilot project competition and secured follow-up investment.</li>
+        </ul>
+      </article>
+
+      <!-- Exobrain WiseQA -->
+      <article class="item">
+        <div class="item-header">
+          <span class="place">Exobrain WiseQA: Neuro-Symbolic Question Answering Platform</span>
+          <span class="time">Sep 2020 – Dec 2022</span>
+        </div>
+        <p class="item-sub">Researcher (M.S.) · Pusan National University &amp; ETRI · Busan, Republic of Korea</p>
+        <div class="chips">
+          <span class="chip emph">Neuro-Symbolic QA</span>
+          <span class="chip">Knowledge Graphs</span>
+        </div>
+        <ul>
+          <li>Developed neural–symbolic models for Korean sentence analysis and Table QA within the national Exobrain project.</li>
+          <li>Designed QA frameworks that combine rules, knowledge graphs, and language models to improve explainability and generalization.</li>
+          <li><strong>Role:</strong> model design, implementation and experimentation; continual-learning–based MRC research.</li>
+          <li><strong>Outcome:</strong> multiple conference papers on Table QA and machine reading comprehension.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h3>
+        Education
+        <span class="em">Academic Background</span>
+      </h3>
+
+      <article class="item">
+        <div class="item-header">
+          <span class="place">M.S. in Artificial Intelligence · Pusan National University</span>
+          <span class="time">Mar 2021 – Feb 2023 · Busan, Republic of Korea</span>
+        </div>
+        <p class="item-sub">Graduate School of Artificial Intelligence</p>
+        <ul>
+          <li>Thesis focused on parsing unstructured data and integrating syntactic/morphological analysis for Korean NLP.</li>
+          <li>Participated in national AI projects and filed patents related to hybrid neural–symbolic NLP models.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-header">
+          <span class="place">B.S. in Computer Science and Engineering · Pusan National University</span>
+          <span class="time">Mar 2016 – Feb 2021 · Busan, Republic of Korea</span>
+        </div>
+        <p class="item-sub">Department of Computer Science and Engineering</p>
+        <ul>
+          <li>Completed coursework in software engineering, algorithms, and data analysis.</li>
+          <li>Engaged in multiple industry projects and hackathons, building teamwork and leadership skills.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Selected Publications -->
+    <section id="publications">
+      <h3>
+        Selected Publications
+        <span class="em">First-author &amp; Key Contributions</span>
+      </h3>
+      <p class="item-sub"><em>* First author</em></p>
+      <ul class="pub-list">
+        <li>
+          <span class="pub-title">M3DocDep</span> <span class="pub-venue">(CVPR 2026 submission) *</span><br />
+          Large-vision-language-model-based document parsing framework for large-scale industrial PDFs and scans, producing document-level dependency trees and graphs for RAG.
+        </li>
+        <li>
+          <span class="pub-title">MultiDocFusion</span> <span class="pub-venue">(EMNLP 2025 Main) *</span><br />
+          Structure-aware multimodal chunking for real-world industrial documents, improving retrieval quality over long, noisy PDFs in RAG pipelines.
+        </li>
+        <li>
+          <span class="pub-title">StyleDFS</span> <span class="pub-venue">(EMNLP 2024 Industry) *</span><br />
+          Korean science-domain LLM and RAG pipeline with tailored preprocessing and chunking for scientific literature; technology transferred to industry partners.
+        </li>
+        <li>
+          Additional conference papers on Korean dependency parsing, Table QA, and machine reading comprehension (KIISE, KSC, and related venues).
+        </li>
+      </ul>
+    </section>
+
+    <!-- Honors & Awards -->
+    <section id="awards">
+      <h3>
+        Honors &amp; Awards
+        <span class="em">Selected Recognition</span>
+      </h3>
+      <ul class="awards-list">
+        <li>
+          <div class="award-main">Deputy Prime Minister and Minister of Education Award</div>
+          <div class="award-org">Competition for Best Practices in Academia–Industry Cooperation · National Research Foundation of Korea (NRF)</div>
+          <div class="award-year">2024</div>
+        </li>
+        <li>
+          <div class="award-main">Outstanding Paper Presentation Award</div>
+          <div class="award-org">Korean Institute of Information Scientists and Engineers (KIISE 2023)</div>
+          <div class="award-year">2023</div>
+        </li>
+        <li>
+          <div class="award-main">Grand Prize</div>
+          <div class="award-org">Samsung Fire &amp; Marine Insurance LLM-based MVP Model Idea Competition</div>
+          <div class="award-year">2023</div>
+        </li>
+        <li>
+          <div class="award-main">Excellence Award (Technology Track)</div>
+          <div class="award-org">KU-Grant Program · Korea University</div>
+          <div class="award-year">2023</div>
+        </li>
+        <li>
+          <div class="award-main">Outstanding Paper Presentation Award</div>
+          <div class="award-org">Korea Software Congress (KSC 2022)</div>
+          <div class="award-year">2022</div>
+        </li>
+        <li>
+          <div class="award-main">Excellence Award</div>
+          <div class="award-org">Student-led Research Project, Graduate School of AI · Pusan National University</div>
+          <div class="award-year">2022</div>
+        </li>
+        <li>
+          <div class="award-main">Milestone Scholarship (Grade A)</div>
+          <div class="award-org">SW-centered University Milestone Scholarship Program · Pusan National University</div>
+          <div class="award-year">2020</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills">
+      <h3>
+        Technical Skills
+        <span class="em">Tools &amp; Capabilities</span>
+      </h3>
+      <div class="grid-2">
+        <div>
+          <div class="skills-group">
+            <strong>Programming</strong>
+            <span>Python, C/C++, Java, C#, Django, React, Unity</span>
+          </div>
+          <div class="skills-group">
+            <strong>Machine Learning</strong>
+            <span>LLM/LVLM fine-tuning, hybrid rule–neural models, knowledge graphs</span>
+          </div>
+          <div class="skills-group">
+            <strong>Tools</strong>
+            <span>PyTorch, TensorFlow, NumPy, Pandas, Scikit-Learn, LangChain, SQL, Linux</span>
+          </div>
+        </div>
+        <div>
+          <div class="skills-group">
+            <strong>Project Management</strong>
+            <span>Team leadership, cross-functional collaboration, proposal writing</span>
+          </div>
+          <div class="skills-group">
+            <strong>Languages</strong>
+            <span>Korean (native), English (fluent reading/writing)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaching & Mentoring -->
+    <section id="teaching">
+      <h3>
+        Teaching &amp; Mentoring
+        <span class="em">Academic Involvement</span>
+      </h3>
+      <article class="item">
+        <div class="item-header">
+          <span class="place">Graduate Research Mentor · Pusan National University</span>
+          <span class="time">2021 – 2022 · Busan, Republic of Korea</span>
+        </div>
+        <p class="item-sub">Mentoring · Education Support</p>
+        <ul>
+          <li>Mentored undergraduate capstone projects on Korean dependency parsing and robust Table QA; guided students to achieve near state-of-the-art performance.</li>
+          <li>Assisted in courses on web application programming and mobile app development, providing feedback and supporting team projects.</li>
+        </ul>
+      </article>
+    </section>
   </main>
 </body>
 </html>

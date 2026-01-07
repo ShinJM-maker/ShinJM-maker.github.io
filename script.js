@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const main = document.querySelector("main");
+  const navLinks = Array.from(document.querySelectorAll(".top-nav a"));
+  const templates = new Map();
+
+  // Extract sections as templates and clear main
+  Array.from(main.querySelectorAll("section")).forEach(section => {
+    templates.set(section.id, section.cloneNode(true));
+    section.remove();
+  });
+
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -8,40 +18,67 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.15 }
   );
 
-  document.querySelectorAll("section, .item, .pub-card").forEach(el => {
-    el.classList.add("reveal");
-    observer.observe(el);
+  const prepareReveal = root => {
+    root.querySelectorAll("section, .item, .pub-card").forEach(el => {
+      el.classList.add("reveal");
+      observer.observe(el);
+    });
+  };
+
+  const initGraphHover = root => {
+    const nodes = Array.from(root.querySelectorAll(".rg-node"));
+    nodes.forEach(rect => {
+      const key = rect.dataset.node;
+      const relatedText = root.querySelectorAll(`text[data-node='${key}']`);
+      const activate = () => {
+        rect.classList.add("highlight");
+        relatedText.forEach(t => t.classList.add("rg-text-highlight"));
+      };
+      const deactivate = () => {
+        rect.classList.remove("highlight");
+        relatedText.forEach(t => t.classList.remove("rg-text-highlight"));
+      };
+      rect.addEventListener("mouseenter", activate);
+      rect.addEventListener("mouseleave", deactivate);
+      rect.addEventListener("focus", activate);
+      rect.addEventListener("blur", deactivate);
+    });
+  };
+
+  const setActiveNav = id => {
+    navLinks.forEach(link => {
+      const target = link.getAttribute("href").replace("#", "");
+      link.classList.toggle("active", target === id);
+    });
+  };
+
+  const renderSection = id => {
+    const tpl = templates.get(id) || templates.values().next().value;
+    if (!tpl) return;
+    main.innerHTML = "";
+    const node = tpl.cloneNode(true);
+    main.appendChild(node);
+    prepareReveal(main);
+    initGraphHover(main);
+    setActiveNav(id);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    history.replaceState(null, "", `#${id}`);
+  };
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const id = link.getAttribute("href").replace("#", "");
+      renderSection(id);
+    });
   });
 
-  const navLinks = Array.from(document.querySelectorAll(".top-nav a"));
-  const sectionMap = new Map(
-    navLinks
-      .map(link => {
-        const id = link.getAttribute("href").replace("#", "");
-        const section = document.getElementById(id);
-        return section ? [section, link] : null;
-      })
-      .filter(Boolean)
-  );
-
-  const spy = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        const link = sectionMap.get(entry.target);
-        if (!link) return;
-        if (entry.isIntersecting) {
-          navLinks.forEach(l => l.classList.remove("active"));
-          link.classList.add("active");
-        }
-      });
-    },
-    { threshold: 0.35 }
-  );
-  sectionMap.forEach((_link, section) => spy.observe(section));
+  const initialId = location.hash ? location.hash.replace("#", "") : "summary";
+  renderSection(initialId);
 
   const backToTop = document.querySelector(".back-to-top");
   const toggleBackToTop = () => {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 200) {
       backToTop.classList.add("show");
     } else {
       backToTop.classList.remove("show");
@@ -50,26 +87,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", toggleBackToTop, { passive: true });
   backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
   toggleBackToTop();
-
-  const nodes = Array.from(document.querySelectorAll(".rg-node"));
-  nodes.forEach(rect => {
-    const key = rect.dataset.node;
-    const relatedText = document.querySelectorAll(`text[data-node='${key}']`);
-    rect.addEventListener("mouseenter", () => {
-      rect.classList.add("highlight");
-      relatedText.forEach(t => t.classList.add("rg-text-highlight"));
-    });
-    rect.addEventListener("mouseleave", () => {
-      rect.classList.remove("highlight");
-      relatedText.forEach(t => t.classList.remove("rg-text-highlight"));
-    });
-    rect.addEventListener("focus", () => {
-      rect.classList.add("highlight");
-      relatedText.forEach(t => t.classList.add("rg-text-highlight"));
-    });
-    rect.addEventListener("blur", () => {
-      rect.classList.remove("highlight");
-      relatedText.forEach(t => t.classList.remove("rg-text-highlight"));
-    });
-  });
 });

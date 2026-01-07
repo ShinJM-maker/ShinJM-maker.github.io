@@ -207,11 +207,11 @@ main {
   border-radius: 999px;
   border: 1px solid #d62839;
   padding: 0.4rem 0.9rem;
-  background: #d62839;
-  color: #fff;
+  background: #fff;
+  color: #d62839;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 10px 24px rgba(214, 40, 57, 0.18);
+  box-shadow: none;
   transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
 }
 
@@ -223,6 +223,8 @@ main {
 }
 
 .cta-btn:hover {
+  background: #d62839;
+  color: #fff;
   transform: translateY(-1px);
   box-shadow: 0 12px 28px rgba(214, 40, 57, 0.2);
 }

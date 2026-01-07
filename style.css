@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg: #f5f6fb;
+  --fg: #1e2330;
+  --accent: #e63946;
+  --accent-soft: rgba(230, 57, 70, 0.09);
+  --card-bg: #ffffff;
+  --border-soft: #e6e8ef;
+  --border-strong: #d3d7e2;
+  --muted: #5a6172;
+  --muted-light: #7a8194;
+  --radius-lg: 14px;
+  --radius-sm: 999px;
+  --shadow-soft: 0 12px 28px rgba(15, 23, 42, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.65;
+  color: var(--fg);
+  background: radial-gradient(circle at 20% 20%, #ffffff, var(--bg));
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #0b63ce;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(11, 99, 206, 0.35);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-color: rgba(11, 99, 206, 0.85);
+}
+
+/* Layout */
+header {
+  padding: 2.5rem 1.5rem 1.35rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-soft);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.header-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.header-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.35rem;
+  letter-spacing: 0.02em;
+}
+
+header h2 {
+  margin: 0.35rem 0 0;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.meta-block {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.meta-block a {
+  color: inherit;
+  text-decoration-style: dotted;
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  align-items: center;
+}
+
+.link-pill {
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-soft);
+  padding: 0.22rem 0.8rem;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
+  color: #0b63ce;
+  text-decoration: none;
+}
+
+.link-pill span.icon {
+  font-size: 0.92rem;
+}
+
+.link-pill:hover {
+  background: #f5f8ff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+  text-decoration: none;
+}
+
+/* Top nav */
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.86rem;
+  color: var(--muted-light);
+}
+
+.top-nav a {
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: var(--muted-light);
+}
+
+.top-nav a:hover {
+  border-color: var(--border-soft);
+  background: #f7f8fc;
+  color: var(--fg);
+}
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3.5rem;
+}
+
+section {
+  margin-bottom: 2.4rem;
+  background: var(--card-bg);
+  padding: 1.6rem 1.8rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-soft);
+  scroll-margin-top: 110px;
+}
+
+section h3 {
+  margin-top: 0;
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 0.45rem;
+  font-size: 1.16rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+section h3 span.em {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--muted-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+ul {
+  padding-left: 1.4rem;
+  margin: 0.45rem 0 0;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+.item {
+  margin-bottom: 1.5rem;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.item-header span.place {
+  color: #111;
+}
+
+.item-header span.time {
+  color: var(--muted-light);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.item-sub {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0.25rem 0 0.3rem;
+}
+
+.tagline {
+  font-size: 0.93rem;
+  color: #444;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.2rem 0 0.4rem;
+}
+
+.chip {
+  font-size: 0.78rem;
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  background: #f3f4f6;
+  color: #4a5163;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.chip.emph {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: rgba(230, 57, 70, 0.25);
+  font-weight: 600;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.3fr);
+  gap: 1.5rem;
+}
+
+.list-compact li {
+  margin-bottom: 0.25rem;
+  font-size: 0.92rem;
+}
+
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pub-list li {
+  margin-bottom: 0.65rem;
+  font-size: 0.92rem;
+}
+
+.pub-title {
+  font-weight: 600;
+}
+
+.pub-venue {
+  font-size: 0.85rem;
+  color: var(--muted-light);
+}
+
+.awards-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+
+.awards-list li {
+  margin-bottom: 0.55rem;
+}
+
+.award-main {
+  font-weight: 600;
+}
+
+.award-org {
+  color: var(--muted-light);
+  font-size: 0.86rem;
+}
+
+.award-year {
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.skills-group {
+  margin-bottom: 0.8rem;
+  font-size: 0.92rem;
+}
+
+.skills-group strong {
+  display: inline-block;
+  width: 150px;
+  max-width: 45%;
+}
+
+@media (max-width: 720px) {
+  header {
+    padding-top: 1.8rem;
+    padding-bottom: 1.05rem;
+  }
+
+  header h1 {
+    font-size: 1.9rem;
+  }
+
+  header h2 {
+    font-size: 0.98rem;
+  }
+
+  .header-main {
+    align-items: flex-start;
+  }
+
+  .top-nav {
+    font-size: 0.84rem;
+  }
+
+  main {
+    padding: 1.6rem 1.2rem 3rem;
+  }
+
+  section {
+    padding: 1.35rem 1.2rem;
+    margin-bottom: 2rem;
+    scroll-margin-top: 96px;
+  }
+
+  .grid-2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .skills-group strong {
+    width: 120px;
+  }
+}

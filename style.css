@@ -238,6 +238,30 @@ main {
   background: #f3f4f7;
 }
 
+.hero-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.85rem;
+  margin-top: 0.9rem;
+}
+
+.hero-card {
+  border: 1px solid #e6e8ef;
+  border-radius: 12px;
+  padding: 0.75rem 0.9rem;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+.hero-card strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.hero-card .chips {
+  margin: 0.2rem 0 0;
+}
+
 /* Featured */
 .featured-grid {
   display: grid;

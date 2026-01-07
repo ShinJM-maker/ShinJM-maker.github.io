@@ -401,24 +401,188 @@
         Selected Publications
         <span class="em">First-author &amp; Key Contributions</span>
       </h3>
-      <p class="item-sub"><em>* First author</em></p>
-      <ul class="pub-list">
-        <li>
-          <span class="pub-title">CVPR_Doc</span> <span class="pub-venue">(CVPR 2026 submission) *</span><br />
-          LVLM-based parsing for large-scale industrial PDFs/scans; outputs document-level dependency trees/graphs for RAG.
-        </li>
-        <li>
-          <span class="pub-title">MultiDocFusion</span> <span class="pub-venue">(EMNLP 2025 Main) *</span><br />
-          Structure-aware multimodal chunking for real-world industrial documents, improving retrieval on long, noisy PDFs.
-        </li>
-        <li>
-          <span class="pub-title">StyleDFS</span> <span class="pub-venue">(EMNLP 2024 Industry) *</span><br />
-          Korean science-domain LLM + RAG with tailored preprocessing/chunking for scientific literature; transferred to industry partners.
-        </li>
-        <li>
-          Additional conference papers on Korean dependency parsing, Table QA, and machine reading comprehension (KIISE, KSC, and related venues).
-        </li>
-      </ul>
+      <p class="item-sub">Click a card to toggle the abstract.</p>
+      <div class="pub-grid">
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">HiKEY: Hierarchical Multimodal Retrieval for Open-Domain Document QA</span>
+              <span class="pub-badge">ACL 2026 (Under Review)</span>
+            </div>
+            <div class="pub-meta">ACL 2026 · Open-domain RAG · Hierarchical routing</div>
+            <div class="pub-authors">Joongmin Shin*, Gyuho Shim, Jeongbae Park, Jaehyung Seo, Heuiseok Lim</div>
+          </summary>
+          <p class="pub-abstract">HiKEY builds a hierarchical tree-based retrieval pipeline for industrial ODQA, combining document hierarchy parsing, coarse-to-fine routing, and multimodal fusion to prune search space and assemble token-efficient evidence. Gains: recall +12.9%, QA +6.8% over page/chunk baselines.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">M3DocDep: Multi-modal, Multi-page, Multi-document Dependency Chunking</span>
+              <span class="pub-badge">CVPR 2026 (Under Review)</span>
+            </div>
+            <div class="pub-meta">CVPR 2026 · Multimodal parsing · Chunking</div>
+            <div class="pub-authors">Joongmin Shin*, Jeongbae Park, Jaehyung Seo, Heuiseok Lim</div>
+          </summary>
+          <p class="pub-abstract">Introduces shared parsing frame (SharedDet), multimodal block embeddings with SoftROI, and biaffine doc-tree reconstruction to build structure-aware chunks for long industrial scans. Improves DHP and RAG: STEDS +28.5–39.6%, nDCG +1.1–15.3%, QA ANLS +4.5–15.3%.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">MultiDocFusion: Hierarchical &amp; Multimodal Chunking Pipeline</span>
+              <span class="pub-badge">EMNLP 2025 (Main)</span>
+            </div>
+            <div class="pub-meta">Long-doc RAG · Layout-aware chunking</div>
+            <div class="pub-authors">Joongmin Shin*, Chanjun Park, Jeongbae Park, Jaehyung Seo, Heuiseok Lim</div>
+          </summary>
+          <p class="pub-abstract">Vision parsing + OCR + LLM hierarchy reconstruction + DFS grouping to keep structure in chunks. Boosts retrieval quality and downstream QA on industrial long-doc benchmarks.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">Predictive Maintenance RAG for Power Plants (StyleDFS)</span>
+              <span class="pub-badge">EMNLP 2024 (Industry)</span>
+            </div>
+            <div class="pub-meta">Industrial RAG · On-premise QA</div>
+            <div class="pub-authors">Seongtae Hong*, Joongmin Shin*, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim</div>
+          </summary>
+          <p class="pub-abstract">On-prem QA framework for high-stakes plants using StyleDFS chunking and domain instruction tuning to preserve structure and privacy while improving accuracy.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">Distance-Based Korean WordNet (KorLex) Embeddings</span>
+              <span class="pub-badge">Applied AI 2024</span>
+            </div>
+            <div class="pub-meta">Lexical graph embeddings</div>
+            <div class="pub-authors">SeongReol Park*, Joongmin Shin, Sanghyun Cho, Hyuk-Chul Kwon, Jung-Hun Lee</div>
+          </summary>
+          <p class="pub-abstract">Maps KorLex into vector space to inject lexical-semantic structure into neural embeddings, improving similarity and analogy behavior over distributional baselines.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">Hybrid Reader over Tables and Text</span>
+              <span class="pub-badge">Applied AI 2024</span>
+            </div>
+            <div class="pub-meta">Table + text MRC · Hybrid reader</div>
+            <div class="pub-authors">Sanghyun Cho*, SeongReol Park, Hye-Lynn Kim, Jung-Hun Lee, Joongmin Shin, Hyuk-Chul Kwon</div>
+          </summary>
+          <p class="pub-abstract">Single hybrid reader (K-Adapter style) that fuses table knowledge without separate models; outperforms table/text specialists on mixed MRC (e.g., KorQuAD 2.0).</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">Retrieval-Based Generation Techniques for LLMs</span>
+              <span class="pub-badge">KIICE 2023</span>
+            </div>
+            <div class="pub-meta">RAG vs zero-shot · GPT-3.5/4</div>
+            <div class="pub-authors">Joongmin Shin*, Jungun Lee</div>
+          </summary>
+          <p class="pub-abstract">Comparative study of zero-shot vs RAG for GPT-3.5/4; outlines accuracy/reliability gains and practical components for evidence-grounded answers.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">QA-Pair Passage RAG for Korean Chatbots</span>
+              <span class="pub-badge">HCLT 2023</span>
+            </div>
+            <div class="pub-meta">Korean chatbot · QA-pair RAG</div>
+            <div class="pub-authors">Joongmin Shin*, Jaewwok Lee, Kyungmin Kim, Heuiseok Lim</div>
+          </summary>
+          <p class="pub-abstract">Combines QA-pair passage construction with RAG to cut hallucination and improve accuracy in Korean chatbot services.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">Comparative Analysis of Korean LLM Quality (Zero-shot)</span>
+              <span class="pub-badge">HCLT 2023</span>
+            </div>
+            <div class="pub-meta">Korean LLM eval · Zero-shot</div>
+            <div class="pub-authors">Yunah Huh, Aram So, Taemin Lee, Joongmin Shin, Heuiseok Lim</div>
+          </summary>
+          <p class="pub-abstract">Benchmarks Korean LLMs across translation, summarization, and QA in zero-shot settings; reports error patterns and practical selection guidance.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">Neural-Symbolic Model for Korean Dependency Parsing</span>
+              <span class="pub-badge">Master's Thesis · 2023</span>
+            </div>
+            <div class="pub-meta">Parsing · Hybrid rules + DL</div>
+            <div class="pub-authors">Joongmin Shin*</div>
+          </summary>
+          <p class="pub-abstract">Hybrid constraint-rule + neural model improves UAS/LAS (up to 96.28/93.19) and trains 11x faster versus larger-data baselines on Modu corpus.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">EDT5: Embeddings with T5 Encoder–Decoder</span>
+              <span class="pub-badge">KSC 2022</span>
+            </div>
+            <div class="pub-meta">Embeddings · Encoder–decoder</div>
+            <div class="pub-authors">Joongmin Shin*, Joogyoung Jung, Junghoon Lee, Hyuk-Chul Kwon</div>
+          </summary>
+          <p class="pub-abstract">Leverages T5 decoder representations alongside encoder to improve embedding quality versus encoder-only baselines.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">Generalization of Korean Table MRC</span>
+              <span class="pub-badge">KSC 2022</span>
+            </div>
+            <div class="pub-meta">Table MRC · Domain generalization</div>
+            <div class="pub-authors">Hyelin Kim*, Sanghyun Cho, Joongmin Shin, Hyuk-Chul Kwon</div>
+          </summary>
+          <p class="pub-abstract">Adversarial and table-specialized embeddings to improve cross-domain table MRC performance across evaluation sets.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">Constraint-Enhanced Dependency Parsing</span>
+              <span class="pub-badge">HCLT 2022</span>
+            </div>
+            <div class="pub-meta">Parsing · Rules + DL</div>
+            <div class="pub-authors">Joongmin Shin*, Hyuk-Chul Kwon</div>
+          </summary>
+          <p class="pub-abstract">Reinforces governor–dependent constraints within neural parsers to boost UAS/LAS while using smaller datasets.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">ANN-Based Dependency Parsing with Rules</span>
+              <span class="pub-badge">KCC 2022</span>
+            </div>
+            <div class="pub-meta">Parsing · Korean</div>
+            <div class="pub-authors">Joongmin Shin*, Sanghyun Cho, Bongwoo Nam, Hyuk-Chul Kwon</div>
+          </summary>
+          <p class="pub-abstract">Adds linguistic rule-based features to neural dependency parsing, improving UAS/LAS on Korean benchmarks.</p>
+        </details>
+
+        <details class="pub-card">
+          <summary>
+            <div class="pub-titleline">
+              <span class="pub-title">Continual Learning for Korean MRC</span>
+              <span class="pub-badge">HCLT 2021</span>
+            </div>
+            <div class="pub-meta">MRC · Continual learning</div>
+            <div class="pub-authors">Joongmin Shin*, Sanghyun Cho, Hyuk-Chul Kwon</div>
+          </summary>
+          <p class="pub-abstract">Applies continual learning (incl. LwF) to Korean MRC; improves KorQuAD 1.0 F1/EM over BERT baselines.</p>
+        </details>
+      </div>
     </section>
 
     <!-- Honors & Awards -->

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.15 }
   );
 
-  document.querySelectorAll("section, .item").forEach(el => {
+  document.querySelectorAll("section, .item, .pub-card").forEach(el => {
     el.classList.add("reveal");
     observer.observe(el);
   });

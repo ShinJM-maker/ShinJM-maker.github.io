@@ -319,15 +319,15 @@ li {
   max-width: 1100px;
   margin: 0.6rem auto 0;
   display: block;
-  background: #f8fafc;
-  border: 1px solid var(--border-soft);
+  background: #eef2f9;
+  border: 1px solid #cbd2e2;
   border-radius: 14px;
 }
 
 .rg-node {
   fill: #ffffff;
-  stroke: var(--border-soft);
-  stroke-width: 1.4px;
+  stroke: #c1c8d8;
+  stroke-width: 1.6px;
 }
 
 .rg-title {
@@ -341,27 +341,27 @@ li {
   font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   font-size: 14px;
   font-weight: 500;
-  fill: #5a6172;
+  fill: #3f4757;
 }
 
 .rg-line {
-  stroke: #d0d5e2;
-  stroke-width: 2.2px;
+  stroke: #c1c8d8;
+  stroke-width: 2.4px;
 }
 
 .rg-line.accent {
-  stroke: #e63946;
+  stroke: #d62839;
 }
 
 .rg-dot {
-  fill: #e63946;
+  fill: #d62839;
 }
 
 .rg-badge {
   font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   font-size: 12px;
   font-weight: 700;
-  fill: #e63946;
+  fill: #d62839;
 }
 
 @media (max-width: 720px) {

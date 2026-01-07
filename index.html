@@ -50,46 +50,87 @@
       </div>
 
       <nav class="top-nav">
-        <a href="#summary">Summary</a>
-        <a href="#strengths">Key Strengths</a>
-        <a href="#experience">Experience</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#featured">Featured</a>
         <a href="#projects">Projects</a>
         <a href="#research-map">Research Map</a>
-        <a href="#education">Education</a>
-        <a href="#publications">Selected Publications</a>
-        <a href="#awards">Honors &amp; Awards</a>
-        <a href="#skills">Skills</a>
-        <a href="#teaching">Teaching</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Summary -->
-    <section id="summary">
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Joongmin Shin</h1>
+        <p>Research scientist building structure-aware RAG, multimodal parsing, and explainable QA systems. Currently exploring hierarchical retrieval and chunking for long industrial documents.</p>
+        <div class="hero-actions">
+          <a class="cta-btn" href="mailto:tlswndals13@korea.ac.kr">Email</a>
+          <a class="cta-btn secondary" href="https://github.com/shinjm-maker" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="cta-btn secondary" href="https://www.linkedin.com/in/shinjm-maker" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <img class="hero-avatar" src="profile_picture.png" alt="Profile portrait" />
+    </section>
+
+    <!-- About -->
+    <section id="about">
       <h3>
-        Professional Summary
-        <span class="em">Overview</span>
+        About
+        <span class="em">Who I Am</span>
       </h3>
+      <p class="item-sub">I design retrieval-augmented and multimodal Document AI systems that respect structure—turning noisy PDFs and scans into trees, graphs, and chunks that LLMs can reason over.</p>
       <ul>
-        <li><strong>5+ years</strong> delivering RAG/multimodal Document AI across power, insurance, healthcare, manufacturing; PoCs advanced to pilots and cut manual search ~<strong>40%</strong>.</li>
-        <li>Turn noisy PDFs/scans into structure-aware chunks/graphs for RAG; blend LLM/LVLM with rules and knowledge graphs for explainable QA (+<strong>~10%</strong> accuracy).</li>
-        <li>First-author EMNLP 2024/2025 and three patents on parsing + hybrid NLP; lead cross-functional teams funded by national grants and a Vice-Prime-Minister’s prize.</li>
+        <li>Over 5 years shipping RAG/LVLM pilots across power plants, insurance, healthcare, and manufacturing—cutting manual search time by ~40% and improving QA accuracy by ~10%.</li>
+        <li>First-author EMNLP (2024/2025) and inventor on three patents; currently submitting new work on hierarchical multimodal retrieval and chunking.</li>
+        <li>Enjoy leading cross-functional teams from scoping to deployment, and turning research ideas into pragmatic, explainable systems.</li>
       </ul>
     </section>
 
-    <!-- Key Strengths -->
-    <section id="strengths">
+    <!-- Featured -->
+    <section id="featured">
       <h3>
-        Key Strengths
-        <span class="em">What I Do Well</span>
+        Featured Work
+        <span class="em">Recent Highlights</span>
       </h3>
-      <ul>
-        <li><strong>Document parsing → retrieval:</strong> extend dependency parsing to document-level trees/graphs for structure-aware chunking of long, noisy PDFs.</li>
-        <li><strong>Problem framing:</strong> translate industrial needs (predictive maintenance, scientific literature, insurance/medical docs) into clear RAG tasks and datasets.</li>
-        <li><strong>Hybrid QA design:</strong> combine LLM/LVLM with rules and knowledge graphs for explainability and accuracy.</li>
-        <li><strong>Rapid prototyping:</strong> lead cross-functional teams to deliver MVPs, iterate with users, and land pilots.</li>
-      </ul>
+      <div class="featured-grid">
+        <div class="featured-card">
+          <div class="featured-title">Project Orion</div>
+          <div class="featured-meta">Hierarchical multimodal retrieval · Under review</div>
+          <div class="featured-tags chips">
+            <span class="chip emph">RAG</span><span class="chip">Routing</span><span class="chip">Multimodal</span>
+          </div>
+          <p class="item-sub">Coarse-to-fine routing and evidence assembly for open-domain document QA on industrial corpora.</p>
+        </div>
+        <div class="featured-card">
+          <div class="featured-title">Project Vega</div>
+          <div class="featured-meta">Multimodal dependency chunking · Under review</div>
+          <div class="featured-tags chips">
+            <span class="chip emph">Chunking</span><span class="chip">LVLM</span><span class="chip">Structure</span>
+          </div>
+          <p class="item-sub">Shared parsing frame + doc-tree reconstruction to create boundary-aware chunks for long scans.</p>
+        </div>
+        <div class="featured-card">
+          <div class="featured-title">MultiDocFusion</div>
+          <div class="featured-meta">EMNLP 2025 · Structure-aware chunking</div>
+          <div class="featured-tags chips">
+            <span class="chip emph">RAG</span><span class="chip">Layout</span><span class="chip">LLM</span>
+          </div>
+          <p class="item-sub">Vision parsing + OCR + hierarchy reconstruction to keep document structure in retrieval.</p>
+        </div>
+        <div class="featured-card">
+          <div class="featured-title">SynerPeace</div>
+          <div class="featured-meta">Insurance QA + workflows</div>
+          <div class="featured-tags chips">
+            <span class="chip emph">Applied LLM</span><span class="chip">Workflow</span><span class="chip">QA</span>
+          </div>
+          <p class="item-sub">LLM QA and automation for insurance agents; won Samsung F&amp;M pilot grand prize.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Professional Experience -->
@@ -682,6 +723,35 @@
           <li><strong>Tech:</strong> NLP parsing, QA evaluation, web/mobile app guidance.</li>
         </ul>
       </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h3>
+        Contact
+        <span class="em">Let’s Talk</span>
+      </h3>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <strong>Email</strong>
+          <div class="item-sub"><a href="mailto:tlswndals13@korea.ac.kr">tlswndals13@korea.ac.kr</a></div>
+        </div>
+        <div class="contact-card">
+          <strong>Phone</strong>
+          <div class="item-sub">(+82) 10-5710-8702</div>
+        </div>
+        <div class="contact-card">
+          <strong>Links</strong>
+          <div class="item-sub">
+            <a href="https://github.com/shinjm-maker" target="_blank" rel="noreferrer">GitHub</a> ·
+            <a href="https://www.linkedin.com/in/shinjm-maker" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <strong>Location</strong>
+          <div class="item-sub">Seoul, Republic of Korea (open to relocation/remote)</div>
+        </div>
+      </div>
     </section>
   </main>
   <button class="back-to-top" type="button" aria-label="Back to top">↑</button>

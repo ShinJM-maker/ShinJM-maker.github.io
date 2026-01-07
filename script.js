@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const initialId = location.hash ? location.hash.replace("#", "") : "summary";
+  const initialId = location.hash ? location.hash.replace("#", "") : "home";
   renderSection(initialId);
 
   const backToTop = document.querySelector(".back-to-top");

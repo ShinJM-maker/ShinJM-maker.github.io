@@ -319,13 +319,15 @@ li {
   max-width: 1100px;
   margin: 0.6rem auto 0;
   display: block;
+  background: #f8fafc;
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
 }
 
 .rg-node {
   fill: #ffffff;
   stroke: var(--border-soft);
   stroke-width: 1.4px;
-  filter: drop-shadow(0 10px 24px rgba(15, 23, 42, 0.08));
 }
 
 .rg-title {

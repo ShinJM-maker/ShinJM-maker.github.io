@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ShinJM-maker.github.io/sitemap.xml

@@ -188,6 +188,14 @@ main {
   font-size: 1rem;
 }
 
+.hero-text ul {
+  margin: 0.2rem 0 0.6rem;
+  padding-left: 1.1rem;
+  color: #3f4757;
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;

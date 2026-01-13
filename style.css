@@ -664,6 +664,10 @@ li {
 
 #research-map {
   overflow: auto;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }
 
 .back-to-top {

@@ -45,34 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  const overlay = document.querySelector("#research-lightbox");
-  const lightboxImg = overlay?.querySelector("img");
-  const closeBtn = overlay?.querySelector(".lightbox-close");
-  const openLightbox = src => {
-    if (!overlay || !lightboxImg) return;
-    if (src) lightboxImg.src = src;
-    overlay.classList.add("open");
-    overlay.setAttribute("aria-hidden", "false");
-  };
-  const closeLightbox = () => {
-    if (!overlay) return;
-    overlay.classList.remove("open");
-    overlay.setAttribute("aria-hidden", "true");
-  };
-  document.addEventListener("click", e => {
-    const trigger = e.target.closest(".research-lightbox-trigger");
-    if (trigger) {
-      openLightbox(trigger.dataset.src || lightboxImg?.src);
-    }
-  });
-  overlay?.addEventListener("click", e => {
-    if (e.target === overlay) closeLightbox();
-  });
-  closeBtn?.addEventListener("click", closeLightbox);
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape") closeLightbox();
-  });
-
   const setActiveNav = id => {
     navLinks.forEach(link => {
       const target = link.getAttribute("href").replace("#", "");

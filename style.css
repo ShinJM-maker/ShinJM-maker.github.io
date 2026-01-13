@@ -639,6 +639,14 @@ li {
   fill: #d62839;
 }
 
+.mermaid {
+  background: #ffffff;
+  border: 1px solid #e3e6ef;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
 .back-to-top {
   position: fixed;
   right: 18px;

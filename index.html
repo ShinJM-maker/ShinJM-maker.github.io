@@ -20,6 +20,7 @@
   <meta name="twitter:image" content="https://ShinJM-maker.github.io/og-image.svg" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 </head>
 <body>
   <header>
@@ -338,81 +339,59 @@
         Research Map
         <span class="em">Flow</span>
       </h3>
-      <svg class="research-graph" viewBox="0 0 1200 650" aria-label="Research flow">
-        <defs>
-          <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
-            <path d="M0,0 L6,3 L0,6 z" fill="#d0d5e2"/>
-          </marker>
-          <marker id="arrow-accent" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
-            <path d="M0,0 L6,3 L0,6 z" fill="#e63946"/>
-          </marker>
-        </defs>
+      <div class="mermaid">
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffffff', 'edgeLabelBackground':'#ffffff', 'tertiaryColor': '#f4f4f4'}, 'flowchart': {'curve': 'basis', 'rankSpacing': 60, 'nodeSpacing': 40}} }%%
+graph LR
+  classDef theme1 fill:#e8eaf6,stroke:#3949ab,stroke-width:1.5px,color:#1a237e,rx:8,ry:8;
+  classDef theme2 fill:#e0f2f1,stroke:#00897b,stroke-width:1.5px,color:#004d40,rx:8,ry:8;
+  classDef theme3 fill:#fff3e0,stroke:#f4511e,stroke-width:3px,color:#bf360c,rx:15,ry:15,font-weight:bold;
+  classDef theme4 fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px,color:#4a148c,rx:8,ry:8,stroke-dasharray:4 4;
 
-        <rect x="10" y="10" width="1180" height="630" rx="18" fill="#eef2f9" stroke="#cbd2e2" stroke-width="2"/>
+  subgraph Stage1 ["Stage 1. Core Linguistic & Syntax<br>(2021-2022)"]
+    direction TB
+    N_Syn["📐 <b>Syntactic Analysis</b><br>(Dependency Parsing,<br>Neuro-Symbolic)"]:::theme1
+    N_MRC["📖 <b>Deep Semantics</b><br>(Table MRC, WordNet,<br>Continual Learning)"]:::theme1
+    N_Syn ~~~ N_MRC
+  end
 
-        <!-- connectors -->
-        <line class="rg-line" x1="600" y1="120" x2="320" y2="220" marker-end="url(#arrow)"/>
-        <line class="rg-line" x1="600" y1="120" x2="600" y2="220" marker-end="url(#arrow)"/>
-        <line class="rg-line" x1="600" y1="120" x2="880" y2="220" marker-end="url(#arrow)"/>
-        <line class="rg-line accent" x1="600" y1="120" x2="200" y2="360" marker-end="url(#arrow-accent)"/>
-        <line class="rg-line" x1="320" y1="300" x2="600" y2="360" marker-end="url(#arrow)"/>
-        <line class="rg-line" x1="600" y1="300" x2="600" y2="360" marker-end="url(#arrow)"/>
-        <line class="rg-line" x1="880" y1="300" x2="600" y2="360" marker-end="url(#arrow)"/>
-        <line class="rg-line" x1="600" y1="440" x2="420" y2="510" marker-end="url(#arrow)"/>
-        <line class="rg-line" x1="600" y1="440" x2="600" y2="510" marker-end="url(#arrow)"/>
-        <line class="rg-line" x1="600" y1="440" x2="780" y2="510" marker-end="url(#arrow)"/>
+  subgraph Stage2 ["Stage 2. Applied LLM & Domain RAG<br>(2023-2024)"]
+    direction TB
+    N_LLM["⚙️ <b>LLM Evaluation</b><br>(Zero-shot Analysis,<br>Chatbot Architecture)"]:::theme2
+    N_Ind["🏭 <b>Industrial RAG</b><br>(Power Plant Domain,<br>StyleDFS Chunking)"]:::theme2
+    N_LLM --> N_Ind
+  end
 
-        <!-- root -->
-        <rect class="rg-node" data-node="root" x="460" y="60" rx="16" ry="16" width="280" height="120"/>
-        <text class="rg-title" data-node="root" x="600" y="108" text-anchor="middle">Document AI &amp; RAG</text>
-        <text class="rg-sub" data-node="root" x="600" y="138" text-anchor="middle">Parsing · Chunking · Retrieval · Explainable QA</text>
-        <text class="rg-sub" data-node="root" x="600" y="162" text-anchor="middle">5+ yrs · EMNLP first-author · patents</text>
+  subgraph Stage3 ["Stage 3. Multimodal Document Intelligence<br>(2025-2026)"]
+    direction TB
+    N_M3D["🖼️ <b>Project Vega</b><br>(Multimodal Dependency)<br>[CVPR 2026]"]:::theme3
+    N_MDF["🚀 <b>MultiDocFusion</b><br>(Hierarchical RAG Pipeline)<br>[EMNLP 2025]"]:::theme3
+    N_HiK["👑 <b>Project Orion</b><br>(Hierarchical Retrieval)<br>[ACL 2026]"]:::theme3
+  end
 
-        <!-- Level 1 -->
-        <rect class="rg-node" data-node="parsing" x="215" y="210" rx="14" ry="14" width="210" height="110"/>
-        <text class="rg-title" data-node="parsing" x="320" y="246" text-anchor="middle">Project Vega</text>
-        <text class="rg-sub" data-node="parsing" x="320" y="272" text-anchor="middle">Multimodal parsing · LVLM</text>
-        <text class="rg-sub" data-node="parsing" x="320" y="296" text-anchor="middle">Under review</text>
+  subgraph Stage4 ["Stage 4. Future: Agentic & Dynamic AI<br>(2027+)"]
+    direction TB
+    N_Ctrl["🧠 <b>Cognitive Controller</b><br>(Plan-Solve-Refine<br>Reasoning Loop)"]:::theme4
+    N_Exec["⚡ <b>Active Executor</b><br>(Layout-Interactive<br>Reading & Action)"]:::theme4
+    N_Temp["🎥 <b>Temporal RAG</b><br>(Streaming Video &<br>Time-Series Logic)"]:::theme4
+    N_Ctrl -->|Allocates| N_Exec
+    N_Exec -.->|Extends Context| N_Temp
+  end
 
-        <rect class="rg-node" data-node="chunking" x="495" y="210" rx="14" ry="14" width="210" height="110"/>
-        <text class="rg-title" data-node="chunking" x="600" y="246" text-anchor="middle">MultiDocFusion</text>
-        <text class="rg-sub" data-node="chunking" x="600" y="272" text-anchor="middle">Structure-aware chunking</text>
-        <text class="rg-sub" data-node="chunking" x="600" y="296" text-anchor="middle">EMNLP 2025</text>
+  N_Syn ~~~ N_LLM ~~~ N_M3D ~~~ N_Ctrl
+  N_MRC ~~~ N_Ind ~~~ N_HiK ~~~ N_Temp
 
-        <rect class="rg-node" data-node="domain" x="775" y="210" rx="14" ry="14" width="210" height="110"/>
-        <text class="rg-title" data-node="domain" x="880" y="246" text-anchor="middle">StyleDFS</text>
-        <text class="rg-sub" data-node="domain" x="880" y="272" text-anchor="middle">Domain LLM + RAG</text>
-        <text class="rg-sub" data-node="domain" x="880" y="296" text-anchor="middle">EMNLP 2024</text>
+  N_MRC --> N_LLM
+  N_Syn ==>|Evolution| N_M3D
+  N_M3D ==>|Structural Basis| N_HiK
+  N_Ind ==>|Context Solve| N_MDF
+  N_MDF ==>|Retrieval Pipe| N_HiK
+  N_HiK -.->|Retrieval as Tool| N_Ctrl
+  N_M3D -.->|Space to Time| N_Temp
 
-        <rect class="rg-node" data-node="neuro" x="90" y="340" rx="14" ry="14" width="220" height="100"/>
-        <text class="rg-title" data-node="neuro" x="200" y="378" text-anchor="middle">Project Orion</text>
-        <text class="rg-sub" data-node="neuro" x="200" y="404" text-anchor="middle">Hierarchical retrieval</text>
-        <text class="rg-sub" data-node="neuro" x="200" y="428" text-anchor="middle">Under review</text>
-
-        <!-- Level 2 -->
-        <rect class="rg-node" data-node="applied" x="465" y="340" rx="14" ry="14" width="270" height="110"/>
-        <text class="rg-title" data-node="applied" x="600" y="376" text-anchor="middle">Applied LLM Systems</text>
-        <text class="rg-sub" data-node="applied" x="600" y="402" text-anchor="middle">Insurance · Healthcare · PLC</text>
-        <text class="rg-sub" data-node="applied" x="600" y="426" text-anchor="middle">Pilots with industry partners</text>
-
-        <!-- Level 3 -->
-        <rect class="rg-node" data-node="plc" x="345" y="500" rx="12" ry="12" width="180" height="100"/>
-        <text class="rg-title" data-node="plc" x="435" y="534" text-anchor="middle">PLC Assistant</text>
-        <text class="rg-sub" data-node="plc" x="435" y="560" text-anchor="middle">Code LLaMA + templates</text>
-
-        <rect class="rg-node" data-node="synerpeace" x="510" y="500" rx="12" ry="12" width="180" height="100"/>
-        <text class="rg-title" data-node="synerpeace" x="600" y="534" text-anchor="middle">SynerPeace</text>
-        <text class="rg-sub" data-node="synerpeace" x="600" y="560" text-anchor="middle">Insurance QA + workflows</text>
-
-        <rect class="rg-node" data-node="synapse" x="675" y="500" rx="12" ry="12" width="180" height="100"/>
-        <text class="rg-title" data-node="synapse" x="765" y="534" text-anchor="middle">Synapse</text>
-        <text class="rg-sub" data-node="synapse" x="765" y="560" text-anchor="middle">Multilingual medical QA</text>
-
-        <!-- badges -->
-        <circle class="rg-dot" cx="600" cy="120" r="5"/>
-        <circle class="rg-dot" cx="600" cy="360" r="4.5"/>
-        <text class="rg-badge" x="660" y="360">Pilots &amp; transfers</text>
-      </svg>
+  linkStyle 0 stroke:#cfd8dc,stroke-width:2px,fill:none;
+  linkStyle 1,2,3,4 stroke:#f4511e,stroke-width:4px,fill:none;
+  linkStyle 5,6,7,8 stroke:#8e24aa,stroke-width:2px,stroke-dasharray:5 5,fill:none;
+      </div>
     </section>
 
     <!-- Education -->

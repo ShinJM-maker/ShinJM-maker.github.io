@@ -45,6 +45,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
+  const initLightbox = root => {
+    const overlay = root.querySelector("#research-lightbox");
+    if (!overlay) return;
+    const openers = root.querySelectorAll(".research-lightbox-trigger");
+    const img = overlay.querySelector("img");
+    const closeBtn = overlay.querySelector(".lightbox-close");
+    const open = src => {
+      if (src) img.src = src;
+      overlay.classList.add("open");
+      overlay.setAttribute("aria-hidden", "false");
+    };
+    const close = () => {
+      overlay.classList.remove("open");
+      overlay.setAttribute("aria-hidden", "true");
+    };
+    openers.forEach(btn =>
+      btn.addEventListener("click", () => open(btn.dataset.src || img.src))
+    );
+    overlay.addEventListener("click", e => {
+      if (e.target === overlay) close();
+    });
+    closeBtn?.addEventListener("click", close);
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") close();
+    });
+  };
+
   const setActiveNav = id => {
     navLinks.forEach(link => {
       const target = link.getAttribute("href").replace("#", "");
@@ -60,6 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     main.appendChild(node);
     prepareReveal(main);
     initGraphHover(main);
+    initLightbox(main);
     setActiveNav(id);
     window.scrollTo({ top: 0, behavior: "smooth" });
     history.replaceState(null, "", `#${id}`);

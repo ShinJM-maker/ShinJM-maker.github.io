@@ -644,15 +644,16 @@ li {
   background: #ffffff;
   border: 1px solid #e3e6ef;
   border-radius: 12px;
-  padding: 0.8rem;
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+  padding: 1rem;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
 }
 
 .research-image {
   width: 100%;
-  max-height: 640px;
+  max-height: 900px;
+  height: auto;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .back-to-top {

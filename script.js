@@ -60,6 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
     main.appendChild(node);
     prepareReveal(main);
     initGraphHover(main);
+    if (window.mermaid) {
+      mermaid.initialize({ startOnLoad: false, securityLevel: "loose" });
+      mermaid.run({ querySelector: ".mermaid" });
+    }
     setActiveNav(id);
     window.scrollTo({ top: 0, behavior: "smooth" });
     history.replaceState(null, "", `#${id}`);

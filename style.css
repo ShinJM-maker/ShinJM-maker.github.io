@@ -646,17 +646,24 @@ li {
   border-radius: 12px;
   padding: 0.4rem;
   box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
-  display: flex;
-  justify-content: center;
+  display: block;
   overflow: auto;
+  width: auto;
+  max-width: none;
 }
 
 .research-image {
+  display: block;
   width: auto;
   height: auto;
-  max-width: 100%;
+  max-width: none;
+  max-height: none;
   object-fit: contain;
   border-radius: 10px;
+}
+
+#research-map {
+  overflow: auto;
 }
 
 .back-to-top {

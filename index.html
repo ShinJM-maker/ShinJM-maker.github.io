@@ -20,7 +20,6 @@
   <meta name="twitter:image" content="https://ShinJM-maker.github.io/og-image.svg" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 </head>
 <body>
   <header>
@@ -339,59 +338,10 @@
         Research Map
         <span class="em">Flow</span>
       </h3>
-      <div class="mermaid">
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffffff', 'edgeLabelBackground':'#ffffff', 'tertiaryColor': '#f4f4f4'}, 'flowchart': {'curve': 'basis', 'rankSpacing': 60, 'nodeSpacing': 40}} }%%
-graph LR
-  classDef theme1 fill:#e8eaf6,stroke:#3949ab,stroke-width:1.5px,color:#1a237e,rx:8,ry:8;
-  classDef theme2 fill:#e0f2f1,stroke:#00897b,stroke-width:1.5px,color:#004d40,rx:8,ry:8;
-  classDef theme3 fill:#fff3e0,stroke:#f4511e,stroke-width:3px,color:#bf360c,rx:15,ry:15,font-weight:bold;
-  classDef theme4 fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px,color:#4a148c,rx:8,ry:8,stroke-dasharray:4 4;
-
-  subgraph Stage1 ["Stage 1. Core Linguistic & Syntax<br>(2021-2022)"]
-    direction TB
-    N_Syn["📐 <b>Syntactic Analysis</b><br>(Dependency Parsing,<br>Neuro-Symbolic)"]:::theme1
-    N_MRC["📖 <b>Deep Semantics</b><br>(Table MRC, WordNet,<br>Continual Learning)"]:::theme1
-    N_Syn ~~~ N_MRC
-  end
-
-  subgraph Stage2 ["Stage 2. Applied LLM & Domain RAG<br>(2023-2024)"]
-    direction TB
-    N_LLM["⚙️ <b>LLM Evaluation</b><br>(Zero-shot Analysis,<br>Chatbot Architecture)"]:::theme2
-    N_Ind["🏭 <b>Industrial RAG</b><br>(Power Plant Domain,<br>StyleDFS Chunking)"]:::theme2
-    N_LLM --> N_Ind
-  end
-
-  subgraph Stage3 ["Stage 3. Multimodal Document Intelligence<br>(2025-2026)"]
-    direction TB
-    N_M3D["🖼️ <b>Project Vega</b><br>(Multimodal Dependency)<br>[CVPR 2026]"]:::theme3
-    N_MDF["🚀 <b>MultiDocFusion</b><br>(Hierarchical RAG Pipeline)<br>[EMNLP 2025]"]:::theme3
-    N_HiK["👑 <b>Project Orion</b><br>(Hierarchical Retrieval)<br>[ACL 2026]"]:::theme3
-  end
-
-  subgraph Stage4 ["Stage 4. Future: Agentic & Dynamic AI<br>(2027+)"]
-    direction TB
-    N_Ctrl["🧠 <b>Cognitive Controller</b><br>(Plan-Solve-Refine<br>Reasoning Loop)"]:::theme4
-    N_Exec["⚡ <b>Active Executor</b><br>(Layout-Interactive<br>Reading & Action)"]:::theme4
-    N_Temp["🎥 <b>Temporal RAG</b><br>(Streaming Video &<br>Time-Series Logic)"]:::theme4
-    N_Ctrl -->|Allocates| N_Exec
-    N_Exec -.->|Extends Context| N_Temp
-  end
-
-  N_Syn ~~~ N_LLM ~~~ N_M3D ~~~ N_Ctrl
-  N_MRC ~~~ N_Ind ~~~ N_HiK ~~~ N_Temp
-
-  N_MRC --> N_LLM
-  N_Syn ==>|Evolution| N_M3D
-  N_M3D ==>|Structural Basis| N_HiK
-  N_Ind ==>|Context Solve| N_MDF
-  N_MDF ==>|Retrieval Pipe| N_HiK
-  N_HiK -.->|Retrieval as Tool| N_Ctrl
-  N_M3D -.->|Space to Time| N_Temp
-
-  linkStyle 0 stroke:#cfd8dc,stroke-width:2px,fill:none;
-  linkStyle 1,2,3,4 stroke:#f4511e,stroke-width:4px,fill:none;
-  linkStyle 5,6,7,8 stroke:#8e24aa,stroke-width:2px,stroke-dasharray:5 5,fill:none;
-      </div>
+      <figure class="research-figure">
+        <img src="Research_history.png" alt="Research history map" class="research-image" />
+        <figcaption class="item-sub">Research evolution across syntax → applied LLM/RAG → multimodal doc intelligence → future agentic AI.</figcaption>
+      </figure>
     </section>
 
     <!-- Education -->

@@ -647,16 +647,15 @@ li {
   padding: 0.4rem;
   box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
   display: block;
-  overflow: auto;
-  width: auto;
-  max-width: none;
+  overflow: hidden;
+  width: 100%;
 }
 
 .research-image {
   display: block;
-  width: 2748px;
+  width: 100%;
   height: auto;
-  max-width: none;
+  max-width: 100%;
   max-height: none;
   object-fit: contain;
   border-radius: 10px;
@@ -668,6 +667,8 @@ li {
   border: none;
   box-shadow: none;
   padding: 0;
+  margin-left: calc(50% - 50vw + 12px);
+  margin-right: calc(50% - 50vw + 12px);
 }
 
 .back-to-top {

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detailed Research Map | Joongmin Shin</title>
+  <meta name="description" content="Detailed research map of Joongmin Shin across stages from linguistic modeling to multimodal and agentic AI." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Joongmin Shin</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a class="active" href="research-map.html">Research Map</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container container-wide page-main">
+    <section class="section-block">
+      <h1 class="page-title">Detailed Research Map</h1>
+      <p class="page-intro">Read the roadmap quickly first, then open the advanced diagram if you want full node-level structure.</p>
+
+      <div class="roadmap-flow">
+        <details class="roadmap-stage" open>
+          <summary>
+            <span class="roadmap-stage-title">Stage 1. Core Linguistic and Syntax</span>
+            <span class="roadmap-stage-meta">2021-2022</span>
+          </summary>
+          <div class="roadmap-content">
+            <p><strong>Focus:</strong> Language structure and machine reading foundations.</p>
+            <ul>
+              <li>Syntactic analysis: dependency parsing, neural-symbolic modeling.</li>
+              <li>Deep semantics: table MRC, WordNet, continual learning.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="roadmap-connector">↓</div>
+
+        <details class="roadmap-stage" open>
+          <summary>
+            <span class="roadmap-stage-title">Stage 2. Applied LLM and Domain RAG</span>
+            <span class="roadmap-stage-meta">2023-2024</span>
+          </summary>
+          <div class="roadmap-content">
+            <p><strong>Focus:</strong> Industrial optimization for real-world systems.</p>
+            <ul>
+              <li>LLM evaluation and architecture design in production settings.</li>
+              <li>Domain RAG pipelines for high-stakes industrial use cases.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="roadmap-connector">↓</div>
+
+        <details class="roadmap-stage" open>
+          <summary>
+            <span class="roadmap-stage-title">Stage 3. Multimodal Document Intelligence</span>
+            <span class="roadmap-stage-meta">2025-2026</span>
+          </summary>
+          <div class="roadmap-content">
+            <p><strong>Focus:</strong> Hierarchical structure and multimodal retrieval.</p>
+            <ul>
+              <li><strong>M3DocDep</strong> (CVPR 2026): multimodal dependency chunking.</li>
+              <li><strong>MultiDocFusion</strong> (EMNLP 2025): hierarchical RAG pipeline.</li>
+              <li><strong>HiKEY</strong> (ACL 2026): hierarchical retrieval framework.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="roadmap-connector">↓</div>
+
+        <details class="roadmap-stage" open>
+          <summary>
+            <span class="roadmap-stage-title">Stage 4. Future Agentic and Dynamic AI</span>
+            <span class="roadmap-stage-meta">2027+</span>
+          </summary>
+          <div class="roadmap-content">
+            <p><strong>Focus:</strong> Autonomous agents with dynamic reasoning and temporal expansion.</p>
+            <ul>
+              <li>Cognitive controller for plan-solve-refine loops.</li>
+              <li>Active executor for layout-interactive reading and action.</li>
+              <li>Temporal RAG for streaming video and time-series logic.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <details id="advanced-map-details" class="advanced-map-block">
+        <summary>Open Advanced Mermaid Diagram</summary>
+
+        <div class="research-map-toolbar" aria-label="Research map zoom controls">
+          <button id="zoom-out" class="map-zoom-btn" type="button">-</button>
+          <span id="zoom-level" class="map-zoom-level">100%</span>
+          <button id="zoom-in" class="map-zoom-btn" type="button">+</button>
+          <button id="zoom-reset" class="map-zoom-btn map-zoom-reset" type="button">Reset</button>
+        </div>
+
+        <div class="research-map-panel research-map-detail-panel">
+          <div id="advanced-mermaid" class="mermaid">
+flowchart TB
+    classDef stage fill:#eef3ff,stroke:#4f6fa7,stroke-width:1.5px,color:#1b355a,font-weight:700,font-size:14px;
+    classDef now fill:#e8f7f3,stroke:#1f8f7b,stroke-width:1.4px,color:#0d4d42,font-size:13px;
+    classDef core fill:#e9edf9,stroke:#4059ad,stroke-width:1.4px,color:#1b2f75,font-size:13px;
+    classDef highlight fill:#fff4e8,stroke:#db5c1a,stroke-width:2px,color:#9b3304,font-weight:700,font-size:13px;
+    classDef future fill:#f3e9f8,stroke:#8f46b8,stroke-width:1.5px,color:#54236f,stroke-dasharray: 5 4,font-size:13px;
+
+    S1["Stage 1<br/>Core Linguistic and Syntax<br/>2021-2022"]:::stage
+    S1A["Syntactic Analysis<br/>Dependency Parsing, Neuro-Symbolic"]:::core
+    S1B["Deep Semantics<br/>Table MRC, WordNet, Continual Learning"]:::core
+
+    S2["Stage 2<br/>Applied LLM and Domain RAG<br/>2023-2024"]:::stage
+    S2A["LLM Evaluation<br/>Zero-shot Analysis, Chatbot Design"]:::now
+    S2B["Industrial RAG<br/>Power Plant Domain, StyleDFS"]:::now
+
+    S3["Stage 3<br/>Multimodal Document Intelligence<br/>2025-2026"]:::stage
+    S3A["M3DocDep<br/>Multimodal Dependency<br/>CVPR 2026"]:::highlight
+    S3B["MultiDocFusion<br/>Hierarchical RAG Pipeline<br/>EMNLP 2025"]:::highlight
+    S3C["HiKEY<br/>Hierarchical Retrieval<br/>ACL 2026"]:::highlight
+
+    S4["Stage 4<br/>Future Agentic and Dynamic AI<br/>2027+"]:::stage
+    S4A["Cognitive Controller<br/>Plan-Solve-Refine"]:::future
+    S4B["Active Executor<br/>Layout-Interactive Reading and Action"]:::future
+    S4C["Temporal RAG<br/>Video and Time-Series Reasoning"]:::future
+
+    S1 --> S1A --> S1B --> S2
+    S2 --> S2A --> S2B --> S3
+    S3 --> S3A --> S3B --> S3C --> S4
+    S4 --> S4A --> S4B --> S4C
+
+    S1B -->|"Foundation for LLM era"| S2A
+    S2B ==>|"Context-driven retrieval"| S3B
+    S3C -.->|"Retrieval as tool"| S4A
+    S3A -.->|"Space to time"| S4C
+          </div>
+        </div>
+      </details>
+
+      <div class="research-map-actions">
+        <a class="btn btn-ghost" href="profile.html">Back to Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    (function () {
+      const details = document.getElementById("advanced-map-details");
+      const panel = document.querySelector(".research-map-detail-panel");
+      const mermaidNode = document.getElementById("advanced-mermaid");
+      const zoomInBtn = document.getElementById("zoom-in");
+      const zoomOutBtn = document.getElementById("zoom-out");
+      const zoomResetBtn = document.getElementById("zoom-reset");
+      const zoomLevelEl = document.getElementById("zoom-level");
+
+      let rendered = false;
+      let scale = 1;
+      let fitScale = 1;
+      let baseWidth = 0;
+      let baseHeight = 0;
+
+      const getSvg = () => panel?.querySelector("svg");
+
+      const applyZoom = () => {
+        const svg = getSvg();
+        if (!svg || !baseWidth || !baseHeight) return;
+        svg.style.maxWidth = "none";
+        svg.style.width = `${Math.round(baseWidth * scale)}px`;
+        svg.style.height = `${Math.round(baseHeight * scale)}px`;
+        if (zoomLevelEl) zoomLevelEl.textContent = `${Math.round(scale * 100)}%`;
+      };
+
+      const initializeZoom = () => {
+        const svg = getSvg();
+        if (!svg) return false;
+
+        const viewBox = svg.viewBox?.baseVal;
+        if (viewBox && viewBox.width && viewBox.height) {
+          baseWidth = viewBox.width;
+          baseHeight = viewBox.height;
+        } else {
+          const bbox = svg.getBBox?.();
+          baseWidth = bbox?.width || svg.clientWidth || 1200;
+          baseHeight = bbox?.height || svg.clientHeight || 900;
+        }
+
+        const panelWidth = panel?.clientWidth || baseWidth;
+        const rawFitScale = panelWidth > 0 ? (panelWidth - 28) / baseWidth : 1;
+        fitScale = Math.max(0.5, Math.min(1.05, rawFitScale));
+        scale = fitScale;
+        applyZoom();
+        return true;
+      };
+
+      const renderMermaid = async () => {
+        if (rendered || !mermaidNode) return;
+        mermaid.initialize({
+          startOnLoad: false,
+          theme: "base",
+          themeVariables: {
+            primaryColor: "#ffffff",
+            edgeLabelBackground: "#ffffff",
+            tertiaryColor: "#f4f4f4",
+            fontSize: "13px"
+          },
+          flowchart: {
+            curve: "basis",
+            rankSpacing: 62,
+            nodeSpacing: 40,
+            diagramPadding: 4,
+            padding: 8
+          }
+        });
+
+        await mermaid.run({ nodes: [mermaidNode] });
+        rendered = true;
+        initializeZoom();
+      };
+
+      zoomInBtn?.addEventListener("click", () => {
+        scale = Math.min(2.4, scale + 0.15);
+        applyZoom();
+      });
+
+      zoomOutBtn?.addEventListener("click", () => {
+        scale = Math.max(0.5, scale - 0.15);
+        applyZoom();
+      });
+
+      zoomResetBtn?.addEventListener("click", () => {
+        scale = fitScale;
+        applyZoom();
+      });
+
+      details?.addEventListener("toggle", () => {
+        if (details.open) {
+          renderMermaid().then(() => {
+            setTimeout(initializeZoom, 120);
+          });
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (rendered && details?.open) {
+          initializeZoom();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

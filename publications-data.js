@@ -1,0 +1,193 @@
+window.PUBLICATIONS = [
+  {
+    slug: "acl-anonymous",
+    category: "Top Conferences",
+    title: "Anonymous Paper (Title Withheld for ACL 2026)",
+    venue: "ACL 2026",
+    date: "Mar 2026",
+    authorsHtml: "Anonymous (Under embargo)",
+    abstract: "Accepted to ACL 2026. Detailed title, author list, and full abstract are currently withheld due to confidentiality and pre-release policy.",
+    doi: "",
+    arxiv: ""
+  },
+  {
+    slug: "m3docdep",
+    category: "Top Conferences",
+    title: "M3DocDep: Multi-modal, Multi-page, Multi-document Dependency Chunking with Large Vision-Language Models",
+    venue: "CVPR 2026",
+    date: "Feb 22, 2026",
+    authorsHtml: "<strong>Joongmin Shin*</strong>, Jeongbae Park, Jaehyung Seo, Heuiseok Lim",
+    abstract: "This work uses large vision-language models to infer cross-page and cross-document dependency structures in complex unstructured inputs. The resulting structure-aware multimodal chunks improve evidence retrieval quality and downstream QA performance for retrieval-augmented pipelines.",
+    doi: "",
+    arxiv: "",
+    figure: {
+      path: "paper_figure/M3DocDep_architecture_preview.png",
+      caption: "M3DocDep architecture",
+      sourcePdf: "paper_figure/M3DocDep_architecture.pdf"
+    }
+  },
+  {
+    slug: "multidocfusion",
+    category: "Top Conferences",
+    title: "MultiDocFusion: Hierarchical and Multimodal Chunking Pipeline for Enhanced RAG on Long Industrial Documents",
+    venue: "EMNLP 2025 (Main)",
+    date: "Aug 21, 2025",
+    authorsHtml: "<strong>Joongmin Shin*</strong>, Chanjun Park, Jeongbae Park, Jaehyung Seo, Heuiseok Lim",
+    abstract: "MultiDocFusion combines vision parsing, OCR, and hierarchy reconstruction to preserve document structure during chunking. It improves retrieval quality for long and noisy inputs and provides stronger evidence composition for downstream QA.",
+    paperUrl: "https://aclanthology.org/2025.emnlp-main.1062/",
+    doi: "10.18653/v1/2025.emnlp-main.1062",
+    arxiv: "",
+    figure: {
+      path: "paper_figure/MultiDocFusion_architecture.png",
+      caption: "MultiDocFusion architecture"
+    }
+  },
+  {
+    slug: "styledfs",
+    category: "Top Conferences",
+    title: "Intelligent Predictive Maintenance RAG framework for Power Plants: Enhancing QA with StyleDFS and Domain Specific Instruction Tuning",
+    venue: "EMNLP 2024 (Industrial)",
+    date: "Oct 1, 2024",
+    authorsHtml: "Seongtae Hong*, <strong>Joongmin Shin*</strong>, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim",
+    abstract: "StyleDFS proposes structure-aware chunking for high-stakes industrial QA. The framework improves answer quality while meeting on-premise and privacy constraints in real deployment environments.",
+    paperUrl: "https://aclanthology.org/2024.emnlp-industry.61/",
+    doi: "10.18653/v1/2024.emnlp-industry.61",
+    arxiv: "",
+    figure: {
+      path: "paper_figure/StyleDFS_architecture_preview.png",
+      caption: "StyleDFS architecture",
+      sourcePdf: "paper_figure/StyleDFS_architecture.pdf"
+    }
+  },
+  {
+    slug: "korlex-embeddings",
+    category: "Journals",
+    title: "Distance Based Korean WordNet (alias. KorLex) Embedding Model",
+    venue: "Applied Artificial Intelligence (An International Journal)",
+    date: "Sep 12, 2024",
+    authorsHtml: "SeongReol Park*, <strong>Joongmin Shin</strong>, Sanghyun Cho, Hyuk-Chul Kwon, Jung-Hun Lee",
+    abstract: "This paper maps KorLex lexical knowledge into vector space to inject graph-aware semantics into representation learning. The approach improves lexical similarity behavior compared with purely distributional baselines.",
+    paperUrl: "https://www.tandfonline.com/doi/full/10.1080/08839514.2024.2398920",
+    doi: "",
+    arxiv: "",
+    figure: {
+      path: "paper_figure/Distance Based Korean WordNet(alias. KorLex) Embedding Model_architecture.png",
+      caption: "KorLex embedding model architecture"
+    }
+  },
+  {
+    slug: "hybrid-reader-tables-text",
+    category: "Journals",
+    title: "Multi-Paragraph Machine Reading Comprehension with Hybrid Reader over Tables and Text",
+    venue: "Applied Artificial Intelligence (An International Journal)",
+    date: "Jun 19, 2024",
+    authorsHtml: "Sanghyun Cho*, SeongReol Park, Hye-Lynn Kim, Jung-Hun Lee, <strong>Joongmin Shin</strong>, Hyuk-Chul Kwon",
+    abstract: "Research on a hybrid reader model capable of processing both text and tables, enabling effective handling of both types of data while maintaining the performance of existing pre-trained models.",
+    paperUrl: "https://www.tandfonline.com/doi/full/10.1080/08839514.2024.2367820",
+    doi: "",
+    arxiv: "",
+    figure: {
+      path: "paper_figure/Multi-Paragraph Machine Reading Comprehension_architecture.png",
+      caption: "Multi-Paragraph Machine Reading Comprehension architecture"
+    }
+  },
+  {
+    slug: "retrieval-generation-techniques-llms",
+    category: "Domestic Conferences & Theses",
+    title: "Search-Based Generation Techniques for Improving LLM Responses: A Comparative Study of Zero-shot and RAG on GPT-3.5 and GPT-4",
+    venue: "KIICE 2023",
+    date: "Oct 26, 2023",
+    authorsHtml: "<strong>Joongmin Shin*</strong>, Jungun Lee",
+    abstract: "A comparative study on zero-shot versus retrieval-augmented generation setups for GPT-3.5 and GPT-4. The analysis outlines reliability and practical implementation benefits of evidence-grounded generation.",
+    doi: "",
+    arxiv: ""
+  },
+  {
+    slug: "comparative-korean-llm-quality",
+    category: "Domestic Conferences & Theses",
+    title: "Comparative Analysis of Korean Quality in Large-Scale Language Models Based on Zero-Shot Learning",
+    venue: "HCLT 2023",
+    date: "Oct 13, 2023",
+    authorsHtml: "Yunah Huh, Aram So, Taemin Lee, <strong>Joongmin Shin</strong>, Heuiseok Lim",
+    abstract: "Compared the performance of Korean-based LLMs and English-based LLMs on four KoBEST tasks to investigate whether language influences LLM performance. The results confirmed that adding prior knowledge about Korean affects LLM performance.",
+    doi: "",
+    arxiv: ""
+  },
+  {
+    slug: "qa-pair-passage-rag",
+    category: "Domestic Conferences & Theses",
+    title: "QA Pair Passage RAG-based LLM Korean Chatbot Service",
+    venue: "HCLT 2023",
+    date: "Oct 13, 2023",
+    authorsHtml: "<strong>Joongmin Shin*</strong>, Jaewwok Lee, Kyungmin Kim, Heuiseok Lim",
+    abstract: "This work introduces QA-pair passage construction for Korean retrieval-augmented chatbot systems. The method improves retrieval relevance and reduces hallucination in domain-specific conversational settings.",
+    doi: "",
+    arxiv: ""
+  },
+  {
+    slug: "neural-symbolic-korean-dependency-parsing",
+    category: "Domestic Conferences & Theses",
+    title: "Neural Symbolic Models for Overcoming Deep Learning Limitations and Korean Dependency Parsing",
+    venue: "Master's Thesis",
+    date: "Feb 8, 2023",
+    authorsHtml: "<strong>Joongmin Shin*</strong>",
+    abstract: "Proposed and analyzed a novel neural-symbolic model that controls final probability values based on additional linguistic knowledge to overcome the limitations of overfitting and data scarcity issues arising from deep learning's dependence on datasets.",
+    doi: "",
+    arxiv: ""
+  },
+  {
+    slug: "edt5-embeddings",
+    category: "Domestic Conferences & Theses",
+    title: "EDT5: Proposal of an Encoder-Decoder Structure Embedding Model for T5",
+    venue: "KSC 2022",
+    date: "Dec 20, 2022",
+    authorsHtml: "<strong>Joongmin Shin*</strong>, Joogyoung Jung, Junghoon Lee, Hyuk-Chul Kwon",
+    abstract: "Analyzed the structure of T5 and proposed a model architecture that uses both the encoder and decoder for embedding, moving beyond the previous approach that only utilized the encoder for embedding and fine-tuning.",
+    doi: "",
+    arxiv: ""
+  },
+  {
+    slug: "korean-table-mrc-generalization",
+    category: "Domestic Conferences & Theses",
+    title: "Evaluation of Korean Machine Reading Comprehension Generalization Performance Based on Domain-Specific Evaluation Datasets",
+    venue: "KSC 2022",
+    date: "Dec 20, 2022",
+    authorsHtml: "Hyelin Kim*, Sanghyun Cho, <strong>Joongmin Shin</strong>, Hyuk-Chul Kwon",
+    abstract: "Identified the limitations of existing tabular machine reading comprehension models in domain generalization through cross-validation, highlighting the importance of constructing tabular datasets across diverse domains.",
+    doi: "",
+    arxiv: ""
+  },
+  {
+    slug: "constraint-enhanced-dependency-parsing",
+    category: "Domestic Conferences & Theses",
+    title: "A Dependency Parsing Model Applying Enhanced Dominant-Dependent Constraint Rules: Combining Deep Learning and Linguistic Knowledge",
+    venue: "HCLT 2022",
+    date: "Oct 18, 2022",
+    authorsHtml: "<strong>Joongmin Shin*</strong>, Hyuk-Chul Kwon",
+    abstract: "Through data and error case analysis, expanded the neural symbolic model from two applied rules to 24, developing a state-of-the-art model.",
+    doi: "",
+    arxiv: ""
+  },
+  {
+    slug: "ann-dependency-parsing-rules",
+    category: "Domestic Conferences & Theses",
+    title: "Rule-Based Dependency Parsing Using Artificial Neural Networks",
+    venue: "KCC 2022",
+    date: "Jun 9, 2022",
+    authorsHtml: "<strong>Joongmin Shin*</strong>, Sanghyun Cho, Bongwoo Nam, Hyuk-Chul Kwon",
+    abstract: "Added a transformer layer to existing graph-based dependency parsing models to incorporate additional feature embeddings and address gradient vanishing issues. Proposed a method that controls the final classification probability values according to predefined rules.",
+    doi: "",
+    arxiv: ""
+  },
+  {
+    slug: "continual-learning-korean-mrc",
+    category: "Domestic Conferences & Theses",
+    title: "Machine Reading Comprehension of Korean Using Continual Learning",
+    venue: "HCLT 2021",
+    date: "Oct 14, 2021",
+    authorsHtml: "<strong>Joongmin Shin*</strong>, Sanghyun Cho, Hyuk-Chul Kwon",
+    abstract: "Applied Continual Learning to Korean machine reading comprehension to address the issue of deep learning models losing information from previously learned models.",
+    doi: "",
+    arxiv: ""
+  }
+];

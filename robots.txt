@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://ShinJM-maker.github.io/sitemap.xml
+Host: shinjm-maker.github.io
+Sitemap: https://shinjm-maker.github.io/sitemap.xml

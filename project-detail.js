@@ -3,6 +3,17 @@
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("slug");
 
+  if (!slug) {
+    window.location.replace("projects.html");
+    return;
+  }
+
+  const project = list.find(item => item.slug === slug);
+  if (project) {
+    window.location.replace(`projects/${project.slug}.html`);
+    return;
+  }
+
   const titleEl = document.getElementById("project-title");
   const metaEl = document.getElementById("project-meta");
   const descriptionEl = document.getElementById("project-description");
@@ -12,7 +23,7 @@
   const prevEl = document.getElementById("project-prev");
   const nextEl = document.getElementById("project-next");
 
-  if (!slug || !list.length) {
+  if (!list.length) {
     titleEl.textContent = "Project Not Found";
     metaEl.textContent = "Please return to the projects page.";
     descriptionEl.textContent = "No project data is available.";
@@ -25,8 +36,7 @@
     return;
   }
 
-  const index = list.findIndex(item => item.slug === slug);
-  if (index === -1) {
+  if (!project) {
     titleEl.textContent = "Project Not Found";
     metaEl.textContent = "This project entry does not exist.";
     descriptionEl.textContent = "Please check the URL or return to the project list.";
@@ -39,7 +49,7 @@
     return;
   }
 
-  const project = list[index];
+  const index = list.findIndex(item => item.slug === slug);
   const prevProject = index > 0 ? list[index - 1] : null;
   const nextProject = index < list.length - 1 ? list[index + 1] : null;
 
@@ -52,7 +62,7 @@
 
   if (prevProject) {
     prevEl.textContent = `Previous: ${prevProject.title}`;
-    prevEl.href = `project.html?slug=${prevProject.slug}`;
+    prevEl.href = `projects/${prevProject.slug}.html`;
   } else {
     prevEl.textContent = "Back to Projects";
     prevEl.href = "projects.html";
@@ -60,7 +70,7 @@
 
   if (nextProject) {
     nextEl.textContent = `Next: ${nextProject.title}`;
-    nextEl.href = `project.html?slug=${nextProject.slug}`;
+    nextEl.href = `projects/${nextProject.slug}.html`;
   } else {
     nextEl.textContent = "Back to Projects";
     nextEl.href = "projects.html";

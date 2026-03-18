@@ -3,6 +3,17 @@
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("slug");
 
+  if (!slug) {
+    window.location.replace("publications.html");
+    return;
+  }
+
+  const paper = list.find(item => item.slug === slug);
+  if (paper) {
+    window.location.replace(`publications/${paper.slug}.html`);
+    return;
+  }
+
   const titleEl = document.getElementById("paper-title");
   const metaEl = document.getElementById("paper-meta");
   const categoryEl = document.getElementById("paper-category");
@@ -13,7 +24,7 @@
   const prevEl = document.getElementById("paper-prev");
   const nextEl = document.getElementById("paper-next");
 
-  if (!slug || !list.length) {
+  if (!list.length) {
     titleEl.textContent = "Publication Not Found";
     metaEl.textContent = "Please return to the publications page.";
     categoryEl.textContent = "";
@@ -27,8 +38,7 @@
     return;
   }
 
-  const index = list.findIndex(item => item.slug === slug);
-  if (index === -1) {
+  if (!paper) {
     titleEl.textContent = "Publication Not Found";
     metaEl.textContent = "This publication entry does not exist.";
     categoryEl.textContent = "";
@@ -42,7 +52,7 @@
     return;
   }
 
-  const paper = list[index];
+  const index = list.findIndex(item => item.slug === slug);
   const prevPaper = index > 0 ? list[index - 1] : null;
   const nextPaper = index < list.length - 1 ? list[index + 1] : null;
 
@@ -102,7 +112,7 @@
 
   if (prevPaper) {
     prevEl.textContent = `Previous: ${prevPaper.title}`;
-    prevEl.href = `publication.html?slug=${prevPaper.slug}`;
+    prevEl.href = `publications/${prevPaper.slug}.html`;
   } else {
     prevEl.textContent = "Back to Publications";
     prevEl.href = "publications.html";
@@ -110,7 +120,7 @@
 
   if (nextPaper) {
     nextEl.textContent = `Next: ${nextPaper.title}`;
-    nextEl.href = `publication.html?slug=${nextPaper.slug}`;
+    nextEl.href = `publications/${nextPaper.slug}.html`;
   } else {
     nextEl.textContent = "Back to Publications";
     nextEl.href = "publications.html";

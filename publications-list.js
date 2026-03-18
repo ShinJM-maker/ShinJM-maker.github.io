@@ -23,7 +23,7 @@
         const meta = `${pub.venue || ""} · ${pub.date || ""}`;
         return `
           <article class="pub-card pub-card-clickable">
-            <a class="pub-card-link" href="publication.html?slug=${pub.slug}">
+            <a class="pub-card-link" href="publications/${pub.slug}.html">
               <div class="pub-titleline">
                 <h2>${pub.title}</h2>
                 <span class="pub-type-badge">${pub.category}</span>
@@ -49,7 +49,7 @@
   remaining.forEach(category => {
     const cards = byCategory.get(category).map(pub => `
       <article class="pub-card pub-card-clickable">
-        <a class="pub-card-link" href="publication.html?slug=${pub.slug}">
+        <a class="pub-card-link" href="publications/${pub.slug}.html">
           <div class="pub-titleline">
             <h2>${pub.title}</h2>
             <span class="pub-type-badge">${pub.category || "Others"}</span>

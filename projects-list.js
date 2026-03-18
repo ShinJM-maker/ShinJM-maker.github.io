@@ -14,7 +14,7 @@
 
     return `
       <article class="entry-card project-card-clickable">
-        <a class="project-card-link" href="project.html?slug=${project.slug}">
+        <a class="project-card-link" href="projects/${project.slug}.html">
           <div class="entry-head">
             <h2>${safeTitle}</h2>
             <p>${safePeriod}</p>

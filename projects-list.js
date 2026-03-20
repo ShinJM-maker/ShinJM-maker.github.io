@@ -3,7 +3,20 @@
   const list = Array.isArray(window.PROJECTS) ? window.PROJECTS : [];
   if (!container || !list.length) return;
 
-  const cards = list.map(project => {
+  const groupOrder = [
+    "Research Systems",
+    "Industry Pilots",
+    "Research Prototypes for Future Agents"
+  ];
+
+  const byGroup = new Map();
+  list.forEach(project => {
+    const key = project.group || "Other";
+    if (!byGroup.has(key)) byGroup.set(key, []);
+    byGroup.get(key).push(project);
+  });
+
+  function renderCard(project) {
     const safeTitle = project.title || "Untitled Project";
     const safePeriod = project.period || "";
     const safeAffiliation = project.affiliation || "";
@@ -29,7 +42,32 @@
         </a>
       </article>
     `;
+  }
+
+  const sections = groupOrder
+    .filter(group => byGroup.has(group))
+    .map(group => {
+      const cards = byGroup.get(group).map(renderCard).join("\n");
+      return `
+        <section class="pub-group">
+          <h2 class="pub-group-title">${group} <span class="pub-group-count">(${byGroup.get(group).length})</span></h2>
+          <div class="pub-group-list">
+            ${cards}
+          </div>
+        </section>
+      `;
+    });
+
+  const remaining = Array.from(byGroup.keys()).filter(k => !groupOrder.includes(k));
+  remaining.forEach(group => {
+    const cards = byGroup.get(group).map(renderCard).join("\n");
+    sections.push(`
+      <section class="pub-group">
+        <h2 class="pub-group-title">${group} <span class="pub-group-count">(${byGroup.get(group).length})</span></h2>
+        <div class="pub-group-list">${cards}</div>
+      </section>
+    `);
   });
 
-  container.innerHTML = cards.join("\n");
+  container.innerHTML = sections.join("\n");
 })();

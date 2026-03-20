@@ -79,6 +79,7 @@ function renderHeader(activePage) {
     { label: "Experience", href: "../experience.html", key: "experience" },
     { label: "Projects", href: "../projects.html", key: "projects" },
     { label: "Publications", href: "../publications.html", key: "publications" },
+    { label: "Research Map", href: "../research-map.html", key: "research-map" },
     { label: "Profile", href: "../profile.html", key: "profile" }
   ];
 
@@ -249,6 +250,11 @@ ${renderHeader("publications")}
         <h2>Abstract</h2>
         <p>${escapeHtml(publication.abstract || "Not specified yet.")}</p>
       </section>
+${publication.contribution ? `
+      <section class="paper-section">
+        <h2>Key Contribution</h2>
+        <p>${escapeHtml(publication.contribution)}</p>
+      </section>` : ""}
 ${renderPublicationFigure(publication.figure)}
 ${renderPublicationLinks(publication)}
 

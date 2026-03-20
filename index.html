@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Joongmin Shin | Unstructured Data Research</title>
-  <meta name="description" content="Joongmin Shin builds evidence-grounded multimodal systems for unstructured data with LLM/LVLM, structure-aware retrieval, and RAG." />
+  <title>Joongmin Shin | Multimodal AI Researcher for Structured Evidence, Memory, and Agents</title>
+  <meta name="description" content="Joongmin Shin studies how AI systems recover, organize, audit, and act on evidence from noisy multimodal observations. Research spans structured evidence, reliability diagnostics, and emerging directions in structured memory and agent planning." />
   <link rel="canonical" href="https://shinjm-maker.github.io/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
@@ -21,16 +21,17 @@
         "name": "Korea University"
       },
       "sameAs": [
+        "https://scholar.google.com/citations?user=KKzAjXAAAAAJ",
         "https://github.com/shinjm-maker",
         "https://www.linkedin.com/in/shinjm-maker"
       ],
       "knowsAbout": [
-        "Multimodal AI",
-        "Unstructured Data",
-        "Document Understanding",
+        "Structured Evidence",
+        "Multimodal Parsing",
         "Retrieval-Augmented Generation",
-        "Computer Vision",
-        "Natural Language Processing"
+        "Reliability Diagnostics",
+        "Structured Memory",
+        "Agent Planning"
       ]
     }
   </script>
@@ -44,58 +45,70 @@
         <a href="experience.html">Experience</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
+        <a href="research-map.html">Research Map</a>
         <a href="profile.html">Profile</a>
       </nav>
     </div>
   </header>
 
   <main class="container main-home">
+    <!-- 1. Hero -->
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Biography</p>
-        <h1>Multimodal Researcher for Unstructured Data</h1>
+        <h1>Multimodal AI Researcher for Structured Evidence, Memory, and Agents</h1>
+        <p class="hero-subtitle">I study how AI systems recover, organize, audit, and act on evidence from noisy multimodal observations.</p>
         <p>
-          I am Joongmin Shin, a Multimodal AI Researcher dedicated to unlocking the value of complex, unstructured data (e.g., Documents, Raw text, Robotics data, Sequential data). Bridging natural language processing and computer vision, I focus on transforming long, noisy documents and other complex inputs into searchable, explainable, and highly structured formats. My research connects advanced multimodal parsing, structure-aware chunking, and robust Retrieval-Augmented Generation (RAG) pipelines, empowering QA systems to deliver precise, evidence-grounded answers for real-world applications.
+          My work progresses from document structure to actionable world structure: from multimodal parsing, evidence graphs, and reliability diagnostics to structured memory and planning mechanisms for future agents.
         </p>
         <div class="chip-row bio-keywords" aria-label="Achievement highlights">
-          <span class="chip">4 First-Author Top-Conference Papers (CVPR, ACL, EMNLP 2)</span>
-          <span class="chip">2 Co-Author International Journal Papers (Applied AI)</span>
-          <span class="chip">12 Projects · 5 Patents · 7 Awards</span>
-          <span class="chip">6+ Years Experience</span>
+          <span class="chip">CVPR 2026</span>
+          <span class="chip">ACL 2026</span>
+          <span class="chip">EMNLP 2025</span>
+          <span class="chip">EMNLP 2024</span>
+          <span class="chip">~40% search reduction</span>
+          <span class="chip">~10% QA gain</span>
+          <span class="chip">5 patents</span>
+          <span class="chip">7 awards</span>
         </div>
         <div class="hero-links">
-          <a class="btn" href="mailto:tlswndals13@korea.ac.kr">Email</a>
+          <a class="btn" href="https://scholar.google.com/citations?hl=ko&view_op=list_works&gmla=AH8HC4yuY9YdqDTyvjSPEwtlZgtJh7q6oS0RbsWJIkk4pZNAQLfWixItF1DGsmxM0QTTHBaf9Y62_MH57MVuzj_7PA91UkZw61WytOjbw6KKfEUwfaji6ssUSAtmnVw&user=KKzAjXAAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
+          <a class="btn btn-ghost" href="CV/Curriculum_Vitae_Joongmin_Shin.pdf" target="_blank" rel="noreferrer">CV</a>
+          <a class="btn btn-ghost" href="mailto:tlswndals13@korea.ac.kr">Email</a>
           <a class="btn btn-ghost" href="https://github.com/shinjm-maker" target="_blank" rel="noreferrer">GitHub</a>
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/shinjm-maker" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn btn-ghost" href="CV/Curriculum_Vitae_Joongmin_Shin.pdf" target="_blank" rel="noreferrer">CV</a>
         </div>
       </div>
       <img class="hero-photo" src="profile_picture.png" alt="Joongmin Shin portrait" loading="eager" fetchpriority="high" />
     </section>
 
+    <!-- 2. Research Focus (3 Pillars) -->
     <section class="section-block">
-      <h2>Research Interests</h2>
-      <div class="chip-row" aria-label="Research interests">
-        <span class="chip">Multimodal Unstructured Parsing</span>
-        <span class="chip">Structure-aware RAG</span>
-        <span class="chip">Hierarchical Retrieval</span>
-        <span class="chip">LVLM for Unstructured Data</span>
-        <span class="chip">Evidence-grounded QA</span>
+      <h2>Research Focus</h2>
+      <p style="margin:0 0 0.6rem;color:var(--muted);font-size:0.93rem;">My research currently spans three connected themes: structured evidence, reliability diagnostics, and emerging directions in structured memory and agent planning.</p>
+      <div class="pillar-grid">
+        <article class="pillar-card">
+          <h3>Structured Evidence and Retrieval</h3>
+          <p class="pillar-status">Established</p>
+          <p>Recovering explicit structure from noisy multimodal documents for evidence-grounded retrieval and QA.</p>
+          <p class="pillar-works">M3DocDep, MultiDocFusion, HiKEY, PILAR</p>
+        </article>
+        <article class="pillar-card">
+          <h3>Reliability, Auditing, and Diagnostics</h3>
+          <p class="pillar-status">Established</p>
+          <p>Measuring what systems truly consume, where errors propagate, and how multimodal QA/RAG breaks under realistic constraints.</p>
+          <p class="pillar-works">SIEVE, EP-DocBench</p>
+        </article>
+        <article class="pillar-card">
+          <h3>Toward Actionable World Models and Agents</h3>
+          <p class="pillar-status emerging">Emerging Direction</p>
+          <p>Extending structured evidence into ontologies, executable plans, and planning mechanisms for multimodal agents.</p>
+          <p class="pillar-works">PlanIR, Actionable Ontology, Video Graph</p>
+        </article>
       </div>
     </section>
 
-    <section class="section-block">
-      <h2>Latest News</h2>
-      <ul class="news-list">
-        <li><span>Jun 2026</span><p><strong>M3DocDep</strong> was accepted at <strong>CVPR 2026 Main</strong> (<strong>First Author</strong>).</p></li>
-        <li><span>Nov 2025</span><p><strong>MultiDocFusion</strong> was accepted at <strong>EMNLP 2025 Main</strong> (<strong>First Author</strong>).</p></li>
-        <li><span>Aug 2025</span><p>Appointed to the National Representative <strong>K-AI Research Team</strong> (with NC AI).</p></li>
-        <li><span>Nov 2024</span><p><strong>StyleDFS</strong> was accepted at <strong>EMNLP 2024 Industry</strong> (<strong>First Author</strong>).</p></li>
-        <li><span>Sep 2024</span><p><strong>2 papers</strong> were accepted at <strong>Applied AI</strong> (<strong>Co-author</strong>).</p></li>
-        <li><span>Ongoing</span><p><strong>Project Orion</strong> is currently <strong>Under Review</strong> (<strong>First Author</strong>, double-blind details omitted).</p></li>
-      </ul>
-    </section>
-
+    <!-- 3. Selected Publications -->
     <section class="section-block">
       <div class="section-head">
         <h2>Selected Publications</h2>
@@ -106,20 +119,74 @@
           <h3><a class="pub-title-link" href="publications/m3docdep.html">M3DocDep: Multi-modal, Multi-page, Multi-document Dependency Chunking with Large Vision-Language Models</a></h3>
           <p class="meta">CVPR 2026 (Main)</p>
           <p class="authors"><strong>Joongmin Shin*</strong>, Jeongbae Park, Jaehyung Seo, Heuiseok Lim</p>
+          <p class="pub-contribution">LVLM-based dependency chunking that reconstructs cross-page structure for long-document retrieval and QA.</p>
+          <div class="pub-keywords"><span class="pub-keyword">document structure</span><span class="pub-keyword">LVLM</span><span class="pub-keyword">chunking</span><span class="pub-keyword">retrieval</span></div>
         </article>
         <article class="pub-card">
           <h3><a class="pub-title-link" href="publications/multidocfusion.html">MultiDocFusion: Hierarchical and Multimodal Chunking Pipeline for Enhanced RAG on Long Industrial Documents</a></h3>
           <p class="meta">EMNLP 2025 (Main)</p>
           <p class="authors"><strong>Joongmin Shin*</strong>, Chanjun Park, Jeongbae Park, Jaehyung Seo, Heuiseok Lim</p>
+          <p class="pub-contribution">A hierarchical multimodal chunking pipeline that preserves layout and improves evidence composition in industrial RAG.</p>
+          <div class="pub-keywords"><span class="pub-keyword">hierarchical chunking</span><span class="pub-keyword">multimodal</span><span class="pub-keyword">RAG</span><span class="pub-keyword">industrial</span></div>
         </article>
         <article class="pub-card">
           <h3><a class="pub-title-link" href="publications/styledfs.html">Intelligent Predictive Maintenance RAG framework for Power Plants: Enhancing QA with StyleDFS and Domain Specific Instruction Tuning</a></h3>
           <p class="meta">EMNLP 2024 (Industrial)</p>
           <p class="authors">Seongtae Hong*, <strong>Joongmin Shin*</strong>, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim</p>
+          <p class="pub-contribution">Domain-specific RAG framework for scientific and industrial QA; led to two technology transfers.</p>
+          <div class="pub-keywords"><span class="pub-keyword">domain RAG</span><span class="pub-keyword">industrial QA</span><span class="pub-keyword">technology transfer</span></div>
         </article>
       </div>
     </section>
 
+    <!-- 4. Current Research Directions -->
+    <section class="section-block">
+      <h2>Current Research Directions</h2>
+      <ul class="directions-list">
+        <li>Actionable ontologies for multimodal agent memory and planning</li>
+        <li>Executable intermediate representations for natural-language agents</li>
+        <li>Video-structured memory: chunking and graph representations for long-horizon reasoning</li>
+        <li>Multimodal agent planning in open-ended environments</li>
+      </ul>
+    </section>
+
+    <!-- 5. Selected Impact -->
+    <section class="section-block">
+      <h2>Selected Impact</h2>
+      <p style="margin:0 0 0.6rem;color:var(--muted);font-size:0.93rem;">Across both research and industry collaborations, I focus on building multimodal AI systems that are not only accurate, but also interpretable, reliable, and deployable.</p>
+      <div class="impact-grid">
+        <div class="impact-stat">
+          <strong>~40%</strong>
+          <p>Manual search reduction in insurance RAG pilot</p>
+        </div>
+        <div class="impact-stat">
+          <strong>~10%</strong>
+          <p>Hybrid QA accuracy improvement</p>
+        </div>
+        <div class="impact-stat">
+          <strong>2</strong>
+          <p>Technology transfers completed</p>
+        </div>
+        <div class="impact-stat">
+          <strong>4</strong>
+          <p>Production prototypes (insurance, manufacturing, healthcare, science)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Latest News -->
+    <section class="section-block">
+      <h2>Latest News</h2>
+      <ul class="news-list">
+        <li><span>Jun 2026</span><p><strong>M3DocDep</strong> was accepted at <strong>CVPR 2026 Main</strong> (<strong>First Author</strong>).</p></li>
+        <li><span>Nov 2025</span><p><strong>MultiDocFusion</strong> was accepted at <strong>EMNLP 2025 Main</strong> (<strong>First Author</strong>).</p></li>
+        <li><span>Aug 2025</span><p>Appointed to the National Representative <strong>K-AI Research Team</strong> (with NC AI).</p></li>
+        <li><span>Nov 2024</span><p><strong>StyleDFS</strong> was accepted at <strong>EMNLP 2024 Industry</strong> (<strong>First Author</strong>).</p></li>
+        <li><span>Sep 2024</span><p><strong>2 papers</strong> were accepted at <strong>Applied AI</strong> (<strong>Co-author</strong>).</p></li>
+      </ul>
+    </section>
+
+    <!-- 7. Explore Details -->
     <section class="section-block">
       <h2>Explore Details</h2>
       <div class="detail-grid">
@@ -129,11 +196,11 @@
         </a>
         <a class="detail-card" href="projects.html">
           <strong>Projects</strong>
-          <p>Full list of applied LLM/LVLM projects for unstructured data intelligence.</p>
+          <p>Research systems, industry pilots, and agent-oriented prototypes.</p>
         </a>
         <a class="detail-card" href="profile.html">
           <strong>Profile</strong>
-          <p>Education, awards, skills, teaching, and research map.</p>
+          <p>Education, awards, skills, and teaching experience.</p>
         </a>
       </div>
     </section>

@@ -829,6 +829,14 @@ h1 {
   .detail-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .pillar-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 760px) {
@@ -848,6 +856,14 @@ h1 {
   .pub-grid,
   .detail-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .entry-head {
@@ -947,4 +963,162 @@ h1 {
   margin: 0.36rem 0 0;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+/* Hero subtitle */
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* 3-pillar grid */
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.pillar-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-soft);
+  padding: 0.85rem;
+}
+
+.pillar-card h3 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.pillar-card p {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: #334764;
+}
+
+.pillar-status {
+  margin: 0.25rem 0 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--brand);
+}
+
+.pillar-status.emerging {
+  color: var(--muted);
+}
+
+.pillar-works {
+  margin: 0.4rem 0 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Impact grid */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.impact-stat {
+  text-align: center;
+  padding: 0.7rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-soft);
+}
+
+.impact-stat strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.6rem;
+  color: var(--brand);
+  display: block;
+}
+
+.impact-stat p {
+  margin: 0.25rem 0 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+/* Directions list */
+.directions-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.directions-list li {
+  margin-bottom: 0.4rem;
+  color: #334764;
+}
+
+/* Publication contribution line */
+.pub-contribution {
+  margin: 0.3rem 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Publication role badge */
+.pub-role-badge {
+  display: inline-block;
+  border: 1px solid #c8daf0;
+  background: #f0f5fc;
+  color: var(--brand);
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 0.35rem;
+}
+
+/* Publication status badges */
+.pub-status-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 0.35rem;
+}
+.pub-status-published {
+  border: 1px solid #b8dcc8;
+  background: #e8f7f0;
+  color: #1a7a4a;
+}
+.pub-status-accepted {
+  border: 1px solid #c8daf0;
+  background: #e8effa;
+  color: var(--brand);
+}
+.pub-status-under-review {
+  border: 1px solid #e0d4b8;
+  background: #faf5e8;
+  color: #8a6d2b;
+}
+
+/* Publication keyword tags */
+.pub-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.35rem;
+}
+
+.pub-keyword {
+  display: inline-block;
+  background: var(--chip);
+  border: 1px solid #dbe4f2;
+  border-radius: 999px;
+  padding: 0.12rem 0.48rem;
+  font-size: 0.76rem;
+  color: #344764;
 }

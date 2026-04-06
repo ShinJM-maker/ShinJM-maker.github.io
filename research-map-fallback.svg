@@ -1,93 +1,110 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="560" viewBox="0 0 1260 560" role="img" aria-labelledby="title desc">
   <title id="title">Static research map fallback</title>
   <desc id="desc">Four-stage research map preview spanning linguistic foundations, domain RAG, multimodal document intelligence, and future structured memory and agents.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#fbfdff" />
-      <stop offset="100%" stop-color="#f1f6fd" />
+      <stop offset="0%" stop-color="#fffaf8" />
+      <stop offset="100%" stop-color="#f7efec" />
     </linearGradient>
     <linearGradient id="stageFill" x1="0" x2="0" y1="0" y2="1">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#f7faff" />
+      <stop offset="100%" stop-color="#fcf8f6" />
+    </linearGradient>
+    <linearGradient id="stageHighlight" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff8f7" />
+      <stop offset="100%" stop-color="#f5e8e6" />
     </linearGradient>
     <style>
-      .title { font: 700 28px "NanumSquare", "Times New Roman", sans-serif; fill: #173454; }
-      .subtitle { font: 600 14px "NanumSquare", "Times New Roman", sans-serif; fill: #5c6b82; }
-      .stageTitle { font: 700 19px "NanumSquare", "Times New Roman", sans-serif; fill: #1d3557; }
-      .stageMeta { font: 700 14px "NanumSquare", "Times New Roman", sans-serif; fill: #355c8b; }
-      .body { font: 600 13px "NanumSquare", "Times New Roman", sans-serif; fill: #334764; }
-      .accent { font: 700 13px "NanumSquare", "Times New Roman", sans-serif; fill: #1f4d8f; }
+      .title,
+      .subtitle,
+      .stageMeta,
+      .stageTitle,
+      .sectionLabel,
+      .body,
+      .bodyStrong {
+        font-family: "NanumSquare", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      }
+      .title { font-size: 30px; font-weight: 700; fill: #2e2d29; }
+      .subtitle { font-size: 15px; font-weight: 600; fill: #53565a; }
+      .stageMeta { font-size: 14px; font-weight: 700; fill: #8c1515; letter-spacing: 0.04em; }
+      .stageTitle { font-size: 18px; font-weight: 700; fill: #2e2d29; }
+      .sectionLabel { font-size: 13px; font-weight: 700; fill: #8c1515; letter-spacing: 0.06em; }
+      .body { font-size: 13px; font-weight: 600; fill: #4f4641; }
+      .bodyStrong { font-size: 13px; font-weight: 700; fill: #6f1010; }
+      .divider { stroke: #b8a59f; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; fill: none; }
     </style>
   </defs>
 
-  <rect width="1200" height="720" fill="url(#bg)" rx="28" />
+  <rect width="1260" height="560" fill="url(#bg)" rx="26" />
+
   <text x="72" y="74" class="title">Joongmin Shin Research Map</text>
-  <text x="72" y="102" class="subtitle">Static fallback preview for crawlers and environments without Mermaid rendering</text>
+  <text x="72" y="102" class="subtitle">Static roadmap preview for non-interactive environments</text>
 
-  <g transform="translate(72 150)">
-    <rect x="0" y="0" width="246" height="400" rx="22" fill="url(#stageFill)" stroke="#d3deef" stroke-width="2" />
-    <text x="24" y="42" class="stageMeta">Stage 1   2021-2022</text>
-    <text x="24" y="78" class="stageTitle">Core Linguistic and Syntax</text>
-    <text x="24" y="122" class="accent">Focus</text>
-    <text x="24" y="146" class="body">Dependency parsing and</text>
-    <text x="24" y="168" class="body">machine reading foundations</text>
-    <text x="24" y="216" class="accent">Themes</text>
-    <text x="24" y="240" class="body">Dependency parsing</text>
-    <text x="24" y="262" class="body">Neural-symbolic modeling</text>
-    <text x="24" y="284" class="body">Table MRC and WordNet</text>
+  <g transform="translate(72 136)">
+    <rect x="0" y="0" width="258" height="360" rx="22" fill="url(#stageFill)" stroke="#cdbfb8" stroke-width="2" />
+    <text x="26" y="38" class="stageMeta">STAGE 1  2021-2022</text>
+    <text x="26" y="76" class="stageTitle">Core Linguistic</text>
+    <text x="26" y="102" class="stageTitle">and Syntax</text>
+    <text x="26" y="144" class="sectionLabel">FOCUS</text>
+    <text x="26" y="168" class="body">Dependency parsing and</text>
+    <text x="26" y="190" class="body">machine reading foundations</text>
+    <text x="26" y="234" class="sectionLabel">THEMES</text>
+    <text x="26" y="258" class="body">Dependency parsing</text>
+    <text x="26" y="280" class="body">Neural-symbolic modeling</text>
+    <text x="26" y="302" class="body">Table MRC and WordNet</text>
   </g>
 
-  <g transform="translate(342 150)">
-    <rect x="0" y="0" width="246" height="400" rx="22" fill="url(#stageFill)" stroke="#d3deef" stroke-width="2" />
-    <text x="24" y="42" class="stageMeta">Stage 2   2023-2024</text>
-    <text x="24" y="78" class="stageTitle">Applied LLM and Domain RAG</text>
-    <text x="24" y="122" class="accent">Focus</text>
-    <text x="24" y="146" class="body">Production-minded LLM</text>
-    <text x="24" y="168" class="body">evaluation and domain retrieval</text>
-    <text x="24" y="216" class="accent">Themes</text>
-    <text x="24" y="240" class="body">Zero-shot analysis</text>
-    <text x="24" y="262" class="body">Chatbot system design</text>
-    <text x="24" y="284" class="body">Industrial RAG pipelines</text>
+  <g transform="translate(358 136)">
+    <rect x="0" y="0" width="258" height="360" rx="22" fill="url(#stageFill)" stroke="#cdbfb8" stroke-width="2" />
+    <text x="26" y="38" class="stageMeta">STAGE 2  2023-2024</text>
+    <text x="26" y="76" class="stageTitle">Applied LLM and</text>
+    <text x="26" y="102" class="stageTitle">Domain RAG</text>
+    <text x="26" y="144" class="sectionLabel">FOCUS</text>
+    <text x="26" y="168" class="body">Production-minded LLM</text>
+    <text x="26" y="190" class="body">evaluation and domain retrieval</text>
+    <text x="26" y="234" class="sectionLabel">THEMES</text>
+    <text x="26" y="258" class="body">Zero-shot analysis</text>
+    <text x="26" y="280" class="body">Chatbot system design</text>
+    <text x="26" y="302" class="body">Industrial RAG pipelines</text>
   </g>
 
-  <g transform="translate(612 150)">
-    <rect x="0" y="0" width="246" height="400" rx="22" fill="url(#stageFill)" stroke="#c7d8ef" stroke-width="2.4" />
-    <text x="24" y="42" class="stageMeta">Stage 3   2025-2026</text>
-    <text x="24" y="78" class="stageTitle">Multimodal Document Intelligence</text>
-    <text x="24" y="122" class="accent">Focus</text>
-    <text x="24" y="146" class="body">Structure recovery, retrieval,</text>
-    <text x="24" y="168" class="body">and evidence assembly</text>
-    <text x="24" y="216" class="accent">Highlighted Work</text>
-    <text x="24" y="240" class="body">M3DocDep   CVPR 2026</text>
-    <text x="24" y="262" class="body">HiKEY   ACL 2026</text>
-    <text x="24" y="284" class="body">MultiDocFusion   EMNLP 2025</text>
+  <g transform="translate(644 136)">
+    <rect x="0" y="0" width="258" height="360" rx="22" fill="url(#stageHighlight)" stroke="#8c1515" stroke-width="2.4" />
+    <text x="26" y="38" class="stageMeta">STAGE 3  2025-2026</text>
+    <text x="26" y="76" class="stageTitle">Multimodal Document</text>
+    <text x="26" y="102" class="stageTitle">Intelligence</text>
+    <text x="26" y="144" class="sectionLabel">FOCUS</text>
+    <text x="26" y="168" class="body">Structure recovery, retrieval,</text>
+    <text x="26" y="190" class="body">and evidence assembly</text>
+    <text x="26" y="234" class="sectionLabel">HIGHLIGHTED WORK</text>
+    <text x="26" y="258" class="bodyStrong">HiKEY  ACL 2026</text>
+    <text x="26" y="280" class="bodyStrong">M3DocDep  CVPR 2026</text>
+    <text x="26" y="302" class="bodyStrong">MultiDocFusion  EMNLP 2025</text>
   </g>
 
-  <g transform="translate(882 150)">
-    <rect x="0" y="0" width="246" height="400" rx="22" fill="url(#stageFill)" stroke="#d3deef" stroke-width="2" />
-    <text x="24" y="42" class="stageMeta">Stage 4   2027+</text>
-    <text x="24" y="78" class="stageTitle">Structured Memory,</text>
-    <text x="24" y="102" class="stageTitle">World Models, and Agents</text>
-    <text x="24" y="146" class="accent">Focus</text>
-    <text x="24" y="170" class="body">Actionable memory and</text>
-    <text x="24" y="192" class="body">planning for multimodal agents</text>
-    <text x="24" y="240" class="accent">Emerging Directions</text>
-    <text x="24" y="264" class="body">Actionable ontologies</text>
-    <text x="24" y="286" class="body">Executable representations</text>
-    <text x="24" y="308" class="body">Video-structured memory</text>
+  <g transform="translate(930 136)">
+    <rect x="0" y="0" width="258" height="360" rx="22" fill="url(#stageFill)" stroke="#cdbfb8" stroke-width="2" />
+    <text x="26" y="38" class="stageMeta">STAGE 4  2027+</text>
+    <text x="26" y="76" class="stageTitle">Structured Memory,</text>
+    <text x="26" y="102" class="stageTitle">World Models and Agents</text>
+    <text x="26" y="144" class="sectionLabel">FOCUS</text>
+    <text x="26" y="168" class="body">Actionable memory and planning</text>
+    <text x="26" y="190" class="body">for multimodal agents</text>
+    <text x="26" y="234" class="sectionLabel">EMERGING DIRECTIONS</text>
+    <text x="26" y="258" class="body">Actionable ontologies</text>
+    <text x="26" y="280" class="body">Executable representations</text>
+    <text x="26" y="302" class="body">Video-structured memory</text>
   </g>
 
-  <g fill="none" stroke="#6b84aa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M322 350 H340" />
-    <path d="M592 350 H610" />
-    <path d="M862 350 H880" />
-    <path d="M340 350 l-14 -10" />
-    <path d="M340 350 l-14 10" />
-    <path d="M610 350 l-14 -10" />
-    <path d="M610 350 l-14 10" />
-    <path d="M880 350 l-14 -10" />
-    <path d="M880 350 l-14 10" />
+  <g class="divider">
+    <path d="M336 316 H352" />
+    <path d="M352 316 l-12 -10" />
+    <path d="M352 316 l-12 10" />
+    <path d="M622 316 H638" />
+    <path d="M638 316 l-12 -10" />
+    <path d="M638 316 l-12 10" />
+    <path d="M908 316 H924" />
+    <path d="M924 316 l-12 -10" />
+    <path d="M924 316 l-12 10" />
   </g>
-
-  <text x="72" y="620" class="subtitle">Interactive Mermaid diagram with zoom controls is available below this preview on the Research Map page.</text>
 </svg>

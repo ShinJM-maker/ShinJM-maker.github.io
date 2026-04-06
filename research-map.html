@@ -103,8 +103,9 @@
 
       <details id="advanced-map-details" class="advanced-map-block">
         <summary>Open Interactive Mermaid Diagram</summary>
+        <p class="research-map-caption">The interactive diagram loads only when opened and renders as SVG, while the static preview above remains the default fallback.</p>
 
-        <div class="research-map-toolbar" aria-label="Research map zoom controls">
+        <div class="research-map-toolbar" aria-label="Research map zoom controls" hidden>
           <button id="zoom-out" class="map-zoom-btn" type="button">-</button>
           <span id="zoom-level" class="map-zoom-level">100%</span>
           <button id="zoom-in" class="map-zoom-btn" type="button">+</button>
@@ -112,7 +113,9 @@
         </div>
 
         <div class="research-map-panel research-map-detail-panel">
-          <div id="advanced-mermaid" class="mermaid" aria-live="polite"></div>
+          <div id="advanced-mermaid" class="research-map-diagram" aria-live="polite">
+            <p class="research-map-placeholder">Interactive diagram loads on demand.</p>
+          </div>
         </div>
       </details>
 
@@ -121,13 +124,12 @@
       </div>
     </section>
   </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
     (function () {
       const details = document.getElementById("advanced-map-details");
       const panel = document.querySelector(".research-map-detail-panel");
       const mermaidNode = document.getElementById("advanced-mermaid");
+      const toolbar = document.querySelector(".research-map-toolbar");
       const zoomInBtn = document.getElementById("zoom-in");
       const zoomOutBtn = document.getElementById("zoom-out");
       const zoomResetBtn = document.getElementById("zoom-reset");
@@ -138,6 +140,22 @@
       let fitScale = 1;
       let baseWidth = 0;
       let baseHeight = 0;
+      let mermaidLoader;
+
+      const loadMermaid = () => {
+        if (window.mermaid) return Promise.resolve(window.mermaid);
+        if (mermaidLoader) return mermaidLoader;
+
+        mermaidLoader = new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js";
+          script.onload = () => resolve(window.mermaid);
+          script.onerror = () => reject(new Error("Failed to load Mermaid."));
+          document.head.appendChild(script);
+        });
+
+        return mermaidLoader;
+      };
 
       const getSvg = () => panel?.querySelector("svg");
 
@@ -174,30 +192,49 @@
 
       const renderMermaid = async () => {
         if (rendered || !mermaidNode) return;
-        const response = await fetch("research-map-diagram.mmd");
-        const mermaidSource = await response.text();
-        mermaidNode.textContent = mermaidSource.trim();
-        mermaid.initialize({
-          startOnLoad: false,
-          theme: "base",
-          themeVariables: {
-            primaryColor: "#ffffff",
-            edgeLabelBackground: "#ffffff",
-            tertiaryColor: "#f4f4f4",
-            fontSize: "13px"
-          },
-          flowchart: {
-            curve: "basis",
-            rankSpacing: 62,
-            nodeSpacing: 40,
-            diagramPadding: 4,
-            padding: 8
-          }
-        });
+        mermaidNode.innerHTML = '<p class="research-map-placeholder">Loading interactive diagram...</p>';
 
-        await mermaid.run({ nodes: [mermaidNode] });
-        rendered = true;
-        initializeZoom();
+        try {
+          const [mermaidLib, response] = await Promise.all([
+            loadMermaid(),
+            fetch("research-map-diagram.mmd")
+          ]);
+
+          if (!response.ok) {
+            throw new Error("Failed to fetch Mermaid source.");
+          }
+
+          const mermaidSource = (await response.text()).trim();
+          mermaidLib.initialize({
+            startOnLoad: false,
+            theme: "base",
+            themeVariables: {
+              primaryColor: "#ffffff",
+              edgeLabelBackground: "#ffffff",
+              tertiaryColor: "#f4f4f4",
+              fontSize: "13px"
+            },
+            flowchart: {
+              curve: "basis",
+              rankSpacing: 62,
+              nodeSpacing: 40,
+              diagramPadding: 4,
+              padding: 8
+            }
+          });
+
+          const renderId = `advanced-mermaid-${Date.now()}`;
+          const renderedDiagram = await mermaidLib.render(renderId, mermaidSource);
+          mermaidNode.innerHTML = renderedDiagram.svg;
+          renderedDiagram.bindFunctions?.(mermaidNode);
+          toolbar?.removeAttribute("hidden");
+          rendered = true;
+          initializeZoom();
+        } catch (error) {
+          console.error(error);
+          mermaidNode.innerHTML = '<p class="research-map-placeholder">Interactive diagram could not be loaded. The static preview above remains available.</p>';
+          toolbar?.setAttribute("hidden", "hidden");
+        }
       };
 
       zoomInBtn?.addEventListener("click", () => {

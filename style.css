@@ -190,6 +190,12 @@ h1 {
   gap: 0.72rem;
 }
 
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
 .hero-photo {
   width: 196px;
   height: 196px;
@@ -197,6 +203,7 @@ h1 {
   object-fit: cover;
   border: 1px solid var(--line-strong);
   box-shadow: 0 16px 30px rgba(46, 45, 41, 0.14);
+  justify-self: end;
 }
 
 .hero-role {
@@ -210,6 +217,10 @@ h1 {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+}
+
+.hero-links .btn {
+  text-align: center;
 }
 
 .hero-secondary-links {
@@ -636,6 +647,10 @@ h1 {
   min-width: 100%;
 }
 
+.research-map-diagram {
+  min-width: 100%;
+}
+
 .research-map-caption {
   margin: 0.5rem 0 0;
   color: var(--muted);
@@ -799,14 +814,26 @@ h1 {
   align-items: flex-start;
 }
 
+.research-map-detail-panel .research-map-diagram {
+  min-width: 0;
+  width: 100%;
+}
+
 .research-map-detail-panel {
   padding: 0.55rem;
   max-height: 80vh;
 }
 
-.research-map-detail-panel .mermaid svg {
+.research-map-detail-panel .mermaid svg,
+.research-map-detail-panel .research-map-diagram svg {
   display: block;
   margin: 0 auto;
+}
+
+.research-map-placeholder {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .research-map-toolbar {
@@ -982,6 +1009,17 @@ h1 {
 }
 
 @media (max-width: 920px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .hero-photo {
+    justify-self: center;
+    width: 180px;
+    height: 180px;
+  }
+
   .pub-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1005,13 +1043,13 @@ h1 {
 
 @media (max-width: 760px) {
   .hero {
-    grid-template-columns: 1fr;
     padding: 1.15rem;
   }
 
   .hero-photo {
-    width: 132px;
-    height: 132px;
+    width: min(220px, 62vw);
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
 
   .news-list li {
@@ -1032,7 +1070,26 @@ h1 {
   }
 
   .hero-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+
+  .hero-stat-wide {
+    grid-column: 1 / -1;
+  }
+
+  .hero-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+
+  .hero-links .btn:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .hero-secondary-links {
+    gap: 0.55rem;
   }
 
   .entry-head {
@@ -1054,11 +1111,13 @@ h1 {
     height: 360px;
   }
 
-  .research-map-panel .mermaid {
+  .research-map-panel .mermaid,
+  .research-map-panel .research-map-diagram {
     min-width: 100%;
   }
 
-  .research-map-detail-panel .mermaid {
+  .research-map-detail-panel .mermaid,
+  .research-map-detail-panel .research-map-diagram {
     justify-content: center;
   }
 
@@ -1068,6 +1127,16 @@ h1 {
 
   .roadmap-stage > summary {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-links {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-links .btn:last-child {
+    grid-column: auto;
   }
 }
 

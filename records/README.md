@@ -3,7 +3,7 @@
 This directory stores markdown copies of the achievements available in this repository.
 
 - Publications: 19
-- Projects: 13
+- Projects: 17
 - Awards: 7
 - Patent-related records: 3
 

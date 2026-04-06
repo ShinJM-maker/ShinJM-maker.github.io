@@ -37,6 +37,50 @@ window.PROJECTS = [
     achievements: "Publication at EMNLP 2024 (Industry Track) and 2 technology transfers."
   },
   {
+    slug: "mideum-k-1-0",
+    title: "Mi:deum K 1.0",
+    period: "2025",
+    affiliation: "KT",
+    group: "Selected LLM Development",
+    description: "Contributed to KT's Korean language model ecosystem for enterprise generative AI applications.",
+    role: "Model adaptation and evaluation.",
+    achievements: "Enterprise Korean LLM contribution.",
+    tools: "Korean-focused post-training and evaluation workflows."
+  },
+  {
+    slug: "kullm",
+    title: "KULLM",
+    period: "2025",
+    affiliation: "Korea University / HIAI",
+    group: "Selected LLM Development",
+    description: "Contributed to KULLM, a Korean large language model initiative developed through Korea University and HIAI.",
+    role: "Post-training and benchmarking.",
+    achievements: "Academic Korean LLM contribution.",
+    tools: "Instruction-following tuning and benchmark evaluation."
+  },
+  {
+    slug: "ko-gemma",
+    title: "Ko-Gemma",
+    period: "2025",
+    affiliation: "Korea University / HIAI",
+    group: "Selected LLM Development",
+    description: "Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with Korean-focused data and evaluation.",
+    role: "Korean-focused adaptation and evaluation.",
+    achievements: "Korean-adapted Gemma contribution.",
+    tools: "Model adaptation and Korean benchmark analysis."
+  },
+  {
+    slug: "vaetki",
+    title: "VAETKI",
+    period: "2025 - Present",
+    affiliation: "NC-AI Consortium",
+    group: "Selected LLM Development",
+    description: "Contributed to VAETKI as part of a broader NC-AI consortium effort on large language model development.",
+    role: "Raw data pipeline support and evaluation.",
+    achievements: "Consortium-scale multilingual LLM contribution.",
+    tools: "Raw data pipeline support, preprocessing, and evaluation."
+  },
+  {
     slug: "plc-assistant-hyundai-mobis",
     title: "GPT-Based PLC Programming Assistant Technology POC Development (Hyundai Mobis)",
     period: "Sep 2023 - Feb 2024",

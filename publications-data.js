@@ -70,7 +70,7 @@ window.PUBLICATIONS = [
     abstract: "StyleDFS proposes structure-aware chunking for high-stakes industrial QA. The framework improves answer quality while meeting on-premise and privacy constraints in real deployment environments.",
     contribution: "Domain-specific RAG framework for scientific and industrial QA; led to two technology transfers.",
     role: "Co-First Author",
-    status: "Published",
+    status: "Accepted",
     keywords: ["domain RAG", "industrial QA", "technology transfer"],
     paperUrl: "https://aclanthology.org/2024.emnlp-industry.61/",
     doi: "10.18653/v1/2024.emnlp-industry.61",

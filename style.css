@@ -505,6 +505,11 @@ h1 {
   font-family: var(--font-ui);
 }
 
+.detail-card h3 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
 .detail-card p {
   margin: 0.4rem 0 0;
   color: var(--muted);
@@ -513,6 +518,30 @@ h1 {
 
 .detail-card:hover {
   transform: translateY(-1px);
+}
+
+.detail-link {
+  display: inline-block;
+  margin-top: 0.65rem;
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.detail-link:hover {
+  text-decoration: underline;
+}
+
+.card-actions {
+  margin-top: 0.8rem;
+}
+
+.llm-summary-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-detail-grid {
+  margin-top: 0.7rem;
 }
 
 .page-title {
@@ -1040,6 +1069,10 @@ h1 {
     grid-template-columns: 1fr 1fr;
   }
 
+  .project-detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .pillar-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1070,6 +1103,11 @@ h1 {
 
   .pub-grid,
   .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .llm-summary-grid,
+  .project-detail-grid {
     grid-template-columns: 1fr;
   }
 

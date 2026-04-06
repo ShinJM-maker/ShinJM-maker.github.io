@@ -2,7 +2,7 @@
 
 - Type: Project
 - Slug: mideum-k-1-0
-- Period: 2025
+- Period: Dec 2021 - Dec 2022
 - Affiliation: KT
 - Group: Selected LLM Development
 - Role: Model adaptation and evaluation.

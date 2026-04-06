@@ -1,13 +1,13 @@
 # Projects
 
-Total items: 17
+Total items: 16
 
 ## DocGraph Copilot
 
 - Slug: docgraph-copilot
 - Period: Jan 2025 - Present
 - Affiliation: Korea University
-- Group: Research Systems
+- Group: Document Intelligence and RAG
 - Role: Research, Design, Development
 - Achievements: Accepted to EMNLP 2025 (Main) and CVPR 2026.
 - Detail Page: projects/docgraph-copilot.html
@@ -33,23 +33,24 @@ Developing a system that performs curation based on Video QA and RAG.
 ## National Representative K-AI Research Team (National Foundation Model Project)
 
 - Slug: national-representative-k-ai-research-team
-- Period: Aug 2025 - Present
+- Period: Aug 2025 - Jan 2026
 - Affiliation: Korea University (NC AI Consortium)
-- Group: Research Systems
-- Role: Construction of the raw data processing pipeline.
+- Group: Selected LLM Development
+- Role: Construction of the raw data processing pipeline, preprocessing, and evaluation.
+- Achievements: Consortium-scale multilingual foundation model contribution.
 - Detail Page: projects/national-representative-k-ai-research-team.html
 - Per-item Markdown: projects/national-representative-k-ai-research-team.md
 - Source: `projects-data.js`
 
 ## Description
-Selected for the National Foundation Model Project (K-AI Project / National Representative LLM Project). Participating as part of the NC AI Consortium in collaboration with major academic institutions (Seoul National University, Yonsei University, KAIST), ETRI, and corporate partners (AIWorks, POSCO DX, Lotte Innovate, HL Robotics, InterX, MediaZen, MBC, and NHN).
+Selected for the National Foundation Model Project (K-AI Project / National Representative LLM Project). Participated as part of the NC AI Consortium in consortium-scale multilingual large language model development with major academic institutions, ETRI, and corporate partners.
 
 ## Development of a Korean LLM & RAG Pipeline Specialized for the Science Domain
 
 - Slug: korean-llm-rag-science-domain
 - Period: Feb 2024 - Dec 2024
 - Affiliation: Korea University
-- Group: Research Systems
+- Group: Document Intelligence and RAG
 - Role: Data preprocessing and chunking methodology development.
 - Achievements: Publication at EMNLP 2024 (Industry Track) and 2 technology transfers.
 - Detail Page: projects/korean-llm-rag-science-domain.html
@@ -62,7 +63,7 @@ Developed a science domain-specialized Korean LLM & RAG pipeline.
 ## Mi:deum K 1.0
 
 - Slug: mideum-k-1-0
-- Period: 2025
+- Period: Dec 2021 - Dec 2022
 - Affiliation: KT
 - Group: Selected LLM Development
 - Role: Model adaptation and evaluation.
@@ -78,7 +79,7 @@ Contributed to KT's Korean language model ecosystem for enterprise generative AI
 ## KULLM
 
 - Slug: kullm
-- Period: 2025
+- Period: Dec 2023 - Feb 2024
 - Affiliation: Korea University / HIAI
 - Group: Selected LLM Development
 - Role: Post-training and benchmarking.
@@ -94,7 +95,7 @@ Contributed to KULLM, a Korean large language model initiative developed through
 ## Ko-Gemma
 
 - Slug: ko-gemma
-- Period: 2025
+- Period: Feb 2024 - Mar 2024
 - Affiliation: Korea University / HIAI
 - Group: Selected LLM Development
 - Role: Korean-focused adaptation and evaluation.
@@ -107,28 +108,12 @@ Contributed to KULLM, a Korean large language model initiative developed through
 ## Description
 Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with Korean-focused data and evaluation.
 
-## VAETKI
-
-- Slug: vaetki
-- Period: 2025 - Present
-- Affiliation: NC-AI Consortium
-- Group: Selected LLM Development
-- Role: Raw data pipeline support and evaluation.
-- Tools: Raw data pipeline support, preprocessing, and evaluation.
-- Achievements: Consortium-scale multilingual LLM contribution.
-- Detail Page: projects/vaetki.html
-- Per-item Markdown: projects/vaetki.md
-- Source: `projects-data.js`
-
-## Description
-Contributed to VAETKI as part of a broader NC-AI consortium effort on large language model development.
-
 ## GPT-Based PLC Programming Assistant Technology POC Development (Hyundai Mobis)
 
 - Slug: plc-assistant-hyundai-mobis
 - Period: Sep 2023 - Feb 2024
 - Affiliation: Korea University
-- Group: Industry Pilots
+- Group: Applied AI Systems and Pilots
 - Role: Development of a code auto-generation model based on Code Llama.
 - Detail Page: projects/plc-assistant-hyundai-mobis.html
 - Per-item Markdown: projects/plc-assistant-hyundai-mobis.md
@@ -142,7 +127,7 @@ Established an LLM-based smart factory system for process automation in collabor
 - Slug: multilingual-medical-synapse
 - Period: Jun 2023 - Jan 2024
 - Affiliation: Korea University
-- Group: Industry Pilots
+- Group: Applied AI Systems and Pilots
 - Role: LLM-based AI chatbot development, admin page implementation.
 - Tools: LangChain (AI), React (Frontend), Express (Backend), PostgreSQL (DB).
 - Achievements: Selected for the KU-Grant Program's Excellent Technology Track.
@@ -158,7 +143,7 @@ Developed an LLM-based multilingual medical consultation chatbot and admin page.
 - Slug: mineral-location-kigam
 - Period: Jun 2023 - Jan 2024
 - Affiliation: Korea University
-- Group: Industry Pilots
+- Group: Applied AI Systems and Pilots
 - Role: Proposal planning and drafting, mineral resource data EDA (Exploratory Data Analysis), and feature engineering.
 - Detail Page: projects/mineral-location-kigam.html
 - Per-item Markdown: projects/mineral-location-kigam.md
@@ -172,7 +157,7 @@ Established an AI-based mineral location prediction system in collaboration with
 - Slug: synerpeace-pilot
 - Period: Jul 2023 - Jan 2024
 - Affiliation: Korea University
-- Group: Industry Pilots
+- Group: Applied AI Systems and Pilots
 - Role: AI model design and development.
 - Achievements: Awarded in Samsung Fire & Marine Insurance's Pilot Project and secured investment.
 - Detail Page: projects/synerpeace-pilot.html
@@ -187,7 +172,7 @@ Developed 'Synerpeace', an LLM model-based application in collaboration with Sam
 - Slug: tts-pronunciation-sequence-kt
 - Period: Dec 2022 - Mar 2023
 - Affiliation: Pusan National University (AI Lab)
-- Group: Industry Pilots
+- Group: Speech and Language Systems
 - Detail Page: projects/tts-pronunciation-sequence-kt.html
 - Per-item Markdown: projects/tts-pronunciation-sequence-kt.md
 - Source: `projects-data.js`
@@ -200,7 +185,7 @@ Developed a Korean phoneme sequence generation system for KT AIX2L Lab to improv
 - Slug: tts-prosodic-boundary-kt
 - Period: Dec 2021 - Dec 2022
 - Affiliation: Pusan National University (AI Lab)
-- Group: Industry Pilots
+- Group: Speech and Language Systems
 - Detail Page: projects/tts-prosodic-boundary-kt.html
 - Per-item Markdown: projects/tts-prosodic-boundary-kt.md
 - Source: `projects-data.js`
@@ -213,7 +198,7 @@ Developed a Korean sentence analysis system and a prosodic phrase boundary predi
 - Slug: exobrain-wiseqa-etri
 - Period: Sep 2020 - Nov 2022
 - Affiliation: Pusan National University (AI Lab)
-- Group: Research Systems
+- Group: Foundational NLP and QA
 - Detail Page: projects/exobrain-wiseqa-etri.html
 - Per-item Markdown: projects/exobrain-wiseqa-etri.md
 - Source: `projects-data.js`
@@ -226,7 +211,7 @@ Developed a table-based question-answering system and a neural-symbolic model fo
 - Slug: tts-navigation-navice
 - Period: Feb 2021 - Dec 2021
 - Affiliation: Pusan National University (AI Lab)
-- Group: Industry Pilots
+- Group: Speech and Language Systems
 - Detail Page: projects/tts-navigation-navice.html
 - Per-item Markdown: projects/tts-navigation-navice.md
 - Source: `projects-data.js`
@@ -239,7 +224,7 @@ Developed a Korean phoneme-based TTS system for navigation in collaboration with
 - Slug: ai-online-judge-coding-education
 - Period: Apr 2020 - Sep 2020
 - Affiliation: Pusan National University
-- Group: Industry Pilots
+- Group: Applied AI Systems and Pilots
 - Detail Page: projects/ai-online-judge-coding-education.html
 - Per-item Markdown: projects/ai-online-judge-coding-education.md
 - Source: `projects-data.js`

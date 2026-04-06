@@ -4,7 +4,7 @@
 - Slug: tts-prosodic-boundary-kt
 - Period: Dec 2021 - Dec 2022
 - Affiliation: Pusan National University (AI Lab)
-- Group: Industry Pilots
+- Group: Speech and Language Systems
 - Detail Page: projects/tts-prosodic-boundary-kt.html
 - Source: `projects-data.js`
 

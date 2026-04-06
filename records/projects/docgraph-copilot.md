@@ -4,7 +4,7 @@
 - Slug: docgraph-copilot
 - Period: Jan 2025 - Present
 - Affiliation: Korea University
-- Group: Research Systems
+- Group: Document Intelligence and RAG
 - Role: Research, Design, Development
 - Achievements: Accepted to EMNLP 2025 (Main) and CVPR 2026.
 - Detail Page: projects/docgraph-copilot.html

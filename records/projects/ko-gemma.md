@@ -2,7 +2,7 @@
 
 - Type: Project
 - Slug: ko-gemma
-- Period: 2025
+- Period: Feb 2024 - Mar 2024
 - Affiliation: Korea University / HIAI
 - Group: Selected LLM Development
 - Role: Korean-focused adaptation and evaluation.

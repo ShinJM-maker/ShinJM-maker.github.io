@@ -8,7 +8,7 @@
     return;
   }
 
-  const paper = list.find(item => item.slug === slug);
+  const paper = list.find(item => item.slug === slug || (Array.isArray(item.legacySlugs) && item.legacySlugs.includes(slug)));
   if (paper) {
     window.location.replace(`publications/${paper.slug}.html`);
     return;

@@ -268,6 +268,22 @@ ${renderPublicationLinks(publication)}
 </html>`;
 }
 
+function renderRedirectPage(targetPath) {
+  const escapedTarget = escapeHtml(targetPath);
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0; url=${escapedTarget}" />
+  <script>window.location.replace(${JSON.stringify(targetPath)});</script>
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to <a href="${escapedTarget}">${escapedTarget}</a>.</p>
+</body>
+</html>`;
+}
+
 async function resetGeneratedDirectory(directoryName) {
   const directoryPath = path.join(rootDir, directoryName);
   await mkdir(directoryPath, { recursive: true });
@@ -286,6 +302,22 @@ async function writeGeneratedPages(directoryName, list, renderPage) {
   await Promise.all(
     list.map((item, index) =>
       writeFile(path.join(rootDir, directoryName, `${item.slug}.html`), renderPage(list, index))
+    )
+  );
+}
+
+async function writeAliasPages(directoryName, list) {
+  const directoryPath = path.join(rootDir, directoryName);
+  const aliasEntries = list.flatMap(item =>
+    (Array.isArray(item.legacySlugs) ? item.legacySlugs : []).map(alias => ({
+      alias,
+      target: `${item.slug}.html`
+    }))
+  );
+
+  await Promise.all(
+    aliasEntries.map(({ alias, target }) =>
+      writeFile(path.join(directoryPath, `${alias}.html`), renderRedirectPage(target))
     )
   );
 }
@@ -344,6 +376,7 @@ async function main() {
 
   await writeGeneratedPages("projects", projects, renderProjectPage);
   await writeGeneratedPages("publications", publications, renderPublicationPage);
+  await writeAliasPages("publications", publications);
   await writeFile(path.join(rootDir, "sitemap.xml"), `${buildSitemap(projects, publications)}\n`);
 }
 

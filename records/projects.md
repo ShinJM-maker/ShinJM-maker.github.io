@@ -60,21 +60,21 @@ Selected for the National Foundation Model Project (K-AI Project / National Repr
 ## Description
 Developed a science domain-specialized Korean LLM & RAG pipeline.
 
-## Mi:deum K 1.0
+## Ko-Gemma
 
-- Slug: mideum-k-1-0
-- Period: Dec 2021 - Dec 2022
-- Affiliation: KT
+- Slug: ko-gemma
+- Period: Feb 2024 - Mar 2024
+- Affiliation: Korea University / HIAI
 - Group: Selected LLM Development
-- Role: Model adaptation and evaluation.
-- Tools: Korean-focused post-training and evaluation workflows.
-- Achievements: Enterprise Korean LLM contribution.
-- Detail Page: projects/mideum-k-1-0.html
-- Per-item Markdown: projects/mideum-k-1-0.md
+- Role: Korean-focused adaptation and evaluation.
+- Tools: Model adaptation and Korean benchmark analysis.
+- Achievements: Korean-adapted Gemma contribution.
+- Detail Page: projects/ko-gemma.html
+- Per-item Markdown: projects/ko-gemma.md
 - Source: `projects-data.js`
 
 ## Description
-Contributed to KT's Korean language model ecosystem for enterprise generative AI applications.
+Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with Korean-focused data and evaluation.
 
 ## KULLM
 
@@ -92,21 +92,21 @@ Contributed to KT's Korean language model ecosystem for enterprise generative AI
 ## Description
 Contributed to KULLM, a Korean large language model initiative developed through Korea University and HIAI.
 
-## Ko-Gemma
+## Mi:deum K 1.0
 
-- Slug: ko-gemma
-- Period: Feb 2024 - Mar 2024
-- Affiliation: Korea University / HIAI
+- Slug: mideum-k-1-0
+- Period: Dec 2021 - Dec 2022
+- Affiliation: KT
 - Group: Selected LLM Development
-- Role: Korean-focused adaptation and evaluation.
-- Tools: Model adaptation and Korean benchmark analysis.
-- Achievements: Korean-adapted Gemma contribution.
-- Detail Page: projects/ko-gemma.html
-- Per-item Markdown: projects/ko-gemma.md
+- Role: Model adaptation and evaluation.
+- Tools: Korean-focused post-training and evaluation workflows.
+- Achievements: Enterprise Korean LLM contribution.
+- Detail Page: projects/mideum-k-1-0.html
+- Per-item Markdown: projects/mideum-k-1-0.md
 - Source: `projects-data.js`
 
 ## Description
-Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with Korean-focused data and evaluation.
+Contributed to KT's Korean language model ecosystem for enterprise generative AI applications.
 
 ## GPT-Based PLC Programming Assistant Technology POC Development (Hyundai Mobis)
 

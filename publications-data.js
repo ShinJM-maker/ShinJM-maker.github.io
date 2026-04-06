@@ -12,6 +12,7 @@ window.PUBLICATIONS = [
     status: "Accepted",
     keywords: ["hierarchical retrieval", "multimodal QA", "evidence assembly"],
     legacySlugs: ["acl-anonymous", "under-review-hierarchical-retrieval"],
+    linkPlaceholders: ["Paper coming soon", "Code coming soon", "arXiv coming soon"],
     doi: "",
     arxiv: ""
   },

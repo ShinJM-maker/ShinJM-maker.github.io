@@ -38,15 +38,15 @@ window.PROJECTS = [
     achievements: "Publication at EMNLP 2024 (Industry Track) and 2 technology transfers."
   },
   {
-    slug: "mideum-k-1-0",
-    title: "Mi:deum K 1.0",
-    period: "Dec 2021 - Dec 2022",
-    affiliation: "KT",
+    slug: "ko-gemma",
+    title: "Ko-Gemma",
+    period: "Feb 2024 - Mar 2024",
+    affiliation: "Korea University / HIAI",
     group: "Selected LLM Development",
-    description: "Contributed to KT's Korean language model ecosystem for enterprise generative AI applications.",
-    role: "Model adaptation and evaluation.",
-    achievements: "Enterprise Korean LLM contribution.",
-    tools: "Korean-focused post-training and evaluation workflows."
+    description: "Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with Korean-focused data and evaluation.",
+    role: "Korean-focused adaptation and evaluation.",
+    achievements: "Korean-adapted Gemma contribution.",
+    tools: "Model adaptation and Korean benchmark analysis."
   },
   {
     slug: "kullm",
@@ -60,15 +60,15 @@ window.PROJECTS = [
     tools: "Instruction-following tuning and benchmark evaluation."
   },
   {
-    slug: "ko-gemma",
-    title: "Ko-Gemma",
-    period: "Feb 2024 - Mar 2024",
-    affiliation: "Korea University / HIAI",
+    slug: "mideum-k-1-0",
+    title: "Mi:deum K 1.0",
+    period: "Dec 2021 - Dec 2022",
+    affiliation: "KT",
     group: "Selected LLM Development",
-    description: "Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with Korean-focused data and evaluation.",
-    role: "Korean-focused adaptation and evaluation.",
-    achievements: "Korean-adapted Gemma contribution.",
-    tools: "Model adaptation and Korean benchmark analysis."
+    description: "Contributed to KT's Korean language model ecosystem for enterprise generative AI applications.",
+    role: "Model adaptation and evaluation.",
+    achievements: "Enterprise Korean LLM contribution.",
+    tools: "Korean-focused post-training and evaluation workflows."
   },
   {
     slug: "plc-assistant-hyundai-mobis",

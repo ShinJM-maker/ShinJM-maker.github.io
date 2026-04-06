@@ -277,6 +277,10 @@ h1 {
   font-size: clamp(1.22rem, 2vw, 1.42rem);
 }
 
+.main-home .section-block h2 {
+  color: var(--brand);
+}
+
 .section-head {
   display: flex;
   justify-content: space-between;

@@ -173,6 +173,10 @@ h1 {
   letter-spacing: -0.03em;
 }
 
+.hero h1 {
+  font-size: clamp(1.85rem, 3.2vw, 2.55rem);
+}
+
 .hero p {
   margin: 0;
 }

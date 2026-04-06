@@ -4,7 +4,7 @@
 - Slug: mineral-location-kigam
 - Period: Jun 2023 - Jan 2024
 - Affiliation: Korea University
-- Group: Industry Pilots
+- Group: Applied AI Systems and Pilots
 - Role: Proposal planning and drafting, mineral resource data EDA (Exploratory Data Analysis), and feature engineering.
 - Detail Page: projects/mineral-location-kigam.html
 - Source: `projects-data.js`

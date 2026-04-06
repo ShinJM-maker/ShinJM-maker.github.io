@@ -4,7 +4,7 @@
 - Slug: ai-online-judge-coding-education
 - Period: Apr 2020 - Sep 2020
 - Affiliation: Pusan National University
-- Group: Industry Pilots
+- Group: Applied AI Systems and Pilots
 - Detail Page: projects/ai-online-judge-coding-education.html
 - Source: `projects-data.js`
 

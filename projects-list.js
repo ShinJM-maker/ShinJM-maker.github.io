@@ -4,9 +4,11 @@
   if (!container || !list.length) return;
 
   const groupOrder = [
-    "Research Systems",
+    "Document Intelligence and RAG",
     "Selected LLM Development",
-    "Industry Pilots",
+    "Applied AI Systems and Pilots",
+    "Speech and Language Systems",
+    "Foundational NLP and QA",
     "Research Prototypes for Future Agents"
   ];
 

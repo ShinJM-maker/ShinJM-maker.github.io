@@ -2,7 +2,7 @@
 
 - Type: Project
 - Slug: kullm
-- Period: 2025
+- Period: Dec 2023 - Feb 2024
 - Affiliation: Korea University / HIAI
 - Group: Selected LLM Development
 - Role: Post-training and benchmarking.

@@ -5,6 +5,7 @@
 
   const groupOrder = [
     "Research Systems",
+    "Selected LLM Development",
     "Industry Pilots",
     "Research Prototypes for Future Agents"
   ];

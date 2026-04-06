@@ -1,6 +1,6 @@
 # Projects
 
-Total items: 13
+Total items: 17
 
 ## DocGraph Copilot
 
@@ -58,6 +58,70 @@ Selected for the National Foundation Model Project (K-AI Project / National Repr
 
 ## Description
 Developed a science domain-specialized Korean LLM & RAG pipeline.
+
+## Mi:deum K 1.0
+
+- Slug: mideum-k-1-0
+- Period: 2025
+- Affiliation: KT
+- Group: Selected LLM Development
+- Role: Model adaptation and evaluation.
+- Tools: Korean-focused post-training and evaluation workflows.
+- Achievements: Enterprise Korean LLM contribution.
+- Detail Page: projects/mideum-k-1-0.html
+- Per-item Markdown: projects/mideum-k-1-0.md
+- Source: `projects-data.js`
+
+## Description
+Contributed to KT's Korean language model ecosystem for enterprise generative AI applications.
+
+## KULLM
+
+- Slug: kullm
+- Period: 2025
+- Affiliation: Korea University / HIAI
+- Group: Selected LLM Development
+- Role: Post-training and benchmarking.
+- Tools: Instruction-following tuning and benchmark evaluation.
+- Achievements: Academic Korean LLM contribution.
+- Detail Page: projects/kullm.html
+- Per-item Markdown: projects/kullm.md
+- Source: `projects-data.js`
+
+## Description
+Contributed to KULLM, a Korean large language model initiative developed through Korea University and HIAI.
+
+## Ko-Gemma
+
+- Slug: ko-gemma
+- Period: 2025
+- Affiliation: Korea University / HIAI
+- Group: Selected LLM Development
+- Role: Korean-focused adaptation and evaluation.
+- Tools: Model adaptation and Korean benchmark analysis.
+- Achievements: Korean-adapted Gemma contribution.
+- Detail Page: projects/ko-gemma.html
+- Per-item Markdown: projects/ko-gemma.md
+- Source: `projects-data.js`
+
+## Description
+Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with Korean-focused data and evaluation.
+
+## VAETKI
+
+- Slug: vaetki
+- Period: 2025 - Present
+- Affiliation: NC-AI Consortium
+- Group: Selected LLM Development
+- Role: Raw data pipeline support and evaluation.
+- Tools: Raw data pipeline support, preprocessing, and evaluation.
+- Achievements: Consortium-scale multilingual LLM contribution.
+- Detail Page: projects/vaetki.html
+- Per-item Markdown: projects/vaetki.md
+- Source: `projects-data.js`
+
+## Description
+Contributed to VAETKI as part of a broader NC-AI consortium effort on large language model development.
 
 ## GPT-Based PLC Programming Assistant Technology POC Development (Hyundai Mobis)
 

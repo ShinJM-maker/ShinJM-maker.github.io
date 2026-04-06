@@ -344,6 +344,14 @@ h1 {
   margin: 0;
 }
 
+.news-emoji {
+  display: inline-block;
+  margin-right: 0.4rem;
+  font-size: 1rem;
+  line-height: 1;
+  vertical-align: -0.08em;
+}
+
 .pub-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

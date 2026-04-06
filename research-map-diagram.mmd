@@ -1,9 +1,9 @@
 flowchart TB
-    classDef stage fill:#eef3ff,stroke:#4f6fa7,stroke-width:1.5px,color:#1b355a,font-weight:700,font-size:14px;
-    classDef now fill:#e8f7f3,stroke:#1f8f7b,stroke-width:1.4px,color:#0d4d42,font-size:13px;
-    classDef core fill:#e9edf9,stroke:#4059ad,stroke-width:1.4px,color:#1b2f75,font-size:13px;
-    classDef highlight fill:#fff4e8,stroke:#db5c1a,stroke-width:2px,color:#9b3304,font-weight:700,font-size:13px;
-    classDef future fill:#f3e9f8,stroke:#8f46b8,stroke-width:1.5px,color:#54236f,stroke-dasharray: 5 4,font-size:13px;
+    classDef stage fill:#fcf8f6,stroke:#cdbfb8,stroke-width:1.5px,color:#2e2d29,font-weight:700,font-size:14px;
+    classDef now fill:#f8f3f1,stroke:#b8a59f,stroke-width:1.4px,color:#4f4641,font-size:13px;
+    classDef core fill:#f5efed,stroke:#a89a95,stroke-width:1.4px,color:#433b37,font-size:13px;
+    classDef highlight fill:#f5e8e6,stroke:#8c1515,stroke-width:2px,color:#6f1010,font-weight:700,font-size:13px;
+    classDef future fill:#f4ecea,stroke:#8c1515,stroke-width:1.5px,color:#6f1010,stroke-dasharray: 5 4,font-size:13px;
 
     S1["Stage 1<br/>Core Linguistic and Syntax<br/>2021-2022"]:::stage
     S1A["Syntactic Analysis<br/>Dependency Parsing, Neuro-Symbolic"]:::core
@@ -14,9 +14,9 @@ flowchart TB
     S2B["Industrial RAG<br/>Power Plant Domain, StyleDFS"]:::now
 
     S3["Stage 3<br/>Multimodal Document Intelligence<br/>2025-2026"]:::stage
-    S3A["M3DocDep<br/>Multimodal Dependency<br/>CVPR 2026"]:::highlight
-    S3B["MultiDocFusion<br/>Hierarchical RAG Pipeline<br/>EMNLP 2025"]:::highlight
-    S3C["HiKEY<br/>Hierarchical Retrieval<br/>ACL 2026"]:::highlight
+    S3A["HiKEY<br/>Hierarchical Retrieval<br/>ACL 2026"]:::highlight
+    S3B["M3DocDep<br/>Multimodal Dependency<br/>CVPR 2026"]:::highlight
+    S3C["MultiDocFusion<br/>Hierarchical RAG Pipeline<br/>EMNLP 2025"]:::highlight
 
     S4["Stage 4<br/>Structured Memory, World Models, and Agents<br/>2027+"]:::stage
     S4A["Actionable Ontologies<br/>Agent Memory and Planning"]:::future
@@ -30,5 +30,5 @@ flowchart TB
 
     S1B -->|"Foundation for LLM era"| S2A
     S2B ==>|"Context-driven retrieval"| S3B
-    S3C -.->|"Retrieval as tool"| S4A
-    S3A -.->|"Space to time"| S4C
+    S3A -.->|"Retrieval as tool"| S4A
+    S3B -.->|"Space to time"| S4C

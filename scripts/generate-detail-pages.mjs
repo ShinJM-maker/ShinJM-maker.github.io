@@ -185,29 +185,37 @@ function renderPublicationFigure(figure) {
 }
 
 function renderPublicationLinks(publication) {
-  const links = [];
+  const items = [];
 
   if (publication.paperUrl) {
-    links.push(`<a href="${escapeHtml(publication.paperUrl)}" target="_blank" rel="noreferrer">Paper</a>`);
+    items.push(`<a class="paper-link-chip" href="${escapeHtml(publication.paperUrl)}" target="_blank" rel="noreferrer">Paper</a>`);
   }
 
   if (publication.doi) {
-    links.push(`<a href="${escapeHtml(`https://doi.org/${publication.doi}`)}" target="_blank" rel="noreferrer">DOI</a>`);
+    items.push(`<a class="paper-link-chip" href="${escapeHtml(`https://doi.org/${publication.doi}`)}" target="_blank" rel="noreferrer">DOI</a>`);
   }
 
   if (publication.arxiv) {
     const arxivUrl = publication.arxiv.startsWith("http")
       ? publication.arxiv
       : `https://arxiv.org/abs/${publication.arxiv}`;
-    links.push(`<a href="${escapeHtml(arxivUrl)}" target="_blank" rel="noreferrer">arXiv</a>`);
+    items.push(`<a class="paper-link-chip" href="${escapeHtml(arxivUrl)}" target="_blank" rel="noreferrer">arXiv</a>`);
   }
 
-  if (!links.length) return "";
+  if (Array.isArray(publication.linkPlaceholders)) {
+    publication.linkPlaceholders
+      .filter(Boolean)
+      .forEach(label => {
+        items.push(`<span class="paper-link-chip paper-link-chip-placeholder">${escapeHtml(label)}</span>`);
+      });
+  }
+
+  if (!items.length) return "";
 
   return `
       <section class="paper-section">
         <h2>Links</h2>
-        <p>${links.join("  ·  ")}</p>
+        <div class="paper-link-list">${items.join("")}</div>
       </section>`;
 }
 

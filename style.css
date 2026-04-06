@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css");
 
 :root {
   --bg: #f5f7fb;
@@ -13,6 +13,8 @@
   --chip: #edf2f9;
   --radius: 14px;
   --shadow: 0 8px 24px rgba(21, 34, 56, 0.08);
+  --font-ui: "NanumSquare", "Nanum Gothic", "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  --font-serif: "Times New Roman", Times, serif;
 }
 
 * {
@@ -26,7 +28,7 @@ body {
 }
 
 body {
-  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-family: var(--font-ui);
   color: var(--text);
   background: linear-gradient(180deg, #f8faff 0%, var(--bg) 100%);
   line-height: 1.6;
@@ -64,7 +66,7 @@ a {
 
 .brand {
   text-decoration: none;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-ui);
   font-size: 1.05rem;
   font-weight: 700;
 }
@@ -154,7 +156,7 @@ a {
 h1,
 h2,
 h3 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-ui);
   line-height: 1.2;
 }
 
@@ -184,7 +186,7 @@ h1 {
 }
 
 .hero-role {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.98rem;
   font-weight: 600;
   color: #294568;
@@ -453,7 +455,7 @@ h1 {
 }
 
 .detail-card strong {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-ui);
 }
 
 .detail-card p {
@@ -507,7 +509,7 @@ h1 {
 
 .hero-stat strong {
   display: block;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-ui);
   font-size: 1.02rem;
   line-height: 1.35;
   color: #183458;
@@ -657,7 +659,7 @@ h1 {
 }
 
 .roadmap-stage-title {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-ui);
   font-weight: 700;
   color: #1c3352;
 }
@@ -706,7 +708,7 @@ h1 {
 .advanced-map-block > summary {
   list-style: none;
   cursor: pointer;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-ui);
   font-weight: 700;
   color: #1f3f68;
   padding: 0.44rem 0.1rem;
@@ -1141,7 +1143,7 @@ h1 {
 }
 
 .impact-stat strong {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-ui);
   font-size: 1.5rem;
   color: var(--brand);
   display: block;

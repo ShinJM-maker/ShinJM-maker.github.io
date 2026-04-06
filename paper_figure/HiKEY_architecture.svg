@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">HiKEY retrieval pipeline</title>
+  <desc id="desc">A three-stage hierarchical multimodal retrieval pipeline with global routing, local evidence ranking, and structured evidence assembly.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fbfdff" />
+      <stop offset="100%" stop-color="#f3f7fd" />
+    </linearGradient>
+    <linearGradient id="highlight" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#eef4ff" />
+      <stop offset="100%" stop-color="#e7f7f3" />
+    </linearGradient>
+    <style>
+      .title { font: 700 30px "NanumSquare", "Times New Roman", sans-serif; fill: #173454; }
+      .subtitle { font: 600 16px "NanumSquare", "Times New Roman", sans-serif; fill: #566b87; }
+      .stepTitle { font: 700 20px "NanumSquare", "Times New Roman", sans-serif; fill: #1d3557; }
+      .stepMeta { font: 700 13px "NanumSquare", "Times New Roman", sans-serif; fill: #2e5b93; }
+      .body { font: 600 14px "NanumSquare", "Times New Roman", sans-serif; fill: #334764; }
+      .chip { font: 700 12px "NanumSquare", "Times New Roman", sans-serif; fill: #1f4d8f; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="640" rx="28" fill="url(#bg)" />
+  <text x="64" y="74" class="title">HiKEY: Hierarchical Multimodal Retrieval</text>
+  <text x="64" y="104" class="subtitle">Global routing narrows candidate regions, local ranking scores evidence, and structure-aware assembly builds the final support set.</text>
+
+  <g transform="translate(64 176)">
+    <rect x="0" y="0" width="300" height="320" rx="24" fill="#ffffff" stroke="#d6e1f0" stroke-width="2" />
+    <text x="26" y="42" class="stepMeta">STEP 1</text>
+    <text x="26" y="74" class="stepTitle">Global Routing</text>
+    <text x="26" y="118" class="body">Question-aware document routing</text>
+    <text x="26" y="142" class="body">selects promising pages and</text>
+    <text x="26" y="166" class="body">layout regions before detailed</text>
+    <text x="26" y="190" class="body">evidence scoring begins.</text>
+    <rect x="26" y="224" width="116" height="30" rx="15" fill="#eef4ff" stroke="#d6e1f0" />
+    <text x="47" y="244" class="chip">Question</text>
+    <rect x="154" y="224" width="120" height="30" rx="15" fill="#eef8f5" stroke="#d6e1f0" />
+    <text x="178" y="244" class="chip">Page Pool</text>
+    <rect x="26" y="270" width="248" height="22" rx="11" fill="#f5f8fd" />
+    <rect x="26" y="270" width="154" height="22" rx="11" fill="#dfeafe" />
+    <text x="26" y="314" class="body">Output: candidate pages and</text>
+    <text x="26" y="338" class="body">coarse document-level routes</text>
+  </g>
+
+  <g transform="translate(450 176)">
+    <rect x="0" y="0" width="300" height="320" rx="24" fill="url(#highlight)" stroke="#cfe0ee" stroke-width="2" />
+    <text x="26" y="42" class="stepMeta">STEP 2</text>
+    <text x="26" y="74" class="stepTitle">Local Evidence Ranking</text>
+    <text x="26" y="118" class="body">Candidate regions are ranked</text>
+    <text x="26" y="142" class="body">with multimodal cues from text,</text>
+    <text x="26" y="166" class="body">layout, and visual structure to</text>
+    <text x="26" y="190" class="body">prioritize fine-grained evidence.</text>
+    <rect x="26" y="228" width="248" height="18" rx="9" fill="#f7fbff" />
+    <rect x="26" y="228" width="198" height="18" rx="9" fill="#dce9ff" />
+    <rect x="26" y="258" width="248" height="18" rx="9" fill="#f7fbff" />
+    <rect x="26" y="258" width="152" height="18" rx="9" fill="#dff4ec" />
+    <rect x="26" y="288" width="248" height="18" rx="9" fill="#f7fbff" />
+    <rect x="26" y="288" width="118" height="18" rx="9" fill="#e8eef9" />
+    <text x="26" y="338" class="body">Output: ranked passages, boxes,</text>
+    <text x="26" y="362" class="body">and multimodal evidence spans</text>
+  </g>
+
+  <g transform="translate(836 176)">
+    <rect x="0" y="0" width="300" height="320" rx="24" fill="#ffffff" stroke="#d6e1f0" stroke-width="2" />
+    <text x="26" y="42" class="stepMeta">STEP 3</text>
+    <text x="26" y="74" class="stepTitle">Structured Assembly</text>
+    <text x="26" y="118" class="body">Ancestry-aware evidence is</text>
+    <text x="26" y="142" class="body">assembled into coherent support</text>
+    <text x="26" y="166" class="body">sets so the QA model reasons</text>
+    <text x="26" y="190" class="body">over aligned multimodal context.</text>
+    <rect x="26" y="228" width="248" height="78" rx="18" fill="#f6f9fe" stroke="#dae4f2" />
+    <text x="48" y="254" class="chip">Title</text>
+    <text x="48" y="278" class="chip">Paragraph</text>
+    <text x="168" y="278" class="chip">Figure</text>
+    <text x="48" y="302" class="chip">Table</text>
+    <text x="26" y="338" class="body">Output: structured evidence set</text>
+    <text x="26" y="362" class="body">for answer generation and audit</text>
+  </g>
+
+  <g fill="none" stroke="#6c86ad" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M364 336 H448" />
+    <path d="M750 336 H834" />
+    <path d="M448 336 l-18 -12" />
+    <path d="M448 336 l-18 12" />
+    <path d="M834 336 l-18 -12" />
+    <path d="M834 336 l-18 12" />
+  </g>
+</svg>

@@ -12,6 +12,7 @@ Total items: 19
 - Role: First Author
 - Status: Accepted
 - Keywords: hierarchical retrieval, multimodal QA, evidence assembly
+- Figure: paper_figure/HiKEY_architecture.svg
 - Detail Page: publications/hikey.html
 - Per-item Markdown: publications/hikey.md
 - Source: `publications-data.js`

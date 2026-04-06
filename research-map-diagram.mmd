@@ -1,0 +1,34 @@
+flowchart TB
+    classDef stage fill:#eef3ff,stroke:#4f6fa7,stroke-width:1.5px,color:#1b355a,font-weight:700,font-size:14px;
+    classDef now fill:#e8f7f3,stroke:#1f8f7b,stroke-width:1.4px,color:#0d4d42,font-size:13px;
+    classDef core fill:#e9edf9,stroke:#4059ad,stroke-width:1.4px,color:#1b2f75,font-size:13px;
+    classDef highlight fill:#fff4e8,stroke:#db5c1a,stroke-width:2px,color:#9b3304,font-weight:700,font-size:13px;
+    classDef future fill:#f3e9f8,stroke:#8f46b8,stroke-width:1.5px,color:#54236f,stroke-dasharray: 5 4,font-size:13px;
+
+    S1["Stage 1<br/>Core Linguistic and Syntax<br/>2021-2022"]:::stage
+    S1A["Syntactic Analysis<br/>Dependency Parsing, Neuro-Symbolic"]:::core
+    S1B["Deep Semantics<br/>Table MRC, WordNet, Continual Learning"]:::core
+
+    S2["Stage 2<br/>Applied LLM and Domain RAG<br/>2023-2024"]:::stage
+    S2A["LLM Evaluation<br/>Zero-shot Analysis, Chatbot Design"]:::now
+    S2B["Industrial RAG<br/>Power Plant Domain, StyleDFS"]:::now
+
+    S3["Stage 3<br/>Multimodal Document Intelligence<br/>2025-2026"]:::stage
+    S3A["M3DocDep<br/>Multimodal Dependency<br/>CVPR 2026"]:::highlight
+    S3B["MultiDocFusion<br/>Hierarchical RAG Pipeline<br/>EMNLP 2025"]:::highlight
+    S3C["HiKEY<br/>Hierarchical Retrieval<br/>ACL 2026"]:::highlight
+
+    S4["Stage 4<br/>Structured Memory, World Models, and Agents<br/>2027+"]:::stage
+    S4A["Actionable Ontologies<br/>Agent Memory and Planning"]:::future
+    S4B["Executable Representations<br/>Natural-Language Agents"]:::future
+    S4C["Video-Structured Memory<br/>Long-Horizon Reasoning"]:::future
+
+    S1 --> S1A --> S1B --> S2
+    S2 --> S2A --> S2B --> S3
+    S3 --> S3A --> S3B --> S3C --> S4
+    S4 --> S4A --> S4B --> S4C
+
+    S1B -->|"Foundation for LLM era"| S2A
+    S2B ==>|"Context-driven retrieval"| S3B
+    S3C -.->|"Retrieval as tool"| S4A
+    S3A -.->|"Space to time"| S4C

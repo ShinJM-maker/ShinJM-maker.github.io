@@ -14,7 +14,11 @@ window.PUBLICATIONS = [
     legacySlugs: ["acl-anonymous", "under-review-hierarchical-retrieval"],
     linkPlaceholders: ["Paper coming soon", "Code coming soon", "arXiv coming soon"],
     doi: "",
-    arxiv: ""
+    arxiv: "",
+    figure: {
+      path: "paper_figure/HiKEY_architecture.svg",
+      caption: "HiKEY retrieval pipeline"
+    }
   },
   {
     slug: "m3docdep",

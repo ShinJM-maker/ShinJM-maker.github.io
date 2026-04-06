@@ -39,6 +39,15 @@ function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
 }
 
+function resetMarkdownDir(dirPath) {
+  ensureDir(dirPath);
+  for (const entry of fs.readdirSync(dirPath, { withFileTypes: true })) {
+    if (entry.isFile() && entry.name.endsWith(".md")) {
+      fs.unlinkSync(path.join(dirPath, entry.name));
+    }
+  }
+}
+
 function pushField(lines, label, value) {
   if (!value) {
     return;
@@ -175,6 +184,10 @@ const patents = [
 ];
 
 ensureDir(outputDir);
+resetMarkdownDir(path.join(outputDir, "publications"));
+resetMarkdownDir(path.join(outputDir, "projects"));
+resetMarkdownDir(path.join(outputDir, "awards"));
+resetMarkdownDir(path.join(outputDir, "patents"));
 
 for (const publication of publications) {
   const dirPath = path.join(outputDir, "publications");

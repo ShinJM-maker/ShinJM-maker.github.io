@@ -160,6 +160,9 @@ function renderPublicationFigure(figure) {
   const sourcePdf = figure.sourcePdf
     ? escapeHtml(encodeAssetPath(`../${figure.sourcePdf}`))
     : "";
+  const sourceLink = sourcePdf
+    ? `\n        <p class="paper-figure-source"><a href="${sourcePdf}" target="_blank" rel="noreferrer">View original PDF</a></p>`
+    : "";
 
   if (/\.pdf$/i.test(figure.path)) {
     return `
@@ -168,8 +171,7 @@ function renderPublicationFigure(figure) {
         <object class="paper-pdf-viewer" data="${figurePath}" type="application/pdf">
           <p>Preview is unavailable. <a href="${figurePath}" target="_blank" rel="noreferrer">Open PDF</a></p>
         </object>
-        <p class="paper-figure-caption">${caption}</p>
-        ${sourcePdf ? `<p class="paper-figure-source"><a href="${sourcePdf}" target="_blank" rel="noreferrer">View original PDF</a></p>` : ""}
+        <p class="paper-figure-caption">${caption}</p>${sourceLink}
       </section>`;
   }
 
@@ -179,8 +181,7 @@ function renderPublicationFigure(figure) {
         <figure class="paper-figure">
           <img src="${figurePath}" alt="${caption}" />
           <figcaption class="paper-figure-caption">${caption}</figcaption>
-        </figure>
-        ${sourcePdf ? `<p class="paper-figure-source"><a href="${sourcePdf}" target="_blank" rel="noreferrer">View original PDF</a></p>` : ""}
+        </figure>${sourceLink}
       </section>`;
 }
 

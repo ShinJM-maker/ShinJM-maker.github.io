@@ -75,7 +75,7 @@ A hierarchical multimodal chunking pipeline that preserves layout and improves e
 - Date: Oct 1, 2024
 - Authors: Seongtae Hong*, Joongmin Shin*, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim
 - Role: Co-First Author
-- Status: Published
+- Status: Accepted
 - Keywords: domain RAG, industrial QA, technology transfer
 - Paper URL: https://aclanthology.org/2024.emnlp-industry.61/
 - DOI: https://doi.org/10.18653/v1/2024.emnlp-industry.61

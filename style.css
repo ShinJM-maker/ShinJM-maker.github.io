@@ -215,8 +215,15 @@ h1 {
 
 .hero-bridge {
   font-size: 0.96rem;
-  font-weight: 700;
-  color: var(--brand);
+  color: var(--brand-strong);
+  line-height: 1.45;
+}
+
+.hero-bridge em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 .hero-summary {

@@ -300,6 +300,12 @@ h1 {
   font-size: 0.95rem;
 }
 
+.section-intro {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .chip-row {
   display: flex;
   flex-wrap: wrap;

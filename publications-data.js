@@ -13,6 +13,10 @@ window.PUBLICATIONS = [
     keywords: ["hierarchical retrieval", "multimodal QA", "evidence assembly"],
     legacySlugs: ["acl-anonymous", "under-review-hierarchical-retrieval"],
     linkPlaceholders: ["Paper coming soon", "Code coming soon", "arXiv coming soon"],
+    venueBadge: {
+      path: "Venue/ACL2026.png",
+      alt: "ACL 2026 venue badge"
+    },
     doi: "",
     arxiv: "",
     figure: {
@@ -32,6 +36,10 @@ window.PUBLICATIONS = [
     role: "First Author",
     status: "Accepted",
     keywords: ["document structure", "LVLM", "chunking", "retrieval"],
+    venueBadge: {
+      path: "Venue/CVPR2026.png",
+      alt: "CVPR 2026 venue badge"
+    },
     doi: "",
     arxiv: "",
     figure: {
@@ -52,6 +60,10 @@ window.PUBLICATIONS = [
     role: "First Author",
     status: "Published",
     keywords: ["hierarchical chunking", "multimodal", "RAG", "industrial"],
+    venueBadge: {
+      path: "Venue/EMNLP2025.png",
+      alt: "EMNLP 2025 venue badge"
+    },
     paperUrl: "https://aclanthology.org/2025.emnlp-main.1062/",
     doi: "10.18653/v1/2025.emnlp-main.1062",
     arxiv: "",
@@ -72,6 +84,10 @@ window.PUBLICATIONS = [
     role: "Co-First Author",
     status: "Accepted",
     keywords: ["domain RAG", "industrial QA", "technology transfer"],
+    venueBadge: {
+      path: "Venue/EMNLP2024.png",
+      alt: "EMNLP 2024 venue badge"
+    },
     paperUrl: "https://aclanthology.org/2024.emnlp-industry.61/",
     doi: "10.18653/v1/2024.emnlp-industry.61",
     arxiv: "",

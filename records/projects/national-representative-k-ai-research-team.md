@@ -4,7 +4,7 @@
 - Slug: national-representative-k-ai-research-team
 - Period: Aug 2025 - Jan 2026
 - Affiliation: Korea University (NC AI Consortium)
-- Group: LLM Development
+- Group: Foundation Models and Adaptation
 - Role: Construction of the raw data processing pipeline, preprocessing, and evaluation.
 - Achievements: Consortium-scale multilingual foundation model contribution.
 - Detail Page: projects/national-representative-k-ai-research-team.html

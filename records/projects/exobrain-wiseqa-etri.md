@@ -4,7 +4,7 @@
 - Slug: exobrain-wiseqa-etri
 - Period: Sep 2020 - Nov 2022
 - Affiliation: Pusan National University (AI Lab)
-- Group: Foundational NLP and QA
+- Group: Language, Speech, and Structured Reasoning
 - Detail Page: projects/exobrain-wiseqa-etri.html
 - Source: `projects-data.js`
 

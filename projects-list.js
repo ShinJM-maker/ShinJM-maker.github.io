@@ -4,11 +4,10 @@
   if (!container || !list.length) return;
 
   const groupOrder = [
-    "Document Intelligence and RAG",
-    "LLM Development",
+    "Multimodal Evidence Systems",
+    "Foundation Models and Adaptation",
     "Applied AI Systems and Pilots",
-    "Speech and Language Systems",
-    "Foundational NLP and QA",
+    "Language, Speech, and Structured Reasoning",
     "Research Prototypes for Future Agents"
   ];
 

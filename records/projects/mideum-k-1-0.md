@@ -4,7 +4,7 @@
 - Slug: mideum-k-1-0
 - Period: Dec 2021 - Dec 2022
 - Affiliation: KT
-- Group: LLM Development
+- Group: Foundation Models and Adaptation
 - Role: Model adaptation and evaluation.
 - Tools: Korean-focused post-training and evaluation workflows.
 - Achievements: Enterprise Korean LLM contribution.

@@ -7,7 +7,7 @@ Total items: 16
 - Slug: docgraph-copilot
 - Period: Jan 2025 - Present
 - Affiliation: Korea University
-- Group: Document Intelligence and RAG
+- Group: Multimodal Evidence Systems
 - Role: Research, Design, Development
 - Achievements: Accepted to EMNLP 2025 (Main) and CVPR 2026.
 - Detail Page: projects/docgraph-copilot.html
@@ -35,7 +35,7 @@ Developing a system that performs curation based on Video QA and RAG.
 - Slug: national-representative-k-ai-research-team
 - Period: Aug 2025 - Jan 2026
 - Affiliation: Korea University (NC AI Consortium)
-- Group: LLM Development
+- Group: Foundation Models and Adaptation
 - Role: Construction of the raw data processing pipeline, preprocessing, and evaluation.
 - Achievements: Consortium-scale multilingual foundation model contribution.
 - Detail Page: projects/national-representative-k-ai-research-team.html
@@ -50,7 +50,7 @@ Selected for the National Foundation Model Project (K-AI Project / National Repr
 - Slug: korean-llm-rag-science-domain
 - Period: Feb 2024 - Dec 2024
 - Affiliation: Korea University
-- Group: Document Intelligence and RAG
+- Group: Multimodal Evidence Systems
 - Role: Data preprocessing and chunking methodology development.
 - Achievements: Publication at EMNLP 2024 (Industry Track) and 2 technology transfers.
 - Detail Page: projects/korean-llm-rag-science-domain.html
@@ -65,7 +65,7 @@ Developed a science domain-specialized Korean LLM & RAG pipeline.
 - Slug: ko-gemma
 - Period: Feb 2024 - Mar 2024
 - Affiliation: Korea University
-- Group: LLM Development
+- Group: Foundation Models and Adaptation
 - Role: Korean-focused adaptation and evaluation.
 - Tools: Model adaptation and Korean benchmark analysis.
 - Achievements: Korean-adapted Gemma contribution.
@@ -81,7 +81,7 @@ Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with
 - Slug: kullm
 - Period: Dec 2023 - Feb 2024
 - Affiliation: Korea University
-- Group: LLM Development
+- Group: Foundation Models and Adaptation
 - Role: Post-training and benchmarking.
 - Tools: Instruction-following tuning and benchmark evaluation.
 - Achievements: Academic Korean LLM contribution.
@@ -97,7 +97,7 @@ Contributed to KULLM, a Korean large language model initiative developed through
 - Slug: mideum-k-1-0
 - Period: Dec 2021 - Dec 2022
 - Affiliation: KT
-- Group: LLM Development
+- Group: Foundation Models and Adaptation
 - Role: Model adaptation and evaluation.
 - Tools: Korean-focused post-training and evaluation workflows.
 - Achievements: Enterprise Korean LLM contribution.
@@ -127,7 +127,7 @@ Established an LLM-based smart factory system for process automation in collabor
 - Slug: multilingual-medical-synapse
 - Period: Jun 2023 - Present
 - Affiliation: Korea University
-- Group: Document Intelligence and RAG
+- Group: Multimodal Evidence Systems
 - Role: LLM-based AI chatbot development, admin page implementation.
 - Tools: LangChain (AI), React (Frontend), Express (Backend), PostgreSQL (DB).
 - Achievements: Selected for the KU-Grant Program's Excellent Technology Track.
@@ -172,7 +172,7 @@ Developed 'Synerpeace', an LLM model-based application in collaboration with Sam
 - Slug: tts-pronunciation-sequence-kt
 - Period: Dec 2022 - Mar 2023
 - Affiliation: Pusan National University (AI Lab)
-- Group: Speech and Language Systems
+- Group: Language, Speech, and Structured Reasoning
 - Detail Page: projects/tts-pronunciation-sequence-kt.html
 - Per-item Markdown: projects/tts-pronunciation-sequence-kt.md
 - Source: `projects-data.js`
@@ -185,7 +185,7 @@ Developed a Korean phoneme sequence generation system for KT AIX2L Lab to improv
 - Slug: tts-prosodic-boundary-kt
 - Period: Dec 2021 - Dec 2022
 - Affiliation: Pusan National University (AI Lab)
-- Group: Speech and Language Systems
+- Group: Language, Speech, and Structured Reasoning
 - Detail Page: projects/tts-prosodic-boundary-kt.html
 - Per-item Markdown: projects/tts-prosodic-boundary-kt.md
 - Source: `projects-data.js`
@@ -198,7 +198,7 @@ Developed a Korean sentence analysis system and a prosodic phrase boundary predi
 - Slug: exobrain-wiseqa-etri
 - Period: Sep 2020 - Nov 2022
 - Affiliation: Pusan National University (AI Lab)
-- Group: Foundational NLP and QA
+- Group: Language, Speech, and Structured Reasoning
 - Detail Page: projects/exobrain-wiseqa-etri.html
 - Per-item Markdown: projects/exobrain-wiseqa-etri.md
 - Source: `projects-data.js`
@@ -211,7 +211,7 @@ Developed a table-based question-answering system and a neural-symbolic model fo
 - Slug: tts-navigation-navice
 - Period: Feb 2021 - Dec 2021
 - Affiliation: Pusan National University (AI Lab)
-- Group: Speech and Language Systems
+- Group: Language, Speech, and Structured Reasoning
 - Detail Page: projects/tts-navigation-navice.html
 - Per-item Markdown: projects/tts-navigation-navice.md
 - Source: `projects-data.js`

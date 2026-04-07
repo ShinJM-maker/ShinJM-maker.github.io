@@ -64,7 +64,7 @@ Developed a science domain-specialized Korean LLM & RAG pipeline.
 
 - Slug: ko-gemma
 - Period: Feb 2024 - Mar 2024
-- Affiliation: Korea University / HIAI
+- Affiliation: Korea University
 - Group: LLM Development
 - Role: Korean-focused adaptation and evaluation.
 - Tools: Model adaptation and Korean benchmark analysis.
@@ -80,7 +80,7 @@ Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with
 
 - Slug: kullm
 - Period: Dec 2023 - Feb 2024
-- Affiliation: Korea University / HIAI
+- Affiliation: Korea University
 - Group: LLM Development
 - Role: Post-training and benchmarking.
 - Tools: Instruction-following tuning and benchmark evaluation.
@@ -90,7 +90,7 @@ Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with
 - Source: `projects-data.js`
 
 ## Description
-Contributed to KULLM, a Korean large language model initiative developed through Korea University and HIAI.
+Contributed to KULLM, a Korean large language model initiative developed through Korea University.
 
 ## Mi:deum K 1.0
 

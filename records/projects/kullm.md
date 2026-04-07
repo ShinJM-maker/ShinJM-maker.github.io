@@ -3,7 +3,7 @@
 - Type: Project
 - Slug: kullm
 - Period: Dec 2023 - Feb 2024
-- Affiliation: Korea University / HIAI
+- Affiliation: Korea University
 - Group: LLM Development
 - Role: Post-training and benchmarking.
 - Tools: Instruction-following tuning and benchmark evaluation.
@@ -12,4 +12,4 @@
 - Source: `projects-data.js`
 
 ## Description
-Contributed to KULLM, a Korean large language model initiative developed through Korea University and HIAI.
+Contributed to KULLM, a Korean large language model initiative developed through Korea University.

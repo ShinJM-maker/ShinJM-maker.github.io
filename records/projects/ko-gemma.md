@@ -4,7 +4,7 @@
 - Slug: ko-gemma
 - Period: Feb 2024 - Mar 2024
 - Affiliation: Korea University / HIAI
-- Group: Selected LLM Development
+- Group: LLM Development
 - Role: Korean-focused adaptation and evaluation.
 - Tools: Model adaptation and Korean benchmark analysis.
 - Achievements: Korean-adapted Gemma contribution.

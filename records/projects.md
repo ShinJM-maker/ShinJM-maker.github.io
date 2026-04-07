@@ -35,7 +35,7 @@ Developing a system that performs curation based on Video QA and RAG.
 - Slug: national-representative-k-ai-research-team
 - Period: Aug 2025 - Jan 2026
 - Affiliation: Korea University (NC AI Consortium)
-- Group: Selected LLM Development
+- Group: LLM Development
 - Role: Construction of the raw data processing pipeline, preprocessing, and evaluation.
 - Achievements: Consortium-scale multilingual foundation model contribution.
 - Detail Page: projects/national-representative-k-ai-research-team.html
@@ -65,7 +65,7 @@ Developed a science domain-specialized Korean LLM & RAG pipeline.
 - Slug: ko-gemma
 - Period: Feb 2024 - Mar 2024
 - Affiliation: Korea University / HIAI
-- Group: Selected LLM Development
+- Group: LLM Development
 - Role: Korean-focused adaptation and evaluation.
 - Tools: Model adaptation and Korean benchmark analysis.
 - Achievements: Korean-adapted Gemma contribution.
@@ -81,7 +81,7 @@ Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with
 - Slug: kullm
 - Period: Dec 2023 - Feb 2024
 - Affiliation: Korea University / HIAI
-- Group: Selected LLM Development
+- Group: LLM Development
 - Role: Post-training and benchmarking.
 - Tools: Instruction-following tuning and benchmark evaluation.
 - Achievements: Academic Korean LLM contribution.
@@ -97,7 +97,7 @@ Contributed to KULLM, a Korean large language model initiative developed through
 - Slug: mideum-k-1-0
 - Period: Dec 2021 - Dec 2022
 - Affiliation: KT
-- Group: Selected LLM Development
+- Group: LLM Development
 - Role: Model adaptation and evaluation.
 - Tools: Korean-focused post-training and evaluation workflows.
 - Achievements: Enterprise Korean LLM contribution.

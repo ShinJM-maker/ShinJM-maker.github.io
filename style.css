@@ -601,13 +601,6 @@ h1 {
   color: var(--brand-strong);
 }
 
-.llm-contribution-line {
-  margin: 0 0 0.35rem;
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text);
-}
-
 .entry-card + .entry-card {
   margin-top: 0.65rem;
 }

@@ -1471,21 +1471,9 @@ h1 {
   width: 100%;
   max-width: 100%;
   height: 56px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.featured-pub-venue-image-acl {
-  background-image: url("Venue/ACL2026.png");
-}
-
-.featured-pub-venue-image-cvpr {
-  background-image: url("Venue/CVPR2026.png");
-}
-
-.featured-pub-venue-image-emnlp {
-  background-image: url("Venue/EMNLP2025.png");
+  object-fit: contain;
+  object-position: center;
+  flex: 0 0 auto;
 }
 
 .featured-pub-card h3 {

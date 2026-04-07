@@ -229,11 +229,37 @@ h1 {
   margin: 0;
 }
 
-.hero-badges {
-  font-size: 0.92rem;
+.hero-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.hero-highlight {
+  padding: 0.8rem 0.88rem;
+  border: 1px solid var(--brand-soft-strong);
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(245, 232, 230, 0.88) 100%);
+  box-shadow: 0 10px 22px rgba(46, 45, 41, 0.06);
+}
+
+.hero-highlight-label {
+  display: block;
+  margin-bottom: 0.32rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.hero-highlight p {
+  margin: 0;
+  font-size: 1rem;
   font-weight: 700;
-  color: #5f534e;
-  line-height: 1.5;
+  line-height: 1.45;
+  color: #4f4641;
 }
 
 .hero-links {
@@ -1112,6 +1138,10 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.55rem;
+  }
+
+  .hero-highlights {
+    grid-template-columns: 1fr;
   }
 
   .hero-secondary-links {

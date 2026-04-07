@@ -213,6 +213,29 @@ h1 {
   color: var(--brand-strong);
 }
 
+.hero-bridge {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.hero-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.32rem;
+}
+
+.hero-summary p {
+  margin: 0;
+}
+
+.hero-badges {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #5f534e;
+  line-height: 1.5;
+}
+
 .hero-links {
   display: flex;
   gap: 0.5rem;
@@ -558,47 +581,6 @@ h1 {
 .page-intro {
   margin: 0.45rem 0 0.9rem;
   color: var(--muted);
-}
-
-.hero-subtitle {
-  font-size: 1.08rem;
-  color: #4f4641;
-  max-width: 58ch;
-}
-
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.65rem;
-}
-
-.hero-stat-wide {
-  grid-column: 1 / -1;
-}
-
-.hero-stat {
-  border: 1px solid var(--line-strong);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.84);
-  padding: 0.72rem 0.8rem;
-}
-
-.hero-stat-label {
-  display: block;
-  margin-bottom: 0.32rem;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #6c625d;
-}
-
-.hero-stat strong {
-  display: block;
-  font-family: var(--font-ui);
-  font-size: 1.02rem;
-  line-height: 1.35;
-  color: var(--brand-strong);
 }
 
 .entry-card + .entry-card {
@@ -1091,9 +1073,6 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero-stats {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 760px) {
@@ -1127,15 +1106,6 @@ h1 {
 
   .impact-grid {
     grid-template-columns: 1fr;
-  }
-
-  .hero-stats {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.55rem;
-  }
-
-  .hero-stat-wide {
-    grid-column: 1 / -1;
   }
 
   .hero-links {

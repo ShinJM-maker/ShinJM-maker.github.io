@@ -542,8 +542,8 @@ h1 {
   margin-top: 0.8rem;
 }
 
-.llm-summary-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.project-summary-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .project-detail-grid {
@@ -1116,7 +1116,7 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .llm-summary-grid,
+  .project-summary-grid,
   .project-detail-grid {
     grid-template-columns: 1fr;
   }

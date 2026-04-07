@@ -8,8 +8,13 @@
     "Foundation Models and Adaptation",
     "Applied AI Systems and Pilots",
     "Language, Speech, and Structured Reasoning",
-    "Research Prototypes for Future Agents"
+    "Early Prototypes Toward Structured Memory and Future Agents"
   ];
+
+  const groupIntro = {
+    "Foundation Models and Adaptation": "In parallel with my research on multimodal evidence systems, I contributed to Korean and multilingual foundation models across academic, industrial, and consortium settings.",
+    "Early Prototypes Toward Structured Memory and Future Agents": "Early exploratory systems connecting multimodal reasoning with future directions in structured memory, temporal abstraction, and agent planning."
+  };
 
   const byGroup = new Map();
   list.forEach(project => {
@@ -53,6 +58,7 @@
       return `
         <section class="pub-group">
           <h2 class="pub-group-title">${group} <span class="pub-group-count">(${byGroup.get(group).length})</span></h2>
+          ${groupIntro[group] ? `<p class="section-note">${groupIntro[group]}</p>` : ""}
           <div class="pub-group-list">
             ${cards}
           </div>

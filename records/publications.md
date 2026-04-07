@@ -90,7 +90,7 @@ StyleDFS proposes structure-aware chunking for high-stakes industrial QA. The fr
 ## Contribution
 Domain-specific RAG framework for scientific and industrial QA; led to two technology transfers.
 
-## Anonymous manuscript on unified evidence representation via entity-linked graphs (details withheld during review)
+## Project ARGUS
 
 - Slug: under-review-evidence-graph
 - Category: Under Review
@@ -99,58 +99,18 @@ Domain-specific RAG framework for scientific and industrial QA; led to two techn
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
-- Keywords: evidence graph, multimodal, unified representation
+- Keywords: anonymous manuscript, evidence graphs, multimodal QA
 - Detail Page: publications/under-review-evidence-graph.html
 - Per-item Markdown: publications/under-review-evidence-graph.md
 - Source: `publications-data.js`
 
 ## Abstract
-This work proposes a page-grounded unified evidence representation that links entities across text, tables, and figures into an assertion graph for open-domain QA. Details are withheld during the review period.
+Anonymous manuscript on unified evidence representation via entity-linked graphs for multimodal QA.
 
 ## Contribution
-Entity-linked assertion graph unifying text, tables, and figures into a single evidence representation for multimodal QA.
+Entity-linked assertion graphs unify text, tables, and figures into a single evidence representation for open-domain multimodal QA.
 
-## Anonymous manuscript on consumed-evidence auditing for multimodal QA (details withheld during review)
-
-- Slug: under-review-consumed-evidence-audit
-- Category: Under Review
-- Venue: Under Review
-- Date: 2026
-- Authors: Anonymous (Under review)
-- Role: First Author
-- Status: Under Review
-- Keywords: evidence audit, reliability, evaluation
-- Detail Page: publications/under-review-consumed-evidence-audit.html
-- Per-item Markdown: publications/under-review-consumed-evidence-audit.md
-- Source: `publications-data.js`
-
-## Abstract
-This work introduces a framework for auditing what evidence multimodal QA systems actually consume, distinguishing genuine evidence use from surface-level metric gains. Details are withheld during the review period.
-
-## Contribution
-Consumed-evidence audit framework that separates real evidence use from evaluation illusions in multimodal QA.
-
-## Anonymous manuscript on cross-family error propagation diagnostics in PDF-to-RAG (details withheld during review)
-
-- Slug: under-review-error-propagation
-- Category: Under Review
-- Venue: Under Review
-- Date: 2026
-- Authors: Anonymous (Under review)
-- Role: First Author
-- Status: Under Review
-- Keywords: error propagation, diagnostics, PDF-to-RAG
-- Detail Page: publications/under-review-error-propagation.html
-- Per-item Markdown: publications/under-review-error-propagation.md
-- Source: `publications-data.js`
-
-## Abstract
-This work presents a matched-intervention diagnostic framework for analyzing how upstream errors in OCR and layout parsing propagate through PDF-to-RAG pipelines. Details are withheld during the review period.
-
-## Contribution
-Diagnostic framework for tracing cross-family error propagation from upstream parsing to downstream RAG reasoning.
-
-## Anonymous manuscript on compiling natural-language instructions into executable structures (details withheld during review)
+## Project COMPASS
 
 - Slug: under-review-executable-plan-representation
 - Category: Under Review
@@ -159,16 +119,56 @@ Diagnostic framework for tracing cross-family error propagation from upstream pa
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
-- Keywords: executable plans, agent planning, intermediate representation
+- Keywords: anonymous manuscript, agent planning, executable structures
 - Detail Page: publications/under-review-executable-plan-representation.html
 - Per-item Markdown: publications/under-review-executable-plan-representation.md
 - Source: `publications-data.js`
 
 ## Abstract
-This work maps free-form natural-language instructions into validated intermediate representations whose nodes are executable operations, slots bind task-critical arguments, and edges encode prerequisite or dataflow structure. Details are withheld during the review period.
+Anonymous manuscript on compiling natural-language instructions into executable structures for reliable agent planning.
 
 ## Contribution
-Compiles natural-language instructions into validated executable intermediate representations with operation nodes and dataflow edges.
+A validated intermediate representation maps instructions into executable operations, task-critical arguments, and prerequisite/dataflow structure.
+
+## Project PRISM
+
+- Slug: under-review-consumed-evidence-audit
+- Category: Under Review
+- Venue: Under Review
+- Date: 2026
+- Authors: Anonymous (Under review)
+- Role: First Author
+- Status: Under Review
+- Keywords: anonymous manuscript, evidence auditing, multimodal QA
+- Detail Page: publications/under-review-consumed-evidence-audit.html
+- Per-item Markdown: publications/under-review-consumed-evidence-audit.md
+- Source: `publications-data.js`
+
+## Abstract
+Anonymous manuscript on consumed-evidence auditing for multimodal QA.
+
+## Contribution
+A matched-reader audit framework separates real evidence use from evaluation illusions in multimodal QA.
+
+## Project CASCADE
+
+- Slug: under-review-error-propagation
+- Category: Under Review
+- Venue: Under Review
+- Date: 2026
+- Authors: Anonymous (Under review)
+- Role: First Author
+- Status: Under Review
+- Keywords: anonymous manuscript, error propagation, PDF-to-RAG
+- Detail Page: publications/under-review-error-propagation.html
+- Per-item Markdown: publications/under-review-error-propagation.md
+- Source: `publications-data.js`
+
+## Abstract
+Anonymous manuscript on error propagation and recoverability in PDF-to-RAG pipelines.
+
+## Contribution
+A matched-intervention diagnostic framework analyzes how upstream parsing uncertainty propagates across representation families.
 
 ## Distance Based Korean WordNet (alias. KorLex) Embedding Model
 

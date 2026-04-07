@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1260" height="560" viewBox="0 0 1260 560" role="img" aria-labelledby="title desc">
   <title id="title">Static research map fallback</title>
-  <desc id="desc">Four-stage research map preview spanning linguistic foundations, domain RAG, multimodal document intelligence, and future structured memory and agents.</desc>
+  <desc id="desc">Static preview of Joongmin Shin's four-stage research map spanning linguistic structure, applied evidence systems, multimodal evidence systems, and future structured memory and agents.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
       <stop offset="0%" stop-color="#fffaf8" />
@@ -38,44 +38,44 @@
   <rect width="1260" height="560" fill="url(#bg)" rx="26" />
 
   <text x="72" y="74" class="title">Joongmin Shin Research Map</text>
-  <text x="72" y="102" class="subtitle">Static roadmap preview for non-interactive environments</text>
+  <text x="72" y="102" class="subtitle">Static roadmap preview for a quick overview of the research trajectory</text>
 
   <g transform="translate(72 136)">
     <rect x="0" y="0" width="258" height="360" rx="22" fill="url(#stageFill)" stroke="#cdbfb8" stroke-width="2" />
     <text x="26" y="38" class="stageMeta">STAGE 1  2021-2022</text>
-    <text x="26" y="76" class="stageTitle">Core Linguistic</text>
-    <text x="26" y="102" class="stageTitle">and Syntax</text>
+    <text x="26" y="76" class="stageTitle">Core Linguistic Structure</text>
+    <text x="26" y="102" class="stageTitle">and Symbolic Reasoning</text>
     <text x="26" y="144" class="sectionLabel">FOCUS</text>
-    <text x="26" y="168" class="body">Dependency parsing and</text>
-    <text x="26" y="190" class="body">machine reading foundations</text>
+    <text x="26" y="168" class="body">Dependency parsing, neural-symbolic</text>
+    <text x="26" y="190" class="body">reasoning, and table QA foundations</text>
     <text x="26" y="234" class="sectionLabel">THEMES</text>
     <text x="26" y="258" class="body">Dependency parsing</text>
     <text x="26" y="280" class="body">Neural-symbolic modeling</text>
-    <text x="26" y="302" class="body">Table MRC and WordNet</text>
+    <text x="26" y="302" class="body">Lexical-semantic structure</text>
   </g>
 
   <g transform="translate(358 136)">
     <rect x="0" y="0" width="258" height="360" rx="22" fill="url(#stageFill)" stroke="#cdbfb8" stroke-width="2" />
     <text x="26" y="38" class="stageMeta">STAGE 2  2023-2024</text>
-    <text x="26" y="76" class="stageTitle">Applied LLM and</text>
-    <text x="26" y="102" class="stageTitle">Domain RAG</text>
+    <text x="26" y="76" class="stageTitle">Applied LLMs and</text>
+    <text x="26" y="102" class="stageTitle">Domain Evidence Systems</text>
     <text x="26" y="144" class="sectionLabel">FOCUS</text>
-    <text x="26" y="168" class="body">Production-minded LLM</text>
-    <text x="26" y="190" class="body">evaluation and domain retrieval</text>
+    <text x="26" y="168" class="body">Zero-shot analysis, domain-specific</text>
+    <text x="26" y="190" class="body">RAG, and industrial evidence systems</text>
     <text x="26" y="234" class="sectionLabel">THEMES</text>
     <text x="26" y="258" class="body">Zero-shot analysis</text>
-    <text x="26" y="280" class="body">Chatbot system design</text>
-    <text x="26" y="302" class="body">Industrial RAG pipelines</text>
+    <text x="26" y="280" class="body">Chatbot systems</text>
+    <text x="26" y="302" class="body">Industrial evidence pipelines</text>
   </g>
 
   <g transform="translate(644 136)">
     <rect x="0" y="0" width="258" height="360" rx="22" fill="url(#stageHighlight)" stroke="#8c1515" stroke-width="2.4" />
     <text x="26" y="38" class="stageMeta">STAGE 3  2025-2026</text>
-    <text x="26" y="76" class="stageTitle">Multimodal Document</text>
-    <text x="26" y="102" class="stageTitle">Intelligence</text>
+    <text x="26" y="76" class="stageTitle">Multimodal Evidence</text>
+    <text x="26" y="102" class="stageTitle">Systems</text>
     <text x="26" y="144" class="sectionLabel">FOCUS</text>
-    <text x="26" y="168" class="body">Structure recovery, retrieval,</text>
-    <text x="26" y="190" class="body">and evidence assembly</text>
+    <text x="26" y="168" class="body">Structure recovery, evidence</text>
+    <text x="26" y="190" class="body">assembly, and long-context reasoning</text>
     <text x="26" y="234" class="sectionLabel">HIGHLIGHTED WORK</text>
     <text x="26" y="258" class="bodyStrong">HiKEY  ACL 2026</text>
     <text x="26" y="280" class="bodyStrong">M3DocDep  CVPR 2026</text>
@@ -85,8 +85,8 @@
   <g transform="translate(930 136)">
     <rect x="0" y="0" width="258" height="360" rx="22" fill="url(#stageFill)" stroke="#cdbfb8" stroke-width="2" />
     <text x="26" y="38" class="stageMeta">STAGE 4  2027+</text>
-    <text x="26" y="76" class="stageTitle">Structured Memory,</text>
-    <text x="26" y="102" class="stageTitle">World Models and Agents</text>
+    <text x="26" y="76" class="stageTitle">Toward Structured Memory,</text>
+    <text x="26" y="102" class="stageTitle">World Models, and Agents</text>
     <text x="26" y="144" class="sectionLabel">FOCUS</text>
     <text x="26" y="168" class="body">Actionable memory and planning</text>
     <text x="26" y="190" class="body">for multimodal agents</text>

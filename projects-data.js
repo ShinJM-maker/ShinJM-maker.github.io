@@ -14,7 +14,7 @@ window.PROJECTS = [
     title: "Video Curation System",
     period: "Jul 2025 - Feb 2026",
     affiliation: "Korea University",
-    group: "Research Prototypes for Future Agents",
+    group: "Early Prototypes Toward Structured Memory and Future Agents",
     description: "Developing a system that performs curation based on Video QA and RAG."
   },
   {

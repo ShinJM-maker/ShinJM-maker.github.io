@@ -22,7 +22,7 @@ Developed a novel multimodal chunking methodology for real-world industrial data
 - Slug: video-curation-system
 - Period: Jul 2025 - Feb 2026
 - Affiliation: Korea University
-- Group: Research Prototypes for Future Agents
+- Group: Early Prototypes Toward Structured Memory and Future Agents
 - Detail Page: projects/video-curation-system.html
 - Per-item Markdown: projects/video-curation-system.md
 - Source: `projects-data.js`

@@ -82,9 +82,9 @@ window.PROJECTS = [
   {
     slug: "multilingual-medical-synapse",
     title: "Development of an LLM-Based Multilingual Medical Consultation Service (Synapse)",
-    period: "Jun 2023 - Jan 2024",
+    period: "Jun 2023 - Present",
     affiliation: "Korea University",
-    group: "Applied AI Systems and Pilots",
+    group: "Document Intelligence and RAG",
     description: "Developed an LLM-based multilingual medical consultation chatbot and admin page.",
     role: "LLM-based AI chatbot development, admin page implementation.",
     tools: "LangChain (AI), React (Frontend), Express (Backend), PostgreSQL (DB).",

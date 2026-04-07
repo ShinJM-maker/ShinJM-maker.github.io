@@ -5,7 +5,7 @@
 
   const groupOrder = [
     "Document Intelligence and RAG",
-    "Selected LLM Development",
+    "LLM Development",
     "Applied AI Systems and Pilots",
     "Speech and Language Systems",
     "Foundational NLP and QA",

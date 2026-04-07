@@ -4,7 +4,7 @@ window.PROJECTS = [
     title: "DocGraph Copilot",
     period: "Jan 2025 - Present",
     affiliation: "Korea University",
-    group: "Document Intelligence and RAG",
+    group: "Multimodal Evidence Systems",
     description: "Developed a novel multimodal chunking methodology for real-world industrial data. It is designed to chunk documents by converting their layout information into a hierarchical structure.",
     role: "Research, Design, Development",
     achievements: "Accepted to EMNLP 2025 (Main) and CVPR 2026."
@@ -22,7 +22,7 @@ window.PROJECTS = [
     title: "National Representative K-AI Research Team (National Foundation Model Project)",
     period: "Aug 2025 - Jan 2026",
     affiliation: "Korea University (NC AI Consortium)",
-    group: "LLM Development",
+    group: "Foundation Models and Adaptation",
     description: "Selected for the National Foundation Model Project (K-AI Project / National Representative LLM Project). Participated as part of the NC AI Consortium in consortium-scale multilingual large language model development with major academic institutions, ETRI, and corporate partners.",
     role: "Construction of the raw data processing pipeline, preprocessing, and evaluation.",
     achievements: "Consortium-scale multilingual foundation model contribution."
@@ -32,7 +32,7 @@ window.PROJECTS = [
     title: "Development of a Korean LLM & RAG Pipeline Specialized for the Science Domain",
     period: "Feb 2024 - Dec 2024",
     affiliation: "Korea University",
-    group: "Document Intelligence and RAG",
+    group: "Multimodal Evidence Systems",
     description: "Developed a science domain-specialized Korean LLM & RAG pipeline.",
     role: "Data preprocessing and chunking methodology development.",
     achievements: "Publication at EMNLP 2024 (Industry Track) and 2 technology transfers."
@@ -42,7 +42,7 @@ window.PROJECTS = [
     title: "Ko-Gemma",
     period: "Feb 2024 - Mar 2024",
     affiliation: "Korea University",
-    group: "LLM Development",
+    group: "Foundation Models and Adaptation",
     description: "Contributed to the development of Ko-Gemma, a Korean Gemma variant improved with Korean-focused data and evaluation.",
     role: "Korean-focused adaptation and evaluation.",
     achievements: "Korean-adapted Gemma contribution.",
@@ -53,7 +53,7 @@ window.PROJECTS = [
     title: "KULLM",
     period: "Dec 2023 - Feb 2024",
     affiliation: "Korea University",
-    group: "LLM Development",
+    group: "Foundation Models and Adaptation",
     description: "Contributed to KULLM, a Korean large language model initiative developed through Korea University.",
     role: "Post-training and benchmarking.",
     achievements: "Academic Korean LLM contribution.",
@@ -64,7 +64,7 @@ window.PROJECTS = [
     title: "Mi:deum K 1.0",
     period: "Dec 2021 - Dec 2022",
     affiliation: "KT",
-    group: "LLM Development",
+    group: "Foundation Models and Adaptation",
     description: "Contributed to KT's Korean language model ecosystem for enterprise generative AI applications.",
     role: "Model adaptation and evaluation.",
     achievements: "Enterprise Korean LLM contribution.",
@@ -84,7 +84,7 @@ window.PROJECTS = [
     title: "Development of an LLM-Based Multilingual Medical Consultation Service (Synapse)",
     period: "Jun 2023 - Present",
     affiliation: "Korea University",
-    group: "Document Intelligence and RAG",
+    group: "Multimodal Evidence Systems",
     description: "Developed an LLM-based multilingual medical consultation chatbot and admin page.",
     role: "LLM-based AI chatbot development, admin page implementation.",
     tools: "LangChain (AI), React (Frontend), Express (Backend), PostgreSQL (DB).",
@@ -114,7 +114,7 @@ window.PROJECTS = [
     title: "Deep Learning-Based TTS Pronunciation Sequence Development (KT)",
     period: "Dec 2022 - Mar 2023",
     affiliation: "Pusan National University (AI Lab)",
-    group: "Speech and Language Systems",
+    group: "Language, Speech, and Structured Reasoning",
     description: "Developed a Korean phoneme sequence generation system for KT AIX2L Lab to improve the quality of their TTS systems."
   },
   {
@@ -122,7 +122,7 @@ window.PROJECTS = [
     title: "Research and Development of Deep Learning-Based TTS Prosodic Boundary Prediction (KT)",
     period: "Dec 2021 - Dec 2022",
     affiliation: "Pusan National University (AI Lab)",
-    group: "Speech and Language Systems",
+    group: "Language, Speech, and Structured Reasoning",
     description: "Developed a Korean sentence analysis system and a prosodic phrase boundary prediction system for KT AIX2L Research Institute to improve the quality of their TTS systems."
   },
   {
@@ -130,7 +130,7 @@ window.PROJECTS = [
     title: "Exobrain Division 1 - Development of the Intelligent Evolutionary WiseQA Platform Technology for Human Knowledge Augmentation Services (ETRI)",
     period: "Sep 2020 - Nov 2022",
     affiliation: "Pusan National University (AI Lab)",
-    group: "Foundational NLP and QA",
+    group: "Language, Speech, and Structured Reasoning",
     description: "Developed a table-based question-answering system and a neural-symbolic model for Korean sentence analysis in collaboration with ETRI as part of the national Exobrain research project."
   },
   {
@@ -138,7 +138,7 @@ window.PROJECTS = [
     title: "Development of a TTS System for Navigation Pronunciation Systems (Navice)",
     period: "Feb 2021 - Dec 2021",
     affiliation: "Pusan National University (AI Lab)",
-    group: "Speech and Language Systems",
+    group: "Language, Speech, and Structured Reasoning",
     description: "Developed a Korean phoneme-based TTS system for navigation in collaboration with Navice."
   },
   {

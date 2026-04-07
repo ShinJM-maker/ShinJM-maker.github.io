@@ -4,7 +4,7 @@
 - Slug: multilingual-medical-synapse
 - Period: Jun 2023 - Present
 - Affiliation: Korea University
-- Group: Document Intelligence and RAG
+- Group: Multimodal Evidence Systems
 - Role: LLM-based AI chatbot development, admin page implementation.
 - Tools: LangChain (AI), React (Frontend), Express (Backend), PostgreSQL (DB).
 - Achievements: Selected for the KU-Grant Program's Excellent Technology Track.

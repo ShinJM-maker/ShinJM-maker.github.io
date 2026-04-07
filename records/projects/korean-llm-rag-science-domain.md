@@ -4,7 +4,7 @@
 - Slug: korean-llm-rag-science-domain
 - Period: Feb 2024 - Dec 2024
 - Affiliation: Korea University
-- Group: Document Intelligence and RAG
+- Group: Multimodal Evidence Systems
 - Role: Data preprocessing and chunking methodology development.
 - Achievements: Publication at EMNLP 2024 (Industry Track) and 2 technology transfers.
 - Detail Page: projects/korean-llm-rag-science-domain.html

@@ -4,7 +4,7 @@
 - Slug: ko-gemma
 - Period: Feb 2024 - Mar 2024
 - Affiliation: Korea University
-- Group: LLM Development
+- Group: Foundation Models and Adaptation
 - Role: Korean-focused adaptation and evaluation.
 - Tools: Model adaptation and Korean benchmark analysis.
 - Achievements: Korean-adapted Gemma contribution.

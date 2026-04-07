@@ -3,19 +3,12 @@
   const list = Array.isArray(window.PUBLICATIONS) ? window.PUBLICATIONS : [];
   if (!container || !list.length) return;
 
-  const categoryOrder = [
-    "Top Conferences",
-    "Under Review",
-    "Journals",
-    "Domestic Conferences & Theses"
+  const underReviewOrder = [
+    "under-review-evidence-graph",
+    "under-review-executable-plan-representation",
+    "under-review-consumed-evidence-audit",
+    "under-review-error-propagation"
   ];
-
-  const byCategory = new Map();
-  list.forEach(item => {
-    const key = item.category || "Others";
-    if (!byCategory.has(key)) byCategory.set(key, []);
-    byCategory.get(key).push(item);
-  });
 
   function renderCard(pub) {
     const meta = `${pub.venue || ""} · ${pub.date || ""}`;
@@ -42,30 +35,36 @@
     `;
   }
 
-  const sections = categoryOrder
-    .filter(category => byCategory.has(category))
-    .map(category => {
-      const cards = byCategory.get(category).map(renderCard).join("\n");
-      return `
-        <section class="pub-group">
-          <h2 class="pub-group-title">${category} <span class="pub-group-count">(${byCategory.get(category).length})</span></h2>
-          <div class="pub-group-list">
-            ${cards}
-          </div>
-        </section>
-      `;
-    });
+  const selectedPublications = list.filter(pub => pub.category !== "Under Review");
+  const underReviewMap = new Map(list.filter(pub => pub.category === "Under Review").map(pub => [pub.slug, pub]));
+  const underReviewPublications = underReviewOrder.map(slug => underReviewMap.get(slug)).filter(Boolean);
 
-  const remaining = Array.from(byCategory.keys()).filter(k => !categoryOrder.includes(k));
-  remaining.forEach(category => {
-    const cards = byCategory.get(category).map(renderCard).join("\n");
-    sections.push(`
-      <section class="pub-group">
-        <h2 class="pub-group-title">${category} <span class="pub-group-count">(${byCategory.get(category).length})</span></h2>
-        <div class="pub-group-list">${cards}</div>
-      </section>
-    `);
-  });
+  const sections = [];
+
+  sections.push(`
+    <section class="pub-group">
+      <h2 class="pub-group-title">Selected Publications</h2>
+      <div class="pub-group-list">
+        ${selectedPublications.map(renderCard).join("\n")}
+      </div>
+    </section>
+  `);
+
+  sections.push(`
+    <section class="pub-group">
+      <h2 class="pub-group-title">Anonymous Manuscripts Under Review</h2>
+      <div class="pub-group-list">
+        ${underReviewPublications.map(renderCard).join("\n")}
+      </div>
+    </section>
+  `);
+
+  sections.push(`
+    <section class="pub-group">
+      <h2 class="pub-group-title">Current Research Directions</h2>
+      <p class="section-note">Current research directions include actionable ontologies for multimodal agent memory, video-structured memory for long-horizon reasoning, and planning over structured world representations.</p>
+    </section>
+  `);
 
   container.innerHTML = sections.join("\n");
 })();

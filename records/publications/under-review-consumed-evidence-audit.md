@@ -1,4 +1,4 @@
-# Anonymous manuscript on consumed-evidence auditing for multimodal QA (details withheld during review)
+# Project PRISM
 
 - Type: Publication
 - Slug: under-review-consumed-evidence-audit
@@ -8,12 +8,12 @@
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
-- Keywords: evidence audit, reliability, evaluation
+- Keywords: anonymous manuscript, evidence auditing, multimodal QA
 - Detail Page: publications/under-review-consumed-evidence-audit.html
 - Source: `publications-data.js`
 
 ## Abstract
-This work introduces a framework for auditing what evidence multimodal QA systems actually consume, distinguishing genuine evidence use from surface-level metric gains. Details are withheld during the review period.
+Anonymous manuscript on consumed-evidence auditing for multimodal QA.
 
 ## Contribution
-Consumed-evidence audit framework that separates real evidence use from evaluation illusions in multimodal QA.
+A matched-reader audit framework separates real evidence use from evaluation illusions in multimodal QA.

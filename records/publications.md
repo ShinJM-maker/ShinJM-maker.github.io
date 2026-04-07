@@ -6,7 +6,7 @@ Total items: 19
 
 - Slug: hikey
 - Category: Top Conferences
-- Venue: ACL 2026
+- Venue: ACL 2026 (Main)
 - Date: Mar 2026
 - Authors: Joongmin Shin*, Gyuho Shim, Jeongbae Park, Jaehyung Seo, Heuiseok Lim
 - Role: First Author
@@ -27,7 +27,7 @@ Hierarchical retrieval for multimodal document QA with structured evidence assem
 
 - Slug: m3docdep
 - Category: Top Conferences
-- Venue: CVPR 2026
+- Venue: CVPR 2026 (Main)
 - Date: Feb 22, 2026
 - Authors: Joongmin Shin*, Jeongbae Park, Jaehyung Seo, Heuiseok Lim
 - Role: First Author

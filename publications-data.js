@@ -3,7 +3,7 @@ window.PUBLICATIONS = [
     slug: "hikey",
     category: "Top Conferences",
     title: "HiKEY: Hierarchical Multimodal Retrieval for Open-Domain Document Question Answering",
-    venue: "ACL 2026",
+    venue: "ACL 2026 (Main)",
     date: "Mar 2026",
     authorsHtml: "<strong>Joongmin Shin*</strong>, Gyuho Shim, Jeongbae Park, Jaehyung Seo, Heuiseok Lim",
     abstract: "HiKEY introduces a hierarchical multimodal retrieval framework for open-domain document question answering. The system combines global routing, local ranking, and structured evidence assembly to improve retrieval quality across long and visually complex documents.",
@@ -15,7 +15,7 @@ window.PUBLICATIONS = [
     linkPlaceholders: ["Paper coming soon", "Code coming soon", "arXiv coming soon"],
     venueBadge: {
       path: "Venue/ACL2026.png",
-      alt: "ACL 2026 venue badge"
+      alt: "ACL 2026 Main venue badge"
     },
     doi: "",
     arxiv: "",
@@ -28,7 +28,7 @@ window.PUBLICATIONS = [
     slug: "m3docdep",
     category: "Top Conferences",
     title: "M3DocDep: Multi-modal, Multi-page, Multi-document Dependency Chunking with Large Vision-Language Models",
-    venue: "CVPR 2026",
+    venue: "CVPR 2026 (Main)",
     date: "Feb 22, 2026",
     authorsHtml: "<strong>Joongmin Shin*</strong>, Jeongbae Park, Jaehyung Seo, Heuiseok Lim",
     abstract: "This work uses large vision-language models to infer cross-page and cross-document dependency structures in complex unstructured inputs. The resulting structure-aware multimodal chunks improve evidence retrieval quality and downstream QA performance for retrieval-augmented pipelines.",
@@ -38,7 +38,7 @@ window.PUBLICATIONS = [
     keywords: ["document structure", "LVLM", "chunking", "retrieval"],
     venueBadge: {
       path: "Venue/CVPR2026.png",
-      alt: "CVPR 2026 venue badge"
+      alt: "CVPR 2026 Main venue badge"
     },
     doi: "",
     arxiv: "",

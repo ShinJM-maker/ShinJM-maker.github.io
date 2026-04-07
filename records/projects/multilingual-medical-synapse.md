@@ -2,9 +2,9 @@
 
 - Type: Project
 - Slug: multilingual-medical-synapse
-- Period: Jun 2023 - Jan 2024
+- Period: Jun 2023 - Present
 - Affiliation: Korea University
-- Group: Applied AI Systems and Pilots
+- Group: Document Intelligence and RAG
 - Role: LLM-based AI chatbot development, admin page implementation.
 - Tools: LangChain (AI), React (Frontend), Express (Backend), PostgreSQL (DB).
 - Achievements: Selected for the KU-Grant Program's Excellent Technology Track.

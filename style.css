@@ -223,16 +223,17 @@ h1 {
 }
 
 .hero-bridge {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 0.08rem;
+  padding: 0.34rem 0.62rem 0.36rem;
+  border-left: 3px solid var(--brand);
+  background: linear-gradient(90deg, rgba(140, 21, 21, 0.08) 0%, rgba(140, 21, 21, 0.02) 100%);
   font-size: 0.96rem;
-  color: var(--brand-strong);
-  line-height: 1.45;
-}
-
-.hero-bridge em {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  font-weight: 700;
+  color: #6f1010;
+  line-height: 1.52;
+  letter-spacing: -0.01em;
 }
 
 .hero-summary {

@@ -572,6 +572,10 @@ h1 {
   gap: 0.65rem;
 }
 
+.hero-stat-wide {
+  grid-column: 1 / -1;
+}
+
 .hero-stat {
   border: 1px solid var(--line-strong);
   border-radius: 14px;
@@ -595,6 +599,13 @@ h1 {
   font-size: 1.02rem;
   line-height: 1.35;
   color: var(--brand-strong);
+}
+
+.llm-contribution-line {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
 }
 
 .entry-card + .entry-card {
@@ -1140,10 +1151,6 @@ h1 {
     gap: 0.55rem;
   }
 
-  .hero-links .btn:last-child {
-    grid-column: 1 / -1;
-  }
-
   .hero-secondary-links {
     gap: 0.55rem;
   }
@@ -1189,10 +1196,6 @@ h1 {
 @media (max-width: 520px) {
   .hero-links {
     grid-template-columns: 1fr;
-  }
-
-  .hero-links .btn:last-child {
-    grid-column: auto;
   }
 }
 

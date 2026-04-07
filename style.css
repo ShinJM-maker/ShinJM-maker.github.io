@@ -217,7 +217,8 @@ h1 {
 }
 
 .hero-role-secondary {
-  font-size: 0.93rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
   font-weight: 600;
   color: #5b4f49;
 }

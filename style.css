@@ -984,14 +984,28 @@ h1 {
   font-size: clamp(1.5rem, 2.9vw, 2.2rem);
 }
 
+.paper-meta-row {
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.paper-meta-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.32rem;
+}
+
 .paper-meta {
-  margin: 0.6rem 0 0;
+  margin: 0;
   font-size: 0.95rem;
   color: var(--muted);
 }
 
 .paper-category {
-  margin: 0.36rem 0 0;
+  margin: 0;
   display: inline-block;
   border: 1px solid var(--brand-soft-strong);
   background: var(--brand-soft);
@@ -1000,6 +1014,19 @@ h1 {
   padding: 0.12rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
+}
+
+.venue-badge {
+  display: inline-block;
+  width: auto;
+  max-width: 124px;
+  max-height: 38px;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0.2rem 0.45rem;
+  box-shadow: 0 6px 16px rgba(46, 45, 41, 0.06);
 }
 
 .paper-section {
@@ -1424,8 +1451,23 @@ h1 {
   font-size: 1.04rem;
 }
 
-.featured-pub-card .meta {
+.featured-pub-meta-row {
   margin-top: 0.42rem;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.venue-badge-featured {
+  max-width: 92px;
+  max-height: 30px;
+  border-radius: 8px;
+  padding: 0.12rem 0.35rem;
+}
+
+.featured-pub-card .meta {
+  margin: 0;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.04em;

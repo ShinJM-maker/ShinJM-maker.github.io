@@ -185,6 +185,14 @@ function renderPublicationFigure(figure) {
       </section>`;
 }
 
+function renderVenueBadge(venueBadge, relativePrefix = "../") {
+  if (!venueBadge?.path) return "";
+
+  const badgePath = escapeHtml(encodeAssetPath(`${relativePrefix}${venueBadge.path}`));
+  const badgeAlt = escapeHtml(venueBadge.alt || "Venue badge");
+  return `<img class="venue-badge" src="${badgePath}" alt="${badgeAlt}" loading="lazy" />`;
+}
+
 function renderPublicationLinks(publication) {
   const items = [];
 
@@ -229,6 +237,19 @@ function renderPublicationPage(publications, index) {
   const canonical = `${siteUrl}/publications/${publication.slug}.html`;
   const metaParts = [publication.date, publication.venue].filter(Boolean).map(escapeHtml);
   const meta = metaParts.join(" &mdash; ");
+  const venueBadge = renderVenueBadge(publication.venueBadge);
+  const metaBlock = venueBadge
+    ? `
+      <div class="paper-meta-row">
+        ${venueBadge}
+        <div class="paper-meta-stack">
+          <p class="paper-meta">${meta}</p>
+          <p class="paper-category">${escapeHtml(publication.category || "")}</p>
+        </div>
+      </div>`
+    : `
+      <p class="paper-meta">${meta}</p>
+      <p class="paper-category">${escapeHtml(publication.category || "")}</p>`;
   const prevLink = prevPublication
     ? `<a href="${escapeHtml(`${prevPublication.slug}.html`)}">Previous: ${escapeHtml(prevPublication.title)}</a>`
     : '<a href="../publications.html">Back to Publications</a>';
@@ -247,8 +268,7 @@ ${renderHeader("publications")}
     <article class="paper-page">
       <p class="paper-kicker"><a href="../publications.html">Publications</a></p>
       <h1 class="paper-title">${escapeHtml(publication.title)}</h1>
-      <p class="paper-meta">${meta}</p>
-      <p class="paper-category">${escapeHtml(publication.category || "")}</p>
+${metaBlock}
 
       <section class="paper-section">
         <h2>Authors</h2>

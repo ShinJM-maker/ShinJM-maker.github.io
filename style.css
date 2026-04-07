@@ -207,10 +207,19 @@ h1 {
 }
 
 .hero-role {
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
   font-family: var(--font-ui);
   font-size: 0.98rem;
   font-weight: 600;
   color: var(--brand-strong);
+}
+
+.hero-role-secondary {
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: #5b4f49;
 }
 
 .hero-bridge {

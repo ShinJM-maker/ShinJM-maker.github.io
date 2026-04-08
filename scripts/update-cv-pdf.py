@@ -58,7 +58,7 @@ def main():
             "AI researcher with 5+ years of experience in multimodal LLM/LVLMs, structure-aware parsing, and "
             "retrieval-augmented generation for document-heavy settings. My current work focuses on structured "
             "evidence and reliable long-context reasoning over heterogeneous unstructured inputs. In addition to my "
-            "individual research, I founded and lead KUDoc, the Document AI research team at Korea University, "
+            "individual research, I founded and lead KUDoc, the Document AI research group at Korea University, "
             "where I help shape collaborative directions across document understanding, multimodal RAG, evaluation, "
             "and applied AI. I aim to pursue a Ph.D. to extend this foundation toward structured memory, world models, "
             "and planning for future agents."

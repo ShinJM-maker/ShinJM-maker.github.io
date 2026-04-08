@@ -1302,6 +1302,76 @@ h1 {
   font-size: 0.93rem;
 }
 
+.project-chip-row {
+  margin: 0.48rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+}
+
+.project-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.56rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #faf7f4;
+  color: #5a514b;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.project-chip--institution {
+  background: rgba(83, 86, 90, 0.08);
+  border-color: rgba(83, 86, 90, 0.18);
+  color: #45484b;
+}
+
+.project-chip--output {
+  background: rgba(140, 21, 21, 0.08);
+  border-color: rgba(140, 21, 21, 0.18);
+  color: var(--brand-strong);
+}
+
+.project-chip--partner {
+  background: rgba(46, 45, 41, 0.05);
+  border-color: rgba(46, 45, 41, 0.12);
+  color: #4a433d;
+}
+
+.project-chip--recognition {
+  background: rgba(188, 147, 58, 0.1);
+  border-color: rgba(188, 147, 58, 0.2);
+  color: #7a5600;
+}
+
+.project-chip--scope {
+  background: rgba(140, 21, 21, 0.04);
+  border-color: rgba(140, 21, 21, 0.1);
+  color: #6f4f46;
+}
+
+.project-card-summary {
+  margin: 0.58rem 0 0;
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.58;
+}
+
+.project-card-cta {
+  display: inline-block;
+  margin-top: 0.72rem;
+  color: var(--brand);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.project-card-link:hover .project-card-cta {
+  text-decoration: underline;
+}
+
 .project-meta-list {
   margin: 0.45rem 0 0;
   padding-left: 1rem;

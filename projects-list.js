@@ -23,14 +23,24 @@
     byGroup.get(key).push(project);
   });
 
+  function renderChip(chip) {
+    if (!chip) return "";
+    const text = typeof chip === "string" ? chip : chip.text;
+    const tone = typeof chip === "object" && chip.tone ? ` project-chip--${chip.tone}` : "";
+    return text ? `<span class="project-chip${tone}">${text}</span>` : "";
+  }
+
   function renderCard(project) {
-    const safeTitle = project.title || "Untitled Project";
+    const safeTitle = project.cardTitle || project.title || "Untitled Project";
     const safePeriod = project.period || "";
-    const safeAffiliation = project.affiliation || "";
-    const safeDescription = project.description || "";
-    const safeRole = project.role || "";
-    const safeTools = project.tools || "";
-    const safeAchievements = project.achievements || "";
+    const safeAffiliation = project.cardAffiliation || project.affiliation || "";
+    const safeSummary = project.cardSummary || project.description || "";
+    const chips = [];
+    if (safeAffiliation) chips.push({ text: safeAffiliation, tone: "institution" });
+    if (Array.isArray(project.cardChips)) chips.push(...project.cardChips);
+    const chipRow = chips.length
+      ? `<div class="project-chip-row">${chips.map(renderChip).join("")}</div>`
+      : "";
 
     return `
       <article class="entry-card project-card-clickable">
@@ -39,13 +49,9 @@
             <h2>${safeTitle}</h2>
             <p>${safePeriod}</p>
           </div>
-          ${safeAffiliation ? `<p class="project-affiliation">${safeAffiliation}</p>` : ""}
-          <ul class="project-meta-list">
-            ${safeDescription ? `<li><strong>Description:</strong> ${safeDescription}</li>` : ""}
-            ${safeRole ? `<li><strong>Role:</strong> ${safeRole}</li>` : ""}
-            ${safeTools ? `<li><strong>Tools Used:</strong> ${safeTools}</li>` : ""}
-            ${safeAchievements ? `<li><strong>Achievements:</strong> ${safeAchievements}</li>` : ""}
-          </ul>
+          ${chipRow}
+          ${safeSummary ? `<p class="project-card-summary">${safeSummary}</p>` : ""}
+          <span class="project-card-cta">View details</span>
         </a>
       </article>
     `;

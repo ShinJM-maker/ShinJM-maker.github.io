@@ -260,6 +260,18 @@ h1 {
   margin: 0;
 }
 
+.hero-summary a {
+  color: var(--brand-strong);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(140, 21, 21, 0.38);
+  text-underline-offset: 0.14em;
+}
+
+.hero-summary a:hover {
+  text-decoration-color: currentColor;
+}
+
 .hero-badge-line {
   margin: 0.12rem 0 0;
   display: flex;

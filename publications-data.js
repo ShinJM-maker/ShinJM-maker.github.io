@@ -20,7 +20,7 @@ window.PUBLICATIONS = [
     doi: "",
     arxiv: "",
     figure: {
-      path: "paper_figure/HiKEY_architecture.svg",
+      path: "paper_figure/HiKEY_architecture.png",
       caption: "HiKEY retrieval pipeline"
     }
   },

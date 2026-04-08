@@ -35,8 +35,8 @@ const groupIntro = {
 function renderChip(chip) {
   if (!chip) return "";
   const text = typeof chip === "string" ? chip : chip.text;
-  const tone = typeof chip === "object" && chip.tone ? ` project-chip--${chip.tone}` : "";
-  return text ? `<span class="project-chip${tone}">${text}</span>` : "";
+  const tone = typeof chip === "object" && chip.tone ? ` project-keyword--${chip.tone}` : "";
+  return text ? `<span class="pub-keyword project-keyword${tone}">${text}</span>` : "";
 }
 
 function renderCard(project) {
@@ -50,7 +50,7 @@ function renderCard(project) {
   if (Array.isArray(project.cardChips)) chips.push(...project.cardChips);
 
   const chipRow = chips.length
-    ? `<div class="project-chip-row">${chips.map(renderChip).join("")}</div>`
+    ? `<div class="pub-keywords project-chip-row">${chips.map(renderChip).join("")}</div>`
     : "";
 
   return `          <article class="entry-card project-card-clickable">

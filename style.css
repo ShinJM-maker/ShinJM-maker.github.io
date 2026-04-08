@@ -1207,6 +1207,10 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  #project-list .pub-group-list {
+    grid-template-columns: 1fr;
+  }
+
   .project-summary-grid,
   .project-detail-grid {
     grid-template-columns: 1fr;
@@ -1302,52 +1306,50 @@ h1 {
   font-size: 0.93rem;
 }
 
+#project-list .pub-group-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+#project-list .entry-card + .entry-card {
+  margin-top: 0;
+}
+
 .project-chip-row {
-  margin: 0.48rem 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.38rem;
+  margin-top: 0.48rem;
 }
 
-.project-chip {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.22rem 0.56rem;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: #faf7f4;
-  color: #5a514b;
-  font-size: 0.76rem;
+.project-keyword {
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+  padding: 0.18rem 0.56rem;
 }
 
-.project-chip--institution {
+.project-keyword--institution {
   background: rgba(83, 86, 90, 0.08);
   border-color: rgba(83, 86, 90, 0.18);
   color: #45484b;
 }
 
-.project-chip--output {
+.project-keyword--output {
   background: rgba(140, 21, 21, 0.08);
   border-color: rgba(140, 21, 21, 0.18);
   color: var(--brand-strong);
 }
 
-.project-chip--partner {
+.project-keyword--partner {
   background: rgba(46, 45, 41, 0.05);
   border-color: rgba(46, 45, 41, 0.12);
   color: #4a433d;
 }
 
-.project-chip--recognition {
+.project-keyword--recognition {
   background: rgba(188, 147, 58, 0.1);
   border-color: rgba(188, 147, 58, 0.2);
   color: #7a5600;
 }
 
-.project-chip--scope {
+.project-keyword--scope {
   background: rgba(140, 21, 21, 0.04);
   border-color: rgba(140, 21, 21, 0.1);
   color: #6f4f46;

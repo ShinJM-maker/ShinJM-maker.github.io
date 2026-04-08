@@ -3,8 +3,7 @@
 - Type: Publication
 - Slug: under-review-error-propagation
 - Category: Under Review
-- Venue: Under Review
-- Date: 2026
+- Venue: TIPAMI
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review

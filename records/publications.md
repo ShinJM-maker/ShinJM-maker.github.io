@@ -12,7 +12,7 @@ Total items: 19
 - Role: First Author
 - Status: Accepted
 - Keywords: hierarchical retrieval, multimodal QA, evidence assembly
-- Figure: paper_figure/HiKEY_architecture.svg
+- Figure: paper_figure/HiKEY_architecture.png
 - Detail Page: publications/hikey.html
 - Per-item Markdown: publications/hikey.md
 - Source: `publications-data.js`
@@ -94,8 +94,7 @@ Domain-specific RAG framework for scientific and industrial QA; led to two techn
 
 - Slug: under-review-evidence-graph
 - Category: Under Review
-- Venue: Under Review
-- Date: 2026
+- Venue: EMNLP 2026
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
@@ -114,8 +113,7 @@ Entity-linked assertion graphs unify text, tables, and figures into a single evi
 
 - Slug: under-review-executable-plan-representation
 - Category: Under Review
-- Venue: Under Review
-- Date: 2026
+- Venue: EMNLP 2026
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
@@ -134,8 +132,7 @@ A validated intermediate representation maps instructions into executable operat
 
 - Slug: under-review-consumed-evidence-audit
 - Category: Under Review
-- Venue: Under Review
-- Date: 2026
+- Venue: TACL
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
@@ -154,8 +151,7 @@ A matched-reader audit framework separates real evidence use from evaluation ill
 
 - Slug: under-review-error-propagation
 - Category: Under Review
-- Venue: Under Review
-- Date: 2026
+- Venue: TIPAMI
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review

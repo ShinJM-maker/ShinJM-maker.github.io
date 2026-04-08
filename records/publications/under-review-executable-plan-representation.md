@@ -3,8 +3,7 @@
 - Type: Publication
 - Slug: under-review-executable-plan-representation
 - Category: Under Review
-- Venue: Under Review
-- Date: 2026
+- Venue: EMNLP 2026
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review

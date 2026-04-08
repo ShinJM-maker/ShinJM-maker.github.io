@@ -3,8 +3,7 @@
 - Type: Publication
 - Slug: under-review-consumed-evidence-audit
 - Category: Under Review
-- Venue: Under Review
-- Date: 2026
+- Venue: TACL
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review

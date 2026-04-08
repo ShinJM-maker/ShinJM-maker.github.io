@@ -11,7 +11,7 @@
   ];
 
   function renderCard(pub) {
-    const meta = `${pub.venue || ""} · ${pub.date || ""}`;
+    const meta = [pub.venue, pub.date].filter(Boolean).join(" · ");
     const roleBadge = pub.role ? `<span class="pub-role-badge">${pub.role}</span>` : "";
     const statusBadge = pub.status ? `<span class="pub-status-badge pub-status-${pub.status.toLowerCase().replace(/\s+/g, "-")}">${pub.status}</span>` : "";
     const contribution = pub.contribution ? `<p class="pub-contribution">${pub.contribution}</p>` : "";

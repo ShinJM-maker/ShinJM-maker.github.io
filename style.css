@@ -223,19 +223,6 @@ h1 {
   color: #5b4f49;
 }
 
-.hero-role-secondary a {
-  color: inherit;
-  font-weight: inherit;
-  text-decoration: underline;
-  text-decoration-color: rgba(140, 21, 21, 0.45);
-  text-underline-offset: 0.14em;
-}
-
-.hero-role-secondary a:hover {
-  color: var(--brand-strong);
-  text-decoration-color: currentColor;
-}
-
 .hero-bridge {
   display: inline-block;
   align-self: flex-start;

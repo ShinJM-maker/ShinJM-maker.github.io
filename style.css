@@ -1121,12 +1121,26 @@ h1 {
   .hero {
     grid-template-columns: 1fr;
     gap: 1.1rem;
+    text-align: center;
   }
 
   .hero-photo {
     justify-self: center;
     width: 180px;
     height: 180px;
+    order: -1;
+  }
+
+  .hero-copy {
+    align-items: center;
+  }
+
+  .hero-badge-line {
+    justify-content: center;
+  }
+
+  .research-area-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .pub-grid {
@@ -1212,13 +1226,39 @@ h1 {
   }
 
   .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-photo {
+    order: -1;
+    justify-self: center;
+  }
+
+  .hero-copy {
+    align-items: center;
+  }
+
+  .hero-badge-line {
+    justify-content: center;
   }
 
   .hero-links {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.55rem;
+  }
+
+  .hero-actions {
+    align-items: center;
+  }
+
+  .research-area-grid {
+    grid-template-columns: 1fr;
   }
 
   .entry-head {
@@ -1815,6 +1855,14 @@ h1 {
   .site-nav.open {
     display: flex;
   }
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .research-area-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ── Hero badge variants ── */
@@ -1968,6 +2016,140 @@ h1 {
   .about-chapter-number {
     font-size: 1.2rem;
   }
+}
+
+/* ── Research area cards (Home) ── */
+.research-area-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+.research-area-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.research-area-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(46, 45, 41, 0.1);
+}
+
+.research-area-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.research-area-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.research-area-card > p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.research-area-pubs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.3rem;
+}
+
+.research-area-pubs a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--brand);
+  text-decoration: none;
+  padding: 0.2rem 0.55rem;
+  background: var(--brand-soft);
+  border-radius: 999px;
+  transition: background 0.15s;
+}
+
+.research-area-pubs a:hover {
+  background: var(--brand-soft-strong);
+}
+
+.ra-venue {
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+/* ── Project highlight cards (Home) ── */
+.project-highlight-card {
+  position: relative;
+}
+
+.project-highlight-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.project-highlight-count {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--brand);
+  line-height: 1;
+}
+
+.project-highlight-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.project-highlight-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.project-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.18rem 0.5rem;
+  background: var(--chip);
+  color: var(--text);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.project-tag:hover {
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.project-highlight-card h3 {
+  margin: 0 0 0.2rem;
+  font-size: 0.98rem;
+}
+
+.project-highlight-card > p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--muted);
 }
 
 /* ── Citation tooltips ── */
@@ -2191,4 +2373,27 @@ h1 {
   padding: 1.4rem 0;
   border-top: 1px solid var(--line);
   background: linear-gradient(180deg, var(--surface-soft) 0%, var(--surface) 100%);
+}
+
+/* ── Final mobile overrides (must be last) ── */
+@media (max-width: 920px) {
+  .research-area-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 760px) {
+  .impact-grid { grid-template-columns: repeat(2, 1fr); }
+  .research-area-grid { grid-template-columns: 1fr; }
+  .impact-metric { font-size: 1.1rem; }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-photo { order: -1; justify-self: center; }
+  .hero-copy { align-items: center; }
+  .hero-badge-line { justify-content: center; flex-wrap: wrap; }
+}
+
+@media (max-width: 520px) {
+  .impact-grid { grid-template-columns: 1fr 1fr; }
 }

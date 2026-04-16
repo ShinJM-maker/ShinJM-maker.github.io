@@ -126,7 +126,7 @@ a {
   overflow: hidden;
   padding: 1.45rem;
   display: grid;
-  grid-template-columns: 1fr 196px;
+  grid-template-columns: 1fr 240px;
   gap: 1.25rem;
   align-items: center;
   margin-bottom: 1.1rem;
@@ -210,10 +210,12 @@ h1 {
 }
 
 .hero-photo {
-  width: 196px;
-  height: 196px;
-  border-radius: 50%;
+  width: 240px;
+  aspect-ratio: 521 / 670;
+  height: auto;
+  border-radius: 16px;
   object-fit: cover;
+  object-position: center top;
   border: 3px solid #fff;
   box-shadow: 0 0 0 2px var(--brand-soft-strong), 0 16px 30px rgba(46, 45, 41, 0.14);
   justify-self: end;
@@ -1126,8 +1128,9 @@ h1 {
 
   .hero-photo {
     justify-self: center;
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: auto;
+    aspect-ratio: 521 / 670;
     order: -1;
   }
 
@@ -1200,7 +1203,7 @@ h1 {
   .hero-photo {
     width: min(220px, 62vw);
     height: auto;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 521 / 670;
   }
 
   .news-list li {

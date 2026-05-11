@@ -1843,6 +1843,15 @@ h1 {
   transform: translateY(0);
 }
 
+/* Defensive: never let the page-wide wrapper get stuck invisible. If any code
+   ever adds .reveal to .section-block (taller than the viewport, IntersectionObserver
+   threshold may not be met), this override keeps the page visible. */
+.section-block,
+.section-block.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 /* ── Mobile overrides (must come after base styles) ── */
 @media (max-width: 760px) {
   .nav-toggle {

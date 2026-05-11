@@ -49,8 +49,12 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
   );
 
+  // Note: .section-block intentionally excluded — it's the page-wide wrapper
+  // and is often taller than the viewport, which means the IntersectionObserver
+  // threshold (0.12) may never be met, leaving the entire page invisible at
+  // opacity:0. Inner cards still animate individually below.
   document
-    .querySelectorAll(".section-block, .pub-card, .entry-card, .detail-card, .impact-stat, .research-stage-card, .pillar-card")
+    .querySelectorAll(".pub-card, .entry-card, .detail-card, .impact-stat, .research-stage-card, .pillar-card")
     .forEach((el) => {
       el.classList.add("reveal");
       revealObserver.observe(el);

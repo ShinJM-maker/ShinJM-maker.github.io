@@ -3,13 +3,6 @@
   const list = Array.isArray(window.PUBLICATIONS) ? window.PUBLICATIONS : [];
   if (!container || !list.length) return;
 
-  const underReviewOrder = [
-    "under-review-evidence-graph",
-    "under-review-executable-plan-representation",
-    "under-review-consumed-evidence-audit",
-    "under-review-error-propagation"
-  ];
-
   function renderCard(pub) {
     const meta = [pub.venue, pub.date].filter(Boolean).join(" · ");
     const roleBadge = pub.role ? `<span class="pub-role-badge">${pub.role}</span>` : "";
@@ -19,18 +12,24 @@
       ? `<div class="pub-keywords">${pub.keywords.map(k => `<span class="pub-keyword">${k}</span>`).join("")}</div>`
       : "";
 
+    const inner = `
+      <div class="pub-titleline">
+        <h2>${pub.title}</h2>
+        <span class="pub-type-badge">${pub.category}</span>
+      </div>
+      <p class="meta">${meta}${roleBadge}${statusBadge}</p>
+      <p class="authors">${pub.authorsHtml || ""}</p>
+      ${contribution}
+      ${keywords}
+    `;
+
+    if (pub.noDetail) {
+      return `<article class="pub-card">${inner}</article>`;
+    }
+
     return `
       <article class="pub-card pub-card-clickable">
-        <a class="pub-card-link" href="publications/${pub.slug}.html">
-          <div class="pub-titleline">
-            <h2>${pub.title}</h2>
-            <span class="pub-type-badge">${pub.category}</span>
-          </div>
-          <p class="meta">${meta}${roleBadge}${statusBadge}</p>
-          <p class="authors">${pub.authorsHtml || ""}</p>
-          ${contribution}
-          ${keywords}
-        </a>
+        <a class="pub-card-link" href="publications/${pub.slug}.html">${inner}</a>
       </article>
     `;
   }
@@ -38,8 +37,9 @@
   const topConferences = list.filter(pub => pub.category === "Top Conferences");
   const journals = list.filter(pub => pub.category === "Journals");
   const domestic = list.filter(pub => pub.category === "Domestic Conferences & Theses");
-  const underReviewMap = new Map(list.filter(pub => pub.category === "Under Review").map(pub => [pub.slug, pub]));
-  const underReviewPublications = underReviewOrder.map(slug => underReviewMap.get(slug)).filter(Boolean);
+  const underReviewAll = list.filter(pub => pub.category === "Under Review");
+  const underReviewFirst = underReviewAll.filter(pub => pub.role === "First Author");
+  const underReviewCo = underReviewAll.filter(pub => pub.role === "Co-Author");
 
   const sections = [];
 
@@ -74,14 +74,32 @@
     `);
   }
 
-  sections.push(`
-    <section class="pub-group">
-      <h2 class="pub-group-title">Anonymous Manuscripts Under Review</h2>
+  const underReviewSubsections = [];
+  if (underReviewFirst.length) {
+    underReviewSubsections.push(`
+      <h3 class="pub-subgroup-title">First-Author Manuscripts (${underReviewFirst.length})</h3>
       <div class="pub-group-list">
-        ${underReviewPublications.map(renderCard).join("\n")}
+        ${underReviewFirst.map(renderCard).join("\n")}
       </div>
-    </section>
-  `);
+    `);
+  }
+  if (underReviewCo.length) {
+    underReviewSubsections.push(`
+      <h3 class="pub-subgroup-title">Co-Author Manuscripts (${underReviewCo.length})</h3>
+      <div class="pub-group-list">
+        ${underReviewCo.map(renderCard).join("\n")}
+      </div>
+    `);
+  }
+  if (underReviewSubsections.length) {
+    sections.push(`
+      <section class="pub-group">
+        <h2 class="pub-group-title">Manuscripts Under Review</h2>
+        <p class="section-note">${underReviewFirst.length} first-author and ${underReviewCo.length} co-author manuscripts currently under peer review at top-tier venues (anonymized titles per double-blind submission policy).</p>
+        ${underReviewSubsections.join("\n")}
+      </section>
+    `);
+  }
 
   sections.push(`
     <section class="pub-group">

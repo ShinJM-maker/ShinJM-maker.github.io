@@ -475,6 +475,15 @@ h1 {
   font-weight: 600;
 }
 
+.pub-subgroup-title {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .pub-group-list .pub-card + .pub-card {
   margin-top: 0.65rem;
 }

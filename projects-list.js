@@ -84,4 +84,9 @@
   });
 
   container.innerHTML = sections.join("\n");
+
+  // Force-mark dynamically-rendered cards as visible (same fix as publications-list.js)
+  container.querySelectorAll(".entry-card, .pub-card").forEach((card) => {
+    card.classList.add("reveal", "visible");
+  });
 })();

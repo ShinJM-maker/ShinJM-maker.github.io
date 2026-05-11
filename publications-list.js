@@ -137,4 +137,11 @@
   `);
 
   container.innerHTML = sections.join("\n");
+
+  // Force-mark dynamically-rendered cards as visible so they don't get stuck
+  // at opacity:0 if script.js's IntersectionObserver fails to fire on them
+  // (race condition: cards are created after observer registration in some browsers).
+  container.querySelectorAll(".pub-card").forEach((card) => {
+    card.classList.add("reveal", "visible");
+  });
 })();

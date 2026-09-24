@@ -4,7 +4,7 @@
 - Slug: continual-learning-korean-mrc
 - Category: Domestic Conferences & Theses
 - Venue: HCLT 2021
-- Date: Oct 14, 2021
+- Date: Oct 2021
 - Authors: Joongmin Shin*, Sanghyun Cho, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published

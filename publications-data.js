@@ -1,3 +1,5 @@
+// Publications, newest first within each category.
+// After editing, run `node scripts/build.mjs` to regenerate the pages.
 window.PUBLICATIONS = [
   {
     slug: "admit",
@@ -35,6 +37,7 @@ window.PUBLICATIONS = [
   {
     slug: "hikey",
     category: "Top Conferences",
+    highlight: "Oral",
     title: "HiKEY: Hierarchical Multimodal Retrieval for Open-Domain Document Question Answering",
     venue: "ACL 2026 (Main)",
     date: "Mar 2026",
@@ -108,6 +111,7 @@ window.PUBLICATIONS = [
   {
     slug: "styledfs",
     category: "Top Conferences",
+    shortName: "StyleDFS",
     title: "Intelligent Predictive Maintenance RAG framework for Power Plants: Enhancing QA with StyleDFS and Domain Specific Instruction Tuning",
     venue: "EMNLP 2024 (Industrial)",
     date: "Oct 2024",
@@ -177,6 +181,7 @@ window.PUBLICATIONS = [
   },
   {
     slug: "under-review-consumed-evidence-audit",
+    detailTitle: "Project PRISM",
     category: "Under Review",
     title: "Evidence Auditing and Support-Sensitive Evaluation for Multimodal QA",
     venue: "TACL",
@@ -192,6 +197,7 @@ window.PUBLICATIONS = [
   },
   {
     slug: "under-review-error-propagation",
+    detailTitle: "Project CASCADE",
     category: "Under Review",
     title: "Error Propagation Diagnostics for PDF-to-RAG Pipelines Across Representation Families",
     venue: "IEEE TPAMI",

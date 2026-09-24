@@ -2,9 +2,9 @@
 
 - Type: Project
 - Slug: video-curation-system
-- Period: Jul 2025 - Feb 2026
+- Period: Jul 2025 - Present
 - Affiliation: Korea University
-- Group: Early Prototypes Toward Structured Memory and Future Agents
+- Group: Multimodal Reasoning & Document AI
 - Detail Page: projects/video-curation-system.html
 - Source: `projects-data.js`
 

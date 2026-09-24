@@ -4,7 +4,7 @@
 - Slug: hybrid-reader-tables-text
 - Category: Journals
 - Venue: Applied Artificial Intelligence (An International Journal)
-- Date: Jun 19, 2024
+- Date: Jun 2024
 - Authors: Sanghyun Cho*, SeongReol Park, Hye-Lynn Kim, Jung-Hun Lee, Joongmin Shin, Hyuk-Chul Kwon
 - Role: Co-Author
 - Status: Published

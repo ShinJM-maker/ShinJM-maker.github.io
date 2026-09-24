@@ -4,7 +4,7 @@
 - Slug: multidocfusion
 - Category: Top Conferences
 - Venue: EMNLP 2025 (Main)
-- Date: Aug 21, 2025
+- Date: Aug 2025
 - Authors: Joongmin Shin*, Chanjun Park, Jeongbae Park, Jaehyung Seo, Heuiseok Lim
 - Role: First Author
 - Status: Published

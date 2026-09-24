@@ -4,7 +4,7 @@
 - Slug: ann-dependency-parsing-rules
 - Category: Domestic Conferences & Theses
 - Venue: KCC 2022
-- Date: Jun 9, 2022
+- Date: Jun 2022
 - Authors: Joongmin Shin*, Sanghyun Cho, Bongwoo Nam, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published

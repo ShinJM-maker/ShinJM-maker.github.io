@@ -405,6 +405,8 @@ window.PUBLICATIONS = [
   },
   {
     slug: "neural-symbolic-korean-dependency-parsing",
+    shortName: "M.S. Thesis",
+    shortVenue: "PNU 2023",
     category: "Domestic Conferences & Theses",
     title: "A Neural-Symbolic Model for Overcoming Deep Learning Limitations in Korean Dependency Parsing",
     venue: "Master's Thesis, Pusan National University",
@@ -451,6 +453,8 @@ window.PUBLICATIONS = [
   },
   {
     slug: "constraint-enhanced-dependency-parsing",
+    shortName: "Neural-Symbolic Parsing",
+    shortVenue: "HCLT 2022",
     category: "Domestic Conferences & Theses",
     title: "A Dependency Parsing Model with Reinforced Head-Dependent Constraint Rules: Combining Deep Learning and Linguistic Knowledge",
     venue: "HCLT 2022",

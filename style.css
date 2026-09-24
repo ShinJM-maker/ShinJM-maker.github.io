@@ -548,6 +548,23 @@ sup {
   gap: 1rem;
 }
 
+.areas-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.areas-lede {
+  margin-top: 0;
+}
+
+.hero-interests a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero-interests a:hover {
+  color: var(--brand);
+}
+
 .area {
   padding: 1.1rem 1.2rem;
   border: 1px solid var(--line);

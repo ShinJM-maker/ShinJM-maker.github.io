@@ -155,33 +155,12 @@ const awards = [
   }
 ];
 
-const patents = [
-  {
-    slug: "adaptive-rule-based-filtering-patent",
-    title: "Patent on Adaptive Rule-Based Filtering",
-    description:
-      "The CV states that the hybrid QA systems work resulted in a 10% accuracy improvement and a patent on adaptive rule-based filtering.",
-    note: "The repository does not provide a formal patent title, number, or filing date for this item.",
-    source: ["CV/Curriculum_Vitae_Joongmin_Shin.pdf"]
-  },
-  {
-    slug: "hybrid-neural-symbolic-nlp-related-patents",
-    title: "Related Patents Filed on Hybrid Neural-Symbolic NLP",
-    period: "Mar 2021 - Feb 2023",
-    description:
-      "The profile page and CV state that related patents were filed while participating in national AI projects during the M.S. research period.",
-    note: "The repository does not include the individual patent titles.",
-    source: ["profile.html", "CV/Curriculum_Vitae_Joongmin_Shin.pdf"]
-  },
-  {
-    slug: "homepage-patent-count-summary",
-    title: "Homepage Patent Count Summary",
-    count: "5 patents",
-    description:
-      "The homepage summary chip lists 5 patents, but the repository does not contain the complete titled patent list needed to split them into named records.",
-    source: ["index.html"]
-  }
-];
+const site = loadBrowserData("site-data.js", "SITE");
+const patents = site.patents.map(patent => ({
+  title: patent.title,
+  description: patent.meta,
+  source: ["site-data.js"]
+}));
 
 ensureDir(outputDir);
 resetMarkdownDir(path.join(outputDir, "publications"));
@@ -368,9 +347,7 @@ writeMarkdown(outputDir, "awards.md", awardsDoc);
 const patentsDoc = [
   "# Patents",
   "",
-  "The repository does not contain a complete structured patent list. The entries below preserve only the patent-related information explicitly available in the repository.",
-  "",
-  `Total patent-related records: ${patents.length}`,
+  `Total items: ${patents.length}`,
   ""
 ];
 
@@ -401,20 +378,18 @@ const readmeLines = [
   `- Publications: ${publications.length}`,
   `- Projects: ${projects.length}`,
   `- Awards: ${awards.length}`,
-  `- Patent-related records: ${patents.length}`,
+  `- Patents: ${patents.length}`,
   "",
   "## Category Files",
   "- `publications.md`: all publication records in one markdown file",
   "- `projects.md`: all project records in one markdown file",
   "- `awards.md`: all award records in one markdown file",
-  "- `patents.md`: all patent-related records in one markdown file",
-  "",
-  "## Note on Patents",
-  "The repository does not provide a complete titled patent list. The patent markdown files only preserve the patent information that is explicitly available in `index.html`, `profile.html`, and `CV/Curriculum_Vitae_Joongmin_Shin.pdf`."
+  "- `patents.md`: all patent records in one markdown file",
+
 ];
 
 writeMarkdown(outputDir, "README.md", readmeLines);
 
 console.log(
-  `Generated markdown records: ${publications.length} publications, ${projects.length} projects, ${awards.length} awards, ${patents.length} patent-related records.`
+  `Generated markdown records: ${publications.length} publications, ${projects.length} projects, ${awards.length} awards, ${patents.length} patents.`
 );

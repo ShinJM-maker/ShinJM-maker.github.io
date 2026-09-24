@@ -4,7 +4,7 @@
 - Slug: retrieval-generation-techniques-llms
 - Category: Domestic Conferences & Theses
 - Venue: KIICE 2023
-- Date: Oct 26, 2023
+- Date: Oct 2023
 - Authors: Joongmin Shin*, Jungun Lee
 - Role: First Author
 - Status: Published

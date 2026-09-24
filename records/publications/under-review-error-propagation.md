@@ -1,13 +1,13 @@
-# Project CASCADE
+# Error Propagation Diagnostics for PDF-to-RAG Pipelines Across Representation Families
 
 - Type: Publication
 - Slug: under-review-error-propagation
 - Category: Under Review
-- Venue: TIPAMI
+- Venue: IEEE TPAMI
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
-- Keywords: anonymous manuscript, error propagation, PDF-to-RAG
+- Keywords: error propagation, PDF-to-RAG, diagnostics
 - Detail Page: publications/under-review-error-propagation.html
 - Source: `publications-data.js`
 
@@ -15,4 +15,4 @@
 Anonymous manuscript on error propagation and recoverability in PDF-to-RAG pipelines.
 
 ## Contribution
-A matched-intervention diagnostic framework analyzes how upstream parsing uncertainty propagates across representation families.
+A matched-intervention diagnostic framework analyzing how upstream parsing uncertainty propagates across PDF-to-RAG representation families.

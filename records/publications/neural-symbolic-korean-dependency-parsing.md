@@ -4,7 +4,7 @@
 - Slug: neural-symbolic-korean-dependency-parsing
 - Category: Domestic Conferences & Theses
 - Venue: Master's Thesis
-- Date: Feb 8, 2023
+- Date: Feb 2023
 - Authors: Joongmin Shin*
 - Role: First Author
 - Status: Published

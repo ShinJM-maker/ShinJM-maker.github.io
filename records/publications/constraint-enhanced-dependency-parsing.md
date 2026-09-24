@@ -4,7 +4,7 @@
 - Slug: constraint-enhanced-dependency-parsing
 - Category: Domestic Conferences & Theses
 - Venue: HCLT 2022
-- Date: Oct 18, 2022
+- Date: Oct 2022
 - Authors: Joongmin Shin*, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published

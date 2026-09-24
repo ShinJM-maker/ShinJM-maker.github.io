@@ -1,4 +1,4 @@
-# Project PRISM
+# Evidence Auditing and Support-Sensitive Evaluation for Multimodal QA
 
 - Type: Publication
 - Slug: under-review-consumed-evidence-audit
@@ -7,7 +7,7 @@
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
-- Keywords: anonymous manuscript, evidence auditing, multimodal QA
+- Keywords: evidence auditing, multimodal QA, evaluation
 - Detail Page: publications/under-review-consumed-evidence-audit.html
 - Source: `publications-data.js`
 

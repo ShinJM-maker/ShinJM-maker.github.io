@@ -4,7 +4,7 @@
 - Slug: edt5-embeddings
 - Category: Domestic Conferences & Theses
 - Venue: KSC 2022
-- Date: Dec 20, 2022
+- Date: Dec 2022
 - Authors: Joongmin Shin*, Joogyoung Jung, Junghoon Lee, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published

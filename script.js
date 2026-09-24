@@ -1,62 +1,48 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // ── Hamburger menu toggle ──
+  // Mobile menu
   const navToggle = document.querySelector(".nav-toggle");
   const siteNav = document.querySelector(".site-nav");
 
   if (navToggle && siteNav) {
+    const setOpen = open => {
+      navToggle.setAttribute("aria-expanded", String(open));
+      navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      siteNav.classList.toggle("open", open);
+    };
+
     navToggle.addEventListener("click", () => {
-      const expanded = navToggle.getAttribute("aria-expanded") === "true";
-      navToggle.setAttribute("aria-expanded", String(!expanded));
-      siteNav.classList.toggle("open");
+      setOpen(navToggle.getAttribute("aria-expanded") !== "true");
     });
 
-    document.addEventListener("click", (e) => {
-      if (!navToggle.contains(e.target) && !siteNav.contains(e.target)) {
-        navToggle.setAttribute("aria-expanded", "false");
-        siteNav.classList.remove("open");
+    document.addEventListener("click", event => {
+      if (!navToggle.contains(event.target) && !siteNav.contains(event.target)) setOpen(false);
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") setOpen(false);
+    });
+  }
+
+  // Dark mode toggle; the choice is remembered per browser, otherwise the system setting wins.
+  const themeToggle = document.querySelector(".theme-toggle");
+  if (themeToggle) {
+    const root = document.documentElement;
+    const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+    const isDark = () => (root.dataset.theme ? root.dataset.theme === "dark" : systemDark.matches);
+    const sync = () => themeToggle.setAttribute("aria-pressed", String(isDark()));
+
+    themeToggle.addEventListener("click", () => {
+      const next = isDark() ? "light" : "dark";
+      root.dataset.theme = next;
+      try {
+        localStorage.setItem("theme", next);
+      } catch (error) {
+        // Storage can be unavailable (private mode); the toggle still works for this page view.
       }
+      sync();
     });
+
+    systemDark.addEventListener?.("change", sync);
+    sync();
   }
-
-  // ── Back to top ──
-  const backToTop = document.querySelector(".back-to-top");
-
-  const toggleBackToTop = () => {
-    if (!backToTop) return;
-    backToTop.classList.toggle("show", window.scrollY > 520);
-  };
-
-  window.addEventListener("scroll", toggleBackToTop, { passive: true });
-
-  if (backToTop) {
-    backToTop.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
-  toggleBackToTop();
-
-  // ── Reveal animation on scroll ──
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
-  );
-
-  // Note: .section-block intentionally excluded — it's the page-wide wrapper
-  // and is often taller than the viewport, which means the IntersectionObserver
-  // threshold (0.12) may never be met, leaving the entire page invisible at
-  // opacity:0. Inner cards still animate individually below.
-  document
-    .querySelectorAll(".pub-card, .entry-card, .detail-card, .impact-stat, .research-stage-card, .pillar-card")
-    .forEach((el) => {
-      el.classList.add("reveal");
-      revealObserver.observe(el);
-    });
 });

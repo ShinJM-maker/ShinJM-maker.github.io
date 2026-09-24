@@ -4,7 +4,7 @@
 - Slug: m3docdep
 - Category: Top Conferences
 - Venue: CVPR 2026 (Main)
-- Date: Feb 22, 2026
+- Date: Feb 2026
 - Authors: Joongmin Shin*, Jeongbae Park, Jaehyung Seo, Heuiseok Lim
 - Role: First Author
 - Status: Accepted

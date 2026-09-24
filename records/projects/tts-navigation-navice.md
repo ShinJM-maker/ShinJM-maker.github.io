@@ -4,7 +4,7 @@
 - Slug: tts-navigation-navice
 - Period: Feb 2021 - Dec 2021
 - Affiliation: Pusan National University (AI Lab)
-- Group: Language, Speech, and Structured Reasoning
+- Group: Additional Projects
 - Detail Page: projects/tts-navigation-navice.html
 - Source: `projects-data.js`
 

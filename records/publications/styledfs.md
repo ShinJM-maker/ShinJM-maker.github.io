@@ -4,7 +4,7 @@
 - Slug: styledfs
 - Category: Top Conferences
 - Venue: EMNLP 2024 (Industrial)
-- Date: Oct 1, 2024
+- Date: Oct 2024
 - Authors: Seongtae Hong*, Joongmin Shin*, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim
 - Role: Co-First Author
 - Status: Accepted

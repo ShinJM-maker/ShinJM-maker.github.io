@@ -4,7 +4,7 @@
 - Slug: comparative-korean-llm-quality
 - Category: Domestic Conferences & Theses
 - Venue: HCLT 2023
-- Date: Oct 13, 2023
+- Date: Oct 2023
 - Authors: Yunah Huh, Aram So, Taemin Lee, Joongmin Shin, Heuiseok Lim
 - Role: Co-Author
 - Status: Published

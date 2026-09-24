@@ -1,37 +1,43 @@
 # Patents
 
-The repository does not contain a complete structured patent list. The entries below preserve only the patent-related information explicitly available in the repository.
+Total items: 5
 
-Total patent-related records: 3
+## Hierarchical Multimodal Retrieval for Open-Domain Document Question Answering
 
-## Patent on Adaptive Rule-Based Filtering
-
-- Per-item Markdown: patents/adaptive-rule-based-filtering-patent.md
-- Source: `CV/Curriculum_Vitae_Joongmin_Shin.pdf`
+- Per-item Markdown: patents/hierarchical-multimodal-retrieval-for-open-domain-document-question-answering.md
+- Source: `site-data.js`
 
 ## Description
-The CV states that the hybrid QA systems work resulted in a 10% accuracy improvement and a patent on adaptive rule-based filtering.
+Related to HiKEY · ACL 2026
 
-## Note
-The repository does not provide a formal patent title, number, or filing date for this item.
+## Multi-modal, Multi-page, Multi-document Dependency Chunking with Large Vision-Language Models
 
-## Related Patents Filed on Hybrid Neural-Symbolic NLP
-
-- Period: Mar 2021 - Feb 2023
-- Per-item Markdown: patents/hybrid-neural-symbolic-nlp-related-patents.md
-- Source: `profile.html`, `CV/Curriculum_Vitae_Joongmin_Shin.pdf`
+- Per-item Markdown: patents/multi-modal-multi-page-multi-document-dependency-chunking-with-large-vision-language-models.md
+- Source: `site-data.js`
 
 ## Description
-The profile page and CV state that related patents were filed while participating in national AI projects during the M.S. research period.
+Related to M3DocDep · CVPR 2026
 
-## Note
-The repository does not include the individual patent titles.
+## Device and Method for Document Chunking, and Question-Answering Device and Method Using the Same
 
-## Homepage Patent Count Summary
-
-- Count: 5 patents
-- Per-item Markdown: patents/homepage-patent-count-summary.md
-- Source: `index.html`
+- Per-item Markdown: patents/device-and-method-for-document-chunking-and-question-answering-device-and-method-using-the-same.md
+- Source: `site-data.js`
 
 ## Description
-The homepage summary chip lists 5 patents, but the repository does not contain the complete titled patent list needed to split them into named records.
+DP-2025-0093 · EMNLP 2024
+
+## Rule Filtering Techniques and Methods for Knowledge Inference Systems Based on Deep Learning
+
+- Per-item Markdown: patents/rule-filtering-techniques-and-methods-for-knowledge-inference-systems-based-on-deep-learning.md
+- Source: `site-data.js`
+
+## Description
+P2022-0340-KR00 · Filed 2023
+
+## An AI-Based System and Method for Recommending Problems Tailored to the Learner’s Level
+
+- Per-item Markdown: patents/an-ai-based-system-and-method-for-recommending-problems-tailored-to-the-learner-s-level.md
+- Source: `site-data.js`
+
+## Description
+10-2022-0068075 · Registered 2022

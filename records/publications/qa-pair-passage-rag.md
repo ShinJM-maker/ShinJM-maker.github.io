@@ -4,7 +4,7 @@
 - Slug: qa-pair-passage-rag
 - Category: Domestic Conferences & Theses
 - Venue: HCLT 2023
-- Date: Oct 13, 2023
+- Date: Oct 2023
 - Authors: Joongmin Shin*, Jaewwok Lee, Kyungmin Kim, Heuiseok Lim
 - Role: First Author
 - Status: Published

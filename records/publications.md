@@ -1,6 +1,46 @@
 # Publications
 
-Total items: 19
+Total items: 28
+
+## ADMIT: Support-Gated Memory-Write Admission for Document QA Agents
+
+- Slug: admit
+- Category: Top Conferences
+- Venue: NeurIPS 2026 (Main)
+- Date: Sep 2026
+- Authors: Joongmin Shin*, Gyuho Shim, Hyeonseok Moon, Jaehyung Seo
+- Role: First Author
+- Status: Accepted
+- Keywords: agent memory, memory-write safety, document QA
+- Detail Page: publications/admit.html
+- Per-item Markdown: publications/admit.md
+- Source: `publications-data.js`
+
+## Abstract
+ADMIT treats memory writes by document QA agents as an admission decision rather than a default side effect. Candidate memory entries are gated by whether they are supported by the document evidence the agent actually used, reducing unsupported or unsafe content that persists into later reasoning.
+
+## Contribution
+Support-gated admission control that decides what a document QA agent is allowed to commit to memory.
+
+## PILAR: A Page-Grounded Unified Evidence Representation via an Entity-Linked Assertion Graph for Open-Domain QA Agents over Multimodal Document Corpora
+
+- Slug: pilar
+- Category: Top Conferences
+- Venue: EMNLP 2026 (Findings)
+- Date: Aug 2026
+- Authors: Joongmin Shin*, Gyuho Shim, Jung-hun Lee, Jaehyung Seo
+- Role: First Author
+- Status: Accepted
+- Keywords: evidence graphs, multimodal QA, entity linking
+- Detail Page: publications/pilar.html
+- Per-item Markdown: publications/pilar.md
+- Source: `publications-data.js`
+
+## Abstract
+PILAR unifies text, tables, and figures from multimodal document corpora into a single page-grounded evidence representation. Assertions are linked through shared entities into a graph, giving open-domain QA agents structured, traceable evidence across pages and documents.
+
+## Contribution
+Entity-linked assertion graphs unify text, tables, and figures into a single page-grounded evidence representation for open-domain multimodal QA agents.
 
 ## HiKEY: Hierarchical Multimodal Retrieval for Open-Domain Document Question Answering
 
@@ -28,7 +68,7 @@ Hierarchical retrieval for multimodal document QA with structured evidence assem
 - Slug: m3docdep
 - Category: Top Conferences
 - Venue: CVPR 2026 (Main)
-- Date: Feb 22, 2026
+- Date: Feb 2026
 - Authors: Joongmin Shin*, Jeongbae Park, Jaehyung Seo, Heuiseok Lim
 - Role: First Author
 - Status: Accepted
@@ -49,7 +89,7 @@ LVLM-based dependency chunking that reconstructs cross-page structure for long-d
 - Slug: multidocfusion
 - Category: Top Conferences
 - Venue: EMNLP 2025 (Main)
-- Date: Aug 21, 2025
+- Date: Aug 2025
 - Authors: Joongmin Shin*, Chanjun Park, Jeongbae Park, Jaehyung Seo, Heuiseok Lim
 - Role: First Author
 - Status: Published
@@ -72,7 +112,7 @@ A hierarchical multimodal chunking pipeline that preserves layout and improves e
 - Slug: styledfs
 - Category: Top Conferences
 - Venue: EMNLP 2024 (Industrial)
-- Date: Oct 1, 2024
+- Date: Oct 2024
 - Authors: Seongtae Hong*, Joongmin Shin*, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim
 - Role: Co-First Author
 - Status: Accepted
@@ -90,45 +130,55 @@ StyleDFS proposes structure-aware chunking for high-stakes industrial QA. The fr
 ## Contribution
 Domain-specific RAG framework for scientific and industrial QA; led to two technology transfers.
 
-## Project ARGUS
+## Unified Evaluation Framework for RAG Chunking
 
-- Slug: under-review-evidence-graph
+- Slug: ur-rag-chunking-eval
 - Category: Under Review
 - Venue: EMNLP 2026
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
-- Keywords: anonymous manuscript, evidence graphs, multimodal QA
-- Detail Page: publications/under-review-evidence-graph.html
-- Per-item Markdown: publications/under-review-evidence-graph.md
+- Keywords: RAG evaluation, chunking, benchmark
+- Detail Page: publications/ur-rag-chunking-eval.html
+- Per-item Markdown: publications/ur-rag-chunking-eval.md
 - Source: `publications-data.js`
 
-## Abstract
-Anonymous manuscript on unified evidence representation via entity-linked graphs for multimodal QA.
-
 ## Contribution
-Entity-linked assertion graphs unify text, tables, and figures into a single evidence representation for open-domain multimodal QA.
+Joint measurement of retrieval relevance, evidence breadth, faithfulness, latency, memory, and cost for fair chunker comparison.
 
-## Project COMPASS
+## Delivered-Pack Sensitivity Diagnostics for Document-Agent Memory Commits
 
-- Slug: under-review-executable-plan-representation
+- Slug: ur-delivered-pack-sensitivity
 - Category: Under Review
 - Venue: EMNLP 2026
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
-- Keywords: anonymous manuscript, agent planning, executable structures
-- Detail Page: publications/under-review-executable-plan-representation.html
-- Per-item Markdown: publications/under-review-executable-plan-representation.md
+- Keywords: agent memory, grounding diagnostics, document agents
+- Detail Page: publications/ur-delivered-pack-sensitivity.html
+- Per-item Markdown: publications/ur-delivered-pack-sensitivity.md
 - Source: `publications-data.js`
 
-## Abstract
-Anonymous manuscript on compiling natural-language instructions into executable structures for reliable agent planning.
+## Contribution
+Demonstrates that final-answer correctness alone is not evidence of grounding; proposes diagnostics on what an agent commits to memory.
+
+## Timestamp-Grounded Evidence Consumption Auditing for Long-Video QA/RAG
+
+- Slug: ur-video-evidence-audit
+- Category: Under Review
+- Venue: EMNLP 2026
+- Authors: Anonymous (Under review)
+- Role: First Author
+- Status: Under Review
+- Keywords: long-video QA, evidence auditing, temporal grounding
+- Detail Page: publications/ur-video-evidence-audit.html
+- Per-item Markdown: publications/ur-video-evidence-audit.md
+- Source: `publications-data.js`
 
 ## Contribution
-A validated intermediate representation maps instructions into executable operations, task-critical arguments, and prerequisite/dataflow structure.
+Shifts video QA/RAG evaluation beyond final-answer accuracy by auditing which timestamped segments were actually consumed.
 
-## Project PRISM
+## Evidence Auditing and Support-Sensitive Evaluation for Multimodal QA
 
 - Slug: under-review-consumed-evidence-audit
 - Category: Under Review
@@ -136,7 +186,7 @@ A validated intermediate representation maps instructions into executable operat
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
-- Keywords: anonymous manuscript, evidence auditing, multimodal QA
+- Keywords: evidence auditing, multimodal QA, evaluation
 - Detail Page: publications/under-review-consumed-evidence-audit.html
 - Per-item Markdown: publications/under-review-consumed-evidence-audit.md
 - Source: `publications-data.js`
@@ -147,15 +197,15 @@ Anonymous manuscript on consumed-evidence auditing for multimodal QA.
 ## Contribution
 A matched-reader audit framework separates real evidence use from evaluation illusions in multimodal QA.
 
-## Project CASCADE
+## Error Propagation Diagnostics for PDF-to-RAG Pipelines Across Representation Families
 
 - Slug: under-review-error-propagation
 - Category: Under Review
-- Venue: TIPAMI
+- Venue: IEEE TPAMI
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
-- Keywords: anonymous manuscript, error propagation, PDF-to-RAG
+- Keywords: error propagation, PDF-to-RAG, diagnostics
 - Detail Page: publications/under-review-error-propagation.html
 - Per-item Markdown: publications/under-review-error-propagation.md
 - Source: `publications-data.js`
@@ -164,14 +214,110 @@ A matched-reader audit framework separates real evidence use from evaluation ill
 Anonymous manuscript on error propagation and recoverability in PDF-to-RAG pipelines.
 
 ## Contribution
-A matched-intervention diagnostic framework analyzes how upstream parsing uncertainty propagates across representation families.
+A matched-intervention diagnostic framework analyzing how upstream parsing uncertainty propagates across PDF-to-RAG representation families.
+
+## Evidence-State Control for Repairing, Recalibrating, and Materializing Retrieved Candidates
+
+- Slug: ur-evidence-state-control
+- Category: Under Review
+- Venue: ML Conference
+- Authors: Anonymous (Under review)
+- Role: First Author
+- Status: Under Review
+- Keywords: evidence control, RAG, candidate repair
+- Detail Page: publications/ur-evidence-state-control.html
+- Per-item Markdown: publications/ur-evidence-state-control.md
+- Source: `publications-data.js`
+
+## Contribution
+Controllable repair, recalibration, and materialization of retrieved candidates before reader-context packing.
+
+## Answer-Side Attribution Analysis of OCR, Evidence Placement, Answer Policy, and Reader Family
+
+- Slug: ur-answer-attribution-analysis
+- Category: Under Review
+- Venue: ML Conference
+- Authors: Anonymous (Under review)
+- Role: First Author
+- Status: Under Review
+- Keywords: attribution analysis, OCR, reader analysis
+- Detail Page: publications/ur-answer-attribution-analysis.html
+- Per-item Markdown: publications/ur-answer-attribution-analysis.md
+- Source: `publications-data.js`
+
+## Contribution
+Attribution analysis of how OCR quality, evidence placement, answer policy, and reader family interact to affect answer-quality gains.
+
+## Multimodal, Multi-Document, Page-Annotated Benchmark Dataset for Open-Domain Document QA
+
+- Slug: ur-multimodal-document-benchmark
+- Category: Under Review
+- Venue: EMNLP 2026
+- Authors: Anonymous (Under review)
+- Role: Co-Author
+- Status: Under Review
+- Keywords: benchmark dataset, multimodal QA, page annotation
+- Detail Page: publications/ur-multimodal-document-benchmark.html
+- Per-item Markdown: publications/ur-multimodal-document-benchmark.md
+- Source: `publications-data.js`
+
+## Contribution
+A multimodal multi-document benchmark with page-level annotations for open-domain document QA.
+
+## Comprehensive Survey of Visual Question Answering: Methods, Benchmarks, and Evaluation Paradigms
+
+- Slug: ur-vqa-survey
+- Category: Under Review
+- Venue: EMNLP 2026
+- Authors: Anonymous (Under review)
+- Role: Co-Author
+- Status: Under Review
+- Keywords: VQA, survey, benchmarks
+- Detail Page: publications/ur-vqa-survey.html
+- Per-item Markdown: publications/ur-vqa-survey.md
+- Source: `publications-data.js`
+
+## Contribution
+Comprehensive survey of VQA methods, benchmarks, and evaluation paradigms.
+
+## Survey and Audit Framework for Reliability and Safety of Multimodal Agent Systems
+
+- Slug: ur-multimodal-agent-safety-survey
+- Category: Under Review
+- Venue: EMNLP 2026
+- Authors: Anonymous (Under review)
+- Role: Co-Author
+- Status: Under Review
+- Keywords: multimodal agents, safety, audit framework
+- Detail Page: publications/ur-multimodal-agent-safety-survey.html
+- Per-item Markdown: publications/ur-multimodal-agent-safety-survey.md
+- Source: `publications-data.js`
+
+## Contribution
+Survey and unified audit framework for the reliability and safety of multimodal agent systems.
+
+## Guiding Retrieval and Reasoning for Reasoning-Efficient Agentic RAG Systems
+
+- Slug: ur-agentic-rag-guidance
+- Category: Under Review
+- Venue: EMNLP 2026
+- Authors: Anonymous (Under review)
+- Role: Co-Author
+- Status: Under Review
+- Keywords: agentic RAG, retrieval guidance, reasoning efficiency
+- Detail Page: publications/ur-agentic-rag-guidance.html
+- Per-item Markdown: publications/ur-agentic-rag-guidance.md
+- Source: `publications-data.js`
+
+## Contribution
+Retrieval- and reasoning-guidance methods for reasoning-efficient agentic RAG systems.
 
 ## Distance Based Korean WordNet (alias. KorLex) Embedding Model
 
 - Slug: korlex-embeddings
 - Category: Journals
 - Venue: Applied Artificial Intelligence (An International Journal)
-- Date: Sep 12, 2024
+- Date: Sep 2024
 - Authors: SeongReol Park*, Joongmin Shin, Sanghyun Cho, Hyuk-Chul Kwon, Jung-Hun Lee
 - Role: Co-Author
 - Status: Published
@@ -193,7 +339,7 @@ Graph-aware lexical embedding model that injects structured knowledge into vecto
 - Slug: hybrid-reader-tables-text
 - Category: Journals
 - Venue: Applied Artificial Intelligence (An International Journal)
-- Date: Jun 19, 2024
+- Date: Jun 2024
 - Authors: Sanghyun Cho*, SeongReol Park, Hye-Lynn Kim, Jung-Hun Lee, Joongmin Shin, Hyuk-Chul Kwon
 - Role: Co-Author
 - Status: Published
@@ -215,7 +361,7 @@ Hybrid reader model that jointly processes text and tables for multi-paragraph m
 - Slug: retrieval-generation-techniques-llms
 - Category: Domestic Conferences & Theses
 - Venue: KIICE 2023
-- Date: Oct 26, 2023
+- Date: Oct 2023
 - Authors: Joongmin Shin*, Jungun Lee
 - Role: First Author
 - Status: Published
@@ -235,7 +381,7 @@ Comparative analysis of zero-shot vs. RAG for GPT models, demonstrating benefits
 - Slug: comparative-korean-llm-quality
 - Category: Domestic Conferences & Theses
 - Venue: HCLT 2023
-- Date: Oct 13, 2023
+- Date: Oct 2023
 - Authors: Yunah Huh, Aram So, Taemin Lee, Joongmin Shin, Heuiseok Lim
 - Role: Co-Author
 - Status: Published
@@ -255,7 +401,7 @@ Investigated language-specific influences on LLM performance across Korean bench
 - Slug: qa-pair-passage-rag
 - Category: Domestic Conferences & Theses
 - Venue: HCLT 2023
-- Date: Oct 13, 2023
+- Date: Oct 2023
 - Authors: Joongmin Shin*, Jaewwok Lee, Kyungmin Kim, Heuiseok Lim
 - Role: First Author
 - Status: Published
@@ -275,7 +421,7 @@ QA-pair passage construction method for Korean RAG chatbots, reducing hallucinat
 - Slug: neural-symbolic-korean-dependency-parsing
 - Category: Domestic Conferences & Theses
 - Venue: Master's Thesis
-- Date: Feb 8, 2023
+- Date: Feb 2023
 - Authors: Joongmin Shin*
 - Role: First Author
 - Status: Published
@@ -295,7 +441,7 @@ Neural-symbolic parser integrating linguistic constraints to overcome deep learn
 - Slug: edt5-embeddings
 - Category: Domestic Conferences & Theses
 - Venue: KSC 2022
-- Date: Dec 20, 2022
+- Date: Dec 2022
 - Authors: Joongmin Shin*, Joogyoung Jung, Junghoon Lee, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published
@@ -315,7 +461,7 @@ Proposed encoder-decoder embedding architecture for T5, improving upon encoder-o
 - Slug: korean-table-mrc-generalization
 - Category: Domestic Conferences & Theses
 - Venue: KSC 2022
-- Date: Dec 20, 2022
+- Date: Dec 2022
 - Authors: Hyelin Kim*, Sanghyun Cho, Joongmin Shin, Hyuk-Chul Kwon
 - Role: Co-Author
 - Status: Published
@@ -335,7 +481,7 @@ Identified domain generalization limitations in tabular MRC models through cross
 - Slug: constraint-enhanced-dependency-parsing
 - Category: Domestic Conferences & Theses
 - Venue: HCLT 2022
-- Date: Oct 18, 2022
+- Date: Oct 2022
 - Authors: Joongmin Shin*, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published
@@ -355,7 +501,7 @@ Expanded neural-symbolic constraint rules from 2 to 24, achieving state-of-the-a
 - Slug: ann-dependency-parsing-rules
 - Category: Domestic Conferences & Theses
 - Venue: KCC 2022
-- Date: Jun 9, 2022
+- Date: Jun 2022
 - Authors: Joongmin Shin*, Sanghyun Cho, Bongwoo Nam, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published
@@ -375,7 +521,7 @@ Transformer-augmented dependency parser with rule-based probability control for 
 - Slug: continual-learning-korean-mrc
 - Category: Domestic Conferences & Theses
 - Venue: HCLT 2021
-- Date: Oct 14, 2021
+- Date: Oct 2021
 - Authors: Joongmin Shin*, Sanghyun Cho, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published

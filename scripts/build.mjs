@@ -197,8 +197,9 @@ function pubLinks(pub, up, { detail = true } = {}) {
 function venueLine(pub) {
   const kind = venueKind(pub.venue);
   const parts = [`<span class="pub-venue">${esc(venueShort(pub.venue))}</span>`];
-  if (kind) parts.push(esc(kind));
+  if (kind) parts.push(`<strong>${esc(kind)}</strong>`);
   if (pub.highlight) parts.push(`<span class="tag tag-accent">${esc(pub.highlight)}</span>`);
+  if (pub.award) parts.push(`<span class="tag tag-accent">${esc(pub.award)}</span>`);
   return parts.join(" · ");
 }
 
@@ -222,11 +223,13 @@ function pubFeature(pub, up) {
 
 function pubCitation(pub, up) {
   const titleHtml = pub.noDetail ? esc(pub.title) : `<a href="${up}publications/${pub.slug}.html">${esc(pub.title)}</a>`;
-  const meta = [esc(pub.venue), esc(pub.date)].filter(Boolean).join(" · ");
+  const venue = pub.category === "Journals" ? `<em>${esc(pub.venue)}</em>` : `<strong>${esc(pub.venue)}</strong>`;
+  const meta = [venue, esc(pub.date)].filter(Boolean).join(" · ");
   return `        <li>
           <p class="cite-title">${titleHtml}</p>
           <p class="cite-authors">${pub.authorsHtml}</p>
-          <p class="cite-meta">${meta}</p>
+          <p class="cite-meta">${meta}</p>${pub.award ? `
+          <p class="cite-award"><strong>Award:</strong> ${esc(pub.award)}</p>` : ""}
         </li>`;
 }
 
@@ -234,23 +237,15 @@ function reviewItem(pub, up) {
   const titleHtml = pub.noDetail ? esc(pub.title) : `<a href="${up}publications/${pub.slug}.html">${esc(pub.title)}</a>`;
   return `        <li>
           <p class="cite-title">${titleHtml}</p>
-          <p class="cite-meta">${esc(pub.venue)}${pub.contribution ? ` — ${esc(pub.contribution)}` : ""}</p>
+          <p class="cite-meta"><strong>${esc(pub.venue)}</strong>${pub.contribution ? ` — ${esc(pub.contribution)}` : ""}</p>
         </li>`;
 }
 
 const components = {
   heroStats() {
-    const items = [
-      [firstAuthorTop.length, `first-author papers at ${listJoin(firstAuthorVenues)}`],
-      [SITE.stats.groupPublications, "publications with KUDoc"],
-      [SITE.stats.patents, "patents"],
-      [SITE.stats.transfers, "technology transfers"],
-      [SITE.stats.awards, "awards"]
-    ];
-    return `    <ul class="stats" aria-label="Highlights">
-${items.map(([n, label]) => `      <li><strong>${n}</strong> ${esc(label)}</li>`).join("\n")}
-    </ul>`;
+    return `    <p class="stats">My work has led to <strong>${SITE.stats.publications} publications</strong>, including first-author papers at <strong>${esc(listJoin(firstAuthorVenues))} Main</strong>, along with <strong>${SITE.stats.patents} patents</strong> and <strong>${SITE.stats.awards} awards</strong>, among them <strong>${SITE.stats.outstandingPaperAwards} Outstanding Paper awards</strong>.</p>`;
   },
+
 
   news() {
     return `      <ol class="news">

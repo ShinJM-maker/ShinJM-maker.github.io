@@ -1,11 +1,11 @@
-# EDT5: Proposal of an Encoder-Decoder Structure Embedding Model for T5
+# EDT5: Proposed Embedding Model of T5 Encoder-Decoder Structure
 
 - Type: Publication
 - Slug: edt5-embeddings
 - Category: Domestic Conferences & Theses
 - Venue: KSC 2022
 - Date: Dec 2022
-- Authors: Joongmin Shin*, Joogyoung Jung, Junghoon Lee, Hyuk-Chul Kwon
+- Authors: Joongmin Shin*, Jugyung Jung, Jung-Hun Lee, Sanghyun Cho, Minho Kim, Miyeon Kim, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published
 - Keywords: T5, embedding, encoder-decoder

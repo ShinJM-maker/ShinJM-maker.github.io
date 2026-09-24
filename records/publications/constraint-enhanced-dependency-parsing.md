@@ -1,4 +1,4 @@
-# A Dependency Parsing Model Applying Enhanced Dominant-Dependent Constraint Rules: Combining Deep Learning and Linguistic Knowledge
+# A Dependency Parsing Model with Reinforced Head-Dependent Constraint Rules: Combining Deep Learning and Linguistic Knowledge
 
 - Type: Publication
 - Slug: constraint-enhanced-dependency-parsing

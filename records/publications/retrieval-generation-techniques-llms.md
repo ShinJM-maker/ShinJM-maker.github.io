@@ -5,7 +5,7 @@
 - Category: Domestic Conferences & Theses
 - Venue: KIICE 2023
 - Date: Oct 2023
-- Authors: Joongmin Shin*, Jungun Lee
+- Authors: Joongmin Shin*, SeongReol Park, Jung-Hun Lee
 - Role: First Author
 - Status: Published
 - Keywords: RAG, LLM, comparative study

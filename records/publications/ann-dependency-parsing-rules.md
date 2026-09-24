@@ -1,4 +1,4 @@
-# Rule-Based Dependency Parsing Using Artificial Neural Networks
+# Rule-Augmented Neural Network-Based Dependency Parsing
 
 - Type: Publication
 - Slug: ann-dependency-parsing-rules

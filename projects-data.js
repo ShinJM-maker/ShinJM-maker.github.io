@@ -50,7 +50,7 @@ window.PROJECTS = [
     period: "Feb 2024 - Dec 2024",
     affiliation: "Korea University",
     group: "Multimodal Reasoning & Document AI",
-    cardSummary: "Science-domain Korean LLM and RAG pipeline for document-grounded industrial QA.",
+    cardSummary: "Korean LLM and RAG pipeline specialized for the science domain; led data preprocessing and chunking methodology development, producing an EMNLP 2024 Industry Track paper and 2 technology transfers.",
     cardChips: [
       { tone: "output", text: "EMNLP 2024 Industry" },
       { tone: "recognition", text: "2 Transfers" }
@@ -82,7 +82,7 @@ window.PROJECTS = [
     period: "Jun 2023 - Present",
     affiliation: "Korea University",
     group: "Multimodal Reasoning & Document AI",
-    cardSummary: "Multilingual medical consultation system with LLM chatbot and production-facing admin workflows.",
+    cardSummary: "Multilingual LLM-based medical consultation chatbot; selected for the KU-Grant research commercialization program.",
     cardChips: [
       { tone: "scope", text: "Medical AI" },
       { tone: "recognition", text: "KU-Grant Track" }
@@ -100,7 +100,7 @@ window.PROJECTS = [
     affiliation: "Korea University (NC AI Consortium)",
     cardAffiliation: "Korea University",
     group: "Foundation Models and Adaptation",
-    cardSummary: "Consortium-scale multilingual foundation model contribution spanning data pipelines and evaluation.",
+    cardSummary: "Multilingual foundation model development as a national-level representative researcher, spanning data pipelines, post-training, and evaluation.",
     cardChips: [
       { tone: "partner", text: "NC AI Consortium" },
       { tone: "recognition", text: "National Project" }
@@ -115,7 +115,7 @@ window.PROJECTS = [
     period: "Feb 2024 - Mar 2024",
     affiliation: "Korea University",
     group: "Foundation Models and Adaptation",
-    cardSummary: "Korean-adapted Gemma development with Korean-focused data and evaluation.",
+    cardSummary: "Korean adaptation of Google's Gemma model; contributed Korean-focused data adaptation and Korean benchmark evaluation.",
     cardChips: [
       { tone: "scope", text: "Gemma Adaptation" },
       { tone: "scope", text: "Evaluation" }
@@ -131,7 +131,7 @@ window.PROJECTS = [
     period: "Dec 2023 - Feb 2024",
     affiliation: "Korea University",
     group: "Foundation Models and Adaptation",
-    cardSummary: "Academic Korean LLM development through post-training and benchmark evaluation.",
+    cardSummary: "Korean LLM initiative developed at Korea University; contributed instruction-following tuning and benchmark evaluation.",
     cardChips: [
       { tone: "scope", text: "Academic LLM" },
       { tone: "scope", text: "Benchmarking" }
@@ -144,11 +144,11 @@ window.PROJECTS = [
   {
     slug: "plc-assistant-hyundai-mobis",
     title: "GPT-Based PLC Programming Assistant Technology POC Development (Hyundai Mobis)",
-    cardTitle: "PLC Programming Assistant (Hyundai Mobis)",
+    cardTitle: "Robot Process Automation – PLC Control-Code Generation",
     period: "Sep 2023 - Feb 2024",
     affiliation: "Korea University",
     group: "Foundation Models and Adaptation",
-    cardSummary: "GPT-based code-generation assistant for smart-factory PLC workflows in collaboration with Hyundai Mobis.",
+    cardSummary: "GPT-based assistant that generates PLC control code for smart-factory robot process automation, in collaboration with Hyundai Mobis.",
     cardChips: [
       { tone: "partner", text: "Hyundai Mobis" },
       { tone: "scope", text: "Smart Factory" }
@@ -161,9 +161,11 @@ window.PROJECTS = [
     title: "Mi:deum K 1.0",
     period: "Dec 2021 - Dec 2022",
     affiliation: "KT",
+    cardAffiliation: "Pusan National University",
     group: "Foundation Models and Adaptation",
-    cardSummary: "Enterprise Korean LLM adaptation and evaluation for generative AI applications.",
+    cardSummary: "Contributed to KT's Korean LLM ecosystem for enterprise generative AI; led model adaptation and Korean-targeted post-training evaluation.",
     cardChips: [
+      { tone: "partner", text: "KT" },
       { tone: "scope", text: "Enterprise LLM" },
       { tone: "scope", text: "Evaluation" }
     ],
@@ -180,7 +182,7 @@ window.PROJECTS = [
     affiliation: "Pusan National University (AI Lab)",
     cardAffiliation: "Pusan National University",
     group: "Foundation Models and Adaptation",
-    cardSummary: "Adapter-based architecture for Table QA and neural-symbolic Korean sentence analysis; reduced QA model count by 50% and grounded later work on structured evidence.",
+    cardSummary: "Table QA and neural-symbolic Korean sentence analysis for the national Exobrain project; an Adapter-based architecture unifying text/table embedding models reduced QA model parameter size by about 50%.",
     cardChips: [
       { tone: "partner", text: "ETRI" },
       { tone: "scope", text: "Adapter Architecture" }

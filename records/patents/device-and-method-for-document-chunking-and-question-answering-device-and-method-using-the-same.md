@@ -4,4 +4,4 @@
 - Source: `site-data.js`
 
 ## Description
-DP-2025-0093 · EMNLP 2024
+Korea · DP-2025-0093 · Pending · 2025

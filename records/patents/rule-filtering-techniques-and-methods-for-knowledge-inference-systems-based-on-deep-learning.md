@@ -4,4 +4,4 @@
 - Source: `site-data.js`
 
 ## Description
-P2022-0340-KR00 · Filed 2023
+Korea · P2022-0340-KR00 · Registered · Feb 2023

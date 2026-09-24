@@ -1,9 +1,9 @@
-# Intelligent Predictive Maintenance RAG framework for Power Plants: Enhancing QA with StyleDFS and Domain Specific Instruction Tuning
+# Intelligent Predictive Maintenance RAG Framework for Power Plants: Enhancing QA with StyleDFS and Domain Specific Instruction Tuning
 
 - Type: Publication
 - Slug: styledfs
 - Category: Top Conferences
-- Venue: EMNLP 2024 (Industrial)
+- Venue: EMNLP 2024 (Industry Track)
 - Date: Oct 2024
 - Authors: Seongtae Hong*, Joongmin Shin*, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim
 - Role: Co-First Author

@@ -3,7 +3,7 @@
 - Type: Publication
 - Slug: korlex-embeddings
 - Category: Journals
-- Venue: Applied Artificial Intelligence (An International Journal)
+- Venue: Applied Artificial Intelligence 38(1), Taylor & Francis
 - Date: Sep 2024
 - Authors: SeongReol Park*, Joongmin Shin, Sanghyun Cho, Hyuk-Chul Kwon, Jung-Hun Lee
 - Role: Co-Author

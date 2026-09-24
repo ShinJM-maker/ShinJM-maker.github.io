@@ -28,7 +28,7 @@ Support-gated admission control that decides what a document QA agent is allowed
 - Category: Top Conferences
 - Venue: EMNLP 2026 (Findings)
 - Date: Aug 2026
-- Authors: Joongmin Shin*, Gyuho Shim, Jung-hun Lee, Jaehyung Seo
+- Authors: Joongmin Shin*, Gyuho Shim, Jung-Hun Lee, Jaehyung Seo
 - Role: First Author
 - Status: Accepted
 - Keywords: evidence graphs, multimodal QA, entity linking
@@ -107,11 +107,11 @@ MultiDocFusion combines vision parsing, OCR, and hierarchy reconstruction to pre
 ## Contribution
 A hierarchical multimodal chunking pipeline that preserves layout and improves evidence composition in industrial RAG.
 
-## Intelligent Predictive Maintenance RAG framework for Power Plants: Enhancing QA with StyleDFS and Domain Specific Instruction Tuning
+## Intelligent Predictive Maintenance RAG Framework for Power Plants: Enhancing QA with StyleDFS and Domain Specific Instruction Tuning
 
 - Slug: styledfs
 - Category: Top Conferences
-- Venue: EMNLP 2024 (Industrial)
+- Venue: EMNLP 2024 (Industry Track)
 - Date: Oct 2024
 - Authors: Seongtae Hong*, Joongmin Shin*, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim
 - Role: Co-First Author
@@ -316,7 +316,7 @@ Retrieval- and reasoning-guidance methods for reasoning-efficient agentic RAG sy
 
 - Slug: korlex-embeddings
 - Category: Journals
-- Venue: Applied Artificial Intelligence (An International Journal)
+- Venue: Applied Artificial Intelligence 38(1), Taylor & Francis
 - Date: Sep 2024
 - Authors: SeongReol Park*, Joongmin Shin, Sanghyun Cho, Hyuk-Chul Kwon, Jung-Hun Lee
 - Role: Co-Author
@@ -338,7 +338,7 @@ Graph-aware lexical embedding model that injects structured knowledge into vecto
 
 - Slug: hybrid-reader-tables-text
 - Category: Journals
-- Venue: Applied Artificial Intelligence (An International Journal)
+- Venue: Applied Artificial Intelligence 38(1), Taylor & Francis
 - Date: Jun 2024
 - Authors: Sanghyun Cho*, SeongReol Park, Hye-Lynn Kim, Jung-Hun Lee, Joongmin Shin, Hyuk-Chul Kwon
 - Role: Co-Author
@@ -362,7 +362,7 @@ Hybrid reader model that jointly processes text and tables for multi-paragraph m
 - Category: Domestic Conferences & Theses
 - Venue: KIICE 2023
 - Date: Oct 2023
-- Authors: Joongmin Shin*, Jungun Lee
+- Authors: Joongmin Shin*, SeongReol Park, Jung-Hun Lee
 - Role: First Author
 - Status: Published
 - Keywords: RAG, LLM, comparative study
@@ -416,13 +416,13 @@ This work introduces QA-pair passage construction for Korean retrieval-augmented
 ## Contribution
 QA-pair passage construction method for Korean RAG chatbots, reducing hallucination in domain-specific settings.
 
-## Neural Symbolic Models for Overcoming Deep Learning Limitations and Korean Dependency Parsing
+## A Neural-Symbolic Model for Overcoming Deep Learning Limitations in Korean Dependency Parsing
 
 - Slug: neural-symbolic-korean-dependency-parsing
 - Category: Domestic Conferences & Theses
-- Venue: Master's Thesis
+- Venue: Master's Thesis, Pusan National University
 - Date: Feb 2023
-- Authors: Joongmin Shin*
+- Authors: Joongmin Shin*, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published
 - Keywords: dependency parsing, neural-symbolic, Korean NLP
@@ -436,13 +436,13 @@ Proposed and analyzed a novel neural-symbolic model that controls final probabil
 ## Contribution
 Neural-symbolic parser integrating linguistic constraints to overcome deep learning limitations in dependency parsing.
 
-## EDT5: Proposal of an Encoder-Decoder Structure Embedding Model for T5
+## EDT5: Proposed Embedding Model of T5 Encoder-Decoder Structure
 
 - Slug: edt5-embeddings
 - Category: Domestic Conferences & Theses
 - Venue: KSC 2022
 - Date: Dec 2022
-- Authors: Joongmin Shin*, Joogyoung Jung, Junghoon Lee, Hyuk-Chul Kwon
+- Authors: Joongmin Shin*, Jugyung Jung, Jung-Hun Lee, Sanghyun Cho, Minho Kim, Miyeon Kim, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published
 - Keywords: T5, embedding, encoder-decoder
@@ -456,7 +456,7 @@ Analyzed the structure of T5 and proposed a model architecture that uses both th
 ## Contribution
 Proposed encoder-decoder embedding architecture for T5, improving upon encoder-only approaches.
 
-## Evaluation of Korean Machine Reading Comprehension Generalization Performance Based on Domain-Specific Evaluation Datasets
+## Evaluation of Generalization Performance in Korean Table Machine Reading Comprehension across Domain-Specific Datasets
 
 - Slug: korean-table-mrc-generalization
 - Category: Domestic Conferences & Theses
@@ -476,7 +476,7 @@ Identified the limitations of existing tabular machine reading comprehension mod
 ## Contribution
 Identified domain generalization limitations in tabular MRC models through cross-validation analysis.
 
-## A Dependency Parsing Model Applying Enhanced Dominant-Dependent Constraint Rules: Combining Deep Learning and Linguistic Knowledge
+## A Dependency Parsing Model with Reinforced Head-Dependent Constraint Rules: Combining Deep Learning and Linguistic Knowledge
 
 - Slug: constraint-enhanced-dependency-parsing
 - Category: Domestic Conferences & Theses
@@ -496,7 +496,7 @@ Through data and error case analysis, expanded the neural symbolic model from tw
 ## Contribution
 Expanded neural-symbolic constraint rules from 2 to 24, achieving state-of-the-art dependency parsing.
 
-## Rule-Based Dependency Parsing Using Artificial Neural Networks
+## Rule-Augmented Neural Network-Based Dependency Parsing
 
 - Slug: ann-dependency-parsing-rules
 - Category: Domestic Conferences & Theses
@@ -516,7 +516,7 @@ Added a transformer layer to existing graph-based dependency parsing models to i
 ## Contribution
 Transformer-augmented dependency parser with rule-based probability control for improved parsing accuracy.
 
-## Machine Reading Comprehension of Korean Using Continual Learning
+## Korean Machine Reading Comprehension Using Continual Learning
 
 - Slug: continual-learning-korean-mrc
 - Category: Domestic Conferences & Theses

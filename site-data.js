@@ -12,13 +12,14 @@ window.SITE = {
     kudoc: "https://kudocai.github.io/index.html"
   },
 
-  // Group-level totals (KUDoc). First-author paper counts are derived from publications-data.js.
+  // Totals shown on the site (kept in sync with the CV). First-author paper counts are derived from publications-data.js.
   stats: {
-    groupPublications: 15,
+    publications: 15,
     patents: 5,
     industryProjects: 4,
     transfers: 3,
-    awards: 7
+    awards: 7,
+    outstandingPaperAwards: 3
   },
 
   // Newest first. `html` may contain inline markup.
@@ -52,11 +53,11 @@ window.SITE = {
   ],
 
   patents: [
-    { title: "Hierarchical Multimodal Retrieval for Open-Domain Document Question Answering", meta: "Related to HiKEY · ACL 2026" },
-    { title: "Multi-modal, Multi-page, Multi-document Dependency Chunking with Large Vision-Language Models", meta: "Related to M3DocDep · CVPR 2026" },
-    { title: "Device and Method for Document Chunking, and Question-Answering Device and Method Using the Same", meta: "DP-2025-0093 · EMNLP 2024" },
-    { title: "Rule Filtering Techniques and Methods for Knowledge Inference Systems Based on Deep Learning", meta: "P2022-0340-KR00 · Filed 2023" },
-    { title: "An AI-Based System and Method for Recommending Problems Tailored to the Learner’s Level", meta: "10-2022-0068075 · Registered 2022" }
+    { title: "Hierarchical Multimodal Retrieval for Open-Domain Document Question Answering", meta: "Korea · Pending · 2026 · Related to HiKEY (ACL 2026)" },
+    { title: "Multi-modal, Multi-page, Multi-document Dependency Chunking with Large Vision-Language Models", meta: "Korea · Pending · 2026 · Related to M3DocDep (CVPR 2026)" },
+    { title: "Device and Method for Document Chunking, and Question-Answering Device and Method Using the Same", meta: "Korea · DP-2025-0093 · Pending · 2025" },
+    { title: "Rule Filtering Techniques and Methods for Knowledge Inference Systems Based on Deep Learning", meta: "Korea · P2022-0340-KR00 · Registered · Feb 2023" },
+    { title: "AI-Based Adaptive Problem Recommendation System and Method for Learner-Level Assessment", meta: "Korea · 10-2022-0068075 · Registered · Nov 2022" }
   ],
 
   // Old URLs that should keep working.

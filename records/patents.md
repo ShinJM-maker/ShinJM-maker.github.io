@@ -8,7 +8,7 @@ Total items: 5
 - Source: `site-data.js`
 
 ## Description
-Related to HiKEY · ACL 2026
+Korea · Pending · 2026 · Related to HiKEY (ACL 2026)
 
 ## Multi-modal, Multi-page, Multi-document Dependency Chunking with Large Vision-Language Models
 
@@ -16,7 +16,7 @@ Related to HiKEY · ACL 2026
 - Source: `site-data.js`
 
 ## Description
-Related to M3DocDep · CVPR 2026
+Korea · Pending · 2026 · Related to M3DocDep (CVPR 2026)
 
 ## Device and Method for Document Chunking, and Question-Answering Device and Method Using the Same
 
@@ -24,7 +24,7 @@ Related to M3DocDep · CVPR 2026
 - Source: `site-data.js`
 
 ## Description
-DP-2025-0093 · EMNLP 2024
+Korea · DP-2025-0093 · Pending · 2025
 
 ## Rule Filtering Techniques and Methods for Knowledge Inference Systems Based on Deep Learning
 
@@ -32,12 +32,12 @@ DP-2025-0093 · EMNLP 2024
 - Source: `site-data.js`
 
 ## Description
-P2022-0340-KR00 · Filed 2023
+Korea · P2022-0340-KR00 · Registered · Feb 2023
 
-## An AI-Based System and Method for Recommending Problems Tailored to the Learner’s Level
+## AI-Based Adaptive Problem Recommendation System and Method for Learner-Level Assessment
 
-- Per-item Markdown: patents/an-ai-based-system-and-method-for-recommending-problems-tailored-to-the-learner-s-level.md
+- Per-item Markdown: patents/ai-based-adaptive-problem-recommendation-system-and-method-for-learner-level-assessment.md
 - Source: `site-data.js`
 
 ## Description
-10-2022-0068075 · Registered 2022
+Korea · 10-2022-0068075 · Registered · Nov 2022

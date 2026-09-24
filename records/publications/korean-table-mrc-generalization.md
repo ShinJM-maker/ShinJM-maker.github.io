@@ -1,4 +1,4 @@
-# Evaluation of Korean Machine Reading Comprehension Generalization Performance Based on Domain-Specific Evaluation Datasets
+# Evaluation of Generalization Performance in Korean Table Machine Reading Comprehension across Domain-Specific Datasets
 
 - Type: Publication
 - Slug: korean-table-mrc-generalization

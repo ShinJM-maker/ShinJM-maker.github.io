@@ -456,6 +456,24 @@ sup {
   font-size: 1.08rem;
 }
 
+.hero-interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-interests li {
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .hero-callout {
   max-width: var(--measure);
   margin-top: 1rem;
@@ -482,21 +500,16 @@ sup {
 }
 
 .stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 2rem;
+  max-width: var(--measure);
   margin: 2.5rem 0 0;
-  padding: 1.1rem 0;
+  padding: 1rem 0;
   border-block: 1px solid var(--line);
-  list-style: none;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .stats strong {
-  margin-right: 0.2rem;
   color: var(--text);
-  font-size: 1.25rem;
   font-weight: 700;
 }
 
@@ -746,6 +759,17 @@ sup {
 
 .cite-title a:hover {
   color: var(--brand);
+}
+
+.cite-award {
+  margin-top: 0.15rem;
+  color: var(--brand);
+  font-size: 0.87rem;
+}
+
+.cite-meta strong,
+.pub-meta strong {
+  color: var(--text);
 }
 
 .cite-meta {
@@ -1181,10 +1205,21 @@ sup {
   font-weight: 650;
 }
 
+.entry-head > p strong {
+  color: var(--text);
+}
+
 .entry-head > p {
   color: var(--faint);
   font-size: 0.88rem;
   white-space: nowrap;
+}
+
+.entry-role {
+  margin-top: 0.3rem;
+  padding-left: calc(36px + 0.75rem);
+  color: var(--text);
+  font-size: 0.95rem;
 }
 
 .entry-card ul {

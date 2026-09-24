@@ -14,6 +14,14 @@ window.PUBLICATIONS = [
     status: "Accepted",
     keywords: ["agent memory", "memory-write safety", "document QA"],
     linkPlaceholders: ["Paper coming soon", "Code coming soon", "arXiv coming soon"],
+    venueBadge: {
+      path: "Venue/NeurIPS2026.png",
+      alt: "NeurIPS 2026 venue logo"
+    },
+    cardImage: {
+      path: "Venue/NeurIPS2026.png",
+      alt: "NeurIPS 2026 venue logo"
+    },
     doi: "",
     arxiv: ""
   },
@@ -31,6 +39,14 @@ window.PUBLICATIONS = [
     keywords: ["evidence graphs", "multimodal QA", "entity linking"],
     legacySlugs: ["under-review-evidence-graph"],
     linkPlaceholders: ["Paper coming soon", "Code coming soon", "arXiv coming soon"],
+    venueBadge: {
+      path: "Venue/EMNLP2026.png",
+      alt: "EMNLP 2026 venue logo"
+    },
+    cardImage: {
+      path: "Venue/EMNLP2026.png",
+      alt: "EMNLP 2026 venue logo"
+    },
     doi: "",
     arxiv: ""
   },

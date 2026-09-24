@@ -72,11 +72,13 @@ const detailPubs = PUBLICATIONS.filter(p => !p.noDetail);
 const pubBySlug = Object.fromEntries(PUBLICATIONS.map(p => [p.slug, p]));
 
 // Paper figures get a small JPEG thumbnail for list pages and link previews.
+// Papers without an architecture figure can set `cardImage` (e.g. a venue logo) for list pages.
 function thumbnailFor(pub) {
-  if (!pub.figure?.path) return null;
+  const image = pub.figure || pub.cardImage;
+  if (!image?.path) return null;
   const rel = `paper_figure/thumbs/${pub.slug}.jpg`;
   const out = path.join(root, rel);
-  const src = path.join(root, pub.figure.path);
+  const src = path.join(root, image.path);
   if (!fs.existsSync(out) || fs.statSync(out).mtimeMs < fs.statSync(src).mtimeMs) {
     fs.mkdirSync(path.dirname(out), { recursive: true });
     execFileSync("convert", [`${src}[0]`, "-resize", "1200x>", "-background", "white", "-alpha", "remove", "-flatten", "-strip", "-quality", "82", out]);
@@ -203,7 +205,7 @@ function venueLine(pub) {
 function pubFeature(pub, up) {
   const thumb = thumbnailFor(pub);
   const media = thumb
-    ? `<img src="${up}${encodePath(thumb)}" alt="${esc(pub.figure.caption || `${shortName(pub)} overview`)}" loading="lazy" />`
+    ? `<img${pub.figure ? "" : ' class="pub-thumb-logo"'} src="${up}${encodePath(thumb)}" alt="${esc(pub.figure?.caption || pub.cardImage?.alt || `${shortName(pub)} overview`)}" loading="lazy" />`
     : `<span class="pub-thumb-fallback" aria-hidden="true"><strong>${esc(shortName(pub))}</strong>${esc(venueShort(pub.venue))}</span>`;
   const titleHtml = pub.noDetail ? esc(pub.title) : `<a href="${up}publications/${pub.slug}.html">${esc(pub.title)}</a>`;
   return `      <article class="pub-feature">

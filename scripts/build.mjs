@@ -260,17 +260,24 @@ ${topConference.map(p => pubFeature(p, "")).join("\n")}
   },
 
   researchAreas() {
-    return `      <div class="areas">
+    return `      <p class="section-lede areas-lede">${esc(SITE.researchStatement)}</p>
+      <div class="areas areas-2">
 ${SITE.researchAreas.map(area => `        <article class="area">
           <h3>${esc(area.title)}</h3>
           <p>${esc(area.text)}</p>
           <p class="area-pubs">${area.pubs.map(slug => {
             const pub = pubBySlug[slug];
             if (!pub) throw new Error(`Unknown publication slug in researchAreas: ${slug}`);
-            return `<a href="publications/${slug}.html">${esc(shortName(pub))} <span>${esc(venueShort(pub.venue))}</span></a>`;
+            return `<a href="publications/${slug}.html">${esc(shortName(pub))} <span>${esc(pub.shortVenue || venueShort(pub.venue))}</span></a>`;
           }).join("")}</p>
         </article>`).join("\n")}
       </div>`;
+  },
+
+  researchInterestTags() {
+    return `        <ul class="hero-interests" aria-label="Research interests">
+${SITE.researchAreas.map(area => `          <li><a href="#areas-title">${esc(area.title)}</a></li>`).join("\n")}
+        </ul>`;
   },
 
   projectGroups() {

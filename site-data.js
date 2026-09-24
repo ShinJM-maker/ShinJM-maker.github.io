@@ -33,22 +33,28 @@ window.SITE = {
     { date: "Oct 2024", html: '<a href="publications/styledfs.html"><strong>StyleDFS</strong></a> was accepted at <strong>EMNLP 2024</strong> (Industry, co-first author).' }
   ],
 
-  // Home page research areas; `pubs` are publication slugs.
+  // Research interests (kept in sync with the CV); `pubs` are publication slugs.
+  researchStatement: "My research asks how AI systems can turn complex, unstructured inputs — multi-page documents, tables, figures, and video — into structured evidence they can retrieve, reason over, and verify. For my Ph.D., I aim to extend this from static documents to structured memory, world models, and planning for agents that act over long horizons.",
   researchAreas: [
     {
-      title: "Structure-Aware Multimodal Reasoning",
-      text: "Retrieval- and generation-oriented representations that preserve layout, section hierarchy, table–figure relations, cross-page dependencies, and provenance.",
-      pubs: ["hikey", "multidocfusion"]
+      title: "Structure-Grounded Multimodal Reasoning",
+      text: "Recovering layout, hierarchy, and cross-page dependencies so models reason over document structure, not flat text.",
+      pubs: ["m3docdep", "multidocfusion"]
     },
     {
-      title: "Document Structure Recovery",
-      text: "LVLM-based parsing and dependency modeling for long, noisy, multi-page documents.",
-      pubs: ["m3docdep", "styledfs"]
+      title: "Evidence-Grounded Information Retrieval & Generation",
+      text: "Hierarchical retrieval and page-grounded evidence representations that make answers traceable to their sources.",
+      pubs: ["hikey", "pilar"]
     },
     {
-      title: "Auditable Evidence and Agent Memory",
-      text: "Claim-to-evidence linking, page-grounded evidence graphs, and support-gated memory writes for reliable document agents.",
-      pubs: ["pilar", "admit"]
+      title: "Agentic AI & Structured Memory",
+      text: "Controlling what agents commit to memory, so long-horizon reasoning builds only on supported evidence.",
+      pubs: ["admit"]
+    },
+    {
+      title: "Knowledge Graphs and Neural-Symbolic Reasoning",
+      text: "Combining symbolic structure with neural models for interpretable reasoning.",
+      pubs: ["neural-symbolic-korean-dependency-parsing", "constraint-enhanced-dependency-parsing"]
     }
   ],
 

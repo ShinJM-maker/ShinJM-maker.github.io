@@ -1,0 +1,205 @@
+%-------------------------------------------------------------------------------
+% Curriculum Vitae — Joongmin Shin
+%
+% Build (from the repository root):
+%   latexmk -xelatex -cd -outdir=build _cv/cv.tex && cp _cv/build/cv.pdf CV/Curriculum_Vitae_Joongmin_Shin.pdf
+%
+% Template: Awesome-CV (posquit0/Awesome-CV, awesome-cv.cls at commit 964f99d, LPPL 1.3c)
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.6cm, footskip=.5cm}
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\renewcommand*{\headerpositionstyle}[1]{{\fontsize{8.4pt}{1em}\headerfont\color{awesome} #1}}
+
+% Publication entry: title, authors, venue.
+\newcommand*{\cvpub}[3]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth}}
+    {\fontsize{9.5pt}{1.2em}\bodyfont\bfseries\color{darktext} #1} \\
+    \hspace{4mm}{\fontsize{9pt}{1em}\bodyfontlight\color{text} #2} \\
+    \hspace{4mm}{\fontsize{7.5pt}{1em}\bodyfontlight\itshape\color{graytext} #3}
+  \end{tabular*}%
+  \vspace{1.2mm}
+}
+\newcommand*{\me}{\textbf{Joongmin Shin*}}
+
+%-------------------------------------------------------------------------------
+\name{Joongmin}{Shin}
+\position{Senior Researcher / Research Scientist, Korea University{\enskip\cdotp\enskip}Founder \& Lead, KUDoc}
+\address{Seoul, Republic of Korea{\enskip\cdotp\enskip}Open to relocation (US/EU) and remote roles}
+\mobile{(+82) 10-5710-8702}
+\email{tlswndals13@korea.ac.kr}
+\homepage{shinjm-maker.github.io}
+\github{ShinJM-maker}
+\linkedin{shinjm-maker}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[C]
+
+%-------------------------------------------------------------------------------
+\cvsection{Professional Summary}
+
+\begin{cvparagraph}
+AI researcher with 5+ years of experience in multimodal LLM/LVLMs, structure-aware parsing, and retrieval-augmented generation for document-heavy settings. My current work focuses on structured evidence and reliable long-context reasoning over heterogeneous unstructured inputs, with first-author papers at NeurIPS, ACL, CVPR, and EMNLP. In addition to my individual research, I founded and lead KUDoc, the Document AI research group at Korea University, where I help shape collaborative directions across document understanding, multimodal RAG, evaluation, and applied AI. I aim to pursue a Ph.D. to extend this foundation toward structured memory, world models, and planning for future agents.
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+\cvsection{Key Strengths}
+
+\vspace{3.5mm}
+{\paragraphstyle
+\begin{cvitems}
+  \item {\textbf{Parsing from sentence to document level:} Build neural dependency parsers for text and extend them to \textbf{document-level trees and graphs}, enabling consistent structure-aware chunking and retrieval for long, noisy PDFs.}
+  \item {\textbf{Explainable hybrid architectures:} Design and implement systems that integrate symbolic rules and knowledge graphs with LLM/LVLM models, improving both performance and transparency.}
+  \item {\textbf{Domain problem definition \& Rapid prototyping:} Translate complex industrial requirements into structured tasks for RAG systems, managing cross-functional teams to deliver end-to-end prototypes and industry pilots.}
+\end{cvitems}
+}
+\vspace{3mm}
+
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\begin{cventries}
+  \cventry
+    {M.S. in Artificial Intelligence}
+    {Pusan National University}
+    {Busan, Republic of Korea}
+    {Mar 2021 -- Feb 2023}
+    {
+      \begin{cvitems}
+        \item {Thesis focused on parsing unstructured data and integrating syntactic/morphological analysis for Korean NLP; participated in national AI projects and filed related patents.}
+      \end{cvitems}
+    }\par
+  \cventry
+    {B.S. in Computer Science and Engineering}
+    {Pusan National University}
+    {Busan, Republic of Korea}
+    {Mar 2016 -- Feb 2021}
+    {
+      \begin{cvitems}
+        \item {Completed coursework in software engineering and data analysis; engaged in multiple industry projects and hackathons, building teamwork and leadership skills.}
+      \end{cvitems}
+    }\par
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+\cvsection{Selected Publications}
+
+\vspace{1mm}
+\hfill{\fontsize{7.5pt}{1em}\bodyfontlight\color{text}\textsuperscript{*}\,First author}\par
+\vspace{1mm}
+
+\cvpub
+  {ADMIT: Support-Gated Memory-Write Admission for Document QA Agents}
+  {\me,\enskip Gyuho Shim,\enskip Hyeonseok Moon,\enskip Jaehyung Seo}
+  {NeurIPS 2026 - Conference on Neural Information Processing Systems: Main}
+
+\cvpub
+  {PILAR: A Page-Grounded Unified Evidence Representation via an Entity-Linked Assertion Graph for Open-Domain QA Agents over Multimodal Document Corpora}
+  {\me,\enskip Gyuho Shim,\enskip Jung-hun Lee,\enskip Jaehyung Seo}
+  {EMNLP 2026 - Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: Findings}
+
+\cvpub
+  {HiKEY: Hierarchical Multimodal Retrieval for Open-Domain Document Question Answering}
+  {\me,\enskip Gyuho Shim,\enskip Jeongbae Park,\enskip Jaehyung Seo,\enskip Heuiseok Lim}
+  {ACL 2026 - Annual Meeting of the Association for Computational Linguistics: Main (Oral)}
+
+\cvpub
+  {M3DocDep: Multi-modal, Multi-page, Multi-document Dependency Chunking with Large Vision-Language Models}
+  {\me,\enskip Jeongbae Park,\enskip Jaehyung Seo,\enskip Heuiseok Lim}
+  {CVPR 2026 - Computer Vision and Pattern Recognition Conference: Main}
+
+\cvpub
+  {MultiDocFusion: Hierarchical and Multimodal Chunking Pipeline for Enhanced RAG on Long Industrial Documents}
+  {\me,\enskip Chanjun Park,\enskip Jeongbae Park,\enskip Jaehyung Seo,\enskip Heuiseok Lim}
+  {EMNLP 2025 - Proceedings of the Conference on Empirical Methods in Natural Language Processing: Main}
+
+\cvpub
+  {Intelligent Predictive Maintenance RAG framework for Power Plants: Enhancing QA with StyleDFS and Domain Specific Instruction Tuning}
+  {Seongtae Hong*,\enskip \me,\enskip Jaehyung Seo,\enskip Taemin Lee,\enskip Jeongbae Park,\enskip Heuiseok Lim}
+  {EMNLP 2024 - Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Industry Track}
+
+%-------------------------------------------------------------------------------
+\clearpage
+\cvsection{Professional Experience}
+
+\begin{cventries}
+  \cventry
+    {Senior Researcher / Research Scientist}
+    {Human-Inspired AI Research, Korea University}
+    {Seoul, Republic of Korea}
+    {Jun 2023 -- Present}
+    {
+      \begin{cvitems}
+        \item {\textbf{Evidence Graphs \& Agent Memory (NeurIPS 2026 / EMNLP 2026):} Developed \textit{PILAR}, a page-grounded evidence representation that links assertions from text, tables, and figures through an entity-linked graph for open-domain QA agents, and \textit{ADMIT}, a support-gated admission policy that controls what document QA agents commit to memory.}
+        \item {\textbf{Hierarchical Multimodal Retrieval (ACL 2026, Oral):} Developed \textit{HiKEY}, which combines global routing, local ranking, and structured evidence assembly for open-domain document question answering.}
+        \item {\textbf{Multimodal Document Parsing \& Chunking (CVPR 2026 / EMNLP 2025):} Designed an LVLM-based document parsing framework (\textit{M3DocDep}) for noisy, large-scale industrial PDFs, building pipelines that produce document-level dependency trees. Developed \textit{MultiDocFusion}, a structure-aware multimodal chunking methodology that preserves hierarchical layouts to improve RAG retrieval quality.}
+        \item {\textbf{Domain-Specific LLM \& RAG (EMNLP 2024):} Designed and implemented \textit{StyleDFS}, a specialized Korean LLM and RAG pipeline for scientific literature with tailored preprocessing algorithms, completing technology transfer twice.}
+        \item {\textbf{Industrial Pilots \& Prototyping:} Led multimodal RAG projects and MVPs for Samsung Fire \& Marine Insurance (reducing manual search time by \textbf{40\%}), Hyundai Mobis (GPT-based PLC Programming Assistant), and Synapse (Multilingual Medical Consultation), successfully securing follow-up funding.}
+        \item {\textbf{Hybrid QA Systems:} Architected QA systems combining knowledge graphs and LLMs, resulting in a \textbf{10\% accuracy improvement} and a patent on adaptive rule-based filtering.}
+      \end{cvitems}
+    }\par
+  \cventry
+    {Researcher (M.S.)}
+    {AI Lab, Pusan National University}
+    {Busan, Republic of Korea}
+    {Sep 2020 -- Feb 2023}
+    {
+      \begin{cvitems}
+        \item {\textbf{Exobrain WiseQA National Project:} Led core research on \textbf{Korean text dependency parsing}, developing neural--symbolic parsers that integrate morphological and syntactic features as the backbone for sentence- and table-level QA.}
+        \item {\textbf{Table QA Frameworks:} Designed a pipeline converting semi-structured financial/encyclopedic tables into structured representations, achieving state-of-the-art Korean Table QA performance and improving model explainability.}
+        \item {\textbf{Applied AI Collaborations:} Collaborated with KT AI2XL on Korean TTS prosody prediction using syntactic parsing features; contributed to finance QA, sentiment-based marketing, and VR recommendation projects, earning an \textbf{Outstanding Paper Award}.}
+      \end{cvitems}
+    }\par
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+\cvsection{Honors \& Awards}
+
+\begin{cvhonors}
+  \cvhonor{Deputy Prime Minister and Minister of Education Award}{Competition for Best Practices in Academia--Industry Cooperation}{National Research Foundation (NRF)}{2024}
+  \cvhonor{Outstanding Paper Presentation Award}{Korean Institute of Information Scientists and Engineers (KIISE)}{KIISE}{2023}
+  \cvhonor{Grand Prize}{Samsung Fire \& Marine Insurance LLM-based MVP Model Idea Competition}{Samsung}{2023}
+  \cvhonor{Excellence Award (Technology Track)}{KU-Grant Program}{Korea University}{2023}
+  \cvhonor{Outstanding Paper Presentation Award}{Korea Software Congress (KSC)}{KSC}{2022}
+  \cvhonor{Excellence Award}{Student-led Research Project, Graduate School of AI}{Pusan National University}{2022}
+  \cvhonor{Milestone Scholarship (Grade A)}{SW-centered University Milestone Scholarship Program}{Pusan National University}{2020}
+\end{cvhonors}
+
+%-------------------------------------------------------------------------------
+\cvsection{Technical Skills}
+
+\begin{cvskills}
+  \cvskill{Programming}{Python, C/C++, Java, C\#, Django, React, Unity}
+  \cvskill{Machine Learning}{LLM/LVLM fine tuning, hybrid rule--neural models, knowledge graphs}
+  \cvskill{Tools}{PyTorch, TensorFlow, NumPy, Pandas, Scikit-Learn, LangChain, SQL, Linux}
+  \cvskill{Project Management}{Team leadership, cross-functional collaboration, proposal writing}
+  \cvskill{Languages}{Korean (native), English (fluent reading/writing)}
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+\cvsection{Teaching \& Mentoring}
+
+\begin{cventries}
+  \cventry
+    {Graduate Research Mentor}
+    {Pusan National University}
+    {Busan, Republic of Korea}
+    {2021 -- 2022}
+    {
+      \begin{cvitems}
+        \item {Mentored undergraduate capstone projects on Korean dependency parsing and robust Table QA; guided students to achieve near state-of-the-art performance.}
+        \item {Assisted in courses on web application programming and mobile app development, providing feedback and supporting team projects.}
+      \end{cvitems}
+    }\par
+\end{cventries}
+
+\end{document}

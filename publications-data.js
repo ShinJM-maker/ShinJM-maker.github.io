@@ -1,5 +1,38 @@
 window.PUBLICATIONS = [
   {
+    slug: "admit",
+    category: "Top Conferences",
+    title: "ADMIT: Support-Gated Memory-Write Admission for Document QA Agents",
+    venue: "NeurIPS 2026 (Main)",
+    date: "Sep 2026",
+    authorsHtml: "<strong>Joongmin Shin*</strong>, Gyuho Shim, Hyeonseok Moon, Jaehyung Seo",
+    abstract: "ADMIT treats memory writes by document QA agents as an admission decision rather than a default side effect. Candidate memory entries are gated by whether they are supported by the document evidence the agent actually used, reducing unsupported or unsafe content that persists into later reasoning.",
+    contribution: "Support-gated admission control that decides what a document QA agent is allowed to commit to memory.",
+    role: "First Author",
+    status: "Accepted",
+    keywords: ["agent memory", "memory-write safety", "document QA"],
+    linkPlaceholders: ["Paper coming soon", "Code coming soon", "arXiv coming soon"],
+    doi: "",
+    arxiv: ""
+  },
+  {
+    slug: "pilar",
+    category: "Top Conferences",
+    title: "PILAR: A Page-Grounded Unified Evidence Representation via an Entity-Linked Assertion Graph for Open-Domain QA Agents over Multimodal Document Corpora",
+    venue: "EMNLP 2026 (Findings)",
+    date: "Aug 2026",
+    authorsHtml: "<strong>Joongmin Shin*</strong>, Gyuho Shim, Jung-hun Lee, Jaehyung Seo",
+    abstract: "PILAR unifies text, tables, and figures from multimodal document corpora into a single page-grounded evidence representation. Assertions are linked through shared entities into a graph, giving open-domain QA agents structured, traceable evidence across pages and documents.",
+    contribution: "Entity-linked assertion graphs unify text, tables, and figures into a single page-grounded evidence representation for open-domain multimodal QA agents.",
+    role: "First Author",
+    status: "Accepted",
+    keywords: ["evidence graphs", "multimodal QA", "entity linking"],
+    legacySlugs: ["under-review-evidence-graph"],
+    linkPlaceholders: ["Paper coming soon", "Code coming soon", "arXiv coming soon"],
+    doi: "",
+    arxiv: ""
+  },
+  {
     slug: "hikey",
     category: "Top Conferences",
     title: "HiKEY: Hierarchical Multimodal Retrieval for Open-Domain Document Question Answering",
@@ -98,21 +131,6 @@ window.PUBLICATIONS = [
     }
   },
   {
-    slug: "under-review-evidence-graph",
-    category: "Under Review",
-    title: "Structured Evidence Representation for Multimodal RAG via Entity-Linked Assertion Graphs",
-    venue: "EMNLP 2026",
-    date: "",
-    authorsHtml: "Anonymous (Under review)",
-    abstract: "Anonymous manuscript on unified evidence representation via entity-linked graphs for multimodal QA.",
-    contribution: "Entity-linked assertion graphs unify text, tables, and figures into a single evidence representation for open-domain multimodal QA.",
-    role: "First Author",
-    status: "Under Review",
-    keywords: ["evidence graphs", "multimodal RAG", "entity linking"],
-    doi: "",
-    arxiv: ""
-  },
-  {
     slug: "ur-rag-chunking-eval",
     category: "Under Review",
     title: "Unified Evaluation Framework for RAG Chunking",
@@ -138,21 +156,6 @@ window.PUBLICATIONS = [
     role: "First Author",
     status: "Under Review",
     keywords: ["agent memory", "grounding diagnostics", "document agents"],
-    noDetail: true,
-    doi: "",
-    arxiv: ""
-  },
-  {
-    slug: "ur-memory-write-safety",
-    category: "Under Review",
-    title: "Memory-Write as a New Safety Surface for Agentic AI",
-    venue: "EMNLP 2026",
-    date: "",
-    authorsHtml: "Anonymous (Under review)",
-    contribution: "Quantitative framing, boundary measurement, and practical mitigation tools for agentic AI memory-write vulnerabilities.",
-    role: "First Author",
-    status: "Under Review",
-    keywords: ["agent safety", "memory-write", "mitigation"],
     noDetail: true,
     doi: "",
     arxiv: ""

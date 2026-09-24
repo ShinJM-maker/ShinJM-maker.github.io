@@ -24,14 +24,14 @@
     {\fontsize{9.5pt}{1.2em}\bodyfont\bfseries\color{darktext} #2} \\
     \hspace{4mm}{\fontsize{9pt}{1em}\bodyfontlight\color{text} #3} \\
     \hspace{4mm}{\fontsize{8pt}{1em}\bodyfontlight\color{graytext} #4}
-    \ifthenelse{\equal{#1}{}}{}{\\ \hspace{4mm}{\fontsize{8pt}{1em}\bodyfont\color{awesome} Award: #1}}
+    \ifthenelse{\equal{#1}{}}{}{\\ \hspace{4mm}{\fontsize{8pt}{1em}\bodyfontlight\color{awesome} \textbf{Award:} #1}}
   \end{tabular*}%
   \vspace{1.2mm}
 }
 % Venue line: {abbreviation}{full name}{track}.
 \newcommand*{\venue}[3]{\textbf{\color{darktext}#1} -- #2\ifthenelse{\equal{#3}{}}{}{ (\textbf{#3})}}
 \newcommand*{\me}{\textbf{Joongmin Shin*}}
-\newcommand*{\meco}{\textbf{Joongmin Shin}}
+\newcommand*{\meco}{Joongmin Shin}
 
 \usepackage{needspace}
 

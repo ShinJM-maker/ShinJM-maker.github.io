@@ -4,4 +4,4 @@
 - Source: `site-data.js`
 
 ## Description
-Related to M3DocDep · CVPR 2026
+Korea · Pending · 2026 · Related to M3DocDep (CVPR 2026)

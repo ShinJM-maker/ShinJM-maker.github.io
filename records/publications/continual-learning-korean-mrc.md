@@ -1,4 +1,4 @@
-# Machine Reading Comprehension of Korean Using Continual Learning
+# Korean Machine Reading Comprehension Using Continual Learning
 
 - Type: Publication
 - Slug: continual-learning-korean-mrc

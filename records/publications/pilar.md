@@ -5,7 +5,7 @@
 - Category: Top Conferences
 - Venue: EMNLP 2026 (Findings)
 - Date: Aug 2026
-- Authors: Joongmin Shin*, Gyuho Shim, Jung-hun Lee, Jaehyung Seo
+- Authors: Joongmin Shin*, Gyuho Shim, Jung-Hun Lee, Jaehyung Seo
 - Role: First Author
 - Status: Accepted
 - Keywords: evidence graphs, multimodal QA, entity linking

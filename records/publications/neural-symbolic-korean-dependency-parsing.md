@@ -1,11 +1,11 @@
-# Neural Symbolic Models for Overcoming Deep Learning Limitations and Korean Dependency Parsing
+# A Neural-Symbolic Model for Overcoming Deep Learning Limitations in Korean Dependency Parsing
 
 - Type: Publication
 - Slug: neural-symbolic-korean-dependency-parsing
 - Category: Domestic Conferences & Theses
-- Venue: Master's Thesis
+- Venue: Master's Thesis, Pusan National University
 - Date: Feb 2023
-- Authors: Joongmin Shin*
+- Authors: Joongmin Shin*, Hyuk-Chul Kwon
 - Role: First Author
 - Status: Published
 - Keywords: dependency parsing, neural-symbolic, Korean NLP

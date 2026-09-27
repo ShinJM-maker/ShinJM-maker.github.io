@@ -33,29 +33,38 @@ window.SITE = {
     { date: "Oct 2024", html: '<a href="publications/styledfs.html"><strong>StyleDFS</strong></a> was accepted at <strong>EMNLP 2024</strong> (Industry, co-first author).' }
   ],
 
-  // Research interests (kept in sync with the CV); `pubs` are publication slugs.
-  researchStatement: "My research asks how AI systems can turn complex, unstructured inputs — multi-page documents, tables, figures, and video — into structured evidence they can retrieve, reason over, and verify. For my Ph.D., I aim to extend this from static documents to structured memory, world models, and planning for agents that act over long horizons.",
+  // Home page research areas: why (human needs) first, structure as the method.
+  // `keywords` are lines of topics; `items` entries are { pub: slug } or { project: slug }, with an optional `label` / `venue` override.
+  researchStatement: "My research starts from real human needs. Practical systems reveal where AI capabilities fail to translate into value; explicit structure, evidence grounding, retrieval, and memory control are the tools I use to close that gap.",
   researchAreas: [
     {
-      title: "Structure-Grounded Multimodal Reasoning",
-      text: "Recovering layout, hierarchy, and cross-page dependencies so models reason over document structure, not flat text.",
-      pubs: ["m3docdep", "multidocfusion"]
+      title: "Multimodal Reasoning",
+      keywords: [["Documents", "Video", "World Modeling"], ["Parsing", "Retrieval", "Grounded QA"]],
+      items: [
+        { pub: "multidocfusion" },
+        { pub: "m3docdep" },
+        { pub: "hikey" },
+        { pub: "pilar" },
+        { pub: "styledfs" },
+        { project: "video-curation-system", label: "Long-Video QA/RAG", venue: "Ongoing" }
+      ]
     },
     {
-      title: "Evidence-Grounded Information Retrieval & Generation",
-      text: "Hierarchical retrieval and page-grounded evidence representations that make answers traceable to their sources.",
-      pubs: ["hikey", "pilar"]
-    },
-    {
-      title: "Agentic AI & Structured Memory",
-      text: "Controlling what agents commit to memory, so long-horizon reasoning builds only on supported evidence.",
-      pubs: ["admit"]
-    },
-    {
-      title: "Knowledge Graphs and Neural-Symbolic Reasoning",
-      text: "Combining symbolic structure with neural models for interpretable reasoning.",
-      pubs: ["neural-symbolic-korean-dependency-parsing", "constraint-enhanced-dependency-parsing"]
+      title: "Agents",
+      keywords: [["Knowledge Representation", "Memory"]],
+      items: [
+        { pub: "admit" },
+        { pub: "neural-symbolic-korean-dependency-parsing" }
+      ]
     }
+  ],
+
+  // Impact row on the home page.
+  impact: [
+    { value: "15", label: "Publications" },
+    { value: "First Author", label: "NeurIPS · ACL · CVPR · EMNLP" },
+    { value: "3", label: "Technology Transfers" },
+    { value: "~40%", label: "Search-time reduction in insurance QA" }
   ],
 
   patents: [

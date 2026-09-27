@@ -243,7 +243,9 @@ function reviewItem(pub, up) {
 
 const components = {
   heroStats() {
-    return `    <p class="stats">My work has led to <strong>${SITE.stats.publications} publications</strong>, including first-author papers at <strong>${esc(listJoin(firstAuthorVenues))} Main</strong>, along with <strong>${SITE.stats.patents} patents</strong> and <strong>${SITE.stats.awards} awards</strong>, among them <strong>${SITE.stats.outstandingPaperAwards} Outstanding Paper awards</strong>.</p>`;
+    return `    <ul class="impact" aria-label="Impact">
+${SITE.impact.map(item => `      <li><strong>${esc(item.value)}</strong><span>${esc(item.label)}</span></li>`).join("\n")}
+    </ul>`;
   },
 
 
@@ -260,24 +262,26 @@ ${topConference.map(p => pubFeature(p, "")).join("\n")}
   },
 
   researchAreas() {
+    const projectBySlug = Object.fromEntries(PROJECTS.map(p => [p.slug, p]));
+    const chip = item => {
+      if (item.pub) {
+        const pub = pubBySlug[item.pub];
+        if (!pub) throw new Error(`Unknown publication slug in researchAreas: ${item.pub}`);
+        return `<a href="publications/${item.pub}.html">${esc(item.label || shortName(pub))} <span>${esc(item.venue || pub.shortVenue || venueShort(pub.venue))}</span></a>`;
+      }
+      const project = projectBySlug[item.project];
+      if (!project) throw new Error(`Unknown project slug in researchAreas: ${item.project}`);
+      return `<a href="projects/${item.project}.html">${esc(item.label || project.cardTitle || project.title)}${item.venue ? ` <span>${esc(item.venue)}</span>` : ""}</a>`;
+    };
     return `      <p class="section-lede areas-lede">${esc(SITE.researchStatement)}</p>
       <div class="areas areas-2">
 ${SITE.researchAreas.map(area => `        <article class="area">
           <h3>${esc(area.title)}</h3>
-          <p>${esc(area.text)}</p>
-          <p class="area-pubs">${area.pubs.map(slug => {
-            const pub = pubBySlug[slug];
-            if (!pub) throw new Error(`Unknown publication slug in researchAreas: ${slug}`);
-            return `<a href="publications/${slug}.html">${esc(shortName(pub))} <span>${esc(pub.shortVenue || venueShort(pub.venue))}</span></a>`;
-          }).join("")}</p>
+${(area.keywords || []).map(line => `          <p class="area-keywords">${line.map(esc).join(" · ")}</p>`).join("\n")}${area.text ? `
+          <p>${esc(area.text)}</p>` : ""}
+          <p class="area-pubs">${area.items.map(chip).join("")}</p>
         </article>`).join("\n")}
       </div>`;
-  },
-
-  researchInterestTags() {
-    return `        <ul class="hero-interests" aria-label="Research interests">
-${SITE.researchAreas.map(area => `          <li><a href="#areas-title">${esc(area.title)}</a></li>`).join("\n")}
-        </ul>`;
   },
 
   projectGroups() {
@@ -325,15 +329,11 @@ ${domestic.map(p => pubCitation(p, "")).join("\n")}
 
     <section class="section" id="under-review" aria-labelledby="review-title">
       <h2 class="section-title" id="review-title">Manuscripts Under Review <span class="count">${review.length}</span></h2>
-      <p class="section-lede">${reviewFirst.length} first-author and ${reviewCo.length} co-author manuscripts under peer review. Author lists are withheld under double-blind review.</p>
-      <h3 class="subsection-title">First author</h3>
+      <p class="section-lede">${reviewCo.length ? `${reviewFirst.length} first-author and ${reviewCo.length} co-author` : `${reviewFirst.length} first-author`} manuscripts under peer review. Author lists are withheld under double-blind review.</p>
+${[["First author", reviewFirst], ["Co-author", reviewCo]].filter(([, items]) => items.length).map(([label, items]) => `      <h3 class="subsection-title">${label}</h3>
       <ul class="cite-list">
-${reviewFirst.map(p => reviewItem(p, "")).join("\n")}
-      </ul>
-      <h3 class="subsection-title">Co-author</h3>
-      <ul class="cite-list">
-${reviewCo.map(p => reviewItem(p, "")).join("\n")}
-      </ul>
+${items.map(p => reviewItem(p, "")).join("\n")}
+      </ul>`).join("\n")}
     </section>
 
     <section class="section" id="patents" aria-labelledby="patents-title">
@@ -379,7 +379,12 @@ function projectCard(project) {
   return `        <a class="card" href="projects/${project.slug}.html">
           <span class="card-meta">${esc(project.period)}</span>
           <h3 class="card-title">${esc(project.cardTitle || project.title)}</h3>
-          <p class="card-text">${esc(project.cardSummary || project.description || "")}</p>
+          <p class="card-text">${esc(project.cardSummary || project.description || "")}</p>${project.need ? `
+          <dl class="card-story">
+            <div><dt>Need</dt><dd>${esc(project.need)}</dd></div>
+            <div><dt>Research problem</dt><dd>${esc(project.problem)}</dd></div>
+            <div><dt>Outcome</dt><dd>${esc(project.outcome)}</dd></div>
+          </dl>` : ""}
           <span class="tags">${chips(project)}</span>
         </a>`;
 }
@@ -426,8 +431,7 @@ const PAGES = [
     path: "about.html",
     active: "about",
     title: `About | ${SITE.name}`,
-    description: "From a Korean wrestling athlete to a multimodal reasoning researcher: the journey and research trajectory behind structured multimodal reasoning.",
-    scripts: ["research-map.js"]
+    description: "How real human needs shape Joongmin Shin's research on human-inspired multimodal and agentic AI, and the research journey from parsing to reliable agents."
   },
   {
     path: "experience.html",
@@ -514,6 +518,9 @@ ${prevNext(detailPubs, index, "publications.html", "Publication")}
 
 PROJECTS.forEach((project, index) => {
   const sections = [
+    ["Need", project.need],
+    ["Research Problem", project.problem],
+    ["Outcome", project.outcome],
     ["Description", project.description || "Not specified yet."],
     ["Role", project.role],
     ["Tools Used", project.tools],

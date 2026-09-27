@@ -23,8 +23,7 @@ window.PROJECTS = [
     group: "Multimodal Reasoning & Document AI",
     cardSummary: "Video QA and RAG system for structured curation and grounded retrieval over long multimodal content.",
     cardChips: [
-      { tone: "scope", text: "Video QA" },
-      { tone: "output", text: "EMNLP 2026 Under Review" }
+      { tone: "scope", text: "Video QA" }
     ],
     description: "Developing a system that performs curation based on Video QA and RAG."
   },
@@ -71,6 +70,9 @@ window.PROJECTS = [
       { tone: "partner", text: "Samsung Fire & Marine" },
       { tone: "recognition", text: "~40% Search Time Reduction" }
     ],
+    need: "Reduce the time staff spend searching complex insurance documents.",
+    problem: "Conditions, exceptions, and provenance were lost during retrieval.",
+    outcome: "~40% reduction in manual search time; motivated subsequent structure-aware retrieval research.",
     description: "Developed 'Synerpeace', an LLM model-based application in collaboration with Samsung Fire & Marine Insurance.",
     role: "AI model design and development.",
     achievements: "Awarded in Samsung Fire & Marine Insurance's Pilot Project and secured investment."

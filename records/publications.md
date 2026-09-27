@@ -1,6 +1,6 @@
 # Publications
 
-Total items: 28
+Total items: 21
 
 ## ADMIT: Support-Gated Memory-Write Admission for Document QA Agents
 
@@ -130,53 +130,29 @@ StyleDFS proposes structure-aware chunking for high-stakes industrial QA. The fr
 ## Contribution
 Domain-specific RAG framework for scientific and industrial QA; led to two technology transfers.
 
-## Unified Evaluation Framework for RAG Chunking
+## Evaluating the Practical Utility of Agentic Memory
 
-- Slug: ur-rag-chunking-eval
+- Slug: ur-iclr-agentic-memory-utility
 - Category: Under Review
-- Venue: EMNLP 2026
+- Venue: ICLR 2027
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
-- Keywords: RAG evaluation, chunking, benchmark
-- Detail Page: publications/ur-rag-chunking-eval.html
-- Per-item Markdown: publications/ur-rag-chunking-eval.md
+- Detail Page: publications/ur-iclr-agentic-memory-utility.html
+- Per-item Markdown: publications/ur-iclr-agentic-memory-utility.md
 - Source: `publications-data.js`
 
-## Contribution
-Joint measurement of retrieval relevance, evidence breadth, faithfulness, latency, memory, and cost for fair chunker comparison.
+## Citation Grounding for Video Question Answering
 
-## Delivered-Pack Sensitivity Diagnostics for Document-Agent Memory Commits
-
-- Slug: ur-delivered-pack-sensitivity
+- Slug: ur-iclr-video-citation
 - Category: Under Review
-- Venue: EMNLP 2026
+- Venue: ICLR 2027
 - Authors: Anonymous (Under review)
 - Role: First Author
 - Status: Under Review
-- Keywords: agent memory, grounding diagnostics, document agents
-- Detail Page: publications/ur-delivered-pack-sensitivity.html
-- Per-item Markdown: publications/ur-delivered-pack-sensitivity.md
+- Detail Page: publications/ur-iclr-video-citation.html
+- Per-item Markdown: publications/ur-iclr-video-citation.md
 - Source: `publications-data.js`
-
-## Contribution
-Demonstrates that final-answer correctness alone is not evidence of grounding; proposes diagnostics on what an agent commits to memory.
-
-## Timestamp-Grounded Evidence Consumption Auditing for Long-Video QA/RAG
-
-- Slug: ur-video-evidence-audit
-- Category: Under Review
-- Venue: EMNLP 2026
-- Authors: Anonymous (Under review)
-- Role: First Author
-- Status: Under Review
-- Keywords: long-video QA, evidence auditing, temporal grounding
-- Detail Page: publications/ur-video-evidence-audit.html
-- Per-item Markdown: publications/ur-video-evidence-audit.md
-- Source: `publications-data.js`
-
-## Contribution
-Shifts video QA/RAG evaluation beyond final-answer accuracy by auditing which timestamped segments were actually consumed.
 
 ## Evidence Auditing and Support-Sensitive Evaluation for Multimodal QA
 
@@ -215,102 +191,6 @@ Anonymous manuscript on error propagation and recoverability in PDF-to-RAG pipel
 
 ## Contribution
 A matched-intervention diagnostic framework analyzing how upstream parsing uncertainty propagates across PDF-to-RAG representation families.
-
-## Evidence-State Control for Repairing, Recalibrating, and Materializing Retrieved Candidates
-
-- Slug: ur-evidence-state-control
-- Category: Under Review
-- Venue: ML Conference
-- Authors: Anonymous (Under review)
-- Role: First Author
-- Status: Under Review
-- Keywords: evidence control, RAG, candidate repair
-- Detail Page: publications/ur-evidence-state-control.html
-- Per-item Markdown: publications/ur-evidence-state-control.md
-- Source: `publications-data.js`
-
-## Contribution
-Controllable repair, recalibration, and materialization of retrieved candidates before reader-context packing.
-
-## Answer-Side Attribution Analysis of OCR, Evidence Placement, Answer Policy, and Reader Family
-
-- Slug: ur-answer-attribution-analysis
-- Category: Under Review
-- Venue: ML Conference
-- Authors: Anonymous (Under review)
-- Role: First Author
-- Status: Under Review
-- Keywords: attribution analysis, OCR, reader analysis
-- Detail Page: publications/ur-answer-attribution-analysis.html
-- Per-item Markdown: publications/ur-answer-attribution-analysis.md
-- Source: `publications-data.js`
-
-## Contribution
-Attribution analysis of how OCR quality, evidence placement, answer policy, and reader family interact to affect answer-quality gains.
-
-## Multimodal, Multi-Document, Page-Annotated Benchmark Dataset for Open-Domain Document QA
-
-- Slug: ur-multimodal-document-benchmark
-- Category: Under Review
-- Venue: EMNLP 2026
-- Authors: Anonymous (Under review)
-- Role: Co-Author
-- Status: Under Review
-- Keywords: benchmark dataset, multimodal QA, page annotation
-- Detail Page: publications/ur-multimodal-document-benchmark.html
-- Per-item Markdown: publications/ur-multimodal-document-benchmark.md
-- Source: `publications-data.js`
-
-## Contribution
-A multimodal multi-document benchmark with page-level annotations for open-domain document QA.
-
-## Comprehensive Survey of Visual Question Answering: Methods, Benchmarks, and Evaluation Paradigms
-
-- Slug: ur-vqa-survey
-- Category: Under Review
-- Venue: EMNLP 2026
-- Authors: Anonymous (Under review)
-- Role: Co-Author
-- Status: Under Review
-- Keywords: VQA, survey, benchmarks
-- Detail Page: publications/ur-vqa-survey.html
-- Per-item Markdown: publications/ur-vqa-survey.md
-- Source: `publications-data.js`
-
-## Contribution
-Comprehensive survey of VQA methods, benchmarks, and evaluation paradigms.
-
-## Survey and Audit Framework for Reliability and Safety of Multimodal Agent Systems
-
-- Slug: ur-multimodal-agent-safety-survey
-- Category: Under Review
-- Venue: EMNLP 2026
-- Authors: Anonymous (Under review)
-- Role: Co-Author
-- Status: Under Review
-- Keywords: multimodal agents, safety, audit framework
-- Detail Page: publications/ur-multimodal-agent-safety-survey.html
-- Per-item Markdown: publications/ur-multimodal-agent-safety-survey.md
-- Source: `publications-data.js`
-
-## Contribution
-Survey and unified audit framework for the reliability and safety of multimodal agent systems.
-
-## Guiding Retrieval and Reasoning for Reasoning-Efficient Agentic RAG Systems
-
-- Slug: ur-agentic-rag-guidance
-- Category: Under Review
-- Venue: EMNLP 2026
-- Authors: Anonymous (Under review)
-- Role: Co-Author
-- Status: Under Review
-- Keywords: agentic RAG, retrieval guidance, reasoning efficiency
-- Detail Page: publications/ur-agentic-rag-guidance.html
-- Per-item Markdown: publications/ur-agentic-rag-guidance.md
-- Source: `publications-data.js`
-
-## Contribution
-Retrieval- and reasoning-guidance methods for reasoning-efficient agentic RAG systems.
 
 ## Distance Based Korean WordNet (alias. KorLex) Embedding Model
 

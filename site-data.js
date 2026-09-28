@@ -59,12 +59,12 @@ window.SITE = {
     }
   ],
 
-  // Impact row on the home page.
+  // Impact row on the home page (kept in sync with the CV's summary sentence).
   impact: [
     { value: "15", label: "Publications" },
-    { value: "First Author", label: "NeurIPS · ACL · CVPR · EMNLP" },
-    { value: "3", label: "Technology Transfers" },
-    { value: "~40%", label: "Search-time reduction in insurance QA" }
+    { value: "6", label: "First- or co-first-author papers at NeurIPS · ACL · CVPR · EMNLP, incl. an ACL 2026 Oral" },
+    { value: "5", label: "Patents" },
+    { value: "7", label: "Awards, including 3 Outstanding Paper or Research Awards" }
   ],
 
   patents: [

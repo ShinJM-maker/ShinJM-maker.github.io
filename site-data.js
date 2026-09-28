@@ -39,7 +39,7 @@ window.SITE = {
   researchAreas: [
     {
       title: "Multimodal Reasoning",
-      keywords: [["Documents", "Video", "World Modeling"], ["Parsing", "Retrieval", "Grounded QA"]],
+      keywords: [["Documents", "Video", "World Models"], ["Parsing", "Retrieval", "Grounded QA"]],
       items: [
         { pub: "multidocfusion" },
         { pub: "m3docdep" },

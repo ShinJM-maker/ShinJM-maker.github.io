@@ -8,7 +8,7 @@
 - Authors: Seongtae Hong*, Joongmin Shin*, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim
 - Role: Co-First Author
 - Status: Accepted
-- Keywords: domain RAG, industrial QA, technology transfer
+- Keywords: domain RAG, industrial QA
 - Paper URL: https://aclanthology.org/2024.emnlp-industry.61/
 - DOI: https://doi.org/10.18653/v1/2024.emnlp-industry.61
 - Figure: paper_figure/StyleDFS_architecture_preview.png
@@ -19,4 +19,4 @@
 StyleDFS proposes structure-aware chunking for high-stakes industrial QA. The framework improves answer quality while meeting on-premise and privacy constraints in real deployment environments.
 
 ## Contribution
-Domain-specific RAG framework for scientific and industrial QA; led to two technology transfers.
+Domain-specific RAG framework for scientific and industrial QA.

@@ -17,7 +17,6 @@ window.SITE = {
     publications: 15,
     patents: 5,
     industryProjects: 4,
-    transfers: 3,
     awards: 7,
     outstandingPaperAwards: 3
   },

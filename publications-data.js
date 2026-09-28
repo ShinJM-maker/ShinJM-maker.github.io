@@ -133,10 +133,10 @@ window.PUBLICATIONS = [
     date: "Oct 2024",
     authorsHtml: "Seongtae Hong*, <strong>Joongmin Shin*</strong>, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim",
     abstract: "StyleDFS proposes structure-aware chunking for high-stakes industrial QA. The framework improves answer quality while meeting on-premise and privacy constraints in real deployment environments.",
-    contribution: "Domain-specific RAG framework for scientific and industrial QA; led to two technology transfers.",
+    contribution: "Domain-specific RAG framework for scientific and industrial QA.",
     role: "Co-First Author",
     status: "Accepted",
-    keywords: ["domain RAG", "industrial QA", "technology transfer"],
+    keywords: ["domain RAG", "industrial QA"],
     venueBadge: {
       path: "Venue/EMNLP2024.png",
       alt: "EMNLP 2024 venue badge"

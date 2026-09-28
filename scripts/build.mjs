@@ -244,7 +244,7 @@ function reviewItem(pub, up) {
 const components = {
   heroStats() {
     return `    <ul class="impact" aria-label="Impact">
-${SITE.impact.map(item => `      <li><strong>${esc(item.value)}</strong><span>${esc(item.label)}</span></li>`).join("\n")}
+${SITE.impact.map(item => `      <li><strong class="impact-value">${esc(item.value)}</strong> <span class="impact-label">${esc(item.label)}</span>${item.detail ? ` <span class="impact-detail">${esc(item.detail)}</span>` : ""}</li>`).join("\n")}
     </ul>`;
   },
 

@@ -412,8 +412,8 @@ const PAGES = [
   {
     path: "index.html",
     active: "home",
-    title: `${SITE.name} | Structure-Aware Multimodal Reasoning`,
-    description: "Joongmin Shin researches structure-aware multimodal reasoning: recovering document structure to turn complex documents into auditable evidence for reliable retrieval, grounded generation, and long-context reasoning.",
+    title: `${SITE.name} | Human-Inspired AI for Multimodal Reasoning and Reliable Agents`,
+    description: "Joongmin Shin builds human-inspired multimodal and agentic AI that addresses real human needs, using structure, evidence grounding, retrieval, and memory control to keep AI useful and reliable.",
     head: `
   <script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
@@ -424,7 +424,7 @@ const PAGES = [
     jobTitle: "Senior Researcher",
     worksFor: { "@type": "Organization", name: "Korea University" },
     sameAs: [SITE.links.scholar, SITE.links.github, SITE.links.linkedin],
-    knowsAbout: ["Multimodal Reasoning", "Document Structure Recovery", "Retrieval-Augmented Generation", "Evidence Auditing", "Agent Memory"]
+    knowsAbout: ["Human-Inspired AI", "Multimodal Reasoning", "Agentic AI", "Retrieval-Augmented Generation", "Grounded Question Answering", "Agent Memory"]
   })}</script>`
   },
   {

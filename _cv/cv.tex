@@ -30,6 +30,9 @@
 }
 % Venue line: {abbreviation}{full name}{track}.
 \newcommand*{\venue}[3]{\textbf{\color{darktext}#1} -- #2\ifthenelse{\equal{#3}{}}{}{ (\textbf{#3})}}
+% Inline link in body text, shown in the accent color so it reads as clickable.
+\newcommand*{\cvlink}[2]{\href{#1}{\textcolor{awesome}{#2}}}
+
 % Let justified paragraphs stretch spacing instead of overflowing the margin.
 \setlength{\emergencystretch}{3em}
 % Keep names from being hyphenated at line ends.
@@ -94,7 +97,7 @@
 \needspace{8\baselineskip}\cvsection{Research Interests}
 
 \begin{cvparagraph}
-I am a Senior Researcher at the Human-Inspired AI Research Institute, Korea University, where I work with Prof.~Heuiseok Lim and Prof.~Jaehyung Seo and founded and lead \textbf{KUDoc}. I received my B.S. in Information and Computer Engineering in February 2021 and my M.S. in Artificial Intelligence (Advisor: Hyuk-Chul Kwon) in February 2023, both from Pusan National University. I start from real-world needs and study how advances in AI capability can become systems that people can use and rely on.
+I am a Senior Researcher at the \cvlink{https://hiai.korea.ac.kr/}{Human-Inspired AI Research Institute}, Korea University, where I work with Prof.~\cvlink{https://scholar.google.com/citations?user=HMTkz7oAAAAJ}{Heuiseok~Lim} and Prof.~\cvlink{https://scholar.google.com/citations?user=V8bFAUIAAAAJ}{Jaehyung~Seo} and founded and lead \cvlink{https://kudocai.github.io/index.html}{\textbf{KUDoc}}. I received my B.S. in Information and Computer Engineering in February 2021 and my M.S. in Artificial Intelligence (Advisor: \cvlink{https://www.researchgate.net/profile/Hyuk-Chul-Kwon}{Hyuk-Chul~Kwon}) in February 2023, both from Pusan National University. I start from real-world needs and study how advances in AI capability can become systems that people can use and rely on.
 
 \medskip
 My master's research in parsing taught me to think structurally; my later work in \textbf{human-inspired AI} taught me what that structure should ultimately serve. I have since built a connected research program across \textbf{multimodal and agentic AI}, using structure, retrieval, hierarchical and knowledge graphs, and memory as methodological tools. My current work asks how these systems should represent, select, update, and verify information so that increasingly capable AI remains useful and reliable over longer interactions.

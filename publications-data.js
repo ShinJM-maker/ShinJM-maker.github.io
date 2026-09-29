@@ -94,7 +94,8 @@ window.PUBLICATIONS = [
       alt: "CVPR 2026 Main venue badge"
     },
     doi: "",
-    arxiv: "",
+    arxiv: "2605.18774",
+    paperUrl: "https://openaccess.thecvf.com/content/CVPR2026/html/Shin_M3DocDep_Multi-modal_Multi-page_Multi-document_Dependency_Chunking_with_Large_Vision-Language_Models_CVPR_2026_paper.html",
     figure: {
       path: "paper_figure/M3DocDep_architecture_preview.png",
       caption: "M3DocDep architecture",

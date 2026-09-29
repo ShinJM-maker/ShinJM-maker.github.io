@@ -9,6 +9,8 @@
 - Role: First Author
 - Status: Accepted
 - Keywords: document structure, LVLM, chunking, retrieval
+- Paper URL: https://openaccess.thecvf.com/content/CVPR2026/html/Shin_M3DocDep_Multi-modal_Multi-page_Multi-document_Dependency_Chunking_with_Large_Vision-Language_Models_CVPR_2026_paper.html
+- arXiv: 2605.18774
 - Figure: paper_figure/M3DocDep_architecture_preview.png
 - Detail Page: publications/m3docdep.html
 - Source: `publications-data.js`

@@ -1000,6 +1000,116 @@ sup {
   text-transform: uppercase;
 }
 
+.detail-section p + p,
+.detail-section p + ul,
+.detail-section ul + p {
+  margin-top: 0.75rem;
+}
+
+.detail-section ul {
+  padding-left: 1.2rem;
+}
+
+.detail-section li + li {
+  margin-top: 0.35rem;
+}
+
+.detail-section .paper-figure {
+  margin-top: 1.25rem;
+}
+
+.paper-figure-narrow {
+  max-width: 440px;
+  margin-inline: auto;
+}
+
+.table-scroll {
+  margin-top: 1rem;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.results-table th,
+.results-table td {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.results-table th:first-child,
+.results-table td:first-child {
+  text-align: left;
+}
+
+.results-table thead th {
+  color: var(--muted);
+  font-weight: 600;
+  background: var(--bg-soft);
+}
+
+.results-table .group td {
+  color: var(--faint);
+  font-style: italic;
+  background: var(--bg-soft);
+}
+
+.results-table tr.ours td {
+  font-weight: 700;
+  background: var(--brand-soft);
+}
+
+.results-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-note {
+  margin-top: 0.5rem;
+  color: var(--faint);
+  font-size: 0.85rem;
+}
+
+.bibtex {
+  position: relative;
+}
+
+.bibtex pre {
+  overflow-x: auto;
+  padding: 2.4rem 1rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.bibtex-copy {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  color: var(--muted);
+  background: var(--surface);
+  font: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.bibtex-copy:hover {
+  color: var(--brand);
+  border-color: var(--brand);
+}
+
 .pager {
   display: grid;
   grid-template-columns: 1fr 1fr;

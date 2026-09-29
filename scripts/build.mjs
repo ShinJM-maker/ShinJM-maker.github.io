@@ -504,6 +504,14 @@ detailPubs.forEach((pub, index) => {
       <section class="detail-section">
         <h2>Key Contribution</h2>
         <p>${esc(pub.contribution)}</p>
+      </section>` : ""}${(pub.sections || []).map(s => `
+      <section class="detail-section">
+        <h2>${esc(s.heading)}</h2>
+        ${s.html}
+      </section>`).join("")}${pub.bibtex ? `
+      <section class="detail-section">
+        <h2>BibTeX</h2>
+        <div class="bibtex"><button type="button" class="bibtex-copy" onclick="navigator.clipboard.writeText(this.nextElementSibling.innerText).then(() => { this.textContent = 'Copied'; setTimeout(() => { this.textContent = 'Copy'; }, 1500); })">Copy</button><pre><code>${esc(pub.bibtex)}</code></pre></div>
       </section>` : ""}${keywords}
 ${prevNext(detailPubs, index, "publications.html", "Publication")}
     </article>`;

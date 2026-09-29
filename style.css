@@ -569,6 +569,11 @@ sup {
   font-weight: 500;
 }
 
+.area-keywords .kw,
+.area-keywords .kw-tail {
+  white-space: nowrap;
+}
+
 .area h3 + .area-keywords {
   margin-top: 0.5rem;
 }

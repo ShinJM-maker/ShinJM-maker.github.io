@@ -38,7 +38,7 @@ window.SITE = {
   researchAreas: [
     {
       title: "Multimodal Reasoning",
-      keywords: [["Documents", "Video", "World Models"], ["Parsing", "Retrieval", "Grounded QA"]],
+      keywords: [["Document & Video Understanding", "Parsing", "Structure-Aware Retrieval", "QA"]],
       items: [
         { pub: "multidocfusion" },
         { pub: "m3docdep" },
@@ -49,8 +49,8 @@ window.SITE = {
       ]
     },
     {
-      title: "Agents",
-      keywords: [["Knowledge Representation", "Memory"]],
+      title: "Agentic AI",
+      keywords: [["Knowledge Representation", "Memory", "Evidence-Grounded Reasoning"]],
       items: [
         { pub: "admit" },
         { pub: "neural-symbolic-korean-dependency-parsing" }

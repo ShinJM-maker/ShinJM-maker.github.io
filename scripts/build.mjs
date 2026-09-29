@@ -245,6 +245,14 @@ function reviewItem(pub, up) {
         </li>`;
 }
 
+// Keywords wrap only between items, and the last two stay together so no item is left alone on a line.
+function keywordLine(words) {
+  const parts = words.map(word => `<span class="kw">${esc(word)}</span>`);
+  if (parts.length < 2) return parts.join("");
+  const last = parts.pop();
+  return `${parts.join(" · ")}<span class="kw-tail">&nbsp;·&nbsp;${last}</span>`;
+}
+
 const components = {
   heroStats() {
     return `    <ul class="impact" aria-label="Impact">
@@ -281,7 +289,7 @@ ${topConference.map(p => pubFeature(p, "")).join("\n")}
       <div class="areas areas-2">
 ${SITE.researchAreas.map(area => `        <article class="area">
           <h3>${esc(area.title)}</h3>
-${(area.keywords || []).map(line => `          <p class="area-keywords">${line.map(esc).join(" · ")}</p>`).join("\n")}${area.text ? `
+${(area.keywords || []).map(line => `          <p class="area-keywords">${keywordLine(line)}</p>`).join("\n")}${area.text ? `
           <p>${esc(area.text)}</p>` : ""}
           <p class="area-pubs">${area.items.map(chip).join("")}</p>
         </article>`).join("\n")}

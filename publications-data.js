@@ -133,7 +133,7 @@ window.PUBLICATIONS = [
     title: "Intelligent Predictive Maintenance RAG Framework for Power Plants: Enhancing QA with StyleDFS and Domain Specific Instruction Tuning",
     venue: "EMNLP 2024 (Industry Track)",
     date: "Oct 2024",
-    authorsHtml: "Seongtae Hong*, <strong>Joongmin Shin*</strong>, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim",
+    authorsHtml: "Seongtae Hong*, <strong>Joongmin Shin*</strong>, Jaehyung Seo, Taemin Lee, Jeongbae Park, Cho Man Young, Byeongho Choi, Heuiseok Lim",
     abstract: "StyleDFS proposes structure-aware chunking for high-stakes industrial QA. The framework improves answer quality while meeting on-premise and privacy constraints in real deployment environments.",
     contribution: "Domain-specific RAG framework for scientific and industrial QA.",
     role: "Co-First Author",

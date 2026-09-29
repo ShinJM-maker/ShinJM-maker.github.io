@@ -5,7 +5,7 @@
 - Category: Top Conferences
 - Venue: EMNLP 2024 (Industry Track)
 - Date: Oct 2024
-- Authors: Seongtae Hong*, Joongmin Shin*, Jaehyung Seo, Taemin Lee, Jeongbae Park, Heuiseok Lim
+- Authors: Seongtae Hong*, Joongmin Shin*, Jaehyung Seo, Taemin Lee, Jeongbae Park, Cho Man Young, Byeongho Choi, Heuiseok Lim
 - Role: Co-First Author
 - Status: Accepted
 - Keywords: domain RAG, industrial QA

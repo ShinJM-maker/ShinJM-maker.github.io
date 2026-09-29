@@ -1074,6 +1074,11 @@ sup {
   background: var(--bg-soft);
 }
 
+.results-table tr.group-ref td {
+  color: var(--muted);
+  font-style: italic;
+}
+
 .results-table tr.hl td {
   background: var(--brand-soft);
 }

@@ -30,8 +30,9 @@
 }
 % Venue line: {abbreviation}{full name}{track}.
 \newcommand*{\venue}[3]{\textbf{\color{darktext}#1} -- #2\ifthenelse{\equal{#3}{}}{}{ (\textbf{#3})}}
-% Inline link in body text, shown in the accent color so it reads as clickable.
-\newcommand*{\cvlink}[2]{\href{#1}{\textcolor{awesome}{#2}}}
+% Inline link in body text, in a muted navy so it reads as clickable without standing out.
+\definecolor{linkcolor}{HTML}{2F4F7A}
+\newcommand*{\cvlink}[2]{\href{#1}{\textcolor{linkcolor}{#2}}}
 
 % Let justified paragraphs stretch spacing instead of overflowing the margin.
 \setlength{\emergencystretch}{3em}

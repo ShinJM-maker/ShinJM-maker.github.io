@@ -71,7 +71,7 @@ window.PUBLICATIONS = [
       alt: "ACL 2026 Main venue badge"
     },
     doi: "",
-    arxiv: "",
+    arxiv: "2605.29606",
     figure: {
       path: "paper_figure/HiKEY_architecture.png",
       caption: "HiKEY retrieval pipeline"

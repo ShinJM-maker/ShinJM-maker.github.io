@@ -100,6 +100,7 @@ LVLM-based dependency chunking that reconstructs cross-page structure for long-d
 - Keywords: hierarchical chunking, multimodal, RAG, industrial
 - Paper URL: https://aclanthology.org/2025.emnlp-main.1062/
 - DOI: https://doi.org/10.18653/v1/2025.emnlp-main.1062
+- arXiv: 2604.12352
 - Figure: paper_figure/MultiDocFusion_architecture.png
 - Detail Page: publications/multidocfusion.html
 - Per-item Markdown: publications/multidocfusion.md

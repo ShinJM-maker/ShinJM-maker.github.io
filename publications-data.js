@@ -120,7 +120,7 @@ window.PUBLICATIONS = [
     },
     paperUrl: "https://aclanthology.org/2025.emnlp-main.1062/",
     doi: "10.18653/v1/2025.emnlp-main.1062",
-    arxiv: "",
+    arxiv: "2604.12352",
     figure: {
       path: "paper_figure/MultiDocFusion_architecture.png",
       caption: "MultiDocFusion architecture"

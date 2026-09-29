@@ -11,6 +11,7 @@
 - Keywords: hierarchical chunking, multimodal, RAG, industrial
 - Paper URL: https://aclanthology.org/2025.emnlp-main.1062/
 - DOI: https://doi.org/10.18653/v1/2025.emnlp-main.1062
+- arXiv: 2604.12352
 - Figure: paper_figure/MultiDocFusion_architecture.png
 - Detail Page: publications/multidocfusion.html
 - Source: `publications-data.js`

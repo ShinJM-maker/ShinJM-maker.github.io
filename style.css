@@ -1074,6 +1074,10 @@ sup {
   background: var(--bg-soft);
 }
 
+.results-table tr.hl td {
+  background: var(--brand-soft);
+}
+
 .results-table tr.ours td {
   font-weight: 700;
   background: var(--brand-soft);

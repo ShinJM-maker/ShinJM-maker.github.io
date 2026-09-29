@@ -16,7 +16,7 @@
 - Source: `publications-data.js`
 
 ## Abstract
-This work uses large vision-language models to infer cross-page and cross-document dependency structures in complex unstructured inputs. The resulting structure-aware multimodal chunks improve evidence retrieval quality and downstream QA performance for retrieval-augmented pipelines.
+In long, multi-page industrial documents, retrieval-augmented generation (RAG) depends heavily on whether chunk boundaries follow the document’s true structure. Existing text-centric chunkers and generative hierarchy parsers often miss cross-page parent–child relations, figure/table–caption bindings, and boundary cues, which leads to fragmented or redundant chunks and degrades both retrieval and answer quality. We propose M3DocDep, an LVLM-based pipeline that first recovers block-level dependencies and then constructs chunks along the recovered document tree. The pipeline uses SharedDet as a common DP+OCR preprocessing layer, extracts multi-modal block embeddings with boundary-aware SoftROI pooling, scores candidate parent–child edges with a biaffine head, decodes a globally valid dependency tree with MST constraints, and builds tree-guided chunks annotated with section paths and page ranges. Under a shared-block evaluation protocol, M3DocDep improves STEDS by +28.5–39.6% on DHP benchmarks, retrieval nDCG by +1.1–15.3%, and QA ANLS by +4.5–15.3% on corpus-level RAG benchmarks. These results show that recovering document dependencies before chunking yields more coherent retrieval units for long, multi-page multi-modal documents.
 
 ## Contribution
 LVLM-based dependency chunking that reconstructs cross-page structure for long-document retrieval and QA.

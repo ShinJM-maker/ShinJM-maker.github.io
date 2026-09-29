@@ -54,6 +54,8 @@ Entity-linked assertion graphs unify text, tables, and figures into a single pag
 - Role: First Author
 - Status: Accepted
 - Keywords: hierarchical retrieval, multimodal QA, evidence assembly
+- Paper URL: https://aclanthology.org/2026.acl-long.818/
+- DOI: https://doi.org/10.18653/v1/2026.acl-long.818
 - arXiv: 2605.29606
 - Figure: paper_figure/HiKEY_architecture.png
 - Detail Page: publications/hikey.html
@@ -61,7 +63,7 @@ Entity-linked assertion graphs unify text, tables, and figures into a single pag
 - Source: `publications-data.js`
 
 ## Abstract
-HiKEY introduces a hierarchical multimodal retrieval framework for open-domain document question answering. The system combines global routing, local ranking, and structured evidence assembly to improve retrieval quality across long and visually complex documents.
+Retrieval-augmented generation (RAG) for document-based open-domain question answering (ODQA) over large industrial corpora faces two core bottlenecks: routing to the correct document and combining scattered evidence. Flat text chunks and page-level images often fail to (i) identify the right document among thousands of candidates and (ii) connect multimodal evidence, such as tables and figures, within a fixed token budget. We propose HiKEY, a hierarchical tree-based multimodal retrieval framework that treats document hierarchy as a first-class retrieval signal. Rather than simply chunking text, HiKEY uses Document Hierarchical Parsing (DHP) to reconstruct a logical heterogeneous graph with explicit parent–child relations. At query time, HiKEY follows a hierarchical coarse-to-fine process: it first performs global routing with hierarchical indexes to prune the corpus, and then ranks sections with a multimodal fusion strategy that selects the most discriminative evidence. It finally builds a token-efficient evidence subgraph through hybrid structural–semantic packing. Experiments on ODQA benchmarks show that HiKEY outperforms page- and chunk-based baselines, improving retrieval recall by up to 12.9 points and end-to-end QA by up to 6.8 points.
 
 ## Contribution
 Hierarchical retrieval for multimodal document QA with structured evidence assembly.
@@ -84,7 +86,7 @@ Hierarchical retrieval for multimodal document QA with structured evidence assem
 - Source: `publications-data.js`
 
 ## Abstract
-This work uses large vision-language models to infer cross-page and cross-document dependency structures in complex unstructured inputs. The resulting structure-aware multimodal chunks improve evidence retrieval quality and downstream QA performance for retrieval-augmented pipelines.
+In long, multi-page industrial documents, retrieval-augmented generation (RAG) depends heavily on whether chunk boundaries follow the document’s true structure. Existing text-centric chunkers and generative hierarchy parsers often miss cross-page parent–child relations, figure/table–caption bindings, and boundary cues, which leads to fragmented or redundant chunks and degrades both retrieval and answer quality. We propose M3DocDep, an LVLM-based pipeline that first recovers block-level dependencies and then constructs chunks along the recovered document tree. The pipeline uses SharedDet as a common DP+OCR preprocessing layer, extracts multi-modal block embeddings with boundary-aware SoftROI pooling, scores candidate parent–child edges with a biaffine head, decodes a globally valid dependency tree with MST constraints, and builds tree-guided chunks annotated with section paths and page ranges. Under a shared-block evaluation protocol, M3DocDep improves STEDS by +28.5–39.6% on DHP benchmarks, retrieval nDCG by +1.1–15.3%, and QA ANLS by +4.5–15.3% on corpus-level RAG benchmarks. These results show that recovering document dependencies before chunking yields more coherent retrieval units for long, multi-page multi-modal documents.
 
 ## Contribution
 LVLM-based dependency chunking that reconstructs cross-page structure for long-document retrieval and QA.

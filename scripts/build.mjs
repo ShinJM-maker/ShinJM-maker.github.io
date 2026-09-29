@@ -193,6 +193,7 @@ function pubLinks(pub, up, { detail = true } = {}) {
     links.push(`<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">arXiv</a>`);
   }
   if (pub.codeUrl) links.push(`<a href="${esc(pub.codeUrl)}" target="_blank" rel="noopener noreferrer">Code</a>`);
+  if (pub.projectUrl) links.push(`<a href="${esc(pub.projectUrl)}" target="_blank" rel="noopener noreferrer">Project</a>`);
   if (detail && !pub.noDetail) links.push(`<a href="${up}publications/${pub.slug}.html">Details</a>`);
   return links.length ? `<p class="pub-links">${links.join("")}</p>` : "";
 }

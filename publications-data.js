@@ -65,7 +65,7 @@ window.PUBLICATIONS = [
     status: "Accepted",
     keywords: ["hierarchical retrieval", "multimodal QA", "evidence assembly"],
     legacySlugs: ["acl-anonymous", "under-review-hierarchical-retrieval"],
-    linkPlaceholders: ["Paper coming soon", "Code coming soon", "arXiv coming soon"],
+    linkPlaceholders: ["Paper coming soon", "Code coming soon"],
     venueBadge: {
       path: "Venue/ACL2026.png",
       alt: "ACL 2026 Main venue badge"

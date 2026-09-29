@@ -61,7 +61,7 @@ window.SITE = {
   // Impact row on the home page (kept in sync with the CV's summary sentence).
   impact: [
     { value: "15", label: "Publications", detail: "Conferences, journals, and theses" },
-    { value: "6", label: "First-author papers", detail: "NeurIPS · ACL (Oral) · CVPR · EMNLP, incl. 1 co-first" },
+    { value: "6", label: "First-author papers", detail: "NeurIPS · ACL (Oral) · CVPR · EMNLP, 4 main conference" },
     { value: "5", label: "Patents", detail: "Korea · 2 registered, 3 pending" },
     { value: "7", label: "Awards", detail: "Incl. 3 Outstanding Paper / Research" }
   ],

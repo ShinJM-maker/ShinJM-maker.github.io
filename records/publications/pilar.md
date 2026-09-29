@@ -9,6 +9,7 @@
 - Role: First Author
 - Status: Accepted
 - Keywords: evidence graphs, multimodal QA, entity linking
+- arXiv: 2609.32895
 - Detail Page: publications/pilar.html
 - Source: `publications-data.js`
 

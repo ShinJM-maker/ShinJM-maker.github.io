@@ -38,7 +38,7 @@ window.PUBLICATIONS = [
     status: "Accepted",
     keywords: ["evidence graphs", "multimodal QA", "entity linking"],
     legacySlugs: ["under-review-evidence-graph"],
-    linkPlaceholders: ["Paper coming soon", "Code coming soon", "arXiv coming soon"],
+    linkPlaceholders: ["Paper coming soon", "Code coming soon"],
     venueBadge: {
       path: "Venue/EMNLP2026.png",
       alt: "EMNLP 2026 venue logo"
@@ -48,7 +48,7 @@ window.PUBLICATIONS = [
       alt: "EMNLP 2026 venue logo"
     },
     doi: "",
-    arxiv: ""
+    arxiv: "2609.32895"
   },
   {
     slug: "hikey",

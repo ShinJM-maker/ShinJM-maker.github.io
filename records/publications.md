@@ -32,6 +32,7 @@ Support-gated admission control that decides what a document QA agent is allowed
 - Role: First Author
 - Status: Accepted
 - Keywords: evidence graphs, multimodal QA, entity linking
+- arXiv: 2609.32895
 - Detail Page: publications/pilar.html
 - Per-item Markdown: publications/pilar.md
 - Source: `publications-data.js`

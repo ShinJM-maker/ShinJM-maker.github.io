@@ -385,7 +385,7 @@ window.PUBLICATIONS = [
     category: "Domestic Conferences & Theses",
     title: "A Dependency Parsing Model with Reinforced Head-Dependent Constraint Rules: Combining Deep Learning and Linguistic Knowledge",
     venue: "HCLT 2022",
-    award: "Outstanding Research Award",
+    award: "Student Research Award",
     date: "Oct 2022",
     authorsHtml: "<strong>Joongmin Shin*</strong>, Hyuk-Chul Kwon",
     abstract: "Through data and error case analysis, expanded the neural symbolic model from two applied rules to 24, developing a state-of-the-art model.",

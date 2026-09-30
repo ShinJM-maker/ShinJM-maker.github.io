@@ -34,11 +34,22 @@ window.SITE = {
 
   // Home page research areas: why (human needs) first, structure as the method.
   // `keywords` are lines of topics; `items` entries are { pub: slug } or { project: slug }, with an optional `label` / `venue` override.
-  researchStatement: "My research starts from real human needs. Practical systems reveal where AI capabilities fail to translate into value; explicit structure, evidence grounding, retrieval, and memory control are the tools I use to close that gap.",
+  researchStatement: "My research uses structure-based reasoning to address real-world and industrial problems. Parsing, hierarchies, and knowledge graphs give multimodal and agentic systems the structure they need to represent, select, update, and verify information.",
   researchAreas: [
     {
-      title: "Multimodal Reasoning",
-      keywords: [["Document & Video Understanding", "Parsing", "Structure-Aware Retrieval", "QA"]],
+      title: "Structure-Based Reasoning",
+      keywords: [["Parsing", "Syntax"], ["Hierarchical & Knowledge Graphs"]],
+      items: [
+        { pub: "hikey" },
+        { pub: "pilar" },
+        { pub: "m3docdep" },
+        { pub: "neural-symbolic-korean-dependency-parsing" },
+        { pub: "constraint-enhanced-dependency-parsing" }
+      ]
+    },
+    {
+      title: "Multimodality",
+      keywords: [["Documents", "Video"]],
       items: [
         { pub: "multidocfusion" },
         { pub: "m3docdep" },
@@ -50,10 +61,9 @@ window.SITE = {
     },
     {
       title: "Agentic AI",
-      keywords: [["Knowledge Representation", "Memory", "Evidence-Grounded Reasoning"]],
+      keywords: [["Memory", "Verification"]],
       items: [
-        { pub: "admit" },
-        { pub: "neural-symbolic-korean-dependency-parsing" }
+        { pub: "admit" }
       ]
     }
   ],

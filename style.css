@@ -558,10 +558,6 @@ sup {
   background: var(--surface);
 }
 
-.areas-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .area .area-keywords {
   margin-top: 0.35rem;
   color: var(--text);

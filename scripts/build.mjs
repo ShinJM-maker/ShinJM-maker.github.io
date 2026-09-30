@@ -286,7 +286,7 @@ ${topConference.map(p => pubFeature(p, "")).join("\n")}
       return `<a href="projects/${item.project}.html">${esc(item.label || project.cardTitle || project.title)}${item.venue ? ` <span>${esc(item.venue)}</span>` : ""}</a>`;
     };
     return `      <p class="section-lede areas-lede">${esc(SITE.researchStatement)}</p>
-      <div class="areas areas-2">
+      <div class="areas">
 ${SITE.researchAreas.map(area => `        <article class="area">
           <h3>${esc(area.title)}</h3>
 ${(area.keywords || []).map(line => `          <p class="area-keywords">${keywordLine(line)}</p>`).join("\n")}${area.text ? `

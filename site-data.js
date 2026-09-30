@@ -51,7 +51,7 @@ window.SITE = {
     },
     {
       title: "Multimodality",
-      keywords: [["Documents", "Video"]],
+      keywords: [["Documents", "Video", "World Models"]],
       items: [
         { pub: "multidocfusion" },
         { pub: "m3docdep" },

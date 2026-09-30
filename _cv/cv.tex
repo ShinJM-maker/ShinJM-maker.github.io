@@ -17,17 +17,17 @@
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \renewcommand*{\headerpositionstyle}[1]{{\fontsize{8.4pt}{1em}\headerfont\color{awesome} #1}}
 
-% Publication entry: [award]{title}{authors}{venue}.
+% Publication entry: [award]{title}{authors}{venue}; the award shares the venue line.
 \newcommand*{\cvpub}[4][]{%
-  \vspace{-2.0mm}
+  \vspace{-2.5mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \renewcommand{\arraystretch}{0.92}%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth}}
     {\fontsize{9.5pt}{1.2em}\bodyfont\bfseries\color{darktext} #2} \\
     \hspace{4mm}{\fontsize{9pt}{1em}\bodyfontlight\color{text} #3} \\
-    \hspace{4mm}{\fontsize{8pt}{1em}\bodyfontlight\color{graytext} #4}
-    \ifthenelse{\equal{#1}{}}{}{\\ \hspace{4mm}{\fontsize{8pt}{1em}\bodyfontlight\color{awesome} \textbf{Award:} #1}}
+    \hspace{4mm}{\fontsize{8pt}{1em}\bodyfontlight\color{graytext} #4}%
+    \ifthenelse{\equal{#1}{}}{}{{\fontsize{8pt}{1em}\bodyfontlight\color{awesome} \,--\, \textbf{#1}}}
   \end{tabular*}%
   \vspace{0mm}
 }

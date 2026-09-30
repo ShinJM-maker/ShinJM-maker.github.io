@@ -8,10 +8,11 @@
 %-------------------------------------------------------------------------------
 \documentclass[11pt, a4paper]{awesome-cv}
 
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.1cm, footskip=.5cm}
+\geometry{left=1.2cm, top=.6cm, right=1.2cm, bottom=.8cm, footskip=.5cm}
 
 \colorlet{awesome}{awesome-red}
 \setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvSectionTopSkip}{2mm}
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \renewcommand*{\headerpositionstyle}[1]{{\fontsize{8.4pt}{1em}\headerfont\color{awesome} #1}}
 
@@ -20,13 +21,14 @@
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
+  \renewcommand{\arraystretch}{0.92}%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth}}
     {\fontsize{9.5pt}{1.2em}\bodyfont\bfseries\color{darktext} #2} \\
     \hspace{4mm}{\fontsize{9pt}{1em}\bodyfontlight\color{text} #3} \\
     \hspace{4mm}{\fontsize{8pt}{1em}\bodyfontlight\color{graytext} #4}
     \ifthenelse{\equal{#1}{}}{}{\\ \hspace{4mm}{\fontsize{8pt}{1em}\bodyfontlight\color{awesome} \textbf{Award:} #1}}
   \end{tabular*}%
-  \vspace{1.2mm}
+  \vspace{0.6mm}
 }
 % Venue line: {abbreviation}{full name}{track}.
 \newcommand*{\venue}[3]{\textbf{\color{darktext}#1} -- #2\ifthenelse{\equal{#3}{}}{}{ (\textbf{#3})}}
@@ -85,7 +87,7 @@
 
 % Paragraph-style bullet list outside of \cventry.
 \newenvironment{cvbullets}{%
-  \vspace{3.5mm}
+  \vspace{2mm}
   \paragraphstyle
   \begin{cvitems}
 }{%
@@ -351,7 +353,7 @@ My research has yielded \textbf{15 publications, including 6 first-author papers
 \hfill{\fontsize{7.5pt}{1em}\bodyfontlight\color{text}\textsuperscript{*}\,First author or co-first author}\par
 
 \needspace{6\baselineskip}\cvsubsection{International Conference Publications}
-\vspace{3mm}
+\vspace{1.5mm}
 
 \cvpub
   {\href{https://shinjm-maker.github.io/publications/admit.html}{ADMIT: Support-Gated Memory-Write Admission for Document QA Agents}}
@@ -384,7 +386,7 @@ My research has yielded \textbf{15 publications, including 6 first-author papers
   {\venue{EMNLP 2024}{Conference on Empirical Methods in Natural Language Processing}{Industry Track}}
 
 \needspace{6\baselineskip}\cvsubsection{Journal Publications}
-\vspace{3mm}
+\vspace{1.5mm}
 
 \cvpub
   {\href{https://www.tandfonline.com/doi/full/10.1080/08839514.2024.2367820}{Multi-Paragraph Machine Reading Comprehension with Hybrid Reader over Tables and Text}}
@@ -397,7 +399,7 @@ My research has yielded \textbf{15 publications, including 6 first-author papers
   {\textit{Applied Artificial Intelligence} 38.1 (2024), p.~2398920. Taylor \& Francis}
 
 \needspace{6\baselineskip}\cvsubsection{Domestic Conference Publications}
-\vspace{3mm}
+\vspace{1.5mm}
 
 \cvpub[Outstanding Paper Award]
   {\href{https://shinjm-maker.github.io/publications/retrieval-generation-techniques-llms.html}{Search-Based Generation Techniques for Improving LLM Responses: A Comparative Study of Zero-shot and RAG on GPT-3.5 and GPT-4}}
@@ -430,7 +432,7 @@ My research has yielded \textbf{15 publications, including 6 first-author papers
   {\venue{HCLT 2021}{Conference on Human and Cognitive Language Technology}{}}
 
 \needspace{6\baselineskip}\cvsubsection{Master's Thesis}
-\vspace{3mm}
+\vspace{1.5mm}
 
 \cvpub
   {\href{https://shinjm-maker.github.io/publications/neural-symbolic-korean-dependency-parsing.html}{A Neural-Symbolic Model for Overcoming Deep Learning Limitations in Korean Dependency Parsing}}
@@ -438,9 +440,7 @@ My research has yielded \textbf{15 publications, including 6 first-author papers
   {Master's Thesis, Pusan National University, 2023}
 
 %-------------------------------------------------------------------------------
-\needspace{8\baselineskip}\cvsection{Selected Manuscripts Under Review}
-
-\needspace{6\baselineskip}\cvsubsection{First-Author Manuscripts}
+\needspace{7\baselineskip}\cvsection{First-Author Manuscripts Under Review}
 \begin{cvbullets}
   \item {\textbf{ICLR 2027.} Evaluating the practical utility of agentic memory.}
   \item {\textbf{ICLR 2027.} Citation grounding for video question answering.}

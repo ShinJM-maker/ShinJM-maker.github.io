@@ -56,6 +56,19 @@
   \end{center}
 }
 
+% Honors table with a location column wide enough to keep institution names on one line.
+\renewenvironment{cvhonors}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-2mm}
+  \begin{center}
+    \setlength\tabcolsep{0pt}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 5.1cm} R{3.6cm}}
+}{%
+    \end{tabular*}
+  \end{center}
+}
+
 % Patents: {date}{title}{status / ID}.
 \newenvironment{cvpatents}{%
   \vspace{\acvSectionContentTopSkip}
@@ -63,7 +76,7 @@
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 6.2cm} R{4.5cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 7.2cm} R{5.7cm}}
 }{%
     \end{tabular*}
   \end{center}
@@ -247,8 +260,8 @@ My research has yielded \textbf{15 publications, including 6 first-author papers
 \needspace{8\baselineskip}\cvsection{Selected Honors \& Awards}
 
 \begin{cvhonors}
-  \cvhonor{Deputy Prime Minister and Minister of Education Award}{Competition for Best Practices in Academia--Industry Cooperation}{National Research Foundation (NRF)}{2024}
-  \cvhonor{Outstanding Paper Award}{Korea Institute of Information and Communication Engineering (KIICE)}{KIICE}{2023}
+  \cvhonor{Deputy Prime Minister and Minister of Education Award}{Competition for Best Practices in Academia--Industry Cooperation}{NRF}{2024}
+  \cvhonor{Outstanding Paper Award}{Korea Institute of Information and Communication Engineering}{KIICE}{2023}
   \cvhonor{Grand Prize}{Samsung Fire \& Marine Insurance LLM-based MVP Model Idea Competition}{Samsung}{2023}
   \cvhonor{Excellence Award (Technology Track)}{KU-Grant Program}{Korea University}{2023}
   \cvhonor{Outstanding Paper Award}{Korea Software Congress (KSC)}{KSC}{2022}
@@ -260,23 +273,20 @@ My research has yielded \textbf{15 publications, including 6 first-author papers
 \needspace{8\baselineskip}\cvsection{Patents}
 
 \begin{cvpatents}
-  \cvpatent{2026}{Hierarchical Multimodal Retrieval for Open-Domain Document Question Answering}{Korea, Pending}
-  \cvpatent{2026}{Multi-modal, Multi-page, Multi-document Dependency Chunking with Large Vision-Language Models}{Korea, Pending}
-  \cvpatent{2025}{Device and Method for Document Chunking, and Question-Answering Device and Method Using the Same}{Korea · DP-2025-0093, Pending}
-  \cvpatent{Feb 2023}{Rule Filtering Techniques and Methods for Knowledge Inference Systems Based on Deep Learning}{Korea · P2022-0340-KR00, Registered}
-  \cvpatent{Nov 2022}{AI-Based Adaptive Problem Recommendation System and Method for Learner-Level Assessment}{Korea · 10-2022-0068075, Registered}
+  \cvpatent{2026}{Hierarchical Multimodal Retrieval for Open-Domain Document QA}{Korea, Pending}
+  \cvpatent{2026}{Multimodal Multi-Document Dependency Chunking}{Korea, Pending}
+  \cvpatent{2025}{Document Chunking and QA System}{Korea · DP-2025-0093, Pending}
+  \cvpatent{Feb 2023}{Rule Filtering for Neural Knowledge Inference}{Korea · P2022-0340-KR00, Registered}
+  \cvpatent{Nov 2022}{Adaptive Problem Recommendation}{Korea · 10-2022-0068075, Registered}
 \end{cvpatents}
 
 %-------------------------------------------------------------------------------
 \needspace{8\baselineskip}\cvsection{Technical Skills}
 
 \begin{cvskills}
-  \cvskill{Modeling}{LLM/LVLM fine-tuning, hierarchical retrieval, knowledge graphs, hybrid neural-symbolic reasoning, rule-based evidence filtering}
-  \cvskill{Document AI}{Multimodal parsing, hierarchical chunking, layout-aware processing, table/document QA}
-  \cvskill{Programming}{Python, SQL, C/C++, Java}
-  \cvskill{ML \& LLM Frameworks}{PyTorch, HuggingFace Transformers, PEFT/LoRA, Accelerate, OpenAI/Anthropic API}
-  \cvskill{Retrieval, RAG \& Evaluation}{FAISS, Elasticsearch, Pinecone, LangChain, LlamaIndex, lm-eval-harness}
-  \cvskill{Document Processing}{PyMuPDF, pdfplumber, Tesseract, PaddleOCR, LayoutLMv3, Donut}
+  \cvskill{Research}{Multimodal LLMs, RAG, hierarchical retrieval, knowledge graphs, neural-symbolic reasoning}
+  \cvskill{Programming \& ML}{Python, C/C++, PyTorch, Hugging Face, PEFT/LoRA}
+  \cvskill{Retrieval \& Evaluation}{Elasticsearch, FAISS, lm-eval-harness}
   \cvskill{Languages}{Korean (native), English (professional working proficiency)}
 \end{cvskills}
 
@@ -302,9 +312,8 @@ My research has yielded \textbf{15 publications, including 6 first-author papers
     {2019 -- 2022}
     {
       \begin{cvitems}
-        \item {\textbf{Capstone research mentoring (2021--2022):} Mentored undergraduate capstone teams on Korean dependency parsing and Table QA; one team achieved SOTA on the KLUE-DP benchmark.}
-        \item {\textbf{PNU Software Hackathon (2021):} As TA for Prof.~Hyuk-Chul Kwon's Software Design course, mentored 100+ students across 30+ projects; seven student teams won awards including the Grand Prize.}
-        \item {\textbf{Course teaching assistant:} Software Design (Android, Java) and Web Application Programming under Prof.~Hyuk-Chul Kwon; Programming Principles (C) under Prof.~Eunmi Jeong.}
+        \item {Mentored undergraduate research teams in dependency parsing and Table QA; one team achieved SOTA on KLUE-DP.}
+        \item {TA for Software Design, Web Application Programming, and Programming Principles; also mentored 100+ students during the PNU Software Hackathon.}
       \end{cvitems}
     }\par
 \end{cventries}
@@ -322,33 +331,18 @@ My research has yielded \textbf{15 publications, including 6 first-author papers
     {Korean LLM and RAG pipeline specialized for the science domain; led data preprocessing and chunking methodology development; produced an EMNLP 2024 Industry Track publication.}\par
   \cventry{Lead Researcher · Korea University · Samsung Fire \& Marine Insurance}{Synerpeace Pilot -- Insurance Document Assistant}{}{Jul 2023 -- Jan 2024}
     {Insurance document QA pilot combining LLM-based retrieval with production-oriented application development.}\par
-  \cventry{Lead Researcher · Korea University · KU-Grant Program}{Synapse -- Multilingual Medical Consultation System}{}{Jun 2023 -- Present}
-    {Multilingual LLM-based medical consultation chatbot; selected for the KU-Grant research commercialization program.}\par
 \end{cventries}
 
 \needspace{6\baselineskip}\cvsubsection{Foundation Models and Adaptation}
 \begin{cventries}
   \cventry{Researcher · Korea University · NC AI Consortium}{National Representative K-AI Research Team}{}{Aug 2025 -- Jan 2026}
     {Multilingual foundation model development as a national-level representative researcher, spanning data pipelines, post-training, and evaluation.}\par
-  \cventry{Researcher · Korea University}{Ko-Gemma -- Korean-Adapted Gemma}{}{Feb 2024 -- Mar 2024}
-    {Korean adaptation of Google's Gemma model; contributed Korean-focused data adaptation and Korean benchmark evaluation.}\par
-  \cventry{Researcher · Korea University}{KULLM -- Korea University Korean LLM}{}{Dec 2023 -- Feb 2024}
-    {Korean LLM initiative developed at Korea University; contributed instruction-following tuning and benchmark evaluation.}\par
-  \cventry{Researcher · Korea University · Hyundai Mobis}{Robot Process Automation -- PLC Control-Code Generation}{}{Sep 2023 -- Feb 2024}
-    {GPT-based assistant that generates PLC control code for smart-factory robot process automation, in collaboration with Hyundai Mobis.}\par
-  \cventry{Graduate Researcher · Pusan National University · KT}{Mi:deum K 1.0 -- Korean Large Language Model}{}{Dec 2021 -- Dec 2022}
-    {Contributed to KT's Korean LLM ecosystem for enterprise generative AI; led model adaptation and Korean-targeted post-training evaluation.}\par
+  \cventry{Researcher · Korea University · Pusan National University · KT}{Foundation-Model Adaptation}{}{Dec 2021 -- Mar 2024}
+    {Contributed to Mi:deum~K, KULLM, and Ko-Gemma across Korean adaptation, instruction tuning, and evaluation.}\par
   \cventry{Graduate Researcher · Pusan National University · ETRI}{Exobrain WiseQA -- National QA}{}{Sep 2020 -- Nov 2022}
     {Table QA and neural-symbolic Korean sentence analysis for the national Exobrain project; introduced an Adapter-based architecture unifying separate text/table embedding models that reduced QA model parameter size by approximately 50\%; research foundation for subsequent structure-grounded evidence work.}\par
 \end{cventries}
 
-\needspace{6\baselineskip}\cvsubsection{Additional Projects}
-\begin{cvbullets}
-  \item {Korean parsing (\textbf{96.28\%}) and TTS prosody (\textbf{92.13\%}) systems with KT, deployed in KT GiGA Genie.}
-  \item {Navigation-TTS for Navice in BMW/Mercedes-Benz.}
-  \item {AI-based online judge with NextStage in PNU SW curriculum.}
-  \item {AI mineral location prediction with KIGAM.}
-\end{cvbullets}
 
 %-------------------------------------------------------------------------------
 \needspace{8\baselineskip}\cvsection{All Publications}
@@ -356,7 +350,7 @@ My research has yielded \textbf{15 publications, including 6 first-author papers
 \vspace{1mm}
 \hfill{\fontsize{7.5pt}{1em}\bodyfontlight\color{text}\textsuperscript{*}\,First author or co-first author}\par
 
-\needspace{6\baselineskip}\cvsubsection{International Top Conference Publications}
+\needspace{6\baselineskip}\cvsubsection{International Conference Publications}
 \vspace{3mm}
 
 \cvpub

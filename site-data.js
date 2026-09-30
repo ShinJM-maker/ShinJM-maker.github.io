@@ -14,7 +14,8 @@ window.SITE = {
 
   // Totals shown on the site (kept in sync with the CV). First-author paper counts are derived from publications-data.js.
   stats: {
-    publications: 15,
+    publications: 14,
+    kudocPublications: 15,
     patents: 5,
     industryProjects: 4,
     awards: 7,
@@ -71,7 +72,7 @@ window.SITE = {
 
   // Impact row on the home page (kept in sync with the CV's summary sentence).
   impact: [
-    { value: "15", label: "Publications", detail: "Conferences, journals, and theses" },
+    { value: "14", label: "Publications", detail: "Conferences, journals, and theses" },
     { value: "6", label: "First-author papers", detail: "NeurIPS · ACL (Oral) · CVPR · EMNLP, main track at all four" },
     { value: "5", label: "Patents", detail: "Korea · 2 registered, 3 pending" },
     { value: "7", label: "Awards", detail: "Incl. 3 paper or research awards" }

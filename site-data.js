@@ -63,7 +63,8 @@ window.SITE = {
       title: "Agentic AI",
       keywords: [["Memory", "Verification"]],
       items: [
-        { pub: "admit" }
+        { pub: "admit" },
+        { pub: "pilar" }
       ]
     }
   ],

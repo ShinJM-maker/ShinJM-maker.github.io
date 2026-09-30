@@ -40,7 +40,7 @@ window.SITE = {
   researchAreas: [
     {
       title: "Structure-Based Reasoning",
-      keywords: [["Parsing", "Syntax"], ["Hierarchical & Knowledge Graphs"]],
+      keywords: [["Parsing", "Hierarchical & Knowledge Graphs"]],
       items: [
         { pub: "hikey" },
         { pub: "pilar" },

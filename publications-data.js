@@ -164,10 +164,10 @@ window.PUBLICATIONS = [
     date: "Oct 2024",
     authorsHtml: "Seongtae Hong*, <strong>Joongmin Shin*</strong>, Jaehyung Seo, Taemin Lee, Jeongbae Park, Cho Man Young, Byeongho Choi, Heuiseok Lim",
     abstract: "Process plants are complex large-scale industrial facilities that convert raw materials or intermediate products into final products, requiring continuous processes with high safety and efficiency standards. In particular, in nuclear process plants, Predictive Maintenance System (PMS) plays a critical role in predicting equipment anomalies and performing preventive maintenance. However, current PMS relies heavily on the experience of a few experts, leading to knowledge loss upon their retirement and difficulty in swift response. Existing off-premise Question-Answering (QA) systems based on Large Language Models (LLM) face issues such as data leakage and challenges in domain-specific tuning. To address these problems, this study proposes an on-premise intelligent PMS framework utilizing a new chunking method, StyleDFS, which effectively reflects the structural information of documents. Additionally, we demonstrate that Instruction tuning using relevant domain-specific data improves LLM performance even under limited data conditions.",
-    contribution: "Domain-specific RAG framework for scientific and industrial QA.",
+    contribution: "Domain-specific RAG framework for scientific and industrial QA; led to two technology transfers.",
     role: "Co-First Author",
     status: "Accepted",
-    keywords: ["domain RAG", "industrial QA"],
+    keywords: ["domain RAG", "industrial QA", "technology transfer"],
     venueBadge: {
       path: "Venue/EMNLP2024.png",
       alt: "EMNLP 2024 venue badge"

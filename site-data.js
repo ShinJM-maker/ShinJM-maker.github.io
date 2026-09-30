@@ -16,6 +16,7 @@ window.SITE = {
   stats: {
     publications: 14,
     kudocPublications: 15,
+    transfers: 3,
     patents: 5,
     industryProjects: 4,
     awards: 7,

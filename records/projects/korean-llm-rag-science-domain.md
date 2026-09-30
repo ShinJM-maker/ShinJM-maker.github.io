@@ -6,7 +6,7 @@
 - Affiliation: Korea University
 - Group: Multimodal Reasoning & Document AI
 - Role: Data preprocessing and chunking methodology development.
-- Achievements: Publication at EMNLP 2024 (Industry Track).
+- Achievements: Publication at EMNLP 2024 (Industry Track) and 2 technology transfers.
 - Detail Page: projects/korean-llm-rag-science-domain.html
 - Source: `projects-data.js`
 

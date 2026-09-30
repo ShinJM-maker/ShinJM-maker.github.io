@@ -49,13 +49,14 @@ window.PROJECTS = [
     period: "Feb 2024 - Dec 2024",
     affiliation: "Korea University",
     group: "Multimodal Reasoning & Document AI",
-    cardSummary: "Korean LLM and RAG pipeline specialized for the science domain; led data preprocessing and chunking methodology development, producing an EMNLP 2024 Industry Track paper.",
+    cardSummary: "Korean LLM and RAG pipeline specialized for the science domain; led data preprocessing and chunking methodology development, producing an EMNLP 2024 Industry Track paper and 2 technology transfers.",
     cardChips: [
-      { tone: "output", text: "EMNLP 2024 Industry" }
+      { tone: "output", text: "EMNLP 2024 Industry" },
+      { tone: "recognition", text: "2 Transfers" }
     ],
     description: "Developed a science domain-specialized Korean LLM & RAG pipeline.",
     role: "Data preprocessing and chunking methodology development.",
-    achievements: "Publication at EMNLP 2024 (Industry Track)."
+    achievements: "Publication at EMNLP 2024 (Industry Track) and 2 technology transfers."
   },
   {
     slug: "synerpeace-pilot",
@@ -66,11 +67,12 @@ window.PROJECTS = [
     group: "Multimodal Reasoning & Document AI",
     cardSummary: "Insurance document QA pilot combining LLM-based retrieval with production-oriented application development.",
     cardChips: [
-      { tone: "partner", text: "Samsung Fire & Marine" }
+      { tone: "partner", text: "Samsung Fire & Marine" },
+      { tone: "recognition", text: "~40% Search Time Reduction" }
     ],
     need: "Reduce the time staff spend searching complex insurance documents.",
     problem: "Conditions, exceptions, and provenance were lost during retrieval.",
-    outcome: "Motivated subsequent structure-aware retrieval research.",
+    outcome: "~40% reduction in manual search time; motivated subsequent structure-aware retrieval research.",
     description: "Developed 'Synerpeace', an LLM model-based application in collaboration with Samsung Fire & Marine Insurance.",
     role: "AI model design and development.",
     achievements: "Awarded in Samsung Fire & Marine Insurance's Pilot Project and secured investment."

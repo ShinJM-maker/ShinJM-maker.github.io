@@ -39,7 +39,7 @@ window.SITE = {
   researchStatement: "My research uses structure-based reasoning to address real-world and industrial problems. Parsing, hierarchies, and knowledge graphs give multimodal and agentic systems the structure they need to represent, select, update, and verify information.",
   researchAreas: [
     {
-      title: "Structure-Based Reasoning",
+      title: "Structure-based Reasoning",
       keywords: [["Parsing", "Hierarchical & Knowledge Graphs"]],
       items: [
         { pub: "hikey" },

@@ -425,7 +425,7 @@ sup {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 220px;
-  gap: 3rem;
+  gap: 2.5rem;
   align-items: start;
   padding-top: 1rem;
 }
@@ -451,7 +451,6 @@ sup {
 }
 
 .hero-summary {
-  max-width: var(--measure);
   margin-top: 1.25rem;
   font-size: 1.04rem;
 }
@@ -479,7 +478,6 @@ sup {
 }
 
 .hero-callout {
-  max-width: var(--measure);
   margin-top: 1rem;
   padding: 0.75rem 1rem;
   border-left: 3px solid var(--brand);
